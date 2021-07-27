@@ -11,8 +11,9 @@ Vue SPA
     - Vue-cli 3
     - Vue-Router
 - Style
-    - vuetify
+    - Vuetify
     - Scss
+    - Material Design icons
 - Data
     - JSON
     - Axios

@@ -1,15 +1,25 @@
 <template>
   <div id="skill">
-      skillsss
+    skillsss
+
+    <!-- footer -->
+    <Footer></Footer>
+
+    <!-- Nav Bottom -->
+    <NavBottom></NavBottom>
   </div>
 </template>
 
 <script>
-export default {
+import Footer from "@/components/Footer/Footer.vue";
+import NavBottom from "@/components/Nav/NavBottom.vue";
 
-}
+export default {
+  components: {
+    Footer,
+    NavBottom,
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
