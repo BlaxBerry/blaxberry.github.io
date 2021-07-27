@@ -1,12 +1,22 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/skill">skill</router-link>
+  <v-app>
+    <div id="app">
+      <!-- Nav Left -->
+      <NavLeft></NavLeft>
+      
+      <router-view />
     </div>
-    <router-view/>
-  </div>
+  </v-app>
 </template>
+
+<script>
+import NavLeft from "@/components/Nav/NavLeft.vue";
+export default {
+  components: {
+    NavLeft,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {

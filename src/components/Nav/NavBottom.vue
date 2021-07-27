@@ -20,7 +20,7 @@ export default {
       { name: "About Me", icon: "mdi-ghost", color: "red" },
       { name: "Skills", icon: "mdi-pickaxe", color: "" },
       { name: "Works", icon: "mdi-bug", color: "" },
-      { name: "Contact", icon: "mdi-hail", color: "" }
+      { name: "Contact", icon: "mdi-hail", color: "" },
     ],
     NavItemClickedDefault: "Contact",
   }),
@@ -30,7 +30,7 @@ export default {
       // change back to default value "Contact"
       clearTimeout(timer);
       let timer = setTimeout(() => {
-        this. NavItemClickedDefault= "Contact"
+        this.NavItemClickedDefault = "Contact";
       }, 1000);
     },
   },
