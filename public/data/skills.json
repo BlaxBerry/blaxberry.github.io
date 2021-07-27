@@ -1,0 +1,295 @@
+[
+    [
+        {
+            "name": "HTML",
+            "id":"html",
+            "pic": "html.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "CSS",
+            "id":"css",
+            "pic": "css.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "id":"javascript",
+            "pic": "javascript.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "TypeScript",
+            "id":"typescript",
+            "pic": "typescript.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "Ruby",
+            "id":"ruby",
+            "pic": "ruby.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        }
+    ],
+    [
+        {
+            "name": "jQuery",
+            "id":"jquery",
+            "pic": "jquery.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "Vue",
+            "id":"vue",
+            "pic": "vue.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "React",
+            "id":"react",
+            "pic": "react.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "Webpack",
+            "id":"webpack",
+            "pic": "webpack.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        }
+    ],
+    [
+        {
+            "name": "Node.js",
+            "id":"nodejs",
+            "pic": "node.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "Rails",
+            "id":"rails",
+            "pic": "rails.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "MySQL",
+            "id":"mysql",
+            "pic": "mysql.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "MongoDB",
+            "id":"mongodb",
+            "pic": "mongodb.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        }
+    ],
+    [
+        {
+            "name": "Scss",
+            "id":"scss",
+            "pic": "sass.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "Less",
+            "id":"less",
+            "pic": "less.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "Bootstrap",
+            "id":"bootstrap",
+            "pic": "bootstrap.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "Git",
+            "id":"git",
+            "pic": "git.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "npm",
+            "id":"npm",
+            "pic": "npm.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        },
+        {
+            "name": "yarn",
+            "id":"yarn",
+            "pic": "yarn.svg",
+            "desc": [
+                "",
+                ""
+            ],
+            "techTasks": [
+                {}
+            ],
+            "works": [
+                {}
+            ]
+        }
+    ]
+]

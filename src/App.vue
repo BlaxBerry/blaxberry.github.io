@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style lang="scss">
+// mian style
+@import url('./assets/style/common.scss');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

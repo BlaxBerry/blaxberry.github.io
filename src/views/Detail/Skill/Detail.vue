@@ -1,0 +1,73 @@
+<template>
+  <div id="skill-detail">
+    skill detail 
+    <br>
+    name: <strong>{{ skill.name }}</strong>
+
+
+    <!-- footer -->
+    <Footer></Footer>
+
+    <!-- Nav Bottom -->
+    <NavBottom></NavBottom>
+  </div>
+</template>
+
+<script>
+// api
+import {
+  // get all skill list
+  getAllSkillList,
+} from "@/api/api";
+
+// components
+import Footer from "@/components/Footer/Footer.vue";
+import NavBottom from "@/components/Nav/NavBottom.vue";
+
+export default {
+  components: {
+    Footer,
+    NavBottom,
+  },
+
+  data() {
+    return {
+      // route query
+      urlQuery: "",
+      // all skill list from data
+      allSkillList: [],
+      // the skill
+      skill: {},
+    };
+  },
+
+  methods: {
+    init() {
+      // 1. get the name of skill in detail page at the beginning
+      this.urlQuery = this.$route.query.name;
+      console.log(this.urlQuery);
+
+      // 2. get all skill list
+      getAllSkillList.then((res) => {
+        this.allSkillList = [
+          ...res.data[0],
+          ...res.data[1],
+          ...res.data[2],
+          ...res.data[3],
+        ];
+        // 3. find the skill
+        this.skill = this.allSkillList.find((item) => {
+          return item.id == this.urlQuery;
+        });
+        console.log(this.skill);
+      });
+    },
+  },
+
+  created() {
+    this.init();
+  },
+};
+</script>
+
+<style lang="scss" scoped></style>
