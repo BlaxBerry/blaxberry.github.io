@@ -3,12 +3,16 @@
     <div class="CardSkills">
       <v-card
         max-width="80"
+        min-width="80"
         elevation="2"
         v-for="(item, index) in list"
         :key="index"
         @click="click(item)"
       >
-        <v-img :src="require(`../../assets/images/${item.pic}`)"></v-img>
+        <v-img
+          :src="require(`../../assets/images/${item.pic}`)"
+          min-width="80"
+        ></v-img>
         <span>{{ item.name }}</span>
       </v-card>
     </div>
@@ -24,7 +28,6 @@ export default {
       clearTimeout(timer);
       let name = skillItem.id;
       let timer = setTimeout(() => {
-
         // send params to detail page
         this.$router.push({
           path: "/detail/skill",

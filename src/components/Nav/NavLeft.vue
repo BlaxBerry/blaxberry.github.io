@@ -33,7 +33,7 @@
         </v-btn>
       </template>
       <v-list>
-        <v-list-item v-for="item,index in NavItems" :key="index">
+        <v-list-item v-for="(item, index) in NavItems" :key="index">
           <v-list-item-title>
             <v-btn fab :to="item.to">
               <v-icon>{{ item.icon }}</v-icon>
@@ -50,7 +50,8 @@ export default {
   data: () => ({
     NavItems: [
       { Name: "Home", icon: "mdi-home", to: "/" },
-      { Name: "Skills", icon: "mdi-star-circle", to: "/skills" },
+      { Name: "Profile", icon: "mdi-account", to: "/profile" },
+      { Name: "Skills", icon: "mdi-cards", to: "/skills" },
       { Name: "Works", icon: "mdi-rhombus-split", to: "/works" },
     ],
   }),

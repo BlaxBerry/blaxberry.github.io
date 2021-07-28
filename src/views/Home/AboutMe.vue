@@ -1,36 +1,63 @@
 <template>
-  <v-app>
-    <v-card class="mx-auto" max-width="434" tile>
-      <v-img
-        height="100%"
-        src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"
+  <v-container id="about-me" class="text-center">
+    <v-avatar tile size="100">
+      <img
+        src="https://pbs.twimg.com/profile_images/1364617705697943553/vtlD_ont_400x400.jpg"
+        alt="chen"
+      />
+    </v-avatar>
+    sad
+
+    <div class="links">
+      <v-btn
+        v-for="(item, index) in links"
+        :key="index"
+        :href="item.link"
+        :color="item.color"
+        target="_blank"
+        elevation="2"
+        class="ma-1"
+        icon
       >
-        <v-row align="end" class="fill-height">
-          <v-col align-self="start" class="pa-0" cols="12">
-            <v-avatar class="profile" color="grey" size="164" tile>
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"
-              ></v-img>
-            </v-avatar>
-          </v-col>
-          <v-col class="py-0">
-            <v-list-item color="rgba(0, 0, 0, .4)" dark>
-              <v-list-item-content>
-                <v-list-item-title class="text-h6">
-                  Marcus Obrien
-                </v-list-item-title>
-                <v-list-item-subtitle>Network Engineer</v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
-          </v-col>
-        </v-row>
-      </v-img>
-    </v-card>
-  </v-app>
+        <v-icon large :color="item.color">{{ item.icon }}</v-icon>
+      </v-btn>
+    </div>
+  </v-container>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      links: [
+        {
+          name: "Twitter",
+          icon: "mdi-twitter",
+          link: "https://twitter.com/chenjiaxu333",
+          color: "blue",
+        },
+        {
+          name: "Github",
+          icon: "mdi-github",
+          link: "https://github.com/BlaxBerry",
+          color: "grey darken-4",
+        },
+        {
+          name: "Facebook",
+          icon: "mdi-facebook",
+          link: "https://www.facebook.com/jiaxu.chen.96",
+          color: "blue darken-4",
+        },
+        {
+          name: "Gmail",
+          icon: "mdi-gmail",
+          link: "mailto:chenjiaxu333@gmail.com",
+          color: "red",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style></style>
