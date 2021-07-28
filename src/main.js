@@ -14,6 +14,10 @@ export default new Vuetify({})
 // Material Design icons
 import '@mdi/font/css/materialdesignicons.css'
 
+//Vue Typer
+import VueTyperPlugin from 'vue-typer'
+Vue.use(VueTyperPlugin)
+
 
 // 每次跳转回到页面顶部
 router.beforeEach((to, from, next) => {    

@@ -7,6 +7,9 @@
     <!-- 2. timeline -->
     <TimeLine></TimeLine>
 
+    <!-- 3. skills  -->
+    <Skills></Skills>
+
     <!-- footer -->
     <Footer></Footer>
 
@@ -19,6 +22,7 @@
 // mian component
 import TopInfo from "@/views/Profile/TopInfo.vue";
 import TimeLine from "@/views/Profile/TimeLine.vue";
+import Skills from "@/views/Home/Skills.vue";
 
 // common componoents
 import Footer from "@/components/Footer/Footer.vue";
@@ -29,6 +33,7 @@ export default {
     // mian components
     TopInfo,
     TimeLine,
+    Skills,
     // common componoents
     Footer,
     NavBottom,

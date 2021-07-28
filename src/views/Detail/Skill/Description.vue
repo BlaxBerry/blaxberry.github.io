@@ -1,37 +1,28 @@
 <template>
-  <v-container id="description">
-    <v-card justify="center" class="pa-5">
-      <!-- 1. skill desc -->
-      {{ skill.name }}
-      <!-- 2. tech tasks list -->
-      <v-expansion-panels accordion>
-        <v-expansion-panel
-          v-for="(item, index) in skill.techTasks"
-          :key="index"
-        >
-          <v-expansion-panel-header>
-            <v-img
-              v-for="(pic, index) in item.pic"
-              :key="index"
-              :src="require(`@/assets/images/${pic}`)"
-              max-width="50"
-              class="mx-1"
-            ></v-img>
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <v-list-item v-for="(list, index) in item.desc" :key="index">
-              {{ list }}
-            </v-list-item>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-      </v-expansion-panels>
+  <v-container id="desctiption">
+    <v-card
+      class="pa-2 d-flex flex-column flex-sm-row justify-center align-center"
+      tile
+    >
+      <!-- :src="require(`@/assets/images/${pic}`)" -->
+      <v-img
+        :src="require(`@/assets/images/${pic}`)"
+        lazy-src="@/assets/images/_lazyloading.gif"
+        max-width="150"
+      ></v-img>
+      <div class="pa-5">
+        <v-card-title class="text-h4 font-weight-black">{{
+          name
+        }}</v-card-title>
+        <v-card-text>{{ desc }}</v-card-text>
+      </div>
     </v-card>
   </v-container>
 </template>
 
 <script>
 export default {
-  props: ["skill"],
+  props: ["name", "pic", "desc"],
 };
 </script>
 

@@ -4,10 +4,7 @@
             "name": "HTML",
             "id": "html",
             "pic": "html.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "最初は静的なページから知り始めましたが、 大手のウェブサイトページを模写した後、架空サイトや独自開発しました。Ajax技術やサーバーやデータベース関連の知識などを日々頑張っています。",
             "techTasks": [
                 {
                     "name": "HTML5",
@@ -15,7 +12,9 @@
                         "html.svg"
                     ],
                     "desc": [
-                        ""
+                        "HTML5の新しいTagsを理解します。",
+                        "LocalStoragewを理解します。",
+                        "Canvasを練習したことがあります。"
                     ]
                 }
             ],
@@ -27,28 +26,25 @@
             "name": "CSS",
             "id": "css",
             "pic": "css.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
-                    "name": "CSS",
+                    "name": "CSS3",
                     "pic": [
                         "css.svg"
                     ],
                     "desc": [
-                        ""
+                        "MediaQueryを利用し、レスポンシブレイアウト開発ができます。"
                     ]
                 },
                 {
-                    "name": "Sass",
+                    "name": "CSS拡張メタ言語",
                     "pic": [
                         "sass.svg",
                         "less.svg"
                     ],
                     "desc": [
-                        "Sass、LessなどのCSSプリプロセッサを利用して開発することができます。"
+                        "CSS拡張メタ言語 Scss/Sass、Lessを利用して開発することができます。"
                     ]
                 },
                 {
@@ -69,10 +65,7 @@
             "name": "JavaScript",
             "id": "javascript",
             "pic": "javascript.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "JavaScript",
@@ -80,7 +73,21 @@
                         "javascript.svg"
                     ],
                     "desc": [
-                        ""
+                        "DOM、BOM操作が出来ます。",
+                        "JSのJSオブジェクト指向を理解します。",
+                        "XMLHTTPRequestを通じてHTTP通信をすることができます。",
+                        "ES6+を理解します。",
+                        "モジュール開発が出来ます。",
+                        "async/await、Promiseを理解します。"
+                    ]
+                },
+                {
+                    "name": "TypeScript",
+                    "pic": [
+                        "typescript.svg"
+                    ],
+                    "desc": [
+                        "ヘビゲーム(Greedy Snake game)の開発を通じてTSを練習しました。"
                     ]
                 },
                 {
@@ -101,10 +108,7 @@
             "name": "TypeScript",
             "id": "typescript",
             "pic": "typescript.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "ヘビゲームの開発を通じてTSを練習しました。",
             "techTasks": [
                 {
                     "name": "TypeScript",
@@ -112,7 +116,7 @@
                         "typescript.svg"
                     ],
                     "desc": [
-                        ""
+                        "ヘビゲーム(Greedy Snake game)の開発を通じてTSを練習しました。"
                     ]
                 }
             ],
@@ -124,10 +128,7 @@
             "name": "Ruby",
             "id": "ruby",
             "pic": "ruby.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "以前 Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
             "techTasks": [
                 {
                     "name": "Ruby",
@@ -158,10 +159,7 @@
             "name": "jQuery",
             "id": "jquery",
             "pic": "jquery.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "jQuery",
@@ -182,19 +180,18 @@
             "name": "Vue",
             "id": "vue",
             "pic": "vue.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "Vue-Cli",
                     "pic": [
+                        "vue.svg",
                         "vue-vuetify.svg",
                         "vue-elementui.svg"
                     ],
                     "desc": [
-                        "Vuetify、ElementUI、VantUIなどのUIフレームワークを利用し、Vue-Cliで開発することがきます。"
+                        "Vuetify、ElementUI、VantUIなどのUIフレームワークを利用し、Vue-Cliで開発することがきます。",
+                        "CSSプリプロセッサ Scss、Lessを利用して開発することができます。"
                     ]
                 },
                 {
@@ -212,7 +209,7 @@
                         "vue-vuex.svg"
                     ],
                     "desc": [
-                        "Vuexは勉強中です。"
+                        "Vuexは勉強して強化中です。"
                     ]
                 },
                 {
@@ -242,10 +239,7 @@
             "name": "React",
             "id": "react",
             "pic": "react.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "Create React App",
@@ -254,7 +248,8 @@
                         "react-materialui.svg"
                     ],
                     "desc": [
-                        "MaterialUI、AntDesigなどのUIフレームワークを利用し、Create React Appで開発することがきます。"
+                        "MaterialUI、AntDesigなどのUIフレームワークを利用し、Create React Appで開発することがきます。",
+                        "CSSプリプロセッサ Scss、Lessを利用して開発することができます。"
                     ]
                 },
                 {
@@ -293,10 +288,7 @@
             "name": "Webpack",
             "id": "webpack",
             "pic": "webpack.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "Webpack",
@@ -318,10 +310,7 @@
             "name": "Node.js",
             "id": "nodejs",
             "pic": "nodejs.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "以前の開発は主にフロントエンドで jQueryAjax や AxiosでHTTP通信してダータリクエストしましたが、それだけでは足りないことを認識し、Node.jsからサーバを勉強しはじめました。",
             "techTasks": [
                 {
                     "name": "Express.js",
@@ -329,10 +318,10 @@
                         "nodejs.svg"
                     ],
                     "desc": [
-                        "Node.jsのCommonJSのモジュール開発を理解します。",
-                        "Express.jsを利用し、SSR（Server Side Rending）や　CSR（Client Side Rendering）Web開発できます。",
+                        "CommonJSのモジュール開発を理解します。",
+                        "Express.jsを利用し、SSR(Server Side Rending) や CSR(Client Side Rendering）Web開発できます。",
                         "Art-Templateなどのテンプレートエンジンを利用して開発することが出来ます。",
-                        "MongoDB、MySQL、PostgreSQLに接続し、APIサーバー開発ができます。"
+                        "HTTP通信の基礎を勉強しました。Cookie、Sessionの基礎を理解します。"
                     ]
                 },
                 {
@@ -342,7 +331,7 @@
                         "mongodb.svg"
                     ],
                     "desc": [
-                        ""
+                        "MongoDB、MySQL、PostgreSQLに接続し、APIサーバー開発ができます。"
                     ]
                 },
                 {
@@ -365,10 +354,7 @@
             "name": "Rails",
             "id": "rails",
             "pic": "rails.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
             "techTasks": [
                 {
                     "name": "Ruby on Rails",
@@ -398,10 +384,7 @@
             "name": "MySQL",
             "id": "mysql",
             "pic": "mysql.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "MySQL",
@@ -409,6 +392,7 @@
                         "mysql.svg"
                     ],
                     "desc": [
+                        "基礎SQL言語を理解し、データの管理操作ができます。",
                         "MySQLWorkBenchツールが使えます。"
                     ]
                 },
@@ -418,7 +402,6 @@
                         "nodejs.svg"
                     ],
                     "desc": [
-                        "基礎SQL言語を理解し、データの管理操作ができます。",
                         "Node.jsに接続してデータを操作することが出来ます。"
                     ]
                 },
@@ -440,10 +423,7 @@
             "name": "MongoDB",
             "id": "mongodb",
             "pic": "mongodb.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "MongoDB",
@@ -484,10 +464,7 @@
             "name": "Scss",
             "id": "scss",
             "pic": "sass.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "Sass",
@@ -502,15 +479,6 @@
                     "name": "Less",
                     "pic": [
                         "less.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                },
-                {
-                    "name": "Bootstrap",
-                    "pic": [
-                        "bootstrap.svg"
                     ],
                     "desc": [
                         ""
@@ -525,10 +493,7 @@
             "name": "Less",
             "id": "less",
             "pic": "less.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "Less",
@@ -547,15 +512,6 @@
                     "desc": [
                         ""
                     ]
-                },
-                {
-                    "name": "Bootstrap",
-                    "pic": [
-                        "bootstrap.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
                 }
             ],
             "works": [
@@ -566,10 +522,7 @@
             "name": "Bootstrap",
             "id": "bootstrap",
             "pic": "bootstrap.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "Bootstrap",
@@ -589,10 +542,7 @@
             "name": "Git",
             "id": "git",
             "pic": "git.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "Git",
@@ -621,10 +571,7 @@
             "name": "npm",
             "id": "npm",
             "pic": "npm.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "npm",
@@ -653,10 +600,7 @@
             "name": "yarn",
             "id": "yarn",
             "pic": "yarn.svg",
-            "desc": [
-                "",
-                ""
-            ],
+            "desc": "",
             "techTasks": [
                 {
                     "name": "yarn",

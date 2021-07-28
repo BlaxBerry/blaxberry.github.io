@@ -3,7 +3,14 @@
     skill detail
 
     <!-- 1. description -->
-    <Description :skill="skill"></Description>
+    <Description
+      :name="skill.name"
+      :pic="skill.pic"
+      :desc="skill.desc"
+    ></Description>
+
+    <!-- 2. techTasks -->
+    <TechList :list="skill.techTasks"></TechList>
 
     <!-- 2. works -->
 
@@ -26,6 +33,7 @@ import {
 
 // mian components
 import Description from "@/views/Detail/Skill/Description.vue";
+import TechList from "@/views/Detail/Skill/TechList.vue";
 
 // components
 import Footer from "@/components/Footer/Footer.vue";
@@ -35,6 +43,7 @@ export default {
   components: {
     // mian components
     Description,
+    TechList,
     // components
     Footer,
     NavBottom,
