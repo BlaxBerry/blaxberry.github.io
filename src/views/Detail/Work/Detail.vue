@@ -1,17 +1,31 @@
 <template>
   <div id="work-detail">
-    {{ work.name }}
+    <h1>{{ work.name }}</h1>
+
     <!-- 1. carousel -->
-    all : {{work.pics?work.pics.length:0}} pics
-    <Slider :list="work.pics"></Slider>
+    all : {{ work.pics ? work.pics.length : 0 }} pics
+    <Slider :list="work.pics" v-if="work.pics"></Slider>
 
     <!-- 2. description -->
     Work Desc
-    {{ work.desc}}
+    <Description
+      :desc="work.desc"
+      :tags="work.keywords"
+      :links="work.links"
+      v-if="work.desc"
+    ></Description>
 
     <!-- 3. tech tasks -->
+    Tech Tasks:
+    <TechList :list="work.techTasks" v-if="work.techTasks"></TechList>
 
     <!-- 4. Function Details -->
+    Function Detail:
+    <Functions
+      :list="work.function"
+      :links="work.links"
+      v-if="work.function"
+    ></Functions>
 
     <!-- 5. footer -->
     <Footer></Footer>
@@ -30,6 +44,9 @@ import {
 
 // mian components
 import Slider from "@/views/Detail/Work/Slider.vue";
+import Description from "@/views/Detail/Work/Description.vue";
+import TechList from "@/views/Detail/Work/TechList.vue";
+import Functions from "@/views/Detail/Work/Functions.vue";
 
 // components
 import Footer from "@/components/Footer/Footer.vue";
@@ -39,6 +56,9 @@ export default {
   components: {
     // main components
     Slider,
+    Description,
+    TechList,
+    Functions,
     // components
     Footer,
     NavBottom,
@@ -69,7 +89,7 @@ export default {
         // 3. find the work
         // this.work =
         this.work = this.allWorksList.find((item) => {
-          return item.id == "01";
+          return item.id == this.urlQuery;
         });
         console.log(this.work);
       });

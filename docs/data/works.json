@@ -18,17 +18,16 @@
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/06.png",
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/07.png",
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/10.png"
-
         ],
         "techTasks": [
             [
                 {
-                    "name": "jQuery",
-                    "pic": "jquery.svg"
+                    "name": "Bootstrap",
+                    "pic": "bootstrap.svg"
                 },
                 {
-                    "name": "Bootstrap",
-                    "pic": "bootstrap"
+                    "name": "jQuery",
+                    "pic": "jquery.svg"
                 }
             ],
             [
@@ -37,38 +36,52 @@
                     "pic": "nodejs.svg"
                 },
                 {
+                    "name": "MongoDB",
+                    "pic": "mongodb.svg"
+                },
+                {
+                    "name": "Art-Template",
+                    "pic": "npm.svg"
+                }
+            ],
+            [
+                {
                     "name": "bcrypt",
                     "pic": "npm.svg"
                 },
                 {
-                    "name": "bcrypt",
+                    "name": "Joi",
                     "pic": "npm.svg"
                 },
                 {
                     "name": "session",
                     "pic": "npm.svg"
-                },
-                {
-                    "name": "Art-Template",
-                    "pic": "npm.svg"
-                },
-                {
-                    "name": "MongoDB",
-                    "pic": "mongodb.svg"
                 }
             ]
         ],
-        "desc": [
-            "",
-            ""
-        ],
+        "desc": "sss",
         "function": [
-            "",
-            ""
+            [
+                "check blogs from client side",
+                "check artic details from client side",
+                "uploade blog article from client side",
+                "user login from client side",
+                "user logout from client side",
+                "check static resources on server from client side"
+            ],
+            [
+                "http server created by Express.js",
+                "connect to database, add / edit / remove data",
+                "SSR(Server Side Rendering) by TemplateEngine",
+                "route guard login interception",
+                "use session + cookie to record login",
+                "use Joi to validate form data from client side",
+                "use formidable to analyze files uploaded from client side",
+                "use bcrypt password-hashing encryption"
+            ]
         ],
         "links": {
-            "github": "",
-            "demo": ""
+            "github": "https://github.com/BlaxBerry/node_blog_management"
         }
     },
     {
@@ -114,19 +127,30 @@
                     "name": "JSON",
                     "pic": "json.svg"
                 }
+            ],
+            [
+                {
+                    "name": "Vue-Router",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "vue-smooth-scroll",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "vue-typer",
+                    "pic": "vue.svg"
+                }
             ]
         ],
-        "desc": [
-            "",
-            ""
-        ],
+        "desc": "sss",
         "function": [
             "",
             ""
         ],
         "links": {
-            "github": "",
-            "demo": ""
+            "github": "https://github.com/BlaxBerry/portfolio-version-4",
+            "demo": "/home"
         }
     }
 ]

@@ -2,10 +2,7 @@
   <v-container>
     <v-carousel>
       <v-carousel-item v-for="(item, index) in list" :key="index">
-        <v-img
-          :src="item"
-          lazy-src="./images/lazy-loading.gif"
-        ></v-img>
+        <v-img :src="item"></v-img>
       </v-carousel-item>
     </v-carousel>
   </v-container>
@@ -18,6 +15,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.v-carousel {
+  width: 100vw;
+}
 .v-image {
   width: 100vw;
 }
