@@ -21,15 +21,18 @@ export default {
 
   methods: {
     click(skillItem) {
-      let name = skillItem.id
+      clearTimeout(timer);
+      let name = skillItem.id;
+      let timer = setTimeout(() => {
 
-      // send params to detail page
-      this.$router.push({
-        path: "/detail/skill",
-        query: {
-          name,
-        }
-      });
+        // send params to detail page
+        this.$router.push({
+          path: "/detail/skill",
+          query: {
+            name,
+          },
+        });
+      }, 200);
     },
   },
 };

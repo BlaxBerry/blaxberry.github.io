@@ -9,6 +9,9 @@
     <!-- 3. skills -->
     <Skills></Skills>
 
+    <!-- 4. works -->
+    <Works></Works>
+
     <!-- footer -->
     <Footer></Footer>
 
@@ -22,6 +25,7 @@
 import Top from "@/views/Home/Top.vue";
 import AboutMe from "@/views/Home/AboutMe.vue";
 import Skills from "@/views/Home/Skills.vue";
+import Works from "@/views/Home/Works.vue";
 
 // common componoents
 import Footer from "@/components/Footer/Footer.vue";
@@ -33,6 +37,7 @@ export default {
     Top,
     AboutMe,
     Skills,
+    Works,
     // common componoents
     Footer,
     NavBottom,

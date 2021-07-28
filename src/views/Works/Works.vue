@@ -1,8 +1,14 @@
 <template>
-  <div id="works-home">
-       works
-    <!-- works cards PC-->
+  <div id="works">
+    works
+    <!-- list -->
     <WorkCardsPC :list="list"></WorkCardsPC>
+
+    <!-- 4. footer -->
+    <Footer></Footer>
+
+    <!-- 5. Nav Bottom -->
+    <NavBottom></NavBottom>
   </div>
 </template>
 
@@ -15,6 +21,8 @@ import {
 
 // components
 import WorkCardsPC from "@/components/Cards/CardWorksPC.vue";
+import Footer from "@/components/Footer/Footer.vue";
+import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
   data() {
@@ -27,12 +35,14 @@ export default {
   components: {
     // components
     WorkCardsPC,
+    Footer,
+    NavBottom,
   },
 
   created() {
     // get all skill list
     getAllWorkList.then((res) => {
-      this.list = [res.data[0], res.data[1]];
+      this.list = res.data;
       console.log(this.list);
     });
   },

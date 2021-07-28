@@ -1,6 +1,6 @@
 <template>
   <v-container id="description">
-    <v-card justify="center">
+    <v-card justify="center" class="pa-5">
       <!-- 1. skill desc -->
       {{ skill.name }}
       <!-- 2. tech tasks list -->

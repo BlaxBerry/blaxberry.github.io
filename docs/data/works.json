@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Blogs & Users Management",
+        "id": "01",
+        "keywords": [
+            "jQuery",
+            "Bootstrap",
+            "Node.js",
+            "Art-Template",
+            "MongoDB"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png",
+        "pics": [
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png",
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/02.png",
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/03.png",
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/05.png",
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/06.png",
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/07.png",
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/10.png"
+
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "jQuery",
+                    "pic": "jquery.svg"
+                },
+                {
+                    "name": "Bootstrap",
+                    "pic": "bootstrap"
+                }
+            ],
+            [
+                {
+                    "name": "Express.js",
+                    "pic": "nodejs.svg"
+                },
+                {
+                    "name": "bcrypt",
+                    "pic": "npm.svg"
+                },
+                {
+                    "name": "bcrypt",
+                    "pic": "npm.svg"
+                },
+                {
+                    "name": "session",
+                    "pic": "npm.svg"
+                },
+                {
+                    "name": "Art-Template",
+                    "pic": "npm.svg"
+                },
+                {
+                    "name": "MongoDB",
+                    "pic": "mongodb.svg"
+                }
+            ]
+        ],
+        "desc": [
+            "",
+            ""
+        ],
+        "function": [
+            "",
+            ""
+        ],
+        "links": {
+            "github": "",
+            "demo": ""
+        }
+    },
+    {
+        "name": "Protofolio 4.0",
+        "id": "02",
+        "keywords": [
+            "Vue",
+            "SPA",
+            "Sass",
+            "Vuetify",
+            "Axios"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/master/src/assets/upload/mask01.png",
+        "pics": [
+            "",
+            ""
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Vue2",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vue-Cli3",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vuetify",
+                    "pic": "vue-vuetify.svg"
+                },
+                {
+                    "name": "Scss",
+                    "pic": "sass.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Axios",
+                    "pic": "axios.svg"
+                },
+                {
+                    "name": "JSON",
+                    "pic": "json.svg"
+                }
+            ]
+        ],
+        "desc": [
+            "",
+            ""
+        ],
+        "function": [
+            "",
+            ""
+        ],
+        "links": {
+            "github": "",
+            "demo": ""
+        }
+    }
+]
