@@ -1,14 +1,18 @@
 <template>
   <div id="skill-detail">
-    skill detail 
-    <br>
-    name: <strong>{{ skill.name }}</strong>
+    skill detail
 
+    <!-- 1. description -->
+    <Description :skill="skill"></Description>
 
-    <!-- footer -->
+    <!-- 2. works -->
+
+    <!-- 3. study -->
+
+    <!-- 4. footer -->
     <Footer></Footer>
 
-    <!-- Nav Bottom -->
+    <!-- 5. Nav Bottom -->
     <NavBottom></NavBottom>
   </div>
 </template>
@@ -20,12 +24,18 @@ import {
   getAllSkillList,
 } from "@/api/api";
 
+// mian components
+import Description from "@/views/Detail/Skill/Description.vue";
+
 // components
 import Footer from "@/components/Footer/Footer.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
   components: {
+    // mian components
+    Description,
+    // components
     Footer,
     NavBottom,
   },

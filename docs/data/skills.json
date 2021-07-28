@@ -2,14 +2,22 @@
     [
         {
             "name": "HTML",
-            "id":"html",
+            "id": "html",
             "pic": "html.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "HTML5",
+                    "pic": [
+                        "html.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -17,14 +25,41 @@
         },
         {
             "name": "CSS",
-            "id":"css",
+            "id": "css",
             "pic": "css.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "CSS",
+                    "pic": [
+                        "css.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Sass",
+                    "pic": [
+                        "sass.svg",
+                        "less.svg"
+                    ],
+                    "desc": [
+                        "Sass、LessなどのCSSプリプロセッサを利用して開発することができます。"
+                    ]
+                },
+                {
+                    "name": "Bootstrap",
+                    "pic": [
+                        "bootstrap.svg"
+                    ],
+                    "desc": [
+                        "Bootstrapを利用し、レスポンシブレイアウト開発することができます。"
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -32,14 +67,31 @@
         },
         {
             "name": "JavaScript",
-            "id":"javascript",
+            "id": "javascript",
             "pic": "javascript.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "JavaScript",
+                    "pic": [
+                        "javascript.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "JSON",
+                    "pic": [
+                        "json.svg"
+                    ],
+                    "desc": [
+                        "JSON(JavaScript Object Notation)というデータ交換フォーマットを理解します。"
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -47,14 +99,22 @@
         },
         {
             "name": "TypeScript",
-            "id":"typescript",
+            "id": "typescript",
             "pic": "typescript.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "TypeScript",
+                    "pic": [
+                        "typescript.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -62,14 +122,31 @@
         },
         {
             "name": "Ruby",
-            "id":"ruby",
+            "id": "ruby",
             "pic": "ruby.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Ruby",
+                    "pic": [
+                        "ruby.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Ruby on Rails",
+                    "pic": [
+                        "rails.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -79,14 +156,23 @@
     [
         {
             "name": "jQuery",
-            "id":"jquery",
+            "id": "jquery",
             "pic": "jquery.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "jQuery",
+                    "pic": [
+                        "jquery.svg"
+                    ],
+                    "desc": [
+                        "jQueryでDOM操作、Animateなどでインタラクティブにすることができます。",
+                        "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -94,14 +180,59 @@
         },
         {
             "name": "Vue",
-            "id":"vue",
+            "id": "vue",
             "pic": "vue.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Vue-Cli",
+                    "pic": [
+                        "vue-vuetify.svg",
+                        "vue-elementui.svg"
+                    ],
+                    "desc": [
+                        "Vuetify、ElementUI、VantUIなどのUIフレームワークを利用し、Vue-Cliで開発することがきます。"
+                    ]
+                },
+                {
+                    "name": "Vue-Router",
+                    "pic": [
+                        "vue.svg"
+                    ],
+                    "desc": [
+                        "Vue-Routerを使って、SPAシングルページアプリケーションを作成するできます。"
+                    ]
+                },
+                {
+                    "name": "Vue-X",
+                    "pic": [
+                        "vue-vuex.svg"
+                    ],
+                    "desc": [
+                        "Vuexは勉強中です。"
+                    ]
+                },
+                {
+                    "name": "Nuxt",
+                    "pic": [
+                        "vue-nuxt.svg"
+                    ],
+                    "desc": [
+                        "Nuxtは勉強中です。"
+                    ]
+                },
+                {
+                    "name": "Axios",
+                    "pic": [
+                        "axios.svg"
+                    ],
+                    "desc": [
+                        "Axiosを利用し、非同期にHTTP通信することができます。"
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -109,14 +240,50 @@
         },
         {
             "name": "React",
-            "id":"react",
+            "id": "react",
             "pic": "react.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Create React App",
+                    "pic": [
+                        "react-ant-design.svg",
+                        "react-materialui.svg"
+                    ],
+                    "desc": [
+                        "MaterialUI、AntDesigなどのUIフレームワークを利用し、Create React Appで開発することがきます。"
+                    ]
+                },
+                {
+                    "name": "React-Router-Dom",
+                    "pic": [
+                        "react.svg"
+                    ],
+                    "desc": [
+                        "React-Router-Domを使って、SPAシングルページアプリケーション作成ができます。"
+                    ]
+                },
+                {
+                    "name": "Redux",
+                    "pic": [
+                        "redux.svg"
+                    ],
+                    "desc": [
+                        "Reduxは強化中です。"
+                    ]
+                },
+                {
+                    "name": "Axios",
+                    "pic": [
+                        "axios.svg"
+                    ],
+                    "desc": [
+                        "Axiosを利用し、非同期にHTTP通信することができます。"
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -124,14 +291,22 @@
         },
         {
             "name": "Webpack",
-            "id":"webpack",
+            "id": "webpack",
             "pic": "webpack.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Webpack",
+                    "pic": [
+                        "webpack.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -141,14 +316,46 @@
     [
         {
             "name": "Node.js",
-            "id":"nodejs",
-            "pic": "node.svg",
+            "id": "nodejs",
+            "pic": "nodejs.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Express.js",
+                    "pic": [
+                        "nodejs.svg"
+                    ],
+                    "desc": [
+                        "Node.jsのCommonJSのモジュール開発を理解します。",
+                        "Express.jsを利用し、SSR（Server Side Rending）や　CSR（Client Side Rendering）Web開発できます。",
+                        "Art-Templateなどのテンプレートエンジンを利用して開発することが出来ます。",
+                        "MongoDB、MySQL、PostgreSQLに接続し、APIサーバー開発ができます。"
+                    ]
+                },
+                {
+                    "name": "Database",
+                    "pic": [
+                        "mysql.svg",
+                        "mongodb.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "npm",
+                    "pic": [
+                        "yarn.svg",
+                        "npm.svg",
+                        "gulp.svg"
+                    ],
+                    "desc": [
+                        "yarn、npm、gulpなどのパッケージ管理ツールが使えます。"
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -156,14 +363,32 @@
         },
         {
             "name": "Rails",
-            "id":"rails",
+            "id": "rails",
             "pic": "rails.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Ruby on Rails",
+                    "pic": [
+                        "rails.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Database",
+                    "pic": [
+                        "mysql.svg",
+                        "mongodb.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -171,14 +396,41 @@
         },
         {
             "name": "MySQL",
-            "id":"mysql",
+            "id": "mysql",
             "pic": "mysql.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "MySQL",
+                    "pic": [
+                        "mysql.svg"
+                    ],
+                    "desc": [
+                        "MySQLWorkBenchツールが使えます。"
+                    ]
+                },
+                {
+                    "name": "Node.js",
+                    "pic": [
+                        "nodejs.svg"
+                    ],
+                    "desc": [
+                        "基礎SQL言語を理解し、データの管理操作ができます。",
+                        "Node.jsに接続してデータを操作することが出来ます。"
+                    ]
+                },
+                {
+                    "name": "Ruby on Rails",
+                    "pic": [
+                        "rails.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -186,14 +438,41 @@
         },
         {
             "name": "MongoDB",
-            "id":"mongodb",
+            "id": "mongodb",
             "pic": "mongodb.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "MongoDB",
+                    "pic": [
+                        "mongodb.svg"
+                    ],
+                    "desc": [
+                        "基礎的なデータを操作ができます。",
+                        "MongoDB Compasshツールが使えます。"
+                    ]
+                },
+                {
+                    "name": "Node.js",
+                    "pic": [
+                        "nodejs.svg"
+                    ],
+                    "desc": [
+                        "Node.jsに接続してデータを操作することが出来ます。"
+                    ]
+                },
+                {
+                    "name": "Ruby on Rails",
+                    "pic": [
+                        "rails.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -203,14 +482,40 @@
     [
         {
             "name": "Scss",
-            "id":"scss",
+            "id": "scss",
             "pic": "sass.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Sass",
+                    "pic": [
+                        "sass.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Less",
+                    "pic": [
+                        "less.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Bootstrap",
+                    "pic": [
+                        "bootstrap.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -218,14 +523,40 @@
         },
         {
             "name": "Less",
-            "id":"less",
+            "id": "less",
             "pic": "less.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Less",
+                    "pic": [
+                        "less.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Sass",
+                    "pic": [
+                        "sass.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Bootstrap",
+                    "pic": [
+                        "bootstrap.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -233,14 +564,22 @@
         },
         {
             "name": "Bootstrap",
-            "id":"bootstrap",
+            "id": "bootstrap",
             "pic": "bootstrap.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Bootstrap",
+                    "pic": [
+                        "bootstrap.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -248,14 +587,31 @@
         },
         {
             "name": "Git",
-            "id":"git",
+            "id": "git",
             "pic": "git.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "Git",
+                    "pic": [
+                        "git.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Github",
+                    "pic": [
+                        "github.svg"
+                    ],
+                    "desc": [
+                        ""
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -263,14 +619,31 @@
         },
         {
             "name": "npm",
-            "id":"npm",
+            "id": "npm",
             "pic": "npm.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "npm",
+                    "pic": [
+                        "npm.svg"
+                    ],
+                    "desc": [
+                        "パッケージ管理ツールnpmが使えます。"
+                    ]
+                },
+                {
+                    "name": "yarn",
+                    "pic": [
+                        "yarn.svg"
+                    ],
+                    "desc": [
+                        "パッケージ管理ツールyarnが使えます。"
+                    ]
+                }
             ],
             "works": [
                 {}
@@ -278,14 +651,31 @@
         },
         {
             "name": "yarn",
-            "id":"yarn",
+            "id": "yarn",
             "pic": "yarn.svg",
             "desc": [
                 "",
                 ""
             ],
             "techTasks": [
-                {}
+                {
+                    "name": "yarn",
+                    "pic": [
+                        "yarn.svg"
+                    ],
+                    "desc": [
+                        "パッケージ管理ツールyarnが使えます。"
+                    ]
+                },
+                {
+                    "name": "npm",
+                    "pic": [
+                        "npm.svg"
+                    ],
+                    "desc": [
+                        "パッケージ管理ツールnpmが使えます。"
+                    ]
+                }
             ],
             "works": [
                 {}

@@ -6,7 +6,7 @@
         elevation="2"
         v-for="(item, index) in list"
         :key="index"
-        @click="click(item.name)"
+        @click="click(item)"
       >
         <v-img :src="require(`../../assets/images/${item.pic}`)"></v-img>
         <span>{{ item.name }}</span>
@@ -20,15 +20,10 @@ export default {
   props: ["list"],
 
   methods: {
-    click(name) {
-      name = name.toLowerCase();
-      let reg = RegExp(/.js/);
-      if (reg.test(name)) {
-        name = name.replace(reg, "");
-      }
-      console.log(name);
+    click(skillItem) {
+      let name = skillItem.id
 
-      // route
+      // send params to detail page
       this.$router.push({
         path: "/detail/skill",
         query: {
@@ -50,6 +45,7 @@ export default {
   .v-card {
     margin: 1rem;
     cursor: pointer;
+    text-align: center;
     // background-color: pink;
   }
 }
