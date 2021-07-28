@@ -14,12 +14,12 @@
         :key="index"
         :href="item.link"
         :color="item.color"
-        target="_blank"
-        elevation="2"
-        class="ma-1"
-        icon
+        class="ma-1 white--text"
+        fab
       >
-        <v-icon large :color="item.color">{{ item.icon }}</v-icon>
+        <v-icon large>
+          {{ item.icon }}
+        </v-icon>
       </v-btn>
     </div>
   </v-container>

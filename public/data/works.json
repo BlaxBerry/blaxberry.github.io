@@ -59,7 +59,7 @@
                 }
             ]
         ],
-        "desc": "sss",
+        "desc": "Full stack project according to Express.js + MongoDB + TemplateEngine. SSR(Server Side Rendering) could check and uploade blog articles, login as admin to manage users and articles",
         "function": [
             [
                 "check blogs from client side",
@@ -96,7 +96,7 @@
         ],
         "mainPic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/master/src/assets/upload/mask01.png",
         "pics": [
-            "",
+            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/master/src/assets/upload/mask01.png",
             ""
         ],
         "techTasks": [
@@ -143,10 +143,28 @@
                 }
             ]
         ],
-        "desc": "sss",
+        "desc": "Responsive SPA(Single Page Application) created by Vue2 + Vue-Router, developed by Vue-Cli3 + Vuetify + Scss. Get data by Axios from JSON files.",
         "function": [
-            "",
-            ""
+            [
+                "go Profile page from Home Page",
+                "go Skills Page from Home Page",
+                "go Works page from Home Page",
+                "click one skill to go Detail Page from Home Page",
+                "click one work to go Detail Page from Home Page"
+            ],
+            [
+                "check personal Info in Profile page",
+                "study TimeLine in Profile page",
+                "check Notes in Profile page"
+            ],
+            [
+                "in Skills page, skills classified by LANGUAGE, FRAMEWORK, OTHERS",
+                "in Skills page, click one skill to go Detail Page from Home Page"
+            ],
+            [
+                "in Works page, works classified by PC, Mobile",
+                "in Works page, click one work to go Detail Page from Home Page"
+            ]
         ],
         "links": {
             "github": "https://github.com/BlaxBerry/portfolio-version-4",

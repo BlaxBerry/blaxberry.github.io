@@ -11,7 +11,9 @@
       >
         <v-img
           :src="require(`../../assets/images/${item.pic}`)"
+          lazy-src="@/assets/images/_lazyloading.gif"
           min-width="80"
+          max-width="80"
         ></v-img>
         <span>{{ item.name }}</span>
       </v-card>
@@ -35,7 +37,7 @@ export default {
             name,
           },
         });
-      }, 200);
+      }, 100);
     },
   },
 };
@@ -44,15 +46,14 @@ export default {
 <style lang="scss" scoped>
 .CardSkills {
   display: flex;
-  justify-content: start;
-  align-items: center;
+  // justify-content: start;
+  // align-items: center;
   flex-wrap: wrap;
   //   background-color: turquoise;
   .v-card {
-    margin: 1rem;
     cursor: pointer;
     text-align: center;
-    // background-color: pink;
+    margin: 10px;
   }
 }
 </style>

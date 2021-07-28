@@ -13,7 +13,10 @@
         >
           <div class="card">
             <v-card elevation="2" @click="click(item)">
-              <v-img :src="item.mainPic"></v-img>
+              <v-img
+                :src="item.mainPic"
+                lazy-src="@/assets/images/_lazyloading.gif"
+              ></v-img>
             </v-card>
             <v-card-text class="text-no-wrap font-weight-bold">{{
               item.name
@@ -33,7 +36,7 @@ export default {
     click(item) {
       clearTimeout(timer);
       let timer = setTimeout(() => {
-        console.log(item.id,item.name);
+        console.log(item.id, item.name);
 
         // send params to detail page
         this.$router.push({
@@ -58,5 +61,9 @@ export default {
 .card {
   text-align: center;
   font-weight: 700 !important;
+
+  .v-card {
+    overflow: hidden !important;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
   <v-container class="description">
     <v-card class="pa-4">
       <!-- 1. desc -->
-      <h3 class="px-4">{{desc}}</h3>
+      <h3 class="px-4 pt-4">{{desc}}</h3>
 
      
       <!-- 2. tags -->
