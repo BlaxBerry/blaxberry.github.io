@@ -6,7 +6,7 @@
         <h1 slot="title1">{{ name }}</h1>
         <h4 slot="title2">この作品について</h4>
       </Title>
-      
+
       <!-- 1. desc -->
       <h3 class="px-4 pt-4">{{ desc }}</h3>
 
@@ -35,7 +35,7 @@
           target="_blank"
           elevation="2"
         >
-          <v-icon>mdi-camera-iris</v-icon>
+          <v-icon color="primary">mdi-camera-iris</v-icon>
           <span>Check Demo Online</span>
         </v-btn>
       </div>

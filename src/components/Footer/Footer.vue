@@ -1,11 +1,12 @@
 <template>
   <v-footer padless class="green">
     <v-container>
-
       <!-- title -->
       <Title>
         <h1 slot="title1" class="title1 white--text">Thanks for Watching</h1>
-        <h4 slot="title2" class="title2 white--text">最後までご覧頂き、心より感謝致します</h4>
+        <h4 slot="title2" class="title2 white--text">
+          最後までご覧頂き、心より感謝致します
+        </h4>
       </Title>
 
       <div flat tile class="lighten-1 white--text text-center">
@@ -33,14 +34,20 @@
         </v-card-text>
 
         <v-card-text class="text-right white--text">
-          <router-link to="/versions">
-            <strong>Protofolio 4.0</strong>
-          </router-link>
+          <v-btn class="purple darken-2 text-center white--text" to="/versions"
+            >Version 4.0
+            <v-badge
+              color="red"
+              offset-x="0"
+              offset-y="-5"
+              content="4"
+              class="font-weight-black"
+            ></v-badge>
+          </v-btn>
           <br />
           <small>
-            Chen -
-            {{ new Date().getFullYear() }}.
-            {{ new Date().getMonth() }}
+            CHEN -
+            {{ new Date().getFullYear() }}. {{ new Date().getMonth() }} &nbsp;&nbsp;
           </small>
         </v-card-text>
       </div>

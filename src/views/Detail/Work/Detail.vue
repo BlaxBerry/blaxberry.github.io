@@ -1,29 +1,31 @@
 <template>
   <div id="work-detail">
-    <!-- 1. carousel -->
-    <Slider :list="work.pics" v-if="work.pics"></Slider>
+    <v-container>
+      <!-- 1. carousel -->
+      <Slider :list="work.pics" v-if="work.pics"></Slider>
 
-    <!-- 2. description -->
-    <Description
-      :name="work.name"
-      :desc="work.desc"
-      :tags="work.keywords"
-      :links="work.links"
-      v-if="work.desc"
-    ></Description>
+      <!-- 2. description -->
+      <Description
+        :name="work.name"
+        :desc="work.desc"
+        :tags="work.keywords"
+        :links="work.links"
+        v-if="work.desc"
+      ></Description>
 
-    <!-- 3. tech stacks -->
-    <TechList :list="work.techTasks" v-if="work.techTasks"></TechList>
+      <!-- 3. tech stacks -->
+      <TechList :list="work.techTasks" v-if="work.techTasks"></TechList>
 
-    <!-- 4. Function Details -->
-    <Functions
-      :list="work.function"
-      :links="work.links"
-      v-if="work.function"
-    ></Functions>
+      <!-- 4. Function Details -->
+      <Functions
+        :list="work.function"
+        :links="work.links"
+        v-if="work.function"
+      ></Functions>
 
-    <!-- 6. Nav Bottom -->
-    <NavBottom></NavBottom>
+      <!-- 6. Nav Bottom -->
+      <NavBottom></NavBottom>
+    </v-container>
   </div>
 </template>
 

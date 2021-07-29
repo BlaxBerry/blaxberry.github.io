@@ -67,7 +67,7 @@ export default {
   created() {
     // get all PC skill list
     getAllWorkList.then((res) => {
-      this.list = [res.data[0], res.data[1]];
+      this.list = [res.data[0], res.data[1],res.data[3]];
       console.log(this.list);
     });
 

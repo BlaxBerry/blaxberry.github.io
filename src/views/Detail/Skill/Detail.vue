@@ -1,21 +1,23 @@
 <template>
   <div id="skill-detail">
-    <!-- 1. description -->
-    <Description
-      :name="skill.name"
-      :pic="skill.pic"
-      :desc="skill.desc"
-    ></Description>
+    <v-container>
+      <!-- 1. description -->
+      <Description
+        :name="skill.name"
+        :pic="skill.pic"
+        :desc="skill.desc"
+      ></Description>
 
-    <!-- 2. techTasks -->
-    <TechList :list="skill.techTasks"></TechList>
+      <!-- 2. techTasks -->
+      <TechList :list="skill.techTasks"></TechList>
 
-    <!-- 2. works -->
+      <!-- 2. works -->
 
-    <!-- 3. study -->
+      <!-- 3. study -->
 
-    <!-- 5. Nav Bottom -->
-    <NavBottom></NavBottom>
+      <!-- 5. Nav Bottom -->
+      <NavBottom></NavBottom>
+    </v-container>
   </div>
 </template>
 
