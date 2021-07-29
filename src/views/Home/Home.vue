@@ -6,14 +6,16 @@
     <!-- 2. about me -->
     <AboutMe></AboutMe>
 
-    <!-- 3. skills -->
-    <Skills></Skills>
+    <v-container>
+      <!-- 3. skills -->
+      <Skills></Skills>
 
-    <!-- 4. works -->
-    <Works></Works>
+      <!-- 4. works -->
+      <Works></Works>
 
-    <!-- Nav Bottom -->
-    <NavBottom></NavBottom>
+      <!-- Nav Bottom -->
+      <NavBottom></NavBottom>
+    </v-container>
   </div>
 </template>
 

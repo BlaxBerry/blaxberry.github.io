@@ -1,19 +1,35 @@
 <template>
-  <div id="works">
-    <!-- title -->
-    <Title>
-      <h1 slot="title1">Works</h1>
-      <h4 slot="title2">作品について</h4>
-    </Title>
+  <div id="works" class="pb-15">
+    <v-container>
+      <!-- title -->
+      <Title>
+        <h1 slot="title1">Works</h1>
+        <h4 slot="title2">作品について</h4>
+      </Title>
 
-    <!-- list -->
-    <!-- works cards PC-->
-    <WorkCardsPC :list="list"></WorkCardsPC>
-    <!-- works cards Mobile-->
-    <WorkCardsMobile :list="listMobile"></WorkCardsMobile>
+      <!-- desc -->
+      <div class="pa-5">
+        <p>
+          最初は静的なページから知り始めましたが、
+          その後Ajax技術やフレームワークのReact、Vueを学んで、
+          最近はサーバーやデータベース関連の知識などを日々頑張っており、
+          このような段階的に、独自の練習や開発の成果を残してきました。
+          不足のところも認識していますが、今後は必ず努力し、より良い作品を提供するために、引き続き勉強して行きたいと思います。
+        </p>
+        <small>
+          ＊ 各作品をクリックして、スキル詳細をご確認ください。
+        </small>
+      </div>
 
-    <!-- 5. Nav Bottom -->
-    <NavBottom></NavBottom>
+      <!-- list -->
+      <!-- works cards PC-->
+      <WorkCardsPC :list="list"></WorkCardsPC>
+      <!-- works cards Mobile-->
+      <WorkCardsMobile :list="listMobile"></WorkCardsMobile>
+
+      <!-- 5. Nav Bottom -->
+      <NavBottom></NavBottom>
+    </v-container>
   </div>
 </template>
 

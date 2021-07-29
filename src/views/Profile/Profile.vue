@@ -1,16 +1,18 @@
 <template>
   <div id="profile">
-    <!-- 1. top info -->
-    <TopInfo></TopInfo>
+    <v-container>
+      <!-- 1. top info -->
+      <TopInfo></TopInfo>
 
-    <!-- 2. timeline -->
-    <TimeLine></TimeLine>
+      <!-- 2. timeline -->
+      <TimeLine></TimeLine>
 
-    <!-- 3. skills  -->
-    <Skills></Skills>
+      <!-- 3. skills  -->
+      <Skills></Skills>
 
-    <!-- Nav Bottom -->
-    <NavBottom></NavBottom>
+      <!-- Nav Bottom -->
+      <NavBottom></NavBottom>
+    </v-container>
   </div>
 </template>
 

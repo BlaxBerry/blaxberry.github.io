@@ -3,23 +3,17 @@
     <!-- title -->
     <Title>
       <h1 slot="title1">About Me</h1>
+      <h2 slot="title2">自己紹介</h2>
     </Title>
 
     <v-card
       elevation="2"
       outlined
       width="700"
-      class="mx-auto pa-2 d-flex flex-column flex-sm-row justify-center align-center"
+      class="mx-auto pa-5 d-flex justify-center align-center"
       tile
       min-height="300"
     >
-      <v-avatar tile size="100">
-        <img
-          src="https://pbs.twimg.com/profile_images/1364617705697943553/vtlD_ont_400x400.jpg"
-          lazy-src="@/assets/images/_lazyloading.gif"
-          alt="chen"
-        />
-      </v-avatar>
       <v-card-text class="pa-5">
         <vue-typer
           :text="[
@@ -48,4 +42,15 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.v-card {
+  border-radius: 1.2rem !important;
+  background: url(../../assets/upload/bgk02.jpg) center no-repeat;
+  background-size: cover;
+  .v-card__text {
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgba(250, 250, 250, 0.7);
+  }
+}
+</style>

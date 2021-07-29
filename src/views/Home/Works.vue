@@ -1,16 +1,36 @@
 <template>
-  <div id="home-works">
+  <div id="home-works" class="py-10 pb-15">
     <!-- title -->
     <Title>
       <h1 slot="title1" class="title1">Works</h1>
       <h4 slot="title2" class="title2">一部の作品</h4>
     </Title>
 
+    <!-- desc -->
+    <div class="pa-5">
+      <p>
+        最初は静的なページから知り始めましたが、
+        その後Ajax技術やフレームワークのReact、Vueを学んで、
+        最近はサーバーやデータベース関連の知識などを日々頑張っており、
+        このような段階的に、独自の練習や開発の成果を残してきました。
+        不足のところも認識していますが、今後は必ず努力し、より良い作品を提供するために、引き続き勉強して行きたいと思います。
+      </p>
+      <small>
+        ＊ 各作品をクリックして、スキル詳細をご確認ください。
+      </small>
+    </div>
+
     <!-- works cards PC-->
     <WorkCardsPC :list="list"></WorkCardsPC>
 
     <!-- works cards Mobile-->
     <WorkCardsMobile :list="listMobile"></WorkCardsMobile>
+
+    <!-- to works page -->
+    <div class="text-center mt-2 px-10">
+      <b>今までの作品集をご確認ください:</b>
+      <v-btn block to="/works" class="my-2">More Works</v-btn>
+    </div>
   </div>
 </template>
 

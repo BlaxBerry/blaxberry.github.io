@@ -1,22 +1,37 @@
 <template>
-  <div id="skills">
-    <!-- title -->
-    <Title>
-      <h1 slot="title1">Skills</h1>
-      <h4 slot="title2">スキルについて</h4>
-    </Title>
+  <div id="skills" class="pb-15">
+    <v-container>
+      <!-- title -->
+      <Title>
+        <h1 slot="title1">Skills</h1>
+        <h4 slot="title2">スキルについて</h4>
+      </Title>
 
-    <!-- 1. languages -->
-    <SkillCards :list="lang_list"></SkillCards>
-    <!-- 2. frameworks -->
-    <SkillCards :list="framework_list"></SkillCards>
-    <!-- 3. datadase & server -->
-    <SkillCards :list="backend_list"></SkillCards>
-    <!-- 4. others -->
-    <SkillCards :list="others_list"></SkillCards>
+      <!-- desc -->
+      <div class="pa-5">
+        <p>
+          今まで身に付いているスキルは主にフロントエンドですが、
+          その不足も認識していますが、挑戦して開発経験を積んだ上で、
+          フロントエンドに関するスキルを幅広くスキルアップして、
+          いずれバックエンドまで幅広くスキルアップに取り組んでいきたいと考えています。
+        </p>
+        <small>
+          ＊ 各スキルをクリックして、スキル詳細をご確認ください。
+        </small>
+      </div>
 
-    <!-- Nav Bottom -->
-    <NavBottom></NavBottom>
+      <!-- 1. languages -->
+      <SkillCards :list="lang_list"></SkillCards>
+      <!-- 2. frameworks -->
+      <SkillCards :list="framework_list"></SkillCards>
+      <!-- 3. datadase & server -->
+      <SkillCards :list="backend_list"></SkillCards>
+      <!-- 4. others -->
+      <SkillCards :list="others_list"></SkillCards>
+
+      <!-- Nav Bottom -->
+      <NavBottom></NavBottom>
+    </v-container>
   </div>
 </template>
 

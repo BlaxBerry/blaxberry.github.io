@@ -4,9 +4,9 @@
       <!-- Nav Left -->
       <NavLeft></NavLeft>
 
-      <v-container>
+      <!-- <v-container> -->
         <router-view />
-      </v-container>
+      <!-- </v-container> -->
 
       <!-- footer -->
       <Footer></Footer>

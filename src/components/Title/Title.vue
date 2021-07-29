@@ -16,7 +16,6 @@ export default {};
 
 <style lang="scss" scoped>
 .common-title {
-  padding: 1rem;
   padding-top: 2rem;
   text-align: center;
 

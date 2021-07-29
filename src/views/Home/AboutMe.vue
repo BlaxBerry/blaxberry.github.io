@@ -2,49 +2,51 @@
   <div id="home-aboutme" class="full-page-session">
     <!-- title -->
     <Title>
-      <h1 slot="title1">About Me</h1>
+      <h1 slot="title1" style="fontSize:4rem">Welcome</h1>
     </Title>
 
-    <v-card
-      elevation="2"
-      outlined
-      width="700"
-      class="mx-auto pa-5 d-flex flex-column flex-sm-row justify-center align-center"
-      tile
-      min-height="200"
-    >
-      <v-avatar tile size="100">
-        <img
-          src="https://pbs.twimg.com/profile_images/1364617705697943553/vtlD_ont_400x400.jpg"
-          alt="chen"
-        />
-      </v-avatar>
-      <div class="">
-        <!-- small screen links-->
-        <div class="links d-block d-sm-none text-center">
-          <v-btn
-            v-for="(item, index) in links"
-            :key="index"
-            :href="item.link"
-            :color="item.color"
-            class="ma-1"
-            icon
-            dark
-          >
-            <v-icon large>
-              {{ item.icon }}
-            </v-icon>
-          </v-btn>
+    <v-container>
+      <v-card
+        elevation="2"
+        outlined
+        width="700"
+        class="mx-auto pa-5 d-flex flex-column flex-sm-row justify-center align-center"
+        tile
+        min-height="200"
+      >
+        <v-avatar tile size="100" class="mr-4">
+          <img
+            src="https://pbs.twimg.com/profile_images/1364617705697943553/vtlD_ont_400x400.jpg"
+            alt="chen"
+          />
+        </v-avatar>
+        <div class="">
+          <!-- small screen links-->
+          <div class="links d-block d-sm-none text-center ma-2">
+            <v-btn
+              v-for="(item, index) in links"
+              :key="index"
+              :href="item.link"
+              :color="item.color"
+              class="ma-1"
+              icon
+              dark
+            >
+              <v-icon large>
+                {{ item.icon }}
+              </v-icon>
+            </v-btn>
+          </div>
+          <!-- infomation -->
+          <v-card-text class="pt-0">
+            I am Chen An enthusiastic guy dreaming to be a Full Stack Web Enginner. Learning and Fighting everyday.
+          </v-card-text>
+          <!-- to profile page -->
+          <v-btn block to="/profile">About Me</v-btn>
         </div>
-        <!-- infomation -->
-        <p class="pl-5">
-          I am <b>Chen.</b> An enthusiastic guy dreaming to be a Full Stack Web
-          Enginner. Learning and Fighting everyday.
-        </p>
-        <!-- to profile page -->
-        <v-btn block to="/profile">More Detail</v-btn>
-      </div>
-    </v-card>
+      </v-card>
+    </v-container>
+
     <!-- big screen links-->
     <div class="links mt-1 d-none d-sm-block">
       <v-btn
@@ -111,5 +113,16 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url(../../assets/upload/bgk01.png) center no-repeat;
+  background-size: cover;
+  color: white;
+  .v-card {
+    border-radius: 1.2rem !important;
+    background-color: rgba(250, 250, 250, 0.7);
+    .v-card__text {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
 }
 </style>
