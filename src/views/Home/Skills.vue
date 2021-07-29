@@ -1,10 +1,9 @@
 <template>
-  <div id="skills-home">
+  <div id="home-skills">
     Skills
 
     <!-- skills cards -->
     <SkillCards :list="list"></SkillCards>
-
   </div>
 </template>
 
@@ -45,8 +44,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-// #skills-home {
-//   // background-color: turquoise;
-// }
-</style>
+<style lang="scss" scoped></style>

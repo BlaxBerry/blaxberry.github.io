@@ -4,9 +4,6 @@
     <!-- list -->
     <WorkCardsPC :list="list"></WorkCardsPC>
 
-    <!-- 4. footer -->
-    <Footer></Footer>
-
     <!-- 5. Nav Bottom -->
     <NavBottom></NavBottom>
   </div>
@@ -21,7 +18,6 @@ import {
 
 // components
 import WorkCardsPC from "@/components/Cards/CardWorksPC.vue";
-import Footer from "@/components/Footer/Footer.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
@@ -35,7 +31,6 @@ export default {
   components: {
     // components
     WorkCardsPC,
-    Footer,
     NavBottom,
   },
 

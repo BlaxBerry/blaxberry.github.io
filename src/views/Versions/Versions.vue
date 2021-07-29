@@ -7,8 +7,6 @@
       <li>1.0: jQuery + CSS + Webpack</li>
     </ul>
     So…. What it would be in the next version, maybe by TypeScript and Vite?
-    <!-- 4. footer -->
-    <Footer></Footer>
 
     <!-- 5. Nav Bottom -->
     <NavBottom></NavBottom>
@@ -17,13 +15,11 @@
 
 <script>
 // components
-import Footer from "@/components/Footer/Footer.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
   components: {
     // components
-    Footer,
     NavBottom,
   },
 };

@@ -1,5 +1,5 @@
 <template>
-  <div id="works-home">
+  <div id="home-works">
        works
     <!-- works cards PC-->
     <WorkCardsPC :list="list"></WorkCardsPC>

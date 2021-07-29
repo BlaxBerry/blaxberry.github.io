@@ -12,9 +12,6 @@
     <!-- 4. works -->
     <Works></Works>
 
-    <!-- footer -->
-    <Footer></Footer>
-
     <!-- Nav Bottom -->
     <NavBottom></NavBottom>
   </div>
@@ -28,7 +25,6 @@ import Skills from "@/views/Home/Skills.vue";
 import Works from "@/views/Home/Works.vue";
 
 // common componoents
-import Footer from "@/components/Footer/Footer.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
@@ -39,7 +35,6 @@ export default {
     Skills,
     Works,
     // common componoents
-    Footer,
     NavBottom,
   },
 };

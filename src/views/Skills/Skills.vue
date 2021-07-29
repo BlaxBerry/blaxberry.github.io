@@ -11,9 +11,6 @@
     <!-- 4. others -->
     <SkillCards :list="others_list"></SkillCards>
 
-    <!-- footer -->
-    <Footer></Footer>
-
     <!-- Nav Bottom -->
     <NavBottom></NavBottom>
   </div>
@@ -27,14 +24,11 @@ import {
 } from "@/api/api";
 
 // components
-import Footer from "@/components/Footer/Footer.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
-
 import SkillCards from "@/components/Cards/CardSkills.vue";
 
 export default {
   components: {
-    Footer,
     NavBottom,
 
     SkillCards,

@@ -1,5 +1,5 @@
 <template>
-  <v-container id="desctiption">
+  <div id="detail-skill-desctiption">
     <v-card
       class="pa-2 d-flex flex-column flex-sm-row justify-center align-center"
       tile
@@ -17,7 +17,7 @@
         <v-card-text>{{ desc }}</v-card-text>
       </div>
     </v-card>
-  </v-container>
+  </div>
 </template>
 
 <script>

@@ -1,18 +1,17 @@
 <template>
-  <v-container class="description">
+  <div id="detail-work-description">
     <v-card class="pa-4">
       <!-- 1. desc -->
-      <h3 class="px-4 pt-4">{{desc}}</h3>
+      <h3 class="px-4 pt-4">{{ desc }}</h3>
 
-     
       <!-- 2. tags -->
-      <div class="tags text-center ma-4">
+      <div class="tags text-center my-4">
         <v-chip
-          class="ma-2"
-          color="success"
+          class="ma-1"
           outlined
           v-for="(item, index) in tags"
           :key="index"
+          :color="tagsColor[index]"
         >
           {{ item }}
         </v-chip>
@@ -35,12 +34,18 @@
         </v-btn>
       </div>
     </v-card>
-  </v-container>
+  </div>
 </template>
 
 <script>
 export default {
   props: ["desc", "tags", "links"],
+
+  data() {
+    return {
+      tagsColor: ["success", "pink", "primary", "orange", "cyan"],
+    };
+  },
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <v-container id="TechList">
+  <div id="detail-skill-techlist">
     <v-card justify="center" class="pa-5">
       <v-expansion-panels accordion>
         <v-expansion-panel v-for="(item, index) in list" :key="index">
@@ -22,7 +22,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -31,4 +31,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>

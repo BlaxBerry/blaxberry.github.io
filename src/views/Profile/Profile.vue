@@ -10,9 +10,6 @@
     <!-- 3. skills  -->
     <Skills></Skills>
 
-    <!-- footer -->
-    <Footer></Footer>
-
     <!-- Nav Bottom -->
     <NavBottom></NavBottom>
   </div>
@@ -25,7 +22,6 @@ import TimeLine from "@/views/Profile/TimeLine.vue";
 import Skills from "@/views/Home/Skills.vue";
 
 // common componoents
-import Footer from "@/components/Footer/Footer.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
@@ -35,7 +31,6 @@ export default {
     TimeLine,
     Skills,
     // common componoents
-    Footer,
     NavBottom,
   },
 };

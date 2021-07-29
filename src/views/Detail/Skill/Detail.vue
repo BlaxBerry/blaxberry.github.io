@@ -16,9 +16,6 @@
 
     <!-- 3. study -->
 
-    <!-- 4. footer -->
-    <Footer></Footer>
-
     <!-- 5. Nav Bottom -->
     <NavBottom></NavBottom>
   </div>
@@ -36,7 +33,6 @@ import Description from "@/views/Detail/Skill/Description.vue";
 import TechList from "@/views/Detail/Skill/TechList.vue";
 
 // components
-import Footer from "@/components/Footer/Footer.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
@@ -45,7 +41,6 @@ export default {
     Description,
     TechList,
     // components
-    Footer,
     NavBottom,
   },
 

@@ -26,11 +26,13 @@
         </v-card-text>
 
         <v-card-text class="text-right white--text">
-          <router-link to="/versions"
-            ><strong>Protofolio 4.0</strong> </router-link
-          ><br />
+          <router-link to="/versions">
+            <strong>Protofolio 4.0</strong>
+          </router-link>
+          <br />
           <small>
-            Chen - {{ new Date().getFullYear() }}.
+            Chen - 
+            {{ new Date().getFullYear() }}.
             {{ new Date().getMonth() }}
           </small>
         </v-card-text>
@@ -54,12 +56,6 @@ export default {
         icon: "mdi-github",
         link: "https://github.com/BlaxBerry",
         color: "grey darken-4",
-      },
-      {
-        name: "Facebook",
-        icon: "mdi-facebook",
-        link: "https://www.facebook.com/jiaxu.chen.96",
-        color: "blue darken-4",
       },
       {
         name: "Gmail",

@@ -1,15 +1,15 @@
 <template>
-  <v-container id="timeline">
+  <div id="profile-timeline">
     <v-timeline>
       <v-timeline-item
         v-for="(item, index) in timeline"
         :key="index"
         color="red lighten-2"
         large
-        icon="mdi-language-ruby"
+        :icon="item.skill?'mdi-bug':''"
       >
         <template v-slot:opposite>
-          <h3>{{ item.time }}</h3>
+          <h3 class="red--text text--lighten-2">{{ item.time }}</h3>
         </template>
         <v-card class="elevation-2">
           <v-card-title v-if="item.title">{{ item.title }}</v-card-title>
@@ -30,7 +30,7 @@
         </v-card>
       </v-timeline-item>
     </v-timeline>
-  </v-container>
+  </div>
 </template>
 
 <script>

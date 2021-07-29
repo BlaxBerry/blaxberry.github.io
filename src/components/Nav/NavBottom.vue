@@ -1,7 +1,12 @@
 <template>
-  <v-bottom-navigation dark v-model="NavItemClickedDefault" absolute bottom>
-   <v-container class="d-flex justify-center pa-0">
-      <v-btn
+  <v-bottom-navigation
+    dark
+    v-model="NavItemClickedDefault"
+    absolute
+    bottom
+    class="d-flex justify-center px-4"
+  >
+    <v-btn
       v-for="(item, index) in NavItems"
       class="mx-4 white--text"
       :key="index"
@@ -11,7 +16,6 @@
       <span>{{ item.name }}</span>
       <v-icon>{{ item.icon }}</v-icon>
     </v-btn>
-   </v-container>
   </v-bottom-navigation>
 </template>
 
@@ -41,6 +45,6 @@ export default {
 
 <style lang="scss" scoped>
 .v-bottom-navigation {
-  height: 60px!important;
+  height: 60px !important;
 }
 </style>

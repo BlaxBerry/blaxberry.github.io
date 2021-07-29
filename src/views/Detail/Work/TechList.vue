@@ -1,7 +1,11 @@
 <template>
-  <v-container class="TechList">
+  <div id="detail-work-techlist">
     <v-list subheader v-for="(l, index) in list" :key="index">
-      <v-list-item class="py-2" v-for="(item, i) in l" :key="i">
+      <v-list-item
+        class="py-2 d-flex flex-column flex-sm-row"
+        v-for="(item, i) in l"
+        :key="i"
+      >
         <v-card class="pa-1">
           <v-img
             :src="require(`@/assets/images/${item.pic}`)"
@@ -10,12 +14,12 @@
             max-width="60"
           ></v-img>
         </v-card>
-        <v-list-item-content class="px-4 d-none d-sm-flex">
+        <v-list-item-content class="px-4 text-no-wrap">
           {{ item.name }}
         </v-list-item-content>
       </v-list-item>
     </v-list>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -25,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.TechList {
+#detail-work-techlist {
   display: flex;
   justify-content: space-around;
   .v-list {
@@ -36,6 +40,7 @@ export default {
     width: 30%;
     .v-list-item {
       flex: none;
+      min-height: 0px;
     }
   }
 }

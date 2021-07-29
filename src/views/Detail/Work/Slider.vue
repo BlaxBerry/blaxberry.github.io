@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div id="detail-work-slider">
     <v-carousel show-arrows-on-hover>
       <v-carousel-item
         v-for="(item, i) in list"
@@ -19,7 +19,7 @@
         </v-btn>
       </template>
     </v-carousel>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -31,11 +31,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-// .v-carousel {
-//   width: 100vw;
-// }
-// .v-image {
-//   width: 100vw;
-// }
-</style>
+<style lang="scss" scoped></style>

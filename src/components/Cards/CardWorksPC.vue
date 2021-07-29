@@ -1,31 +1,27 @@
 <template>
-  <v-container>
-    <div class="CardWorks">
-      <v-row align="center" justify="start">
-        <v-col
-          max-width="200"
-          v-for="(item, index) in list"
-          :key="index"
-          cols="12"
-          sm="6"
-          md="4"
-          lg="3"
-        >
-          <div class="card">
-            <v-card elevation="2" @click="click(item)">
-              <v-img
-                :src="item.mainPic"
-                lazy-src="@/assets/images/_lazyloading.gif"
-              ></v-img>
-            </v-card>
-            <v-card-text class="text-no-wrap font-weight-bold">{{
-              item.name
-            }}</v-card-text>
-          </div>
-        </v-col>
-      </v-row>
-    </div>
-  </v-container>
+  <div class="CardWorks">
+    <v-row align="center" justify="start">
+      <v-col
+        max-width="200"
+        v-for="(item, index) in list"
+        :key="index"
+        cols="12"
+        sm="6"
+        md="4"
+        lg="3"
+      >
+        <v-card elevation="2" @click="click(item)">
+          <v-img
+            :src="item.mainPic"
+            lazy-src="@/assets/images/_lazyloading.gif"
+          ></v-img>
+        </v-card>
+        <v-card-text class="text-center text-no-wrap font-weight-bold">
+          {{ item.name }}
+        </v-card-text>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -51,19 +47,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-// .container {
-//   background-color: skyblue !important;
-// }
-// .CardWorks {
-//   background-color: turquoise !important;
-// }
-.card {
-  text-align: center;
-  font-weight: 700 !important;
-
-  .v-card {
-    overflow: hidden !important;
-  }
-}
-</style>
+<style lang="scss" scoped></style>

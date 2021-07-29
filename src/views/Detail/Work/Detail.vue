@@ -27,9 +27,6 @@
       v-if="work.function"
     ></Functions>
 
-    <!-- 5. footer -->
-    <Footer></Footer>
-
     <!-- 6. Nav Bottom -->
     <NavBottom></NavBottom>
   </div>
@@ -49,7 +46,6 @@ import TechList from "@/views/Detail/Work/TechList.vue";
 import Functions from "@/views/Detail/Work/Functions.vue";
 
 // components
-import Footer from "@/components/Footer/Footer.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
@@ -60,7 +56,6 @@ export default {
     TechList,
     Functions,
     // components
-    Footer,
     NavBottom,
   },
 

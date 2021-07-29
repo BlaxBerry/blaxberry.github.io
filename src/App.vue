@@ -3,43 +3,31 @@
     <div id="app">
       <!-- Nav Left -->
       <NavLeft></NavLeft>
-      
-      <router-view />
+
+      <v-container>
+        <router-view />
+      </v-container>
+
+      <!-- footer -->
+      <Footer></Footer>
     </div>
   </v-app>
 </template>
 
 <script>
 import NavLeft from "@/components/Nav/NavLeft.vue";
+import Footer from "@/components/Footer/Footer.vue";
+
 export default {
   components: {
     NavLeft,
+    Footer,
   },
 };
 </script>
 
 <style lang="scss">
-// mian style
-@import url('./assets/style/common.scss');
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  // text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+// common style
+@import url("./assets/style/main.scss");
+@import url("./assets/style/common.scss");
 </style>

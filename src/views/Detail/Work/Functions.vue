@@ -1,5 +1,5 @@
 <template>
-  <v-container class="Functions">
+  <div id="detail-work-functions">
     <v-list v-for="(l, index) in list" :key="index">
       <v-divider inset class="my-1"></v-divider>
       <v-list-item v-for="(item, i) in l" :key="i">
@@ -16,7 +16,7 @@
         <span>Clike to Github</span>
       </v-btn>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -25,4 +25,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>
