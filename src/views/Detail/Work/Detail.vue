@@ -30,8 +30,10 @@
 <script>
 // api
 import {
-  // get all works list
+  // get all PC works list
   getAllWorkList,
+  // get all Mobile works list
+  getAllWorkMobileList,
 } from "@/api/api";
 
 // mian components
@@ -71,18 +73,35 @@ export default {
       this.urlQuery = this.$route.query.id;
       // console.log("query id:",this.urlQuery);
 
-      // 2. get all skill list
-      getAllWorkList.then((res) => {
-        this.allWorksList = res.data;
-        console.log("all:", this.allWorksList);
+      // 2. get all skill list (PC? or Mobile?)
+      let type = this.$route.query.type;
+      if (type == "pc") {
+        // pc work
+        getAllWorkList.then((res) => {
+          this.allWorksList = res.data;
+          console.log("all:", this.allWorksList);
 
-        // 3. find the work
-        // this.work =
-        this.work = this.allWorksList.find((item) => {
-          return item.id == this.urlQuery;
+          // 3. find the work
+          this.work = this.allWorksList.find((item) => {
+            return item.id == this.urlQuery;
+          });
+          console.log(this.work);
         });
-        console.log(this.work);
-      });
+      } else if (type == "mobile") {
+        // mobile work
+        getAllWorkMobileList.then((res) => {
+          this.allWorksList = res.data;
+          console.log("all:", this.allWorksList);
+
+          // 3. find the work
+          this.work = this.allWorksList.find((item) => {
+            return item.id == this.urlQuery;
+          });
+          console.log(this.work);
+        });
+      } else {
+        this.$router.go(-1);
+      }
     },
   },
 

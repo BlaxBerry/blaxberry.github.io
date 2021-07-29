@@ -2,6 +2,7 @@
     {
         "name": "Blogs & Users Management",
         "id": "01",
+        "type":"pc",
         "keywords": [
             "jQuery",
             "Bootstrap",
@@ -87,6 +88,7 @@
     {
         "name": "Protofolio 4.0",
         "id": "02",
+        "type":"pc",
         "keywords": [
             "Vue",
             "SPA",

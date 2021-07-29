@@ -8,25 +8,32 @@
 
     <!-- works cards PC-->
     <WorkCardsPC :list="list"></WorkCardsPC>
+    
+      <!-- works cards Mobile-->
+    <WorkCardsMobile :list="listMobile"></WorkCardsMobile>
   </div>
 </template>
 
 <script>
 // api
 import {
-  // get all works list
+  // get all PC works list
   getAllWorkList,
+  // get all Mobile works list
+  getAllWorkMobileList,
 } from "@/api/api";
 
 // components
 import Title from "@/components/Title/Title.vue";
 import WorkCardsPC from "@/components/Cards/CardWorksPC.vue";
+import WorkCardsMobile from "@/components/Cards/CardWorkMobile.vue";
 
 export default {
   data() {
     return {
       // works list
       list: [],
+      listMobile: [],
     };
   },
 
@@ -34,13 +41,20 @@ export default {
     // components
     Title,
     WorkCardsPC,
+    WorkCardsMobile 
   },
 
   created() {
-    // get all skill list
+    // get all PC skill list
     getAllWorkList.then((res) => {
       this.list = [res.data[0], res.data[1]];
       console.log(this.list);
+    });
+
+    // get all Mobile skill list
+    getAllWorkMobileList.then((res) => {
+      this.listMobile = [res.data[0], res.data[1]];
+      console.log(this.listMobile);
     });
   },
 };

@@ -1,14 +1,13 @@
 <template>
-  <div class="CardWorksPC">
+  <div class="CardWorksMobile">
     <v-row align="center" justify="start">
       <v-col
-        max-width="200"
         v-for="(item, index) in list"
         :key="index"
-        cols="12"
-        sm="6"
-        md="4"
-        lg="3"
+        cols="6"
+        sm="3"
+        md="3"
+        lg="2"
       >
         <v-card elevation="2" @click="click(item)">
           <v-img :src="item.mainPic"></v-img>
@@ -29,14 +28,14 @@ export default {
     click(item) {
       clearTimeout(timer);
       let timer = setTimeout(() => {
-        // console.log(item.id, item.name);
+        // console.log(item.type);
 
         // send params to detail page
         this.$router.push({
           path: "/detail/work",
           query: {
             id: item.id,
-            type: item.type,
+            type:item.type
           },
         });
       }, 200);
@@ -45,4 +44,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style></style>

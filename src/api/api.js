@@ -4,5 +4,8 @@ import axios from "axios";
 export const getAllSkillList = axios.get("./data/skills.json");
 
 
-// get all works list
+// get all PC works list
 export const getAllWorkList = axios.get("./data/works.json");
+
+// get all Mobile works list
+export const getAllWorkMobileList = axios.get("./data/worksMobile.json");

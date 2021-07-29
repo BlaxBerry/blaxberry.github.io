@@ -1,0 +1,144 @@
+[
+    {
+        "name": "SPA EC Book Shop",
+        "id": "mobile001",
+        "type": "mobile",
+        "keywords": [
+            "Vue",
+            "SPA",
+            "VantUI",
+            "Axios",
+            "Less"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Home.png",
+        "pics": [
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Home.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Category.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Profile.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Register.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Login.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Detail.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Cart.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-OrderConfirm.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/OrderDetail.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/AddressList.png",
+            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-EditAddress.png"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Vue2",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vue-Cli2",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Element UI",
+                    "pic": "vue-elementui.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Axios",
+                    "pic": "axios.svg"
+                },
+                {
+                    "name": "JSON",
+                    "pic": "json.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Vue-Router",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Less",
+                    "pic": "less.svg"
+                }
+            ]
+        ],
+        "desc": "a SPA Mobile Web App of EC ( mobile Single Page Application of Electronic Commerce)",
+        "function": [
+            [
+                "must Login user's Account or Register Account at the beginning.",
+                "( can use Test Account: andy@qq.com, password: 123456 )",
+                ""
+            ],
+            []
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/Mobile-book-shopping",
+            "demo": "blaxberry.github.io/mobile-book-shopping/"
+        }
+    },
+    {
+        "name": "SPA Muisc Player",
+        "id": "mobile002",
+        "type": "mobile",
+        "keywords": [
+            "React",
+            "SPA",
+            "Axios",
+            "Scss"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/mobile01.png",
+        "pics": [
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/mobile01.png",
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/mobile02.png",
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/mobile03.png"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Create-React-App",
+                    "pic": "react.svg"
+                },
+                {
+                    "name": "Material UI",
+                    "pic": "react-materialui.svg"
+                },
+                {
+                    "name": "Scss",
+                    "pic": "sass.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Axios",
+                    "pic": "axios.svg"
+                },
+                {
+                    "name": "JSON",
+                    "pic": "json.svg"
+                }
+            ],
+            [
+                {
+                    "name": "React-Router-Dom",
+                    "pic": "react.svg"
+                },
+                {
+                    "name": "PubSub-js",
+                    "pic": "npm.svg"
+                }
+            ]
+        ],
+        "desc": "a Mobile SPA (Single Page Application) Player, requesting data by Axios from Local JSON files ( only for persional using )",
+        "function": [
+            [
+                "ローカルデータから曲や動画を自動検索して画面上展示します。",
+                "曲、動画の再生ができます。"
+            ],
+            [
+                "Axiosを通じてローカルJSONファイルから読み込めたデーターを画面上展示します。",
+                "passing data between different components by default props and PubSub.js."
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/react-music-player"
+        }
+    }
+]
