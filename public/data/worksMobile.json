@@ -97,12 +97,12 @@
                     "pic": "react.svg"
                 },
                 {
-                    "name": "Material UI",
-                    "pic": "react-materialui.svg"
-                },
-                {
                     "name": "Scss",
                     "pic": "sass.svg"
+                },
+                {
+                    "name": "Material UI",
+                    "pic": "react-materialui.svg"
                 }
             ],
             [
@@ -139,6 +139,121 @@
         ],
         "links": {
             "github": "https://github.com/BlaxBerry/react-music-player"
+        }
+    },
+    {
+        "name": "SPA EC Shop",
+        "id": "vueec02",
+        "type": "mobile",
+        "keywords": [
+            "Vue",
+            "SPA",
+            "Vant UI",
+            "Axios"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png",
+        "pics": [
+            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png",
+            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Detail.png",
+            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Detail2.png",
+            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/AddToCart.png",
+            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Search&Sort.png",
+            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/CartEdit.png",
+            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/SignOut.png"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Vue2",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vue-Cli2",
+                    "pic": "vue.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Axios",
+                    "pic": "axios.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Vue-Router",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Van UI",
+                    "pic": "vue.svg"
+                }
+            ]
+        ],
+        "desc": "a SPA Mobile Web App of EC ( mobile Single Page Application of Electronic Commerce)",
+        "function": [
+            [
+                "must Login user's Account or Register Account at the beginning.",
+                "( can use Test Account: 默认用户, password: 111111 )"
+            ],
+            [
+                "Axiosを通じて、FreeAPIに商品リストや詳細のデータを請求して、画面上展示します。"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/vue-shop-app-Mobile"
+        }
+    },
+    {
+        "name": "Simple TodoList",
+        "id": "statictodolist02",
+        "type": "mobile",
+        "keywords": [
+            "Local Storage",
+            "JavaScript",
+            "Material"
+        ],
+        "mainPic": "https://huntr-assets.s3.amazonaws.com/users/151810189/ddde0ab7-8a48-4573-8b57-61ada72763b5",
+        "pics": [
+            "https://huntr-assets.s3.amazonaws.com/users/151810189/ddde0ab7-8a48-4573-8b57-61ada72763b5"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "HTML5",
+                    "pic": "html.svg"
+                },
+                {
+                    "name": "Material ",
+                    "pic": "react-materialui.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Local Storage",
+                    "pic": "html.svg"
+                }
+            ],
+            [
+                {
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
+                }
+            ]
+        ],
+        "desc": "a Simple Task list management, could Add, Delete, Search Task List. According to Material Design, Record Data in LocalStorage.",
+        "function": [
+            [
+                "Add Task List.",
+                "Delete Task List.",
+                "Search Task List.( filter )"
+            ],
+            [
+                "Record Data in Local Storage。"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/vue-shop-app-Mobile",
+            "demo": "https://blaxberry.github.io/JS--TaskList/"
         }
     }
 ]

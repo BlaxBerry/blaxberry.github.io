@@ -2,7 +2,7 @@
     {
         "name": "Blogs & Users Management",
         "id": "01",
-        "type":"pc",
+        "type": "pc",
         "keywords": [
             "jQuery",
             "Bootstrap",
@@ -88,7 +88,7 @@
     {
         "name": "Protofolio 4.0",
         "id": "02",
-        "type":"pc",
+        "type": "pc",
         "keywords": [
             "Vue",
             "SPA",
@@ -171,6 +171,287 @@
         "links": {
             "github": "https://github.com/BlaxBerry/portfolio-version-4",
             "demo": "/home"
+        }
+    },
+    {
+        "name": "SPA Music Player",
+        "id": "vuemuisc01",
+        "type": "pc",
+        "keywords": [
+            "Vue",
+            "Element UI",
+            "Less",
+            "Media Query",
+            "Axios"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/pc01.png",
+        "pics": [
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/pc01.png"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Vue",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vue-Cli",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Less",
+                    "pic": "less.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Axios",
+                    "pic": "axios.svg"
+                },
+                {
+                    "name": "JSON",
+                    "pic": "json.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Vue-Router",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Element UI",
+                    "pic": "vue-elementui.svg"
+                }
+            ]
+        ],
+        "desc": "SPA (Single Page Application) Player, requesting data by Axios from Local JSON files ( only for persional using )",
+        "function": [
+            [
+                "ローカルデータから曲や動画を自動検索して画面上展示します。",
+                "曲、動画の再生ができます。"
+            ],
+            [
+                "Axiosを通じてローカルJSONファイルから読み込めたデーターを画面上展示します。",
+                "passing data between different components by default props and PubSub.js."
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/vue-music-player"
+        }
+    },
+    {
+        "name": "Wedding Dress Site",
+        "id": "static01",
+        "type": "pc",
+        "keywords": [
+            "jQuery",
+            "Bootstrap",
+            "Less",
+            "Webpack"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
+        "pics": [
+            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
+            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/02.png",
+            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/03.png",
+            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/04.png",
+            ""
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Bootstrap",
+                    "pic": "bootstrap.svg"
+                },
+                {
+                    "name": "jQuery",
+                    "pic": "jquery.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Json",
+                    "pic": "json.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Webpack",
+                    "pic": "webpack.svg"
+                }
+            ]
+        ],
+        "desc": "a fictional Responsive Static Website, for practicing responsive layout and Bootstrap.",
+        "function": [
+            [
+                "fictional Website for practicing"
+            ],
+            [
+                "Responsive Layout ( according to Flex Layout + BootStrap's Grid System )",
+                "used Bootstrap's Components"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress",
+            "demo": "https://blaxberry.github.io/PC-Static-Weddng-Dress/"
+        }
+    },
+    {
+        "name": "EC PinYouGo Shopping",
+        "id": "static02",
+        "type": "pc",
+        "keywords": [
+            "HTML5",
+            "CSS3",
+            "jQuery",
+            "JavaScript",
+            "Regular Express"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
+        "pics": [
+            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
+            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot2.png",
+            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot3.png"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "HTML5",
+                    "pic": "html.svg"
+                }
+            ],
+            [
+                {
+                    "name": "CSS3",
+                    "pic": "css.svg"
+                }
+            ],
+            [
+                {
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
+                },
+                {
+                    "name": "jQuery",
+                    "pic": "jquery.svg"
+                }
+            ]
+        ],
+        "desc": "大手のEC(電子商取引)のPCページを模写しようとしましたが、著作権のため、静的な架空のサイトを書きました。",
+        "function": [
+            [
+                "HTML5、CSS3を練習しました。"
+            ],
+            [
+                "RegExpを利用してFromを検証しました。"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping",
+            "demo": "https://blaxberry.github.io/PC-Static-Web-PinYouGoShopping/"
+        }
+    },
+    {
+        "name": "EC QingZhu Shopping",
+        "id": "static03",
+        "type": "pc",
+        "keywords": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "mainPic": "https://pbs.twimg.com/media/E4tBTASUUAU1_C5?format=jpg&name=small",
+        "pics": [
+            "https://pbs.twimg.com/media/E4tBTASUUAU1_C5?format=jpg&name=small"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "HTML5",
+                    "pic": "html.svg"
+                }
+            ],
+            [
+                {
+                    "name": "CSS3",
+                    "pic": "css.svg"
+                }
+            ],
+            [
+                {
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
+                }
+            ]
+        ],
+        "desc": "大手のEC(電子商取引)のPCページを模写しようとしましたが、著作権のため、静的な架空のサイトを書きました。",
+        "function": [
+            [
+                "HTML5、CSS3を練習しました。"
+            ],
+            [
+                "RegExpを利用してFromを検証しました。"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping"
+        }
+    },
+    {
+        "name": "Simple TodoList",
+        "id": "jq01",
+        "type": "pc",
+        "keywords": [
+            "HTML5",
+            "CSS3",
+            "jQuery",
+            "JavaScript"
+        ],
+        "mainPic": "https://pbs.twimg.com/media/EuRg8zRVgAQMwVi?format=png&name=small",
+        "pics": [
+            "https://pbs.twimg.com/media/EuRg8zRVgAQMwVi?format=png&name=small"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "HTML5",
+                    "pic": "html.svg"
+                },
+                {
+                    "name": "LocalStorage",
+                    "pic": "html.svg"
+                }
+            ],
+            [
+                {
+                    "name": "CSS3",
+                    "pic": "css.svg"
+                }
+            ],
+            [
+                {
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
+                },
+                {
+                    "name": "jQuery",
+                    "pic": "jquery.svg"
+                }
+            ]
+        ],
+        "desc": "Simple TodoList",
+        "function": [
+            [
+                "HTML5、CSS3を練習しました。",
+                "jQueryのイベントやアニメーションを練習しました。"
+            ],
+            [
+                "LocalStorageを利用して、データを操作します。"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/JS--todoList",
+            "demo": "https://blaxberry.github.io/JS--todoList/"
         }
     }
 ]

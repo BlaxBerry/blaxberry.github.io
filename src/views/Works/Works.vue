@@ -58,7 +58,7 @@ export default {
     });
     // get all Mobile skill list
     getAllWorkMobileList.then((res) => {
-      this.listMobile = [res.data[0], res.data[1]];
+      this.listMobile = res.data;
       console.log(this.listMobile);
     });
   },

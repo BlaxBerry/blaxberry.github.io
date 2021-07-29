@@ -8,8 +8,8 @@
 
     <!-- works cards PC-->
     <WorkCardsPC :list="list"></WorkCardsPC>
-    
-      <!-- works cards Mobile-->
+
+    <!-- works cards Mobile-->
     <WorkCardsMobile :list="listMobile"></WorkCardsMobile>
   </div>
 </template>
@@ -41,7 +41,7 @@ export default {
     // components
     Title,
     WorkCardsPC,
-    WorkCardsMobile 
+    WorkCardsMobile,
   },
 
   created() {
@@ -53,7 +53,7 @@ export default {
 
     // get all Mobile skill list
     getAllWorkMobileList.then((res) => {
-      this.listMobile = [res.data[0], res.data[1]];
+      this.listMobile = [res.data[0], res.data[1], res.data[3]];
       console.log(this.listMobile);
     });
   },
