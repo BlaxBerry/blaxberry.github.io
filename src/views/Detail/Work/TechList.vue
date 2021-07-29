@@ -1,35 +1,50 @@
 <template>
   <div id="detail-work-techlist">
-    <v-list subheader v-for="(l, index) in list" :key="index">
-      <v-list-item
-        class="py-2 d-flex flex-column flex-sm-row"
-        v-for="(item, i) in l"
-        :key="i"
-      >
-        <v-card class="pa-1">
-          <v-img
-            :src="require(`@/assets/images/${item.pic}`)"
-            lazy-src="@/assets/images/_lazyloading.gif"
-            max-height="60"
-            max-width="60"
-          ></v-img>
-        </v-card>
-        <v-list-item-content class="px-4 text-no-wrap">
-          {{ item.name }}
-        </v-list-item-content>
-      </v-list-item>
-    </v-list>
+    <!-- title -->
+    <Title>
+      <h1 slot="title1">Tech Stacks</h1>
+      <h4 slot="title2">テクノロジースタックについて</h4>
+    </Title>
+
+    <div class="techt-list">
+      <v-list subheader v-for="(l, index) in list" :key="index">
+        <v-list-item
+          class="py-2 d-flex flex-column flex-sm-row"
+          v-for="(item, i) in l"
+          :key="i"
+        >
+          <v-card class="pa-1">
+            <v-img
+              :src="require(`@/assets/images/${item.pic}`)"
+              lazy-src="@/assets/images/_lazyloading.gif"
+              max-height="60"
+              max-width="60"
+            ></v-img>
+          </v-card>
+          <v-list-item-content class="px-4 text-no-wrap">
+            {{ item.name }}
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </div>
   </div>
 </template>
 
 <script>
+// components
+import Title from "@/components/Title/Title.vue";
+
 export default {
   props: ["list"],
+
+  components: {
+    Title,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-#detail-work-techlist {
+.techt-list {
   display: flex;
   justify-content: space-around;
   .v-list {

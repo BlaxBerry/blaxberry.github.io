@@ -1,6 +1,11 @@
 <template>
   <div id="home-skills">
-    Skills
+    
+    <!-- title -->
+    <Title>
+      <h1 slot="title1">Skills</h1>
+      <h4 slot="title2">スキルについて</h4>
+    </Title>
 
     <!-- skills cards -->
     <SkillCards :list="list"></SkillCards>
@@ -15,6 +20,7 @@ import {
 } from "@/api/api";
 
 // components
+import Title from "@/components/Title/Title.vue";
 import SkillCards from "@/components/Cards/CardSkills.vue";
 
 export default {
@@ -26,6 +32,7 @@ export default {
   },
 
   components: {
+    Title,
     SkillCards,
   },
 

@@ -1,6 +1,5 @@
 <template>
   <div id="profile">
-    Profile
     <!-- 1. top info -->
     <TopInfo></TopInfo>
 

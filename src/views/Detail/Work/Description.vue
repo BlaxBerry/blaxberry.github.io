@@ -1,6 +1,12 @@
 <template>
   <div id="detail-work-description">
     <v-card class="pa-4">
+      <!-- title -->
+      <Title>
+        <h1 slot="title1">{{ name }}</h1>
+        <h4 slot="title2">この作品について</h4>
+      </Title>
+      
       <!-- 1. desc -->
       <h3 class="px-4 pt-4">{{ desc }}</h3>
 
@@ -38,8 +44,15 @@
 </template>
 
 <script>
+// components
+import Title from "@/components/Title/Title.vue";
+
 export default {
-  props: ["desc", "tags", "links"],
+  props: ["name", "desc", "tags", "links"],
+
+  components: {
+    Title,
+  },
 
   data() {
     return {

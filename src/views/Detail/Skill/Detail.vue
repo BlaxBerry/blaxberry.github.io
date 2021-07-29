@@ -1,7 +1,5 @@
 <template>
   <div id="skill-detail">
-    skill detail
-
     <!-- 1. description -->
     <Description
       :name="skill.name"

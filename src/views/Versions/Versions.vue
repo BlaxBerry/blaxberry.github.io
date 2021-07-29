@@ -1,5 +1,11 @@
 <template>
   <div id="versions">
+    <!-- title -->
+    <Title>
+      <h1 slot="title1">Protofilo Versions</h1>
+      <h4 slot="title2">ポートフォリオのバージョンアップ</h4>
+    </Title>
+
     <ul>
       <li>4.0: Vue2 + Vue-Cli3 + Vuetify + Sass + Vue-Router + Axios + JSON</li>
       <li>3.0: Vue2 + Vue-Cli2 + Vue-Router + Less + JSON</li>
@@ -16,10 +22,12 @@
 <script>
 // components
 import NavBottom from "@/components/Nav/NavBottom.vue";
+import Title from "@/components/Title/Title.vue";
 
 export default {
   components: {
     // components
+    Title,
     NavBottom,
   },
 };

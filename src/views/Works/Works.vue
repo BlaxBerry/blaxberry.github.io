@@ -1,6 +1,11 @@
 <template>
   <div id="works">
-    works
+    <!-- title -->
+    <Title>
+      <h1 slot="title1">Works</h1>
+      <h4 slot="title2">作品について</h4>
+    </Title>
+
     <!-- list -->
     <WorkCardsPC :list="list"></WorkCardsPC>
 
@@ -17,6 +22,7 @@ import {
 } from "@/api/api";
 
 // components
+import Title from "@/components/Title/Title.vue";
 import WorkCardsPC from "@/components/Cards/CardWorksPC.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 
@@ -30,6 +36,7 @@ export default {
 
   components: {
     // components
+    Title,
     WorkCardsPC,
     NavBottom,
   },

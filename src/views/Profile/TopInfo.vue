@@ -1,5 +1,10 @@
 <template>
   <div id="profile-topinfo">
+    <!-- title -->
+    <Title>
+      <h1 slot="title1">About Me</h1>
+    </Title>
+
     <v-card
       elevation="2"
       outlined
@@ -33,7 +38,14 @@
 </template>
 
 <script>
-export default {};
+// components
+import Title from "@/components/Title/Title.vue";
+
+export default {
+  components: {
+    Title,
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

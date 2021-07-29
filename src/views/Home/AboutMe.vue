@@ -1,5 +1,10 @@
 <template>
   <div id="home-aboutme" class="full-page-session">
+    <!-- title -->
+    <Title>
+      <h1 slot="title1">About Me</h1>
+    </Title>
+
     <v-card
       elevation="2"
       outlined
@@ -59,7 +64,13 @@
 </template>
 
 <script>
+import Title from "@/components/Title/Title.vue";
+
 export default {
+  components: {
+    Title,
+  },
+
   data() {
     return {
       links: [

@@ -1,6 +1,13 @@
 <template>
   <v-footer padless class="green">
     <v-container>
+
+      <!-- title -->
+      <Title>
+        <h1 slot="title1" class="title1 white--text">Thanks for Watching</h1>
+        <h4 slot="title2" class="title2 white--text">最後までご覧頂き、心より感謝致します</h4>
+      </Title>
+
       <div flat tile class="lighten-1 white--text text-center">
         <v-card-text>
           <v-btn
@@ -31,7 +38,7 @@
           </router-link>
           <br />
           <small>
-            Chen - 
+            Chen -
             {{ new Date().getFullYear() }}.
             {{ new Date().getMonth() }}
           </small>
@@ -42,7 +49,13 @@
 </template>
 
 <script>
+import Title from "@/components/Title/Title.vue";
+
 export default {
+  components: {
+    Title,
+  },
+
   data: () => ({
     links: [
       {

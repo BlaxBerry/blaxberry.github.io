@@ -11,10 +11,7 @@
         lg="3"
       >
         <v-card elevation="2" @click="click(item)">
-          <v-img
-            :src="item.mainPic"
-            lazy-src="@/assets/images/_lazyloading.gif"
-          ></v-img>
+          <v-img :src="item.mainPic"></v-img>
         </v-card>
         <v-card-text class="text-center text-no-wrap font-weight-bold">
           {{ item.name }}

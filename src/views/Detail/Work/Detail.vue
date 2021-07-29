@@ -1,26 +1,21 @@
 <template>
   <div id="work-detail">
-    <h1>{{ work.name }}</h1>
-
     <!-- 1. carousel -->
-    all : {{ work.pics ? work.pics.length : 0 }} pics
     <Slider :list="work.pics" v-if="work.pics"></Slider>
 
     <!-- 2. description -->
-    Work Desc
     <Description
+      :name="work.name"
       :desc="work.desc"
       :tags="work.keywords"
       :links="work.links"
       v-if="work.desc"
     ></Description>
 
-    <!-- 3. tech tasks -->
-    Tech Tasks:
+    <!-- 3. tech stacks -->
     <TechList :list="work.techTasks" v-if="work.techTasks"></TechList>
 
     <!-- 4. Function Details -->
-    Function Detail:
     <Functions
       :list="work.function"
       :links="work.links"

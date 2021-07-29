@@ -1,6 +1,10 @@
 <template>
   <div id="skills">
-    skills
+    <!-- title -->
+    <Title>
+      <h1 slot="title1">Skills</h1>
+      <h4 slot="title2">スキルについて</h4>
+    </Title>
 
     <!-- 1. languages -->
     <SkillCards :list="lang_list"></SkillCards>
@@ -24,13 +28,14 @@ import {
 } from "@/api/api";
 
 // components
+import Title from "@/components/Title/Title.vue";
 import NavBottom from "@/components/Nav/NavBottom.vue";
 import SkillCards from "@/components/Cards/CardSkills.vue";
 
 export default {
   components: {
+    Title,
     NavBottom,
-
     SkillCards,
   },
 
