@@ -1,5 +1,5 @@
 <template>
-  <div class="CardWorksMobile">
+  <div class="CardWorksMobile pb-5">
     <v-row align="center" justify="start">
       <v-col
         v-for="(item, index) in list"

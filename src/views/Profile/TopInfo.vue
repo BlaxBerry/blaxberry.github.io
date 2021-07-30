@@ -15,7 +15,7 @@
       min-height="300"
     >
       <v-card-text class="pa-5">
-        <vue-typer
+        <b><vue-typer
           :text="[
             '中国出身、外国語学部卒業、前職は不動産営業。\n前職でITプログラミングを知り始めてから、日々進化しているIT技術の魅力に深く惹かれました。将来エンジニアとして、より良いユーザ体験やサービスなどを開発して、この社会に貢献し続きたいと思います。その夢を目指して、日々勉強や練習を重ねて頑張っています。',
           ]"
@@ -25,7 +25,7 @@
           :typeDelay="100"
           :preEraseDelay="5000"
           :eraseDelay="2000"
-        ></vue-typer>
+        ></vue-typer></b>
       </v-card-text>
     </v-card>
   </div>

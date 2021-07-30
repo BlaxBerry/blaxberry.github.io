@@ -22,6 +22,7 @@ export default {};
   // title1 主标题
   h1 {
     font-style: italic;
+    padding-top: 2rem;
   }
 
   // title2 副标题

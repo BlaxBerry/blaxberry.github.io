@@ -1,20 +1,15 @@
 <template>
-  <div class="CardSkills">
-    <v-card
-      max-width="80"
-      min-width="80"
-      elevation="2"
-      v-for="(item, index) in list"
-      :key="index"
-      @click="click(item)"
-    >
-      <v-img
-        :src="require(`../../assets/images/${item.pic}`)"
-        lazy-src="@/assets/images/_lazyloading.gif"
-        min-width="80"
-        max-width="80"
-      ></v-img>
-    </v-card>
+  <div class="CardSkills pb-5">
+    <v-row align="center" justify="start">
+      <v-col v-for="(item, index) in list" :key="index" class="pa-0" cols="3" sm="2" md="1">
+        <v-card elevation="2" @click="click(item)">
+          <v-img
+            :src="require(`../../assets/images/${item.pic}`)"
+            lazy-src="@/assets/images/_lazyloading.gif"
+          ></v-img>
+        </v-card>
+      </v-col>
+    </v-row>
   </div>
 </template>
 

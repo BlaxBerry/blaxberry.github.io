@@ -1,5 +1,5 @@
 <template>
-  <div class="CardWorksPC">
+  <div class="CardWorksPC pb-5">
     <v-row align="center" justify="start">
       <v-col
         max-width="200"

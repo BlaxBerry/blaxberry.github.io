@@ -270,7 +270,7 @@
             "Less",
             "Webpack"
         ],
-        "mainPic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
+        "mainPic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/blob/master/screenshot.png",
         "pics": [
             "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
             "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/02.png",
@@ -330,9 +330,9 @@
             "CSS3",
             "JavaScript"
         ],
-        "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
+        "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/blob/master/screenshot.png",
         "pics": [
-            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
+            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/blob/master/screenshot.png",
             "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot2.png",
             "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot3.png"
         ],
@@ -382,9 +382,9 @@
             "jQuery",
             "JavaScript"
         ],
-        "mainPic": "https://pbs.twimg.com/media/E4tBTASUUAU1_C5?format=jpg&name=small",
+        "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/blob/master/screenshot.png",
         "pics": [
-            "https://pbs.twimg.com/media/E4tBTASUUAU1_C5?format=jpg&name=small"
+            "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/blob/master/screenshot.png"
         ],
         "techTasks": [
             [
@@ -430,9 +430,9 @@
             "ローカルストレージ",
             "jQuery"
         ],
-        "mainPic": "https://pbs.twimg.com/media/EuRg8zRVgAQMwVi?format=png&name=small",
+        "mainPic": "https://github.com/BlaxBerry/JS--todoList/blob/master/screenshot.png",
         "pics": [
-            "https://pbs.twimg.com/media/EuRg8zRVgAQMwVi?format=png&name=small"
+            "https://github.com/BlaxBerry/JS--todoList/blob/master/screenshot.png"
         ],
         "techTasks": [
             [

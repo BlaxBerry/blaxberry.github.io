@@ -3,19 +3,32 @@
   <div class="text-center nav-row-routes">
     <v-menu transition="slide-x-transition" bottom right>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn dark color="primary" fab large v-bind="attrs" v-on="on">
-          Pages
+        <v-btn
+          dark
+          color="purple"
+          class="font-weight-black text-sm-h6"
+          fab
+          large
+          elevation="5"
+          v-bind="attrs"
+          v-on="on"
+        >
+          GoTo
         </v-btn>
       </template>
 
-      <v-list class="d-flex pb-5 ml-10 pl-10 ">
+      <v-list
+        class="d-md-flex pl-2 pt-14 mt-5 pt-md-0 mt-md-1 pl-md-15 ml-md-5"
+        width="400px"
+      >
         <v-list-item
-          class="px-1"
+          class="px-0 py-1 px-md-2"
+          max-width="60"
           v-for="(item, index) in mainRoutes"
           :key="index"
         >
           <v-list-item-title>
-            <v-btn fab :to="item.to">
+            <v-btn fab :to="item.to" elevation="5" color="secondary">
               <v-icon large>{{ item.icon }}</v-icon>
             </v-btn>
           </v-list-item-title>
@@ -44,9 +57,13 @@ export default {
   box-shadow: none !important;
   .v-list {
     background-color: transparent !important;
-    .v-list-item__title {
-      overflow: visible !important;
+    box-shadow: none !important;
+    .v-list-item {
       box-shadow: none !important;
+      .v-list-item__title {
+        overflow: visible !important;
+        box-shadow: none !important;
+      }
     }
   }
 }
