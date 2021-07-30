@@ -22,9 +22,6 @@
         :links="work.links"
         v-if="work.function"
       ></Functions>
-
-      <!-- 6. Nav Bottom -->
-      <NavBottom></NavBottom>
     </v-container>
   </div>
 </template>
@@ -44,18 +41,13 @@ import Description from "@/views/Detail/Work/Description.vue";
 import TechList from "@/views/Detail/Work/TechList.vue";
 import Functions from "@/views/Detail/Work/Functions.vue";
 
-// components
-import NavBottom from "@/components/Nav/NavBottom.vue";
-
 export default {
   components: {
     // main components
     Slider,
     Description,
     TechList,
-    Functions,
-    // components
-    NavBottom,
+    Functions
   },
 
   data() {
@@ -66,6 +58,30 @@ export default {
       allWorksList: [],
       // the work model
       work: {},
+      SmoothScrollAnchors: [
+        // Description
+        {
+          name: "Desc",
+          anchorID: "detail-work-description",
+          icon: "mdi-bug",
+        },
+
+        // Tech Stacks
+        {
+          name: "TechStacks",
+          anchorID: "detail-work-techlist",
+          icon: "mdi-bug",
+        },
+        // Function Detail
+        {
+          name: "Functions",
+          anchorID: "detail-work-functions",
+          icon: "mdi-bug",
+        },
+
+        // Contact
+        { name: "Contact", anchorID: "footer", icon: "mdi-hail" },
+      ],
     };
   },
 
@@ -109,6 +125,10 @@ export default {
 
   created() {
     this.init();
+  },
+
+  mounted() {
+    this.$parent.$parent.SmoothScrollAnchors = this.SmoothScrollAnchors;
   },
 };
 </script>

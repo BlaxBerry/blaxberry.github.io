@@ -15,8 +15,6 @@
 
       <!-- 3. study -->
 
-      <!-- 5. Nav Bottom -->
-      <NavBottom></NavBottom>
     </v-container>
   </div>
 </template>
@@ -32,16 +30,11 @@ import {
 import Description from "@/views/Detail/Skill/Description.vue";
 import TechList from "@/views/Detail/Skill/TechList.vue";
 
-// components
-import NavBottom from "@/components/Nav/NavBottom.vue";
-
 export default {
   components: {
     // mian components
     Description,
-    TechList,
-    // components
-    NavBottom,
+    TechList
   },
 
   data() {
@@ -52,6 +45,23 @@ export default {
       allSkillList: [],
       // the skill
       skill: {},
+      SmoothScrollAnchors: [
+        // Description
+        {
+          name: "Desctiption",
+          anchorID: "detail-skill-desctiption",
+          icon: "mdi-bug",
+        },
+
+        // Tech Stacks
+        {
+          name: "techStacks",
+          anchorID: "detail-skill-techlist",
+          icon: "mdi-bug",
+        },
+        // Contact
+        { name: "Contact", anchorID: "footer", icon: "mdi-hail" },
+      ],
     };
   },
 
@@ -80,6 +90,10 @@ export default {
 
   created() {
     this.init();
+  },
+
+  mounted() {
+    this.$parent.$parent.SmoothScrollAnchors = this.SmoothScrollAnchors;
   },
 };
 </script>

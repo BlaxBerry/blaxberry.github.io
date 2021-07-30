@@ -1,5 +1,7 @@
 <template>
   <div id="skills" class="pb-15">
+
+
     <v-container>
       <!-- title -->
       <Title>
@@ -28,9 +30,6 @@
       <SkillCards :list="backend_list"></SkillCards>
       <!-- 4. others -->
       <SkillCards :list="others_list"></SkillCards>
-
-      <!-- Nav Bottom -->
-      <NavBottom></NavBottom>
     </v-container>
   </div>
 </template>
@@ -44,13 +43,11 @@ import {
 
 // components
 import Title from "@/components/Title/Title.vue";
-import NavBottom from "@/components/Nav/NavBottom.vue";
 import SkillCards from "@/components/Cards/CardSkills.vue";
 
 export default {
   components: {
     Title,
-    NavBottom,
     SkillCards,
   },
 
@@ -60,6 +57,12 @@ export default {
       framework_list: [],
       backend_list: [],
       others_list: [],
+      SmoothScrollAnchors: [
+        // SKills
+        { name: "Skills", anchorID: "home-skills", icon: "mdi-pickaxe" },
+        // Contact
+        { name: "Contact", anchorID: "footer", icon: "mdi-hail" },
+      ],
     };
   },
 
@@ -71,6 +74,10 @@ export default {
       this.backend_list = res.data[2];
       this.others_list = res.data[3];
     });
+  },
+
+  mounted() {
+    this.$parent.$parent.SmoothScrollAnchors = this.SmoothScrollAnchors;
   },
 };
 </script>

@@ -21,14 +21,17 @@
         </small>
       </div>
 
-      <!-- list -->
       <!-- works cards PC-->
-      <WorkCardsPC :list="list"></WorkCardsPC>
-      <!-- works cards Mobile-->
-      <WorkCardsMobile :list="listMobile"></WorkCardsMobile>
+      <div id="works-pc">
+        <Title><h3 slot="title2">PC端末</h3></Title>
+        <WorkCardsPC :list="list" class="mt-5"></WorkCardsPC>
+      </div>
 
-      <!-- 5. Nav Bottom -->
-      <NavBottom></NavBottom>
+      <!-- works cards Mobile-->
+      <div id="works-mobile">
+        <Title><h3 slot="title2">Mobile端末</h3></Title>
+        <WorkCardsMobile :list="listMobile" class="mt-5"></WorkCardsMobile>
+      </div>
     </v-container>
   </div>
 </template>
@@ -46,7 +49,6 @@ import {
 import Title from "@/components/Title/Title.vue";
 import WorkCardsPC from "@/components/Cards/CardWorksPC.vue";
 import WorkCardsMobile from "@/components/Cards/CardWorkMobile.vue";
-import NavBottom from "@/components/Nav/NavBottom.vue";
 
 export default {
   data() {
@@ -55,6 +57,14 @@ export default {
       list: [],
       // Mobile list
       listMobile: [],
+      SmoothScrollAnchors: [
+        // works PC
+        { name: "PC", anchorID: "works-pc", icon: "mdi-pickaxe" },
+        // works Mobile
+        { name: "Mobile", anchorID: "works-mobile", icon: "mdi-pickaxe" },
+        // Contact
+        { name: "Contact", anchorID: "footer", icon: "mdi-hail" },
+      ],
     };
   },
 
@@ -63,7 +73,6 @@ export default {
     Title,
     WorkCardsPC,
     WorkCardsMobile,
-    NavBottom,
   },
 
   created() {
@@ -77,6 +86,10 @@ export default {
       this.listMobile = res.data;
       console.log(this.listMobile);
     });
+  },
+
+  mounted() {
+    this.$parent.$parent.SmoothScrollAnchors = this.SmoothScrollAnchors;
   },
 };
 </script>

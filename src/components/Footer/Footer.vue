@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless class="green">
+  <v-footer padless class="green" id="footer" bottom>
     <v-container>
       <!-- title -->
       <Title>
@@ -90,6 +90,6 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 </style>

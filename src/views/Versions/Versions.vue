@@ -3,7 +3,7 @@
     <v-container>
       <!-- title -->
       <Title>
-        <h1 slot="title1">Protofilo Versions</h1>
+        <h1 slot="title1">Portofolio Versions</h1>
         <h4 slot="title2">ポートフォリオのバージョンアップ</h4>
       </Title>
 
@@ -61,23 +61,18 @@
           </v-expansion-panel>
         </v-expansion-panels>
       </div>
-
-      <!-- 5. Nav Bottom -->
-      <NavBottom></NavBottom>
     </v-container>
   </div>
 </template>
 
 <script>
 // components
-import NavBottom from "@/components/Nav/NavBottom.vue";
 import Title from "@/components/Title/Title.vue";
 
 export default {
   components: {
     // components
     Title,
-    NavBottom,
   },
 
   data() {
@@ -148,6 +143,10 @@ export default {
         },
       ],
     };
+  },
+
+  mounted() {
+    this.$parent.$parent.SmoothScrollAnchors = [];
   },
 };
 </script>

@@ -18,9 +18,12 @@ import '@mdi/font/css/materialdesignicons.css'
 import VueTyperPlugin from 'vue-typer'
 Vue.use(VueTyperPlugin)
 
+// vue Smooth Scroll
+import vueSmoothScroll from 'vue-smooth-scroll'
+Vue.use(vueSmoothScroll)
 
 // 每次跳转回到页面顶部
-router.beforeEach((to, from, next) => {    
+router.beforeEach((to, from, next) => {
   // chrome
   document.body.scrollTop = 0
   // firefox

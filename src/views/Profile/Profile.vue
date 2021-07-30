@@ -9,9 +9,6 @@
 
       <!-- 3. skills  -->
       <Skills></Skills>
-
-      <!-- Nav Bottom -->
-      <NavBottom></NavBottom>
     </v-container>
   </div>
 </template>
@@ -22,17 +19,31 @@ import TopInfo from "@/views/Profile/TopInfo.vue";
 import TimeLine from "@/views/Profile/TimeLine.vue";
 import Skills from "@/views/Home/Skills.vue";
 
-// common componoents
-import NavBottom from "@/components/Nav/NavBottom.vue";
-
 export default {
   components: {
     // mian components
     TopInfo,
     TimeLine,
     Skills,
-    // common componoents
-    NavBottom,
+  },
+
+  data() {
+    return {
+      SmoothScrollAnchors: [
+        // Top Info
+        { name: "About Me", anchorID: "profile-topinfo", icon: "mdi-ghost" },
+        // Time Line
+        { name: "Experience", anchorID: "profile-timeline", icon: "mdi-bug" },
+        // SKills
+        { name: "Skills", anchorID: "home-skills", icon: "mdi-pickaxe" },
+        // Contact
+        { name: "Contact", anchorID: "footer", icon: "mdi-hail" },
+      ],
+    };
+  },
+
+  mounted() {
+    this.$parent.$parent.SmoothScrollAnchors = this.SmoothScrollAnchors;
   },
 };
 </script>
