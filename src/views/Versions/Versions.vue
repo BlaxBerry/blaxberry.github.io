@@ -7,21 +7,28 @@
         <h4 slot="title2">ポートフォリオのバージョンアップ</h4>
       </Title>
 
+      <!-- 1. desc -->
+      <p class="pt-10">
+        この画面でポートフォリオのバージョンアップ、今までの各バージョンで使用したスキル、そして以前のポートフォリオの問題点など、開発に関する内容を確認することができます。
+      </p>
+
+      <!-- 2. list -->
       <div class="version-list my-10">
         <v-expansion-panels>
           <v-expansion-panel
             v-for="(version, index) in versionList"
             :key="index"
           >
-            <!-- 1. title -->
+            <!-- 2.1. title -->
             <v-expansion-panel-header class="font-weight-black">
               Version
               <b :class="index == 0 ? 'text-h6 pl-2 red--text' : 'pl-2'">
                 {{ version.version }}
               </b>
+              <small class="text-right pr-2 primary--text">{{ version.time }}</small>
             </v-expansion-panel-header>
             <v-expansion-panel-content class="pl-4">
-              <!-- 1. tech stacks -->
+              <!-- 2.2. tech stacks -->
               <div subheader class="d-flex flex-wrap" style="fontSize:12px">
                 <div
                   class="d-flex flex-column ma-1"
@@ -43,12 +50,12 @@
                 </div>
               </div>
 
-              <!-- 2.desc -->
+              <!-- 2.3. desc -->
               <div class="desc py-4">
                 {{ version.desc }}
               </div>
 
-              <!-- 3.shortcoming -->
+              <!-- 2.4. shortcoming -->
               <div
                 class="shortcoming ml-lg-15 pa-2"
                 v-for="(shortcoming, i) in version.shortcoming"
@@ -80,8 +87,9 @@ export default {
       versionList: [
         {
           version: "4.0",
+          time: "2021/07",
           desc:
-            "色々な練習を重ねて、最後はVue-Router + Vuetifyを利用して、単一ページのSPAサイト開発しました。そして静的なWebページではなく、画面上で展示するデータを、Vue-Cliの中でAxiosを通じて、publicに保存しているJSONファイルから読み込みます。",
+            "色々な練習を重ねて、最後はVue-Router + Vuetifyを利用して、単一ページのSPAサイトを開発しました。そして静的なWebページではなく、Vue-Cliの中でAxiosを通じて、/public/data に保存しているJSONファイルからデータを読み込んで、画面上で展示或いは操作をします。",
           shortcoming: [],
           techStacks: [
             { name: "Vue-Cli", icon: "vue.svg" },
@@ -94,6 +102,7 @@ export default {
         },
         {
           version: "3.0",
+          time: "2021/05",
           desc: "",
           shortcoming: [
             "他のWebページにジャンプするので、閲覧する体験が良くない。",
@@ -110,6 +119,7 @@ export default {
         },
         {
           version: "2.0",
+          time: "2021/04",
           desc:
             "レスポンシブ開発するために、各端末(特に携帯端末)に応じて自動で表示が最適化されるように、Bootstrapを使いました。",
           shortcoming: [
@@ -127,6 +137,7 @@ export default {
         },
         {
           version: "1.0",
+          time: "2021/03",
           desc: "",
           shortcoming: [
             "携帯端末に対応できない。",
