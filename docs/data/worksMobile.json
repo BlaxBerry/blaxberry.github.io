@@ -235,9 +235,10 @@
             "Material Framework",
             "JavaScript"
         ],
-        "mainPic": "https://github.com/BlaxBerry/JS--TaskList/blob/master/screenshot.png",
+        "mainPic": "https://github.com/BlaxBerry/JS--TaskList/raw/master/images/screenshot01.png",
         "pics": [
-            "https://github.com/BlaxBerry/JS--TaskList/blob/master/screenshot.png"
+            "https://github.com/BlaxBerry/JS--TaskList/raw/master/images/screenshot01.png",
+            "https://github.com/BlaxBerry/JS--TaskList/raw/master/images/screenshot02.png"
         ],
         "techTasks": [
             [
@@ -252,14 +253,14 @@
             ],
             [
                 {
-                    "name": "Local Storage",
-                    "pic": "html.svg"
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
                 }
             ],
             [
                 {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
+                    "name": "Local Storage",
+                    "pic": "html.svg"
                 }
             ]
         ],
@@ -290,9 +291,10 @@
             "CSS3",
             "JavaScript"
         ],
-        "mainPic": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/blob/master/screenshot.png",
+        "mainPic": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/01.png",
         "pics": [
-            "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/blob/master/screenshot.png"
+            "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/01.png",
+            "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/02.png"
         ],
         "techTasks": [
             [

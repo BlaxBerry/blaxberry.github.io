@@ -270,7 +270,7 @@
             "Less",
             "Webpack"
         ],
-        "mainPic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/blob/master/screenshot.png",
+        "mainPic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
         "pics": [
             "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
             "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/02.png",
@@ -330,10 +330,11 @@
             "CSS3",
             "JavaScript"
         ],
-        "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/blob/master/screenshot.png",
+        "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
         "pics": [
-            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/blob/master/screenshot.png",
+            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
             "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot2.png",
+            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot4.png",
             "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot3.png"
         ],
         "techTasks": [
@@ -341,9 +342,7 @@
                 {
                     "name": "HTML5",
                     "pic": "html.svg"
-                }
-            ],
-            [
+                },
                 {
                     "name": "CSS3",
                     "pic": "css.svg"
@@ -352,6 +351,12 @@
             [
                 {
                     "name": "JavaScript",
+                    "pic": "javascript.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Regular Express",
                     "pic": "javascript.svg"
                 }
             ]
@@ -364,7 +369,7 @@
             [
                 "レイアウトを練習しました。",
                 "CSS3の各種セレクタや、Float、Postionなどを練習しました。",
-                "正規表現( RegExp )でフォームデータ( form data )検証します。"
+                "正規表現( RegExp )でフォームデータ( form data )を検証します。"
             ]
         ],
         "links": {
@@ -377,23 +382,24 @@
         "id": "static03",
         "type": "pc",
         "keywords": [
-            "HTML5",
-            "CSS3",
+            "HTML5 + CSS3",
+            "Ajax",
             "jQuery",
-            "JavaScript"
+            "JavaScript",
+            "JSON"
         ],
-        "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/blob/master/screenshot.png",
+        "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot.png",
         "pics": [
-            "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/blob/master/screenshot.png"
+            "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot.png",
+            "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot1.png",
+            "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot2.png"
         ],
         "techTasks": [
             [
                 {
                     "name": "HTML5",
                     "pic": "html.svg"
-                }
-            ],
-            [
+                },
                 {
                     "name": "CSS3",
                     "pic": "css.svg"
@@ -401,20 +407,35 @@
             ],
             [
                 {
+                    "name": "javaScript",
+                    "pic": "javascript.svg"
+                },
+                {
                     "name": "jQuery",
                     "pic": "jquery.svg"
+                },
+                {
+                    "name": "jQuery.Ajax",
+                    "pic": "jquery.svg"
+                }
+            ],
+            [
+                {
+                    "name": "JSON",
+                    "pic": "json.svg"
                 }
             ]
         ],
-        "desc": "最初にレイアウトを練習する時の静的な架空のEC( 電子商取引 )サイトです。これを通じて、FloatやPostionなどのHTML＋CSSレイアウト、そしてjQueryでのDOM操作や動的なDOM作成などを練習しました。",
+        "desc": "最初にレイアウトを練習する時の静的な架空のEC( 電子商取引 )サイトです。この作品を通じてjQueryのAjaxや、DOM操作( 動的な生成、追加など )を練習しました。",
         "function": [
             [
                 "静的な架空のEC( 電子商取引 )サイトです。"
             ],
             [
-                "レイアウトを練習しました。",
+                "HTML5 ＋ CSS3レイアウトを練習しました。",
                 "CSS3の各種セレクタや、Float、Postionなどを練習しました。",
-                "jQueryでの動的なDOM作成や画面への追加を練習しました。"
+                "スライドアニメーションメソッドをカプセル化して、JavaScriptを練習しました。",
+                "jQuery.ajaxを通じて、JSONファイルのデータを読み込めて動的にjQueryオブジェクトを生成し、そしてjQueryでDOM操作して画面上へ追加します。"
             ]
         ],
         "links": {
@@ -428,11 +449,12 @@
         "keywords": [
             "HTML5 + CSS3",
             "ローカルストレージ",
-            "jQuery"
+            "jQuery",
+            "JavaScript"
         ],
-        "mainPic": "https://github.com/BlaxBerry/JS--todoList/blob/master/screenshot.png",
+        "mainPic": "https://github.com/BlaxBerry/JS--todoList/raw/master/images/screenshot.png",
         "pics": [
-            "https://github.com/BlaxBerry/JS--todoList/blob/master/screenshot.png"
+            "https://github.com/BlaxBerry/JS--todoList/raw/master/images/screenshot.png"
         ],
         "techTasks": [
             [
@@ -441,20 +463,24 @@
                     "pic": "html.svg"
                 },
                 {
-                    "name": "Local Storage",
-                    "pic": "html.svg"
-                }
-            ],
-            [
-                {
                     "name": "CSS3",
                     "pic": "css.svg"
                 }
             ],
             [
                 {
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
+                },
+                {
                     "name": "jQuery",
                     "pic": "jquery.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Local Storage",
+                    "pic": "html.svg"
                 }
             ]
         ],
@@ -464,7 +490,7 @@
                 "TodoListタスクを追加、保存、削除、編集することができます。"
             ],
             [
-                "ローカルストレージ( LocalStorage )を利用して、ブラウザにTodoListのデータを保存します。",
+                "ローカルストレージ( LocalStorage )を利用し、JSON.stringify()・JSON.parse()でTodoListのデータを操作し、ブラウザにデータを保存します。",
                 "HTML5、CSS3を練習しました。",
                 "jQueryのイベントやアニメーションを練習しました。"
             ]
