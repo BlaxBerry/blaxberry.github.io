@@ -4,21 +4,21 @@
         "id": "01",
         "type": "pc",
         "keywords": [
-            "jQuery",
-            "Bootstrap",
             "Node.js",
+            "パスワードを暗号化",
+            "サーバサイド",
             "Art-Template",
             "MongoDB"
         ],
         "mainPic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png",
         "pics": [
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png",
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/10.png",
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/02.png",
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/03.png",
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/05.png",
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/06.png",
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/07.png",
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/10.png"
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/07.png"
         ],
         "techTasks": [
             [
@@ -29,9 +29,17 @@
                 {
                     "name": "jQuery",
                     "pic": "jquery.svg"
+                },
+                {
+                    "name": "Art-Template",
+                    "pic": "npm.svg"
                 }
             ],
             [
+                {
+                    "name": "Node.js",
+                    "pic": "nodejs.svg"
+                },
                 {
                     "name": "Express.js",
                     "pic": "nodejs.svg"
@@ -39,10 +47,6 @@
                 {
                     "name": "MongoDB",
                     "pic": "mongodb.svg"
-                },
-                {
-                    "name": "Art-Template",
-                    "pic": "npm.svg"
                 }
             ],
             [
@@ -60,25 +64,27 @@
                 }
             ]
         ],
-        "desc": "Full stack project according to Express.js + MongoDB + TemplateEngine. SSR(Server Side Rendering) could check and uploade blog articles, login as admin to manage users and articles",
+        "desc": "SSR( Server Side Rendering )サーバサイドドレンダリングのブログ展示や管理システムです。Node.jsのExpress.jsを利用してサーバを開発し、フロントからのリクエストに応じて、MongoBDデータベースに接続し、そしてArt-Templateというテンプレートエンジンを通じてHTMLテンプレーを作成します。",
         "function": [
             [
-                "check blogs from client side",
-                "check artic details from client side",
-                "uploade blog article from client side",
-                "user login from client side",
-                "user logout from client side",
-                "check static resources on server from client side"
+                "ユーザー登録してから、ホームページでアップロードしたブログのリストや、文章内容を確認することができます。",
+                "一般的なユーザー( normal user)として管理システムにログインし、自分のブログ文章を管理操作( 追加、修正、削除 )することができます。",
+                "スーパー管理者( admin )として管理システムにログインし、全てのユーザーやブログ文章を管理操作することができます。",
+                "URLを通じて、静的リソース( サーバサイドにおける静的なファイル )を確認することができます。",
+                "ユーザーログイン、ログアウト機能があります。"
             ],
             [
-                "http server created by Express.js",
-                "connect to database, add / edit / remove data",
-                "SSR(Server Side Rendering) by TemplateEngine",
-                "route guard login interception",
-                "use session + cookie to record login",
-                "use Joi to validate form data from client side",
-                "use formidable to analyze files uploaded from client side",
-                "use bcrypt password-hashing encryption"
+                "Express.jsでHTTPサーバを作成します。",
+                "フロントからのリクエストに応じて、データベースに接続し、データを管理操作( 追加、修正、削除 )します。",
+                "MongoDBのデータを、テンプレートエンジン( Art-Template )を利用して、HTMLテンプレーを作成します。",
+                "SSRサドレンダリングです。フロントからのリクエストに応じて、ページをリクエストします。",
+                "ルートログインガード( route guard login interception )、ユーザー登録しないと、ページ展示できます。"
+            ],
+            [
+                "SessionやCookieを利用し、サーバサイドでログインを記録します。",
+                "Joiを利用し、サーバサイドでクライアント側で発送したフォームデータ( form data )を検証します。",
+                "formidableを利用し、サーバサイドでクライアント側で登録したファイル( 文章の画像など )検証、分析します。",
+                "セキュリティ強化のために、bcryptを利用してサーバサイドでユーザーパスワードを暗号化( ハッシュ化 )してからデータベースに追加します。"
             ]
         ],
         "links": {
@@ -86,20 +92,25 @@
         }
     },
     {
-        "name": "Protofolio 4.0",
+        "name": "Portofolio 4.0",
         "id": "02",
         "type": "pc",
         "keywords": [
             "Vue",
             "SPA",
-            "Sass",
             "Vuetify",
+            "Scss",
             "Axios"
         ],
-        "mainPic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/master/src/assets/upload/mask01.png",
+        "mainPic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-01.png",
         "pics": [
-            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/master/src/assets/upload/mask01.png",
-            ""
+            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-01.png",
+            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-02.png",
+            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-03.png",
+            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/profile-01.png",
+            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/skills-01.png",
+            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/works-01.png",
+            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/detail-work-01.png"
         ],
         "techTasks": [
             [
@@ -145,27 +156,34 @@
                 }
             ]
         ],
-        "desc": "Responsive SPA(Single Page Application) created by Vue2 + Vue-Router, developed by Vue-Cli3 + Vuetify + Scss. Get data by Axios from JSON files.",
+        "desc": "以前のポートフォリオ練習を重ねて、今回のバージョンはVue-Router + Vuetifyを利用して、静的なWebページではなく、単一ページのSPAサイトを開発しました。そして画面上で展示するデータを、Axiosを通じて、Vue-Cliの中のpublicに保存しているJSONファイルから読み込みます。",
         "function": [
             [
-                "go Profile page from Home Page",
-                "go Skills Page from Home Page",
-                "go Works page from Home Page",
-                "click one skill to go Detail Page from Home Page",
-                "click one work to go Detail Page from Home Page"
+                "画面の左上のナビゲーションボタンを通じて、SPAサイトの各画面( メイン画面、スキルリスト、作品集、プロフィール )を確認することができます。",
+                "画面の右下のバージョンボタンを通じて、ポートフォリオのバージョンアップに関する内容を確認することができます。",
+                "もし、このサイトや私について何かコメントまたBug修正などがありましたら、画面の一番下のリンクをご利用ください。",
+                "ホーム画面の一番目の About Me コンテンツのボタンををクリックして、プロフィール画面の内容を確認することができます。",
+                "ホーム画面の二番目の Skills コンテンツで、身に付いているスキルを展示しています。そして、各スキルをクリックして、このスキルの詳細を確認することもできます。",
+                "ホーム画面の三番目の Works ンテンツで、一部の作品を展示しています。そして、作品画像をクリックして、この作品の詳細を確認することもできます。"
             ],
             [
-                "check personal Info in Profile page",
-                "study TimeLine in Profile page",
-                "check Notes in Profile page"
+                "プロフィール画面で、自己PRを確認することができます。",
+                "今までの履歴や、プログラミングの勉強などを、タイムラインの形で展示しています。"
             ],
             [
-                "in Skills page, skills classified by LANGUAGE, FRAMEWORK, OTHERS",
-                "in Skills page, click one skill to go Detail Page from Home Page"
+                "Skills画面で、スキルリストを( 言語、フレームワーク、その他 )分類して展示しています。",
+                "各スキルをクリックして、このスキルの詳細を確認することもできます。"
             ],
             [
-                "in Works page, works classified by PC, Mobile",
-                "in Works page, click one work to go Detail Page from Home Page"
+                "Work Detail画面で、この作品に関する( イメージ、使用したスキル、詳細機能説明など )詳細を確認することができます。",
+                "Githubボタンをクリックして、Githubでコードを確認することもできます。",
+                "Demoボタンをクリックして、オンラインで作品を使用して確認することもできます。"
+            ],
+            [
+                "Skill Detail画面で、このスキルに関する知識や関連スキルのレベルなどについて、確認することができます。"
+            ],
+            [
+                "Versions画面で、ポートフォリオの開発に関する内容( バージョンアップ、各バージョンで使用したスキル、以前のポートフォリオの問題点など )を確認することができます。"
             ]
         ],
         "links": {
@@ -179,10 +197,10 @@
         "type": "pc",
         "keywords": [
             "Vue",
-            "Element UI",
+            "SPA",
             "Less",
-            "Media Query",
-            "Axios"
+            "音楽プレーヤー",
+            "Element UI"
         ],
         "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/pc01.png",
         "pics": [
@@ -224,15 +242,17 @@
                 }
             ]
         ],
-        "desc": "SPA (Single Page Application) Player, requesting data by Axios from Local JSON files ( only for persional using )",
+        "desc": "SPA( Single Page Application ) 音楽プレーヤーです。Axiosを利用し、ローカルJSONファイルの音楽データを読み込めて操作します。個人練習専用です。( Only for Personal Using )",
         "function": [
             [
-                "ローカルデータから曲や動画を自動検索して画面上展示します。",
-                "曲、動画の再生ができます。"
+                "曲 / 動画 / アルバムを検索することができます。",
+                "曲 / 動画 / アルバムを分類して、リストまたカードの形で画面上で展示します。",
+                "曲 / 動画 / アルバムを再生することができます。"
             ],
             [
-                "Axiosを通じてローカルJSONファイルから読み込めたデーターを画面上展示します。",
-                "passing data between different components by default props and PubSub.js."
+                "Axiosを通じて、ローカルJSONファイルから読み込めたデーターを画面上展示します。",
+                "この作品のコンポーネントが複雑ではないので、直接に子コンポーネで this.$parent.src に音楽データのパースを代入して、そしてその親コンポーネンでもらった音楽のパースを<audio>や<video>のsrcに代入します。",
+                "Element UIを利用し、Lessでレイアウトを調整します。"
             ]
         ],
         "links": {
@@ -244,8 +264,9 @@
         "id": "static01",
         "type": "pc",
         "keywords": [
-            "jQuery",
+            "HTML5 + CSS3",
             "Bootstrap",
+            "jQuery",
             "Less",
             "Webpack"
         ],
@@ -281,14 +302,17 @@
                 }
             ]
         ],
-        "desc": "a fictional Responsive Static Website, for practicing responsive layout and Bootstrap.",
+        "desc": "架空のWedding Dressサイトです。各端末に応じてページレイアウトを自動調整することができます。これを通じて、Bootstrapレスポンシブレイアウト、そしてjQueryのDOM操作やアニメーションなどを練習しました。",
         "function": [
             [
-                "fictional Website for practicing"
+                "Bootstrapテンプレートを使用してレスポンシブル開発をしました。",
+                "jQueryでJSをカプセル化して、ページスクロールを実現しました。"
             ],
             [
-                "Responsive Layout ( according to Flex Layout + BootStrap's Grid System )",
-                "used Bootstrap's Components"
+                "SCC3のフィルター( Filter )を練習しました。",
+                "Bootstrapのグリッドシステム( Grid System )を練習しました。",
+                "Flexレイアウト( Flex Layout )を練習しました。",
+                "jQueryを通じて、やアニメーションなどを練習しました。"
             ]
         ],
         "links": {
@@ -302,10 +326,9 @@
         "type": "pc",
         "keywords": [
             "HTML5",
+            "正規表現",
             "CSS3",
-            "jQuery",
-            "JavaScript",
-            "Regular Express"
+            "JavaScript"
         ],
         "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
         "pics": [
@@ -330,20 +353,18 @@
                 {
                     "name": "JavaScript",
                     "pic": "javascript.svg"
-                },
-                {
-                    "name": "jQuery",
-                    "pic": "jquery.svg"
                 }
             ]
         ],
-        "desc": "大手のEC(電子商取引)のPCページを模写しようとしましたが、著作権のため、静的な架空のサイトを書きました。",
+        "desc": "最初にレイアウトを練習する時の静的な架空のEC( 電子商取引 )サイトです。これを通じて、HTML＋CSSのレイアウトや、JavaScriptでのDOM操作、また正規表現( RegExp )でのフォームデータ( form data )検証などを練習しました。",
         "function": [
             [
-                "HTML5、CSS3を練習しました。"
+                "静的な架空のEC( 電子商取引 )サイトです。"
             ],
             [
-                "RegExpを利用してFromを検証しました。"
+                "レイアウトを練習しました。",
+                "CSS3の各種セレクタや、Float、Postionなどを練習しました。",
+                "正規表現( RegExp )でフォームデータ( form data )検証します。"
             ]
         ],
         "links": {
@@ -358,6 +379,7 @@
         "keywords": [
             "HTML5",
             "CSS3",
+            "jQuery",
             "JavaScript"
         ],
         "mainPic": "https://pbs.twimg.com/media/E4tBTASUUAU1_C5?format=jpg&name=small",
@@ -379,18 +401,20 @@
             ],
             [
                 {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
+                    "name": "jQuery",
+                    "pic": "jquery.svg"
                 }
             ]
         ],
-        "desc": "大手のEC(電子商取引)のPCページを模写しようとしましたが、著作権のため、静的な架空のサイトを書きました。",
+        "desc": "最初にレイアウトを練習する時の静的な架空のEC( 電子商取引 )サイトです。これを通じて、FloatやPostionなどのHTML＋CSSレイアウト、そしてjQueryでのDOM操作や動的なDOM作成などを練習しました。",
         "function": [
             [
-                "HTML5、CSS3を練習しました。"
+                "静的な架空のEC( 電子商取引 )サイトです。"
             ],
             [
-                "RegExpを利用してFromを検証しました。"
+                "レイアウトを練習しました。",
+                "CSS3の各種セレクタや、Float、Postionなどを練習しました。",
+                "jQueryでの動的なDOM作成や画面への追加を練習しました。"
             ]
         ],
         "links": {
@@ -402,10 +426,9 @@
         "id": "jq01",
         "type": "pc",
         "keywords": [
-            "HTML5",
-            "CSS3",
-            "jQuery",
-            "JavaScript"
+            "HTML5 + CSS3",
+            "ローカルストレージ",
+            "jQuery"
         ],
         "mainPic": "https://pbs.twimg.com/media/EuRg8zRVgAQMwVi?format=png&name=small",
         "pics": [
@@ -418,7 +441,7 @@
                     "pic": "html.svg"
                 },
                 {
-                    "name": "LocalStorage",
+                    "name": "Local Storage",
                     "pic": "html.svg"
                 }
             ],
@@ -430,23 +453,20 @@
             ],
             [
                 {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
-                },
-                {
                     "name": "jQuery",
                     "pic": "jquery.svg"
                 }
             ]
         ],
-        "desc": "Simple TodoList",
+        "desc": "ローカルストレージ( LocalStorage )でブラウザにデータを保存するTodoListです。これを通じて、jQueryでのDOM操作やAPIまたアニメーションなどを練習しました。",
         "function": [
             [
-                "HTML5、CSS3を練習しました。",
-                "jQueryのイベントやアニメーションを練習しました。"
+                "TodoListタスクを追加、保存、削除、編集することができます。"
             ],
             [
-                "LocalStorageを利用して、データを操作します。"
+                "ローカルストレージ( LocalStorage )を利用して、ブラウザにTodoListのデータを保存します。",
+                "HTML5、CSS3を練習しました。",
+                "jQueryのイベントやアニメーションを練習しました。"
             ]
         ],
         "links": {

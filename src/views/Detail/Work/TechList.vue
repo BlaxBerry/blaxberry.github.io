@@ -9,7 +9,7 @@
     <div class="techt-list">
       <v-list subheader v-for="(l, index) in list" :key="index">
         <v-list-item
-          class="py-2 d-flex flex-column flex-sm-row"
+          class="py-2 d-flex flex-column flex-md-row"
           v-for="(item, i) in l"
           :key="i"
         >
@@ -46,7 +46,8 @@ export default {
 <style lang="scss" scoped>
 .techt-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: start;
   .v-list {
     display: flex;
     flex-direction: column;

@@ -65,7 +65,7 @@
             "name": "JavaScript",
             "id": "javascript",
             "pic": "javascript.svg",
-            "desc": "",
+            "desc": "引き続き深く勉強して強化中です。",
             "techTasks": [
                 {
                     "name": "JavaScript",
@@ -159,7 +159,7 @@
             "name": "jQuery",
             "id": "jquery",
             "pic": "jquery.svg",
-            "desc": "",
+            "desc": "jQueryで開発することができます。",
             "techTasks": [
                 {
                     "name": "jQuery",
@@ -167,7 +167,7 @@
                         "jquery.svg"
                     ],
                     "desc": [
-                        "jQueryでDOM操作、Animateなどでインタラクティブにすることができます。",
+                        "jQueryでDOM操作、アニメーションなどでインタラクティブにすることができます。",
                         "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"
                     ]
                 }
@@ -180,7 +180,7 @@
             "name": "Vue",
             "id": "vue",
             "pic": "vue.svg",
-            "desc": "",
+            "desc": "色々な SPA Web Appの開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
             "techTasks": [
                 {
                     "name": "Vue-Cli",
@@ -239,7 +239,7 @@
             "name": "React",
             "id": "react",
             "pic": "react.svg",
-            "desc": "",
+            "desc": "引き続き深く勉強して強化中です。",
             "techTasks": [
                 {
                     "name": "Create React App",
@@ -384,7 +384,7 @@
             "name": "MySQL",
             "id": "mysql",
             "pic": "mysql.svg",
-            "desc": "",
+            "desc": "MySQLを Node.js・Express.js などに接続して、サーバサイト開発することが出来ます。ブログ管理システムなどの SSR や CSR 開発を通じて練習しました。",
             "techTasks": [
                 {
                     "name": "MySQL",
@@ -393,7 +393,7 @@
                     ],
                     "desc": [
                         "基礎SQL言語を理解し、データの管理操作ができます。",
-                        "MySQLWorkBenchツールが使えます。"
+                        "MySQL WorkBenchツールが使えます。"
                     ]
                 },
                 {
@@ -402,7 +402,8 @@
                         "nodejs.svg"
                     ],
                     "desc": [
-                        "Node.jsに接続してデータを操作することが出来ます。"
+                        "Node.jsに接続してデータを操作することが出来ます。",
+                        "SSR や CSR 開発することが出来ます"
                     ]
                 },
                 {
@@ -423,7 +424,7 @@
             "name": "MongoDB",
             "id": "mongodb",
             "pic": "mongodb.svg",
-            "desc": "",
+            "desc": "MongoDBを Node.js・Express.js などに接続して、サーバサイト開発することが出来ます。ブログ管理システムなどの SSR や CSR 開発を通じて練習しました。",
             "techTasks": [
                 {
                     "name": "MongoDB",
@@ -441,7 +442,8 @@
                         "nodejs.svg"
                     ],
                     "desc": [
-                        "Node.jsに接続してデータを操作することが出来ます。"
+                        "Node.jsに接続してデータを操作することが出来ます。",
+                        "SSR や CSR 開発することが出来ます"
                     ]
                 },
                 {
@@ -522,7 +524,7 @@
             "name": "Bootstrap",
             "id": "bootstrap",
             "pic": "bootstrap.svg",
-            "desc": "",
+            "desc": "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
             "techTasks": [
                 {
                     "name": "Bootstrap",
@@ -530,7 +532,7 @@
                         "bootstrap.svg"
                     ],
                     "desc": [
-                        ""
+                        "Bootstrapのグリッドシステム( Grid System )を使用してレスポンシブル開発することができます。"
                     ]
                 }
             ],
