@@ -1,7 +1,5 @@
 <template>
   <div id="skills" class="pb-15">
-
-
     <v-container>
       <!-- title -->
       <Title>
@@ -24,12 +22,16 @@
 
       <!-- 1. languages -->
       <SkillCards :list="lang_list"></SkillCards>
-      <!-- 2. frameworks -->
+      <!-- 2. style -->
+      <SkillCards :list="style_list"></SkillCards>
+      <!-- 3. frameworks -->
       <SkillCards :list="framework_list"></SkillCards>
-      <!-- 3. datadase & server -->
-      <SkillCards :list="backend_list"></SkillCards>
       <!-- 4. others -->
       <SkillCards :list="others_list"></SkillCards>
+      <!-- 5. server -->
+      <SkillCards :list="server_list"></SkillCards>
+      <!-- 6. datadase  -->
+      <SkillCards :list="db_list"></SkillCards>
     </v-container>
   </div>
 </template>
@@ -53,10 +55,14 @@ export default {
 
   data() {
     return {
+      // 分类skills
       lang_list: [],
+      style_list: [],
       framework_list: [],
-      backend_list: [],
+      server_list: [],
+      db_list: [],
       others_list: [],
+
       SmoothScrollAnchors: [
         // SKills
         { name: "Skills", anchorID: "home-skills", icon: "mdi-pickaxe" },
@@ -69,10 +75,93 @@ export default {
   created() {
     // get all skill list
     getAllSkillList.then((res) => {
-      this.lang_list = res.data[0];
-      this.framework_list = res.data[1];
-      this.backend_list = res.data[2];
-      this.others_list = res.data[3];
+      // 1. all types of Skills
+      let allTypes = [];
+      res.data.forEach((skill) => {
+        skill.techTasks.forEach((type) => {
+          allTypes.push(type.type);
+        });
+      });
+      allTypes = Array.from(new Set(allTypes));
+      // console.log("types", allTypes);
+
+      // 2. all tech stacks pics
+      let allSkill = [];
+      res.data.forEach((skill) => {
+        skill.techTasks.forEach((item) => {
+          item.pic.forEach((pic) => {
+            allSkill.push({
+              name: pic.replace(".svg", ""),
+              pic: pic,
+              id: pic.replace(".svg", ""),
+              type: item.type,
+              // 若该技术没有详情信息，则挑跳转到相关技术画面
+              similarity: skill.id,
+            });
+          });
+        });
+      });
+      // console.log("all",allSkill);
+
+      // 3. 分类
+      // according to different types
+      let lang_list = [];
+      let style_list = [];
+      let framework_list = [];
+      let server_list = [];
+      let db_list = [];
+      let others_list = [];
+      allSkill.map((item) => {
+        switch (item.type) {
+          case "lang":
+            lang_list.push(item);
+            break;
+          case "style":
+            style_list.push(item);
+            break;
+          case "framework":
+            framework_list.push(item);
+            break;
+          case "server":
+            server_list.push(item);
+            break;
+          case "db":
+            db_list.push(item);
+            break;
+          case "others":
+            others_list.push(item);
+            break;
+          default:
+            break;
+        }
+      });
+
+      // 4 去重复 hash unique
+      function unique(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i].name === arr[j].name) {
+              arr.splice(i, 1);
+              j--;
+            }
+          }
+        }
+      }
+      unique(lang_list);
+      unique(style_list);
+      unique(framework_list);
+      unique(server_list);
+      unique(db_list);
+      unique(others_list);
+
+      // 5. 赋值给数据模型
+      this.lang_list = lang_list;
+      this.style_list = style_list;
+      this.framework_list = framework_list;
+      this.server_list = server_list;
+      this.db_list = db_list;
+      this.others_list = others_list;
+      console.log(this.others_list);
     });
   },
 

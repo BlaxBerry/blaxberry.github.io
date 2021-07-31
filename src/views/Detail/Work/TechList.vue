@@ -16,7 +16,7 @@
           <v-card class="pa-1">
             <v-img
               :src="require(`@/assets/images/${item.pic}`)"
-              lazy-src="@/assets/images/_lazyloading.gif"
+              lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
               max-height="60"
               max-width="60"
             ></v-img>

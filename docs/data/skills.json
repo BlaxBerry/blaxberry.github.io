@@ -1,631 +1,631 @@
 [
-    [
-        {
-            "name": "HTML",
-            "id": "html",
-            "pic": "html.svg",
-            "desc": "最初は静的なページから知り始めましたが、 大手のウェブサイトページを模写した後、架空サイトや独自開発しました。Ajax技術やサーバーやデータベース関連の知識などを日々頑張っています。",
-            "techTasks": [
-                {
-                    "name": "HTML5",
-                    "pic": [
-                        "html.svg"
-                    ],
-                    "desc": [
-                        "HTML5の新しいTagsを理解します。",
-                        "LocalStoragewを理解します。",
-                        "Canvasを練習したことがあります。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "CSS",
-            "id": "css",
-            "pic": "css.svg",
-            "desc": "",
-            "techTasks": [
-                {
-                    "name": "CSS3",
-                    "pic": [
-                        "css.svg"
-                    ],
-                    "desc": [
-                        "MediaQueryを利用し、レスポンシブレイアウト開発ができます。"
-                    ]
-                },
-                {
-                    "name": "CSS拡張メタ言語",
-                    "pic": [
-                        "sass.svg",
-                        "less.svg"
-                    ],
-                    "desc": [
-                        "CSS拡張メタ言語 Scss/Sass、Lessを利用して開発することができます。"
-                    ]
-                },
-                {
-                    "name": "Bootstrap",
-                    "pic": [
-                        "bootstrap.svg"
-                    ],
-                    "desc": [
-                        "Bootstrapを利用し、レスポンシブレイアウト開発することができます。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "JavaScript",
-            "id": "javascript",
-            "pic": "javascript.svg",
-            "desc": "引き続き深く勉強して強化中です。",
-            "techTasks": [
-                {
-                    "name": "JavaScript",
-                    "pic": [
-                        "javascript.svg"
-                    ],
-                    "desc": [
-                        "DOM、BOM操作が出来ます。",
-                        "JSのJSオブジェクト指向を理解します。",
-                        "XMLHTTPRequestを通じてHTTP通信をすることができます。",
-                        "ES6+を理解します。",
-                        "モジュール開発が出来ます。",
-                        "async/await、Promiseを理解します。"
-                    ]
-                },
-                {
-                    "name": "TypeScript",
-                    "pic": [
-                        "typescript.svg"
-                    ],
-                    "desc": [
-                        "ヘビゲーム(Greedy Snake game)の開発を通じてTSを練習しました。"
-                    ]
-                },
-                {
-                    "name": "JSON",
-                    "pic": [
-                        "json.svg"
-                    ],
-                    "desc": [
-                        "JSON(JavaScript Object Notation)というデータ交換フォーマットを理解します。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "TypeScript",
-            "id": "typescript",
-            "pic": "typescript.svg",
-            "desc": "ヘビゲームの開発を通じてTSを練習しました。",
-            "techTasks": [
-                {
-                    "name": "TypeScript",
-                    "pic": [
-                        "typescript.svg"
-                    ],
-                    "desc": [
-                        "ヘビゲーム(Greedy Snake game)の開発を通じてTSを練習しました。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "Ruby",
-            "id": "ruby",
-            "pic": "ruby.svg",
-            "desc": "以前 Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
-            "techTasks": [
-                {
-                    "name": "Ruby",
-                    "pic": [
-                        "ruby.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                },
-                {
-                    "name": "Ruby on Rails",
-                    "pic": [
-                        "rails.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        }
-    ],
-    [
-        {
-            "name": "jQuery",
-            "id": "jquery",
-            "pic": "jquery.svg",
-            "desc": "jQueryで開発することができます。",
-            "techTasks": [
-                {
-                    "name": "jQuery",
-                    "pic": [
-                        "jquery.svg"
-                    ],
-                    "desc": [
-                        "jQueryでDOM操作、アニメーションなどでインタラクティブにすることができます。",
-                        "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "Vue",
-            "id": "vue",
-            "pic": "vue.svg",
-            "desc": "色々な SPA Web Appの開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
-            "techTasks": [
-                {
-                    "name": "Vue-Cli",
-                    "pic": [
-                        "vue.svg",
-                        "vue-vuetify.svg",
-                        "vue-elementui.svg"
-                    ],
-                    "desc": [
-                        "Vuetify、ElementUI、VantUIなどのUIフレームワークを利用し、Vue-Cliで開発することがきます。",
-                        "CSSプリプロセッサ Scss、Lessを利用して開発することができます。"
-                    ]
-                },
-                {
-                    "name": "Vue-Router",
-                    "pic": [
-                        "vue.svg"
-                    ],
-                    "desc": [
-                        "Vue-Routerを使って、SPAシングルページアプリケーションを作成するできます。"
-                    ]
-                },
-                {
-                    "name": "Vue-X",
-                    "pic": [
-                        "vue-vuex.svg"
-                    ],
-                    "desc": [
-                        "Vuexは勉強して強化中です。"
-                    ]
-                },
-                {
-                    "name": "Nuxt",
-                    "pic": [
-                        "vue-nuxt.svg"
-                    ],
-                    "desc": [
-                        "Nuxtは勉強中です。"
-                    ]
-                },
-                {
-                    "name": "Axios",
-                    "pic": [
-                        "axios.svg"
-                    ],
-                    "desc": [
-                        "Axiosを利用し、非同期にHTTP通信することができます。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "React",
-            "id": "react",
-            "pic": "react.svg",
-            "desc": "引き続き深く勉強して強化中です。",
-            "techTasks": [
-                {
-                    "name": "Create React App",
-                    "pic": [
-                        "react-ant-design.svg",
-                        "react-materialui.svg"
-                    ],
-                    "desc": [
-                        "MaterialUI、AntDesigなどのUIフレームワークを利用し、Create React Appで開発することがきます。",
-                        "CSSプリプロセッサ Scss、Lessを利用して開発することができます。"
-                    ]
-                },
-                {
-                    "name": "React-Router-Dom",
-                    "pic": [
-                        "react.svg"
-                    ],
-                    "desc": [
-                        "React-Router-Domを使って、SPAシングルページアプリケーション作成ができます。"
-                    ]
-                },
-                {
-                    "name": "Redux",
-                    "pic": [
-                        "redux.svg"
-                    ],
-                    "desc": [
-                        "Reduxは強化中です。"
-                    ]
-                },
-                {
-                    "name": "Axios",
-                    "pic": [
-                        "axios.svg"
-                    ],
-                    "desc": [
-                        "Axiosを利用し、非同期にHTTP通信することができます。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "Webpack",
-            "id": "webpack",
-            "pic": "webpack.svg",
-            "desc": "",
-            "techTasks": [
-                {
-                    "name": "Webpack",
-                    "pic": [
-                        "webpack.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        }
-    ],
-    [
-        {
-            "name": "Node.js",
-            "id": "nodejs",
-            "pic": "nodejs.svg",
-            "desc": "以前の開発は主にフロントエンドで jQueryAjax や AxiosでHTTP通信してダータリクエストしましたが、それだけでは足りないことを認識し、Node.jsからサーバを勉強しはじめました。",
-            "techTasks": [
-                {
-                    "name": "Express.js",
-                    "pic": [
-                        "nodejs.svg"
-                    ],
-                    "desc": [
-                        "CommonJSのモジュール開発を理解します。",
-                        "Express.jsを利用し、SSR(Server Side Rending) や CSR(Client Side Rendering）Web開発できます。",
-                        "Art-Templateなどのテンプレートエンジンを利用して開発することが出来ます。",
-                        "HTTP通信の基礎を勉強しました。Cookie、Sessionの基礎を理解します。"
-                    ]
-                },
-                {
-                    "name": "Database",
-                    "pic": [
-                        "mysql.svg",
-                        "mongodb.svg"
-                    ],
-                    "desc": [
-                        "MongoDB、MySQL、PostgreSQLに接続し、APIサーバー開発ができます。"
-                    ]
-                },
-                {
-                    "name": "npm",
-                    "pic": [
-                        "yarn.svg",
-                        "npm.svg",
-                        "gulp.svg"
-                    ],
-                    "desc": [
-                        "yarn、npm、gulpなどのパッケージ管理ツールが使えます。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "Rails",
-            "id": "rails",
-            "pic": "rails.svg",
-            "desc": "Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
-            "techTasks": [
-                {
-                    "name": "Ruby on Rails",
-                    "pic": [
-                        "rails.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                },
-                {
-                    "name": "Database",
-                    "pic": [
-                        "mysql.svg",
-                        "mongodb.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "MySQL",
-            "id": "mysql",
-            "pic": "mysql.svg",
-            "desc": "MySQLを Node.js・Express.js などに接続して、サーバサイト開発することが出来ます。ブログ管理システムなどの SSR や CSR 開発を通じて練習しました。",
-            "techTasks": [
-                {
-                    "name": "MySQL",
-                    "pic": [
-                        "mysql.svg"
-                    ],
-                    "desc": [
-                        "基礎SQL言語を理解し、データの管理操作ができます。",
-                        "MySQL WorkBenchツールが使えます。"
-                    ]
-                },
-                {
-                    "name": "Node.js",
-                    "pic": [
-                        "nodejs.svg"
-                    ],
-                    "desc": [
-                        "Node.jsに接続してデータを操作することが出来ます。",
-                        "SSR や CSR 開発することが出来ます"
-                    ]
-                },
-                {
-                    "name": "Ruby on Rails",
-                    "pic": [
-                        "rails.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "MongoDB",
-            "id": "mongodb",
-            "pic": "mongodb.svg",
-            "desc": "MongoDBを Node.js・Express.js などに接続して、サーバサイト開発することが出来ます。ブログ管理システムなどの SSR や CSR 開発を通じて練習しました。",
-            "techTasks": [
-                {
-                    "name": "MongoDB",
-                    "pic": [
-                        "mongodb.svg"
-                    ],
-                    "desc": [
-                        "基礎的なデータを操作ができます。",
-                        "MongoDB Compasshツールが使えます。"
-                    ]
-                },
-                {
-                    "name": "Node.js",
-                    "pic": [
-                        "nodejs.svg"
-                    ],
-                    "desc": [
-                        "Node.jsに接続してデータを操作することが出来ます。",
-                        "SSR や CSR 開発することが出来ます"
-                    ]
-                },
-                {
-                    "name": "Ruby on Rails",
-                    "pic": [
-                        "rails.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        }
-    ],
-    [
-        {
-            "name": "Scss",
-            "id": "scss",
-            "pic": "sass.svg",
-            "desc": "",
-            "techTasks": [
-                {
-                    "name": "Sass",
-                    "pic": [
-                        "sass.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                },
-                {
-                    "name": "Less",
-                    "pic": [
-                        "less.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "Less",
-            "id": "less",
-            "pic": "less.svg",
-            "desc": "",
-            "techTasks": [
-                {
-                    "name": "Less",
-                    "pic": [
-                        "less.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                },
-                {
-                    "name": "Sass",
-                    "pic": [
-                        "sass.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "Bootstrap",
-            "id": "bootstrap",
-            "pic": "bootstrap.svg",
-            "desc": "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
-            "techTasks": [
-                {
-                    "name": "Bootstrap",
-                    "pic": [
-                        "bootstrap.svg"
-                    ],
-                    "desc": [
-                        "Bootstrapのグリッドシステム( Grid System )を使用してレスポンシブル開発することができます。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "Git",
-            "id": "git",
-            "pic": "git.svg",
-            "desc": "",
-            "techTasks": [
-                {
-                    "name": "Git",
-                    "pic": [
-                        "git.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                },
-                {
-                    "name": "Github",
-                    "pic": [
-                        "github.svg"
-                    ],
-                    "desc": [
-                        ""
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "npm",
-            "id": "npm",
-            "pic": "npm.svg",
-            "desc": "",
-            "techTasks": [
-                {
-                    "name": "npm",
-                    "pic": [
-                        "npm.svg"
-                    ],
-                    "desc": [
-                        "パッケージ管理ツールnpmが使えます。"
-                    ]
-                },
-                {
-                    "name": "yarn",
-                    "pic": [
-                        "yarn.svg"
-                    ],
-                    "desc": [
-                        "パッケージ管理ツールyarnが使えます。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        },
-        {
-            "name": "yarn",
-            "id": "yarn",
-            "pic": "yarn.svg",
-            "desc": "",
-            "techTasks": [
-                {
-                    "name": "yarn",
-                    "pic": [
-                        "yarn.svg"
-                    ],
-                    "desc": [
-                        "パッケージ管理ツールyarnが使えます。"
-                    ]
-                },
-                {
-                    "name": "npm",
-                    "pic": [
-                        "npm.svg"
-                    ],
-                    "desc": [
-                        "パッケージ管理ツールnpmが使えます。"
-                    ]
-                }
-            ],
-            "works": [
-                {}
-            ]
-        }
-    ]
+    {
+        "name": "HTML",
+        "id": "html",
+        "pic": "html.svg",
+        "desc": "最初は静的なページから知り始めましたが、 大手のウェブサイトページを模写した後、架空サイトや独自開発しました。Ajax技術やサーバーやデータベース関連の知識などを日々頑張っています。",
+        "techTasks": [
+            {
+                "name": "HTML5",
+                "type": "lang",
+                "pic": [
+                    "html.svg"
+                ],
+                "desc": [
+                    "HTML5の新しいTagsを理解します。",
+                    "LocalStoragewを理解します。",
+                    "Canvasを練習したことがあります。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "CSS",
+        "id": "css",
+        "pic": "css.svg",
+        "desc": "",
+        "techTasks": [
+            {
+                "name": "CSS3",
+                "type": "lang",
+                "pic": [
+                    "css.svg"
+                ],
+                "desc": [
+                    "MediaQueryを利用し、レスポンシブレイアウト開発ができます。"
+                ]
+            },
+            {
+                "name": "CSS拡張メタ言語",
+                "type": "style",
+                "pic": [
+                    "sass.svg",
+                    "less.svg"
+                ],
+                "desc": [
+                    "CSS拡張メタ言語 Scss/Sass、Lessを利用して開発することができます。"
+                ]
+            },
+            {
+                "name": "Bootstrap",
+                "type": "style",
+                "pic": [
+                    "bootstrap.svg"
+                ],
+                "desc": [
+                    "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
+                    "Bootstrapのグリッドシステム( Grid System )が使えます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "JavaScript",
+        "id": "javascript",
+        "pic": "javascript.svg",
+        "desc": "引き続き深く勉強して強化中です。",
+        "techTasks": [
+            {
+                "name": "JavaScript",
+                "type": "lang",
+                "pic": [
+                    "javascript.svg"
+                ],
+                "desc": [
+                    "DOM、BOM操作が出来ます。",
+                    "JSのJSオブジェクト指向を理解します。",
+                    "XMLHTTPRequestを通じてHTTP通信をすることができます。",
+                    "ES6+を理解します。",
+                    "モジュール開発が出来ます。",
+                    "async/await、Promiseを理解します。"
+                ]
+            },
+            {
+                "name": "TypeScript",
+                "type": "lang",
+                "pic": [
+                    "typescript.svg"
+                ],
+                "desc": [
+                    "ヘビゲーム(Greedy Snake game)の開発を通じてTSを練習しました。"
+                ]
+            },
+            {
+                "name": "JSON",
+                "type": "others",
+                "pic": [
+                    "json.svg"
+                ],
+                "desc": [
+                    "JSON(JavaScript Object Notation)というデータ交換フォーマットを理解します。",
+                    "JSON.stringify()・JSON.parse()で文字列とJSONを変更することができます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "TypeScript",
+        "id": "typescript",
+        "pic": "typescript.svg",
+        "desc": "ヘビゲームの開発を通じてTSを練習しました。",
+        "techTasks": [
+            {
+                "name": "TypeScript",
+                "type":"lang",
+                "pic": [
+                    "typescript.svg"
+                ],
+                "desc": [
+                    "ヘビゲーム(Greedy Snake game)の開発を通じてTSを練習しました。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Ruby",
+        "id": "ruby",
+        "pic": "ruby.svg",
+        "desc": "以前 Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
+        "techTasks": [
+            {
+                "name": "Ruby",
+                "type":"lang",
+                "pic": [
+                    "ruby.svg"
+                ],
+                "desc": [
+                    "Rubyの基礎知識( 文字列、配列や繰り返し処理、ハッシュやシンボルなど )を勉強しました。",
+                    "オブジェクト指向のクラス( Class )の作成を理解します。"
+                ]
+            },
+            {
+                "name": "Ruby on Rails",
+                "type":"server",
+                "pic": [
+                    "rails.svg"
+                ],
+                "desc": [
+                   "RailsのMVC( モデルModel、ビューView、コントローラーController )を理解します。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "jQuery",
+        "id": "jquery",
+        "pic": "jquery.svg",
+        "desc": "jQueryで開発することができます。",
+        "techTasks": [
+            {
+                "name": "jQuery",
+                "type":"framework",
+                "pic": [
+                    "jquery.svg"
+                ],
+                "desc": [
+                    "jQueryでDOM操作、アニメーションなどでインタラクティブにすることができます。",
+                    "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Vue",
+        "id": "vue",
+        "pic": "vue.svg",
+        "desc": "色々な SPA Web Appの開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
+        "techTasks": [
+            {
+                "name": "Vue-Cli",
+                "type":"framework",
+                "pic": [
+                    "vue.svg",
+                    "vue-vuetify.svg",
+                    "vue-elementui.svg"
+                ],
+                "desc": [
+                    "Vue-Cliで開発することがきます。",
+                    "Vuetify、Element-UI、Vant-UI、Nut-UI などのUIフレームワークを利用することができます。",
+                    "CSSプリプロセッサ( Scss、Less )を導入して開発することができます。"
+                ]
+            },
+            {
+                "name": "Vue-Router",
+                "type":"framework",
+                "pic": [
+                    "vue.svg"
+                ],
+                "desc": [
+                    "Vue-Routerを使って、SPAシングルページアプリケーションを作成することができます。"
+                ]
+            },
+            {
+                "name": "Vue-X",
+                "type":"framework",
+                "pic": [
+                    "vue-vuex.svg"
+                ],
+                "desc": [
+                    "Vuexは勉強して強化中です。"
+                ]
+            },
+            {
+                "name": "Nuxt",
+                "type":"framework",
+                "pic": [
+                    "vue-nuxt.svg"
+                ],
+                "desc": [
+                    "Nuxtは勉強中です。"
+                ]
+            },
+            {
+                "name": "Axios",
+                "type":"others",
+                "pic": [
+                    "axios.svg"
+                ],
+                "desc": [
+                    "Axiosを利用し、非同期にHTTP通信することができます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "React",
+        "id": "react",
+        "pic": "react.svg",
+        "desc": "引き続き深く勉強して強化中です。",
+        "techTasks": [
+            {
+                "name": "Create React App",
+                "type":"framework",
+                "pic": [
+                    "react-ant-design.svg",
+                    "react-materialui.svg"
+                ],
+                "desc": [
+                    "Create React Appで開発することがきます。",
+                    "Material-UI、AntDesig などのUIフレームワークが使えます。",
+                    "CSSプリプロセッサ( Scss、Less )を導入して開発することができます。"
+                ]
+            },
+            {
+                "name": "React-Router-Dom",
+                "type":"framework",
+                "pic": [
+                    "react.svg"
+                ],
+                "desc": [
+                    "React-Router-Domを使って、SPAシングルページアプリケーションを作成することができます。"
+                ]
+            },
+            {
+                "name": "Redux",
+                "type":"others",
+                "pic": [
+                    "redux.svg"
+                ],
+                "desc": [
+                    "Reduxは強化中です。"
+                ]
+            },
+            {
+                "name": "Axios",
+                "type":"others",
+                "pic": [
+                    "axios.svg"
+                ],
+                "desc": [
+                    "Axiosを利用し、非同期にHTTP通信することができます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Webpack",
+        "id": "webpack",
+        "pic": "webpack.svg",
+        "desc": "",
+        "techTasks": [
+            {
+                "name": "Webpack",
+                "type":"others",
+                "pic": [
+                    "webpack.svg"
+                ],
+                "desc": [
+                    ""
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Node.js",
+        "id": "nodejs",
+        "pic": "nodejs.svg",
+        "desc": "以前の開発は主にフロントエンドで jQueryAjax や AxiosでHTTP通信してダータリクエストしましたが、それだけでは足りないことを認識し、Node.jsからサーバを勉強しはじめました。",
+        "techTasks": [
+            {
+                "name": "Express.js",
+                "type":"server",
+                "pic": [
+                    "nodejs.svg"
+                ],
+                "desc": [
+                    "CommonJSのモジュール開発を理解します。",
+                    "Express.jsを利用し、SSR(Server Side Rending) や CSR(Client Side Rendering）Web開発できます。",
+                    "Art-Templateなどのテンプレートエンジンを利用して開発することが出来ます。",
+                    "HTTP通信の基礎を勉強しました。Cookie、Sessionの基礎を理解します。"
+                ]
+            },
+            {
+                "name": "Database",
+                "type":"db",
+                "pic": [
+                    "mysql.svg",
+                    "mongodb.svg"
+                ],
+                "desc": [
+                    "MongoDB、MySQL、PostgreSQLに接続し、APIサーバー開発ができます。"
+                ]
+            },
+            {
+                "name": "パッケージ管理ツール",
+                "type":"others",
+                "pic": [
+                    "yarn.svg",
+                    "gulp.svg"
+                ],
+                "desc": [
+                    "yarn、npm、gulpなどのパッケージ管理ツールが使えます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Rails",
+        "id": "rails",
+        "pic": "rails.svg",
+        "desc": "Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
+        "techTasks": [
+            {
+                "name": "Ruby on Rails",
+                "type":"server",
+                "pic": [
+                    "rails.svg"
+                ],
+                "desc": [
+                    "RailsのMVC( モデルModel、ビューView、コントローラーController )を理解します。"
+                ]
+            },
+            {
+                "name": "Database",
+                "type":"db",
+                "pic": [
+                    "mysql.svg",
+                    "mongodb.svg"
+                ],
+                "desc": [
+                    ""
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "MySQL",
+        "id": "mysql",
+        "pic": "mysql.svg",
+        "desc": "MySQLを Node.js・Express.js などに接続して、サーバサイト開発することが出来ます。ブログ管理システムなどの SSR や CSR 開発を通じて練習しました。",
+        "techTasks": [
+            {
+                "name": "MySQL",
+                "type":"db",
+                "pic": [
+                    "mysql.svg"
+                ],
+                "desc": [
+                    "基礎SQL言語を理解し、データの管理操作ができます。",
+                    "MySQL WorkBenchツールが使えます。"
+                ]
+            },
+            {
+                "name": "Node.js",
+                "type":"server",
+                "pic": [
+                    "nodejs.svg"
+                ],
+                "desc": [
+                    "Node.jsに接続してデータを操作することが出来ます。",
+                    "SSR や CSR 開発することが出来ます"
+                ]
+            },
+            {
+                "name": "Ruby on Rails",
+                "type":"server",
+                "pic": [
+                    "rails.svg"
+                ],
+                "desc": [
+                    ""
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "MongoDB",
+        "id": "mongodb",
+        "pic": "mongodb.svg",
+        "desc": "MongoDBを Node.js・Express.js などに接続して、サーバサイト開発することが出来ます。ブログ管理システムなどの SSR や CSR 開発を通じて練習しました。",
+        "techTasks": [
+            {
+                "name": "MongoDB",
+                "type":"db",
+                "pic": [
+                    "mongodb.svg"
+                ],
+                "desc": [
+                    "基礎的なデータを操作ができます。",
+                    "MongoDB Compasshツールが使えます。"
+                ]
+            },
+            {
+                "name": "Node.js",
+                "type":"server",
+                "pic": [
+                    "nodejs.svg"
+                ],
+                "desc": [
+                    "Node.jsに接続してデータを操作することが出来ます。",
+                    "SSR や CSR 開発することが出来ます"
+                ]
+            },
+            {
+                "name": "Ruby on Rails",
+                "type":"server",
+                "pic": [
+                    "rails.svg"
+                ],
+                "desc": [
+                    ""
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Scss",
+        "id": "scss",
+        "pic": "sass.svg",
+        "desc": "",
+        "techTasks": [
+            {
+                "name": "Sass",
+                "type":"style",
+                "pic": [
+                    "sass.svg"
+                ],
+                "desc": [
+                    ""
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Less",
+        "id": "less",
+        "pic": "less.svg",
+        "desc": "",
+        "techTasks": [
+            {
+                "name": "Less",
+                "type":"style",
+                "pic": [
+                    "less.svg"
+                ],
+                "desc": [
+                    ""
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Bootstrap",
+        "id": "bootstrap",
+        "pic": "bootstrap.svg",
+        "desc": "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
+        "techTasks": [
+            {
+                "name": "Bootstrap",
+                "type":"style",
+                "pic": [
+                    "bootstrap.svg"
+                ],
+                "desc": [
+                    "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
+                    "Bootstrapのグリッドシステム( Grid System )が使えます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Git",
+        "id": "git",
+        "pic": "git.svg",
+        "desc": "",
+        "techTasks": [
+            {
+                "name": "Git",
+                "type":"others",
+                "pic": [
+                    "git.svg"
+                ],
+                "desc": [
+                    "Gitを利用してバージョン管理ができます。"
+                ]
+            },
+            {
+                "name": "Github",
+                "type":"others",
+                "pic": [
+                    "github.svg"
+                ],
+                "desc": [
+                    "作成したウェブアプリ( Web App )を GitHub Pagesで公開することができます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "npm",
+        "id": "npm",
+        "pic": "npm.svg",
+        "desc": "",
+        "techTasks": [
+            {
+                "name": "npm",
+                "type":"others",
+                "pic": [
+                    "npm.svg"
+                ],
+                "desc": [
+                    "パッケージ管理ツールnpmが使えます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "yarn",
+        "id": "yarn",
+        "pic": "yarn.svg",
+        "desc": "",
+        "techTasks": [
+            {
+                "name": "yarn",
+                "type":"others",
+                "pic": [
+                    "yarn.svg"
+                ],
+                "desc": [
+                    "パッケージ管理ツールyarnが使えます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    }
 ]

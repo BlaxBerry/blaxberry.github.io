@@ -25,7 +25,9 @@
               <b :class="index == 0 ? 'text-h6 pl-2 red--text' : 'pl-2'">
                 {{ version.version }}
               </b>
-              <small class="text-right pr-2 primary--text">{{ version.time }}</small>
+              <small class="text-right pr-2 primary--text">{{
+                version.time
+              }}</small>
             </v-expansion-panel-header>
             <v-expansion-panel-content class="pl-4">
               <!-- 2.2. tech stacks -->
@@ -39,7 +41,7 @@
                   <v-card class="pa-1">
                     <v-img
                       :src="require(`@/assets/images/${tech.icon}`)"
-                      lazy-src="@/assets/images/_lazyloading.gif"
+                      lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
                       max-height="60"
                       max-width="60"
                     ></v-img>

@@ -8,7 +8,7 @@
               v-for="(pic, index) in item.pic"
               :key="index"
               :src="require(`@/assets/images/${pic}`)"
-              lazy-src="@/assets/images/_lazyloading.gif"
+              lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
               max-width="50"
               class="mx-1"
             ></v-img>

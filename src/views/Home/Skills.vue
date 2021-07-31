@@ -57,13 +57,7 @@ export default {
   created() {
     // get all skill list
     getAllSkillList.then((res) => {
-      this.list = [
-        ...res.data[0],
-        ...res.data[1],
-        ...res.data[2],
-        ...res.data[3],
-      ];
-      console.log(this.list);
+      this.list = res.data;
     });
   },
 };

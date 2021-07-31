@@ -14,7 +14,6 @@
       <!-- 2. works -->
 
       <!-- 3. study -->
-
     </v-container>
   </div>
 </template>
@@ -34,13 +33,11 @@ export default {
   components: {
     // mian components
     Description,
-    TechList
+    TechList,
   },
 
   data() {
     return {
-      // route query
-      urlQuery: "",
       // all skill list from data
       allSkillList: [],
       // the skill
@@ -67,23 +64,24 @@ export default {
 
   methods: {
     init() {
-      // 1. get the name of skill in detail page at the beginning
-      this.urlQuery = this.$route.query.name;
-      console.log(this.urlQuery);
-
-      // 2. get all skill list
+      // 1. get all skill list
       getAllSkillList.then((res) => {
-        this.allSkillList = [
-          ...res.data[0],
-          ...res.data[1],
-          ...res.data[2],
-          ...res.data[3],
-        ];
-        // 3. find the skill
-        this.skill = this.allSkillList.find((item) => {
-          return item.id == this.urlQuery;
+        this.allSkillList = res.data;
+
+        // 2. get the name + similarit from URL query
+        let name = this.$route.query.name;
+        let similarity = this.$route.query.similarity;
+
+        let detail = this.allSkillList.find((item) => {
+          return item.id == name;
         });
-        console.log(this.skill);
+
+        if (!detail) {
+          detail = this.allSkillList.find((item) => {
+            return item.id == similarity;
+          });
+        }
+        this.skill = detail;
       });
     },
   },

@@ -7,13 +7,13 @@
       <!-- :src="require(`@/assets/images/${pic}`)" -->
       <v-img
         :src="require(`@/assets/images/${pic}`)"
-        lazy-src="@/assets/images/_lazyloading.gif"
+        lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
         max-width="150"
       ></v-img>
       <div class="pa-5">
-        <v-card-title class="text-h4 font-weight-black">{{
-          name
-        }}</v-card-title>
+        <v-card-title class="text-h4 font-weight-black">
+          {{ name }} 関連スキル
+        </v-card-title>
         <v-card-text>{{ desc }}</v-card-text>
       </div>
     </v-card>
