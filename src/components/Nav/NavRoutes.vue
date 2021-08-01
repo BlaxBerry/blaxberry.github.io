@@ -28,7 +28,7 @@
           :key="index"
         >
           <v-list-item-title>
-            <v-btn fab :to="item.to" elevation="5" color="secondary">
+            <v-btn fab :to="item.to" elevation="5" color="secondary" dark>
               <v-icon large>{{ item.icon }}</v-icon>
             </v-btn>
           </v-list-item-title>

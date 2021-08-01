@@ -2,7 +2,7 @@
   <div id="home-aboutme" class="full-page-session">
     <!-- title -->
     <Title>
-      <h1 slot="title1" style="fontSize:4rem">Welcome</h1>
+      <h1 slot="title1" style="fontSize:4rem">Wellcome</h1>
     </Title>
 
     <v-container>
@@ -38,8 +38,10 @@
             </v-btn>
           </div>
           <!-- infomation -->
-          <v-card-text class="pt-0">
-            I am Chen An enthusiastic guy dreaming to be a Full Stack Web Enginner. Learning and Fighting everyday.
+          <v-card-text class="">
+            Hello, wellcome to my Portfolio.<br>
+            I am Chen, an enthusiastic guy fighting for being Full Stack Web Enginner.
+            Hope you will know more about me here. 
           </v-card-text>
           <!-- to profile page -->
           <v-btn block to="/profile">About Me</v-btn>
@@ -122,6 +124,8 @@ export default {
     .v-card__text {
       font-weight: 700;
       font-size: 1rem;
+      padding: 1rem 0;
+      padding-left: 1rem;
     }
   }
 }

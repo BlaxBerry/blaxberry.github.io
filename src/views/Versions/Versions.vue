@@ -3,7 +3,7 @@
     <v-container>
       <!-- title -->
       <Title>
-        <h1 slot="title1">Portofolio Versions</h1>
+        <h1 slot="title1">Portfolio Versions</h1>
         <h4 slot="title2">ポートフォリオのバージョンアップ</h4>
       </Title>
 

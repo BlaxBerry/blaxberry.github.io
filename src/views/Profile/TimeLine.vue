@@ -6,7 +6,7 @@
         :key="index"
         color="red lighten-2"
         large
-        :icon="item.skill?'mdi-bug':''"
+        :icon="item.skill ? 'mdi-bug' : ''"
       >
         <template v-slot:opposite>
           <h3 class="red--text text--lighten-2">{{ item.time }}</h3>
@@ -15,7 +15,7 @@
           <v-card-title v-if="item.title">{{ item.title }}</v-card-title>
           <v-card-text>
             {{ item.desc ? item.desc : "" }}
-            <div class="skills" v-if="item.skill">
+            <div class="skills text-center" v-if="item.skill">
               <v-avatar
                 v-for="(skill, i) in item.skill"
                 :key="i"
@@ -40,9 +40,11 @@ export default {
       timeline: [
         {
           time: "2021.6",
-          desc:"Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
+          desc:
+            "サーバ開発について、Node.jsだけでは足りないと思いました。Railsでの開発の強さを見つけ、自分のスキルアップのために、JavaScript以外の言語での開発を勉強しはじめました。",
           skill: [
             { name: "Ruby", pic: "ruby.svg" },
+            { name: "RubyGems", pic: "ruby-rubygems.svg" },
             { name: "Ruby on Rails", pic: "rails.svg" },
           ],
         },
@@ -51,14 +53,17 @@ export default {
           skill: [
             { name: "TypeScript.js", pic: "typescript.svg" },
             { name: "Vuetify", pic: "vue-vuetify.svg" },
+            { name: "Redux", pic: "redux.svg" },
           ],
         },
         {
           time: "2021.4",
-          desc:"以前の開発は主にフロントエンドで jQueryAjax や AxiosでHTTP通信してダータリクエストしましたが、それだけでは足りないことを認識し、Node.jsからサーバを勉強しはじめました。",
+          desc:
+            "以前の勉強や開発練習は主にフロントエンドですが、キャリアアップするために、Node.jsからサーバ開発やデータベース関連スキルを勉強しはじめました。",
           skill: [
             { name: "Node.js", pic: "nodejs.svg" },
             { name: "MongoDB", pic: "mongodb.svg" },
+            { name: "MySQL", pic: "mysql.svg" },
           ],
         },
         {
@@ -68,7 +73,7 @@ export default {
             { name: "ElementUI", pic: "vue-elementui.svg" },
             { name: "axios", pic: "axios.svg" },
             { name: "React", pic: "react.svg" },
-            { name: "React", pic: "react-materialui.svg" },
+            { name: "React", pic: "react-ant-design.svg" },
           ],
         },
         {

@@ -3,7 +3,7 @@
         "name": "HTML",
         "id": "html",
         "pic": "html.svg",
-        "desc": "最初は静的なページから知り始めましたが、 大手のウェブサイトページを模写した後、架空サイトや独自開発しました。Ajax技術やサーバーやデータベース関連の知識などを日々頑張っています。",
+        "desc": "最初は静的なページから練習し始めましたが、色々なウェブサイトページ模写を通じ、HTML の基本構造やページのレイアウトなどを理解して練習しました。その後、Ajax で HTML を動的に生成することや、サーバサイドにおけるテンプレートエンジンのレンダリングも勉強して練習しました。知識深めていくために、架空サイトや Web APP などを独自開発しています",
         "techTasks": [
             {
                 "name": "HTML5",
@@ -12,7 +12,7 @@
                     "html.svg"
                 ],
                 "desc": [
-                    "HTML5の新しいTagsを理解します。",
+                    "HTML5の新しいTagsが使えます。",
                     "LocalStoragewを理解します。",
                     "Canvasを練習したことがあります。"
                 ]
@@ -26,7 +26,7 @@
         "name": "CSS",
         "id": "css",
         "pic": "css.svg",
-        "desc": "",
+        "desc": "最初は静的なページから勉強し始めましたが、色々なウェブサイトページ模写を通じ、各種類のレイアウトなどを理解して練習しました。その後、CSSプリプロセッサ( CSSメタ言語 )の Less、Scss/Sass を勉強し利用し、架空サイトや Web APP などの独自開発をしてできます。",
         "techTasks": [
             {
                 "name": "CSS3",
@@ -116,11 +116,11 @@
         "name": "TypeScript",
         "id": "typescript",
         "pic": "typescript.svg",
-        "desc": "ヘビゲームの開発を通じてTSを練習しました。",
+        "desc": "ヘビゲームの開発を通じてTSを練習しました。引き続き深く勉強して強化中です。",
         "techTasks": [
             {
                 "name": "TypeScript",
-                "type":"lang",
+                "type": "lang",
                 "pic": [
                     "typescript.svg"
                 ],
@@ -137,11 +137,11 @@
         "name": "Ruby",
         "id": "ruby",
         "pic": "ruby.svg",
-        "desc": "以前 Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
+        "desc": "Rubyの基礎。引き続き深く勉強して強化中です。",
         "techTasks": [
             {
                 "name": "Ruby",
-                "type":"lang",
+                "type": "lang",
                 "pic": [
                     "ruby.svg"
                 ],
@@ -152,12 +152,76 @@
             },
             {
                 "name": "Ruby on Rails",
-                "type":"server",
+                "type": "server",
                 "pic": [
                     "rails.svg"
                 ],
                 "desc": [
-                   "RailsのMVC( モデルModel、ビューView、コントローラーController )を理解します。"
+                    "RailsのMVC( モデルModel、ビューView、コントローラーController )を理解します。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Scss",
+        "id": "scss",
+        "pic": "sass.svg",
+        "desc": "色々な架空サイトや Web APP などの練習を通じ、フレームワークで Scss を利用して開発することができます。",
+        "techTasks": [
+            {
+                "name": "Scss",
+                "type": "style",
+                "pic": [
+                    "sass.svg"
+                ],
+                "desc": [
+                    "フレームワークでScssを設定して利用し、開発することができます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Less",
+        "id": "less",
+        "pic": "less.svg",
+        "desc": "色々な架空サイトやWeb APPなどの練習を通じ、フレームワークで Less を利用して開発することができます。",
+        "techTasks": [
+            {
+                "name": "Less",
+                "type": "style",
+                "pic": [
+                    "less.svg"
+                ],
+                "desc": [
+                    "フレームワークでLessを設定して利用し、開発することができます。"
+                ]
+            }
+        ],
+        "works": [
+            {}
+        ]
+    },
+    {
+        "name": "Bootstrap",
+        "id": "bootstrap",
+        "pic": "bootstrap.svg",
+        "desc": "色々な架空サイトや Web APP などの練習を通じ、Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
+        "techTasks": [
+            {
+                "name": "Bootstrap",
+                "type": "style",
+                "pic": [
+                    "bootstrap.svg"
+                ],
+                "desc": [
+                    "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
+                    "Bootstrapのグリッドシステム( Grid System )を理解して使えます。"
                 ]
             }
         ],
@@ -169,11 +233,11 @@
         "name": "jQuery",
         "id": "jquery",
         "pic": "jquery.svg",
-        "desc": "jQueryで開発することができます。",
+        "desc": "jQuery で開発することができます。",
         "techTasks": [
             {
                 "name": "jQuery",
-                "type":"framework",
+                "type": "framework",
                 "pic": [
                     "jquery.svg"
                 ],
@@ -191,11 +255,11 @@
         "name": "Vue",
         "id": "vue",
         "pic": "vue.svg",
-        "desc": "色々な SPA Web Appの開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
+        "desc": "色々な SPA Web App の開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
         "techTasks": [
             {
                 "name": "Vue-Cli",
-                "type":"framework",
+                "type": "framework",
                 "pic": [
                     "vue.svg",
                     "vue-vuetify.svg",
@@ -209,7 +273,7 @@
             },
             {
                 "name": "Vue-Router",
-                "type":"framework",
+                "type": "framework",
                 "pic": [
                     "vue.svg"
                 ],
@@ -219,7 +283,7 @@
             },
             {
                 "name": "Vue-X",
-                "type":"framework",
+                "type": "framework",
                 "pic": [
                     "vue-vuex.svg"
                 ],
@@ -229,7 +293,7 @@
             },
             {
                 "name": "Nuxt",
-                "type":"framework",
+                "type": "framework",
                 "pic": [
                     "vue-nuxt.svg"
                 ],
@@ -239,7 +303,7 @@
             },
             {
                 "name": "Axios",
-                "type":"others",
+                "type": "others",
                 "pic": [
                     "axios.svg"
                 ],
@@ -260,20 +324,20 @@
         "techTasks": [
             {
                 "name": "Create React App",
-                "type":"framework",
+                "type": "framework",
                 "pic": [
                     "react-ant-design.svg",
                     "react-materialui.svg"
                 ],
                 "desc": [
                     "Create React Appで開発することがきます。",
-                    "Material-UI、AntDesig などのUIフレームワークが使えます。",
+                    "Ant-Design、Material-UI などのUIフレームワークが使えます。",
                     "CSSプリプロセッサ( Scss、Less )を導入して開発することができます。"
                 ]
             },
             {
                 "name": "React-Router-Dom",
-                "type":"framework",
+                "type": "framework",
                 "pic": [
                     "react.svg"
                 ],
@@ -283,7 +347,7 @@
             },
             {
                 "name": "Redux",
-                "type":"others",
+                "type": "framework",
                 "pic": [
                     "redux.svg"
                 ],
@@ -293,7 +357,7 @@
             },
             {
                 "name": "Axios",
-                "type":"others",
+                "type": "others",
                 "pic": [
                     "axios.svg"
                 ],
@@ -314,7 +378,7 @@
         "techTasks": [
             {
                 "name": "Webpack",
-                "type":"others",
+                "type": "others",
                 "pic": [
                     "webpack.svg"
                 ],
@@ -331,11 +395,11 @@
         "name": "Node.js",
         "id": "nodejs",
         "pic": "nodejs.svg",
-        "desc": "以前の開発は主にフロントエンドで jQueryAjax や AxiosでHTTP通信してダータリクエストしましたが、それだけでは足りないことを認識し、Node.jsからサーバを勉強しはじめました。",
+        "desc": "以前の勉強や開発練習は主にフロントエンドですが、キャリアアップするために、Node.jsからサーバ開発やデータベース関連スキルを勉強しはじめました。",
         "techTasks": [
             {
                 "name": "Express.js",
-                "type":"server",
+                "type": "server",
                 "pic": [
                     "nodejs.svg"
                 ],
@@ -348,7 +412,7 @@
             },
             {
                 "name": "Database",
-                "type":"db",
+                "type": "db",
                 "pic": [
                     "mysql.svg",
                     "mongodb.svg"
@@ -359,10 +423,10 @@
             },
             {
                 "name": "パッケージ管理ツール",
-                "type":"others",
+                "type": "others",
                 "pic": [
-                    "yarn.svg",
-                    "gulp.svg"
+                    "npm.svg",
+                    "yarn.svg"
                 ],
                 "desc": [
                     "yarn、npm、gulpなどのパッケージ管理ツールが使えます。"
@@ -377,21 +441,33 @@
         "name": "Rails",
         "id": "rails",
         "pic": "rails.svg",
-        "desc": "Node.jsだけでのサーバ開発が足りないと思い、JavaScript以外の言語での開発を勉強しはじめました。",
+        "desc": "Node.js などでサーバを開発する経験があります。Rails を通じてWebアプリ開発することができます。引き続き深く勉強して強化中です。",
         "techTasks": [
             {
                 "name": "Ruby on Rails",
-                "type":"server",
+                "type": "server",
                 "pic": [
                     "rails.svg"
                 ],
                 "desc": [
-                    "RailsのMVC( モデルModel、ビューView、コントローラーController )を理解します。"
+                    "MVC( モデルModel、ビューView、コントローラーController )を理解します。",
+                    "BootstrapフレームワークをRailsに組み込んで、ERB( Embedded Ruby )を通じて、Webアプリ開発することができます。"
+                ]
+            },
+            {
+                "name": "RubyGems",
+                "type": "others",
+                "pic": [
+                    "ruby-rubygems.svg"
+                ],
+                "desc": [
+                    "RubyGemsで各gem( パッケージ )を管理することができます。",
+                    "bundlerが使えます。"
                 ]
             },
             {
                 "name": "Database",
-                "type":"db",
+                "type": "db",
                 "pic": [
                     "mysql.svg",
                     "mongodb.svg"
@@ -409,11 +485,11 @@
         "name": "MySQL",
         "id": "mysql",
         "pic": "mysql.svg",
-        "desc": "MySQLを Node.js・Express.js などに接続して、サーバサイト開発することが出来ます。ブログ管理システムなどの SSR や CSR 開発を通じて練習しました。",
+        "desc": "以前、ブログ管理システムなどの SSR や CSR 開発を通じて、MySQL を Node.js・Express.js などに接続したサーバサイト開発を練習しました。現在 Rails への組み込みの開発を練習しています。",
         "techTasks": [
             {
                 "name": "MySQL",
-                "type":"db",
+                "type": "db",
                 "pic": [
                     "mysql.svg"
                 ],
@@ -424,7 +500,7 @@
             },
             {
                 "name": "Node.js",
-                "type":"server",
+                "type": "server",
                 "pic": [
                     "nodejs.svg"
                 ],
@@ -435,7 +511,7 @@
             },
             {
                 "name": "Ruby on Rails",
-                "type":"server",
+                "type": "server",
                 "pic": [
                     "rails.svg"
                 ],
@@ -452,11 +528,11 @@
         "name": "MongoDB",
         "id": "mongodb",
         "pic": "mongodb.svg",
-        "desc": "MongoDBを Node.js・Express.js などに接続して、サーバサイト開発することが出来ます。ブログ管理システムなどの SSR や CSR 開発を通じて練習しました。",
+        "desc": "以前、ブログ管理システムなどの SSR や CSR 開発を通じて、MongoDB を Node.js・Express.js などに接続したサーバサイト開発を練習しました。現在 Rails への組み込みの開発を練習しています。",
         "techTasks": [
             {
                 "name": "MongoDB",
-                "type":"db",
+                "type": "db",
                 "pic": [
                     "mongodb.svg"
                 ],
@@ -467,7 +543,7 @@
             },
             {
                 "name": "Node.js",
-                "type":"server",
+                "type": "server",
                 "pic": [
                     "nodejs.svg"
                 ],
@@ -478,76 +554,12 @@
             },
             {
                 "name": "Ruby on Rails",
-                "type":"server",
+                "type": "server",
                 "pic": [
                     "rails.svg"
                 ],
                 "desc": [
                     ""
-                ]
-            }
-        ],
-        "works": [
-            {}
-        ]
-    },
-    {
-        "name": "Scss",
-        "id": "scss",
-        "pic": "sass.svg",
-        "desc": "",
-        "techTasks": [
-            {
-                "name": "Sass",
-                "type":"style",
-                "pic": [
-                    "sass.svg"
-                ],
-                "desc": [
-                    ""
-                ]
-            }
-        ],
-        "works": [
-            {}
-        ]
-    },
-    {
-        "name": "Less",
-        "id": "less",
-        "pic": "less.svg",
-        "desc": "",
-        "techTasks": [
-            {
-                "name": "Less",
-                "type":"style",
-                "pic": [
-                    "less.svg"
-                ],
-                "desc": [
-                    ""
-                ]
-            }
-        ],
-        "works": [
-            {}
-        ]
-    },
-    {
-        "name": "Bootstrap",
-        "id": "bootstrap",
-        "pic": "bootstrap.svg",
-        "desc": "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
-        "techTasks": [
-            {
-                "name": "Bootstrap",
-                "type":"style",
-                "pic": [
-                    "bootstrap.svg"
-                ],
-                "desc": [
-                    "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
-                    "Bootstrapのグリッドシステム( Grid System )が使えます。"
                 ]
             }
         ],
@@ -563,7 +575,7 @@
         "techTasks": [
             {
                 "name": "Git",
-                "type":"others",
+                "type": "others",
                 "pic": [
                     "git.svg"
                 ],
@@ -573,54 +585,12 @@
             },
             {
                 "name": "Github",
-                "type":"others",
+                "type": "others",
                 "pic": [
                     "github.svg"
                 ],
                 "desc": [
                     "作成したウェブアプリ( Web App )を GitHub Pagesで公開することができます。"
-                ]
-            }
-        ],
-        "works": [
-            {}
-        ]
-    },
-    {
-        "name": "npm",
-        "id": "npm",
-        "pic": "npm.svg",
-        "desc": "",
-        "techTasks": [
-            {
-                "name": "npm",
-                "type":"others",
-                "pic": [
-                    "npm.svg"
-                ],
-                "desc": [
-                    "パッケージ管理ツールnpmが使えます。"
-                ]
-            }
-        ],
-        "works": [
-            {}
-        ]
-    },
-    {
-        "name": "yarn",
-        "id": "yarn",
-        "pic": "yarn.svg",
-        "desc": "",
-        "techTasks": [
-            {
-                "name": "yarn",
-                "type":"others",
-                "pic": [
-                    "yarn.svg"
-                ],
-                "desc": [
-                    "パッケージ管理ツールyarnが使えます。"
                 ]
             }
         ],
