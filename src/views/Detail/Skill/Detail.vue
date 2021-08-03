@@ -2,14 +2,10 @@
   <div id="skill-detail">
     <v-container>
       <!-- 1. description -->
-      <Description
-        :name="skill.name"
-        :pic="skill.pic"
-        :desc="skill.desc"
-      ></Description>
+      <Description :skill="skill"></Description>
 
       <!-- 2. techTasks -->
-      <TechList :list="skill.techTasks"></TechList>
+      <TechList :list="similars"></TechList>
 
       <!-- 2. works -->
 
@@ -38,50 +34,39 @@ export default {
 
   data() {
     return {
-      // all skill list from data
-      allSkillList: [],
       // the skill
       skill: {},
-      SmoothScrollAnchors: [
-        // Description
-        {
-          name: "Desctiption",
-          anchorID: "detail-skill-desctiption",
-          icon: "mdi-bug",
-        },
-
-        // Tech Stacks
-        {
-          name: "techStacks",
-          anchorID: "detail-skill-techlist",
-          icon: "mdi-bug",
-        },
-        // Contact
-        { name: "Contact", anchorID: "footer", icon: "mdi-hail" },
-      ],
+      // all similar skill list about this skills
+      similars: [],
     };
   },
 
   methods: {
     init() {
-      // 1. get all skill list
+      // get all skill list
       getAllSkillList.then((res) => {
-        this.allSkillList = res.data;
+        // 1. get url params
+        let id = this.$route.query.id;
 
-        // 2. get the name + similarit from URL query
-        let name = this.$route.query.name;
-        let similarity = this.$route.query.similarity;
-
-        let detail = this.allSkillList.find((item) => {
-          return item.id == name;
+        // 2. get this skill's detail from all
+        let allSKill = res.data;
+        this.skill = allSKill.find((item) => {
+          return item.id == id;
         });
+        // console.log(this.skill);
 
-        if (!detail) {
-          detail = this.allSkillList.find((item) => {
-            return item.id == similarity;
+        // 3. get all similar skill list about this skills
+        let similarSkills = this.skill.similar;
+        // console.log(similarSkills);
+
+        // 4. get those from all skills
+        similarSkills.forEach((item) => {
+          allSKill.filter((element) => {
+            if (element.id == item) {
+              this.similars.push(element);
+            }
           });
-        }
-        this.skill = detail;
+        });
       });
     },
   },

@@ -321,6 +321,62 @@
         }
     },
     {
+        "name": "SSR Game Collection by Rails",
+        "id": "rails01",
+        "type": "pc",
+        "keywords": [
+            "ERB",
+            "Ruby on Rails",
+            "Bootstrap",
+            "JavaScript"
+        ],
+        "mainPic": "https://pbs.twimg.com/media/E7zrQWeVUB0pVD2?format=jpg&name=medium",
+        "pics": [
+            "https://pbs.twimg.com/media/E7zrQWeVUB0pVD2?format=jpg&name=medium"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Bootstrap",
+                    "pic": "bootstrap.svg"
+                },
+                {
+                    "name": "Scss",
+                    "pic": "sass.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Ruby",
+                    "pic": "ruby.svg"
+                },
+                {
+                    "name": "Ruby on Rails",
+                    "pic": "rails.svg"
+                }
+            ],
+            [
+                {
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
+                }
+            ]
+        ],
+        "desc": "このSSR( サーバサイトレンダリング )の開発を通じで、Railsのコントローラー( Controller )、ビュー( View )、ルーティング( route )を練習しました。",
+        "function": [
+            [
+               "展示しているカードから各詳細ページへ移動できます。"
+            ],
+            [
+                "RailsのMVC ( Model、Controller、View )のコントローラーやビュー、またルーティング( Routes )を練習しまシアた。",
+                "各ページのレイアウトについて、Bootstrap + Scss + ERBテンプレートを練習しました。"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/rails_ssr"
+        }
+    },
+    {
         "name": "EC PinYouGo Shopping",
         "id": "static02",
         "type": "pc",

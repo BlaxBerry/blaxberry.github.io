@@ -7,7 +7,8 @@
         class="pa-0"
         cols="3"
         sm="2"
-        md="1"
+        md="2"
+        lg="1"
       >
         <v-card elevation="2" @click="click(item)">
           <v-img
@@ -27,15 +28,13 @@ export default {
   methods: {
     click(skillItem) {
       clearTimeout(timer);
-      let name = skillItem.id;
-      let similarity = skillItem.similarity;
+      let id = skillItem.id;
       let timer = setTimeout(() => {
         // send params to detail page
         this.$router.push({
           path: "/detail/skill",
           query: {
-            name,
-            similarity,
+            id
           },
         });
       }, 200);

@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless class="green" id="footer" bottom>
+  <v-footer padless class="cyan darken-2" id="footer" bottom>
     <v-container>
       <!-- title -->
       <Title>

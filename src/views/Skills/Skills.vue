@@ -10,7 +10,10 @@
       <!-- desc -->
       <div class="pa-5">
         <p>
-          今まで身に付いているスキルは主にフロントエンドですが、その不足も認識していますが、挑戦して開発経験を積んだ上で、フロントエンドに関するスキルを幅広くスキルアップして、いずれバックエンドまで幅広くスキルアップに取り組んでいきたいと考えています。
+          今までロントからサーバサイトまで広く浅く取り組んできました。<br />
+          最近は Node.js や Rails
+          などに基づいたサーバサイト開発に関する知識も勉強しています。
+          色々な開発練習を通じて、身に付いているスキルの不足なところも認識しましたが、今後は必ず幅広い面で挑戦して専門性を高め、開発経験を積んだ上で将来オールラウンドに対応できるように頑張りたいと考えています。
         </p>
         <small>
           ＊ 各スキルをクリックして、詳細をご確認ください。
@@ -19,16 +22,30 @@
 
       <!-- 1. languages -->
       <SkillCards :list="lang_list"></SkillCards>
-      <!-- 2. style -->
-      <SkillCards :list="style_list"></SkillCards>
+      <br />
+
       <!-- 3. frameworks -->
       <SkillCards :list="framework_list"></SkillCards>
-      <!-- 4. others -->
-      <SkillCards :list="others_list"></SkillCards>
+      <br />
+
       <!-- 5. server -->
       <SkillCards :list="server_list"></SkillCards>
+      <br />
+
       <!-- 6. datadase  -->
       <SkillCards :list="db_list"></SkillCards>
+      <br />
+
+      <!-- 4. others -->
+      <SkillCards :list="others_list"></SkillCards>
+      <br />
+
+      <!-- 2. style -->
+      <SkillCards :list="style_list"></SkillCards>
+
+      <small class="pa-5"
+        >＊ 各スキルをクリックして、詳細をご確認ください。</small
+      >
     </v-container>
   </div>
 </template>
@@ -59,74 +76,49 @@ export default {
       server_list: [],
       db_list: [],
       others_list: [],
-
-      SmoothScrollAnchors: [
-        // SKills
-        { name: "Skills", anchorID: "home-skills", icon: "mdi-pickaxe" },
-        // Contact
-        { name: "Contact", anchorID: "footer", icon: "mdi-hail" },
-      ],
     };
   },
 
   created() {
     // get all skill list
     getAllSkillList.then((res) => {
-      // 1. all types of Skills
+      console.log(res.data);
+      let allSkill = [];
+      res.data.forEach((item) => {
+        if (item.showSkillPage) {
+          allSkill.push(item);
+        }
+      });
+      // console.log(allSkill);
+
+      // 1. get all kinds of types of Skills
       let allTypes = [];
-      res.data.forEach((skill) => {
-        skill.techTasks.forEach((type) => {
-          allTypes.push(type.type);
-        });
+      allSkill.forEach((item) => {
+        allTypes.push(item.type);
       });
       allTypes = Array.from(new Set(allTypes));
       // console.log("types", allTypes);
 
-      // 2. all tech stacks pics
-      let allSkill = [];
-      res.data.forEach((skill) => {
-        skill.techTasks.forEach((item) => {
-          item.pic.forEach((pic) => {
-            allSkill.push({
-              name: pic.replace(".svg", ""),
-              pic: pic,
-              id: pic.replace(".svg", ""),
-              type: item.type,
-              // 若该技术没有详情信息，则挑跳转到相关技术画面
-              similarity: skill.id,
-            });
-          });
-        });
-      });
-      // console.log("all",allSkill);
-
-      // 3. 分类
-      // according to different types
-      let lang_list = [];
-      let style_list = [];
-      let framework_list = [];
-      let server_list = [];
-      let db_list = [];
-      let others_list = [];
+      // 2. 分类 并 赋值
       allSkill.map((item) => {
         switch (item.type) {
-          case "lang":
-            lang_list.push(item);
+          case allTypes[0]:
+            this.lang_list.push(item);
             break;
-          case "style":
-            style_list.push(item);
+          case allTypes[1]:
+            this.style_list.push(item);
             break;
-          case "framework":
-            framework_list.push(item);
+          case allTypes[2]:
+            this.framework_list.push(item);
             break;
-          case "server":
-            server_list.push(item);
+          case allTypes[3]:
+            this.others_list.push(item);
             break;
-          case "db":
-            db_list.push(item);
+          case allTypes[4]:
+            this.server_list.push(item);
             break;
-          case "others":
-            others_list.push(item);
+          case allTypes[5]:
+            this.db_list.push(item);
             break;
           default:
             break;
@@ -134,31 +126,22 @@ export default {
       });
 
       // 4 去重复 hash unique
-      function unique(arr) {
-        for (let i = 0; i < arr.length; i++) {
-          for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i].name === arr[j].name) {
-              arr.splice(i, 1);
-              j--;
-            }
-          }
-        }
-      }
-      unique(lang_list);
-      unique(style_list);
-      unique(framework_list);
-      unique(server_list);
-      unique(db_list);
-      unique(others_list);
-
-      // 5. 赋值给数据模型
-      this.lang_list = lang_list;
-      this.style_list = style_list;
-      this.framework_list = framework_list;
-      this.server_list = server_list;
-      this.db_list = db_list;
-      this.others_list = others_list;
-      console.log(this.others_list);
+      // function unique(arr) {
+      //   for (let i = 0; i < arr.length; i++) {
+      //     for (let j = i + 1; j < arr.length; j++) {
+      //       if (arr[i].name === arr[j].name) {
+      //         arr.splice(i, 1);
+      //         j--;
+      //       }
+      //     }
+      //   }
+      // }
+      // unique(lang_list);
+      // unique(style_list);
+      // unique(framework_list);
+      // unique(server_list);
+      // unique(db_list);
+      // unique(others_list);
     });
   },
 

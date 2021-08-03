@@ -9,7 +9,9 @@
     <!-- desc -->
     <div class="pa-5">
       <p>
-        最初は静的なページから知り始めましたが、その後Ajax技術やフレームワークのReact、Vueを学んで、最近はサーバーやデータベース関連の知識などを日々頑張っており、このような段階的に、独自の練習や開発の成果を残してきました。不足のところも認識していますが、今後は必ず努力し、より良い作品を提供するために、引き続き勉強して行きたいと思います。
+        <br />
+        SSR・CSR ウェブサイト、SPA、サーバの開発、PC/Mobile端末向けのウェブアプリ、フレームワーク...などを日々頑張っています。
+        フロントからサーバまで段階的な勉強を通じて、色々な独自の成果を残してきました。その中に不足なところも認識していますが、今後は必ず努力して改善し、より良い作品を提供するために、引き続き勉強して行きたいと思います。
       </p>
       <small>
         ＊ 各作品をクリックして、詳細をご確認ください。
@@ -25,7 +27,12 @@
     <!-- to works page -->
     <div class="text-center mt-2 px-10">
       <b>今までの作品集をご確認ください:</b>
-      <v-btn block to="/works" class="my-2">More Works</v-btn>
+      <v-btn
+        block
+        to="/works"
+        class="my-2 cyan darken-2 white--text font-weight-black py-6"
+        >More Works</v-btn
+      >
     </div>
   </div>
 </template>
@@ -63,7 +70,7 @@ export default {
   created() {
     // get all PC skill list
     getAllWorkList.then((res) => {
-      this.list = [res.data[0], res.data[1],res.data[3]];
+      this.list = [res.data[0], res.data[1], res.data[3]];
       console.log(this.list);
     });
 

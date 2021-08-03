@@ -1,35 +1,31 @@
 <template>
   <!-- 横行 nav page routes-->
   <div class="text-center nav-row-routes">
-    <v-menu transition="slide-x-transition" bottom right>
+    <v-menu transition="slide-y-transition" bottom>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          dark
-          color="purple"
-          class="font-weight-black text-sm-h6"
+          color="cyan darken-2"
+          class="font-weight-black text-sm-h6 white--text"
           fab
           large
           elevation="5"
           v-bind="attrs"
           v-on="on"
         >
-          GoTo
+          <v-icon>mdi-menu-down-outline</v-icon>
         </v-btn>
       </template>
 
-      <v-list
-        class="d-md-flex pl-2 pt-14 mt-5 pt-md-0 mt-md-1 pl-md-15 ml-md-5"
-        width="400px"
-      >
+      <v-list class="pl-2 pt-14 mt-5" width="400px">
         <v-list-item
-          class="px-0 py-1 px-md-2"
+          class="px-0 py-1"
           max-width="60"
           v-for="(item, index) in mainRoutes"
           :key="index"
         >
           <v-list-item-title>
-            <v-btn fab :to="item.to" elevation="5" color="secondary" dark>
-              <v-icon large>{{ item.icon }}</v-icon>
+            <v-btn fab :to="item.to" elevation="5" raised>
+              <v-icon large color="cyan darken-2">{{ item.icon }}</v-icon>
             </v-btn>
           </v-list-item-title>
         </v-list-item>

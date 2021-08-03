@@ -2,7 +2,7 @@
   <div id="home-aboutme" class="full-page-session">
     <!-- title -->
     <Title>
-      <h1 slot="title1" style="fontSize:4rem">Wellcome</h1>
+      <h1 slot="title1" style="fontSize:4rem">Welcome</h1>
     </Title>
 
     <v-container>
@@ -39,31 +39,14 @@
           </div>
           <!-- infomation -->
           <v-card-text class="">
-            Hello, wellcome to my Portfolio.<br>
-            I am Chen, an enthusiastic guy fighting for being Full Stack Web Enginner.
+            Hello, I am Chen. Welcome to my Portfolio.
             Hope you will know more about me here. 
           </v-card-text>
           <!-- to profile page -->
-          <v-btn block to="/profile">About Me</v-btn>
+          <v-btn block to="/profile" class="cyan darken-2 white--text font-weight-black">About Me</v-btn>
         </div>
       </v-card>
     </v-container>
-
-    <!-- big screen links-->
-    <div class="links mt-1 d-none d-sm-block">
-      <v-btn
-        v-for="(item, index) in links"
-        :key="index"
-        :href="item.link"
-        :color="item.color"
-        class="ma-1"
-        dark
-      >
-        <v-icon large>
-          {{ item.icon }}
-        </v-icon>
-      </v-btn>
-    </div>
   </div>
 </template>
 

@@ -1,5 +1,12 @@
 <template>
   <div id="profile-timeline">
+    <!-- title -->
+    <Title>
+      <h1 slot="title1">Experience Time Line</h1>
+      <h2 slot="title2">経歴や勉強について</h2>
+    </Title>
+
+    <!-- timeline -->
     <v-timeline>
       <v-timeline-item
         v-for="(item, index) in timeline"
@@ -34,7 +41,14 @@
 </template>
 
 <script>
+// components
+import Title from "@/components/Title/Title.vue";
+
 export default {
+  components: {
+    Title,
+  },
+
   data() {
     return {
       timeline: [
@@ -44,8 +58,8 @@ export default {
             "サーバ開発について、Node.jsだけでは足りないと思いました。Railsでの開発の強さを見つけ、自分のスキルアップのために、JavaScript以外の言語での開発を勉強しはじめました。",
           skill: [
             { name: "Ruby", pic: "ruby.svg" },
-            { name: "RubyGems", pic: "ruby-rubygems.svg" },
             { name: "Ruby on Rails", pic: "rails.svg" },
+            { name: "PostgreSQL", pic: "postgresql.svg" },
           ],
         },
         {
