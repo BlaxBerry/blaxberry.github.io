@@ -8,7 +8,7 @@
         cols="3"
         sm="2"
         md="2"
-        lg="1"
+        lg="2"
       >
         <v-card elevation="2" @click="click(item)">
           <v-img

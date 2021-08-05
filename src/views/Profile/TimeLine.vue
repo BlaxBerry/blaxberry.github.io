@@ -11,16 +11,18 @@
       <v-timeline-item
         v-for="(item, index) in timeline"
         :key="index"
-        color="red lighten-2"
+        color="cyan darken-2"
         large
         :icon="item.skill ? 'mdi-bug' : ''"
       >
         <template v-slot:opposite>
-          <h3 class="red--text text--lighten-2">{{ item.time }}</h3>
+          <h3 class="cyan--text text--darken-2">{{ item.time }}</h3>
         </template>
         <v-card class="elevation-2">
-          <v-card-title v-if="item.title">{{ item.title }}</v-card-title>
-          <v-card-text>
+          <v-card-title v-if="item.title" class="cyan white--text py-2">
+            {{ item.title }}
+          </v-card-title>
+          <v-card-text class="py-4">
             {{ item.desc ? item.desc : "" }}
             <div class="skills text-center" v-if="item.skill">
               <v-avatar

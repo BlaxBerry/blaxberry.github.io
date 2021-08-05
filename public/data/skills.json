@@ -288,8 +288,12 @@
         "pic": "react.svg",
         "showHomePage": true,
         "showSkillPage": true,
-        "main": "引き続き深く勉強して強化中です。",
-        "desc": [],
+        "main": "JSXでレンダーをすることができ、state・props・contextを理解し、コンポーネント開発ができます。クラス型コンポーネントの他に、フック (hook) も強化中です。引き続き深く勉強して強化中です。",
+        "desc": [
+            "JSX で React要素のレンダーをすることができます。",
+            "state,props,contextを理解し、 コンポーネント開発ができます。",
+            "クラス型コンポーネントの他に、フック( hook )も強化中です。"
+        ],
         "similar": [
             "creat-react-app",
             "material-ui",
@@ -317,7 +321,7 @@
         "name": "React-Router-Dom",
         "id": "react-router-dom",
         "type": "framework",
-        "pic": "react.svg",
+        "pic": "react-router-dom.svg",
         "showSkillPage": false,
         "main": "引き続き深く勉強して強化中です。",
         "desc": [

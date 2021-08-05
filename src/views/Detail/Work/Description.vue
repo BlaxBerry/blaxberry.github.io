@@ -25,7 +25,12 @@
 
       <!-- 3. links -->
       <div class="links text-center">
-        <v-btn :href="links.github" target="_blank" elevation="2">
+        <v-btn
+          v-if="links.github"
+          :href="links.github"
+          target="_blank"
+          elevation="2"
+        >
           <v-icon>mdi-github</v-icon>
           <span>Clike to Github</span>
         </v-btn>

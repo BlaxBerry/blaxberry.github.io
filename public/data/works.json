@@ -192,33 +192,34 @@
         }
     },
     {
-        "name": "SPA Music Player",
-        "id": "vuemuisc01",
+        "name": "Moba Game Characters Detail",
+        "id": "reactpc01",
         "type": "pc",
         "keywords": [
-            "Vue",
+            "Axios",
             "SPA",
-            "Less",
-            "音楽プレーヤー",
-            "Element UI"
+            "React",
+            "JavaScript",
+            "Material UI"
         ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/pc01.png",
+        "mainPic": "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/01.png",
         "pics": [
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/pc01.png"
+            "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/01.png",
+            "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/02.png"
         ],
         "techTasks": [
             [
                 {
-                    "name": "Vue",
-                    "pic": "vue.svg"
+                    "name": "React",
+                    "pic": "react.svg"
                 },
                 {
-                    "name": "Vue-Cli",
-                    "pic": "vue.svg"
+                    "name": "react-tabs",
+                    "pic": "npm.svg"
                 },
                 {
-                    "name": "Less",
-                    "pic": "less.svg"
+                    "name": "Material UI",
+                    "pic": "react-materialui.svg"
                 }
             ],
             [
@@ -227,36 +228,34 @@
                     "pic": "axios.svg"
                 },
                 {
-                    "name": "JSON",
-                    "pic": "json.svg"
+                    "name": "React-Router-Dom",
+                    "pic": "react-router-dom.svg"
                 }
             ],
             [
                 {
-                    "name": "Vue-Router",
-                    "pic": "vue.svg"
+                    "name": "Pub/Sub",
+                    "pic": "npm.svg"
                 },
                 {
-                    "name": "Element UI",
-                    "pic": "vue-elementui.svg"
+                    "name": "Redux",
+                    "pic": "redux.svg"
                 }
             ]
         ],
-        "desc": "SPA( Single Page Application ) 音楽プレーヤーです。Axiosを利用し、ローカルJSONファイルの音楽データを読み込めて操作します。個人練習専用です。( Only for Personal Using )",
+        "desc": "React SPA( Single Page Application ) です。この作品を通じて、Reactのコンポーネントや、react-router-dom でのSPA、また UIフレームワークでの開発を練習しました。",
         "function": [
             [
-                "曲 / 動画 / アルバムを検索することができます。",
-                "曲 / 動画 / アルバムを分類して、リストまたカードの形で画面上で展示します。",
-                "曲 / 動画 / アルバムを再生することができます。"
+                "JSX で React要素のレンダーを練習しました。",
+                "クラス型コンポーネントの他に、フック (hook) も練習しました。",
+                "Material UIでの開発を練習しました。"
             ],
             [
-                "Axiosを通じて、ローカルJSONファイルから読み込めたデーターを画面上展示します。",
-                "この作品のコンポーネントが複雑ではないので、直接に子コンポーネで this.$parent.src に音楽データのパースを代入して、そしてその親コンポーネンでもらった音楽のパースを<audio>や<video>のsrcに代入します。",
-                "Element UIを利用し、Lessでレイアウトを調整します。"
+                "Axiosを通じてフリーAPIからヒーローのデーターを読み込めます。"
             ]
         ],
         "links": {
-            "github": "https://github.com/BlaxBerry/vue-music-player"
+            "github": "https://github.com/BlaxBerry/react-game-collection"
         }
     },
     {
@@ -365,7 +364,7 @@
         "desc": "このSSR( サーバサイトレンダリング )の開発を通じで、Railsのコントローラー( Controller )、ビュー( View )、ルーティング( route )を練習しました。",
         "function": [
             [
-               "展示しているカードから各詳細ページへ移動できます。"
+                "展示しているカードから各詳細ページへ移動できます。"
             ],
             [
                 "RailsのMVC ( Model、Controller、View )のコントローラーやビュー、またルーティング( Routes )を練習しまシアた。",

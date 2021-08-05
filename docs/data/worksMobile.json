@@ -127,7 +127,7 @@
             [
                 {
                     "name": "React-Router-Dom",
-                    "pic": "react.svg"
+                    "pic": "react-router-dom.svg"
                 },
                 {
                     "name": "Pub/Sub-js",
@@ -149,9 +149,7 @@
                 "Material UIを利用し、Scssでレイアウトを調整します。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/react-music-player"
-        }
+        "links": {}
     },
     {
         "name": "SPA EC Shop",
