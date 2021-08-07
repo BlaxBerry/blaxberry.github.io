@@ -46,6 +46,17 @@
       <small class="pa-5"
         >＊ 各スキルをクリックして、詳細をご確認ください。</small
       >
+
+      <!-- to works page -->
+      <div class="text-center mt-10 px-10">
+        <b>今までの作品集をご確認ください:</b>
+        <v-btn
+          block
+          to="/works"
+          class="my-2 cyan darken-2 white--text font-weight-black py-6"
+          >Check Works</v-btn
+        >
+      </div>
     </v-container>
   </div>
 </template>

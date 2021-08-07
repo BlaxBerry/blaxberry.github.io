@@ -55,7 +55,7 @@ export default {
     return {
       timeline: [
         {
-          time: "2021.6",
+          time: "2021.7",
           desc:
             "サーバ開発について、Node.jsだけでは足りないと思いました。Railsでの開発の強さを見つけ、自分のスキルアップのために、JavaScript以外の言語での開発を勉強しはじめました。",
           skill: [
@@ -65,7 +65,7 @@ export default {
           ],
         },
         {
-          time: "2021.5",
+          time: "2021.6",
           skill: [
             { name: "TypeScript.js", pic: "typescript.svg" },
             { name: "Vuetify", pic: "vue-vuetify.svg" },
@@ -73,7 +73,7 @@ export default {
           ],
         },
         {
-          time: "2021.4",
+          time: "2021.5",
           desc:
             "以前の勉強や開発練習は主にフロントエンドですが、キャリアアップするために、Node.jsからサーバ開発やデータベース関連スキルを勉強しはじめました。",
           skill: [
@@ -89,17 +89,16 @@ export default {
             { name: "ElementUI", pic: "vue-elementui.svg" },
             { name: "axios", pic: "axios.svg" },
             { name: "React", pic: "react.svg" },
-            { name: "React", pic: "react-ant-design.svg" },
+            { name: "Antd", pic: "react-ant-design.svg" },
+            { name: "React-Router-Dom", pic: "react-router-dom.svg" },
           ],
         },
         {
           time: "2020.1",
           skill: [
             { name: "Webpack", pic: "webpack.svg" },
-            { name: "Scss", pic: "sass.svg" },
             { name: "Less", pic: "less.svg" },
             { name: "npm", pic: "npm.svg" },
-            { name: "yarn", pic: "yarn.svg" },
           ],
         },
         {

@@ -3,6 +3,7 @@
         "name": "Blogs & Users Management",
         "id": "01",
         "type": "pc",
+        "time": "2021/06",
         "keywords": [
             "Node.js",
             "パスワードを暗号化",
@@ -95,6 +96,7 @@
         "name": "Portfolio 4.0",
         "id": "02",
         "type": "pc",
+        "time": "2021/07 ~",
         "keywords": [
             "Vue",
             "SPA",
@@ -195,12 +197,13 @@
         "name": "Moba Game Characters Detail",
         "id": "reactpc01",
         "type": "pc",
+        "time": "2021/08",
         "keywords": [
-            "Axios",
+            "Material UI",
             "SPA",
-            "React",
-            "JavaScript",
-            "Material UI"
+            "Redux",
+            "Axios",
+            "React"
         ],
         "mainPic": "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/01.png",
         "pics": [
@@ -243,15 +246,19 @@
                 }
             ]
         ],
-        "desc": "React SPA( Single Page Application ) です。この作品を通じて、Reactのコンポーネントや、react-router-dom でのSPA、また UIフレームワークでの開発を練習しました。",
+        "desc": "React.jsでの SPA 単一ページアプリケーションです。この作品を通じて、コンポーネント開発、Redux、React Hooks、react-router-domでのSPA開発、またUIフレームワークの使用を練習しました。",
         "function": [
             [
-                "JSX で React要素のレンダーを練習しました。",
-                "クラス型コンポーネントの他に、フック (hook) も練習しました。",
-                "Material UIでの開発を練習しました。"
+                "Axios請求でもらったヒーローリストを展示しています。",
+                "各ヒーローの画像をクリックしたら、ヒーローのデーター画面が展示します。",
+                "各ヒーローの画像をクリックしたら、独自のボイス <audio> が出てきます。"
             ],
             [
-                "Axiosを通じてフリーAPIからヒーローのデーターを読み込めます。"
+                "HTTP通信を通じてフリーAPIからヒーローのデーターを読み込めます。",
+                "Material-UI + JSX で、React要素のレンダーを練習しました。",
+                "クラス型コンポーネントの他に、フック( React State Hooks )なども練習しました。",
+                "Reduxを利用し、コンポネートの共通状態の管理を練習しました。",
+                "<audio>のsrcについて、画像の子コンポネートをクリックすると、各ヒーローのボイスパスのsrcをReduxで統一管理し、それをAppコンポネートでの<audio>が使います。"
             ]
         ],
         "links": {
@@ -262,6 +269,7 @@
         "name": "Wedding Dress Site",
         "id": "static01",
         "type": "pc",
+        "time": "2021/05",
         "keywords": [
             "HTML5 + CSS3",
             "Bootstrap",
@@ -323,6 +331,7 @@
         "name": "SSR Game Collection by Rails",
         "id": "rails01",
         "type": "pc",
+        "time": "2021/08",
         "keywords": [
             "ERB",
             "Ruby on Rails",
@@ -361,7 +370,7 @@
                 }
             ]
         ],
-        "desc": "このSSR( サーバサイトレンダリング )の開発を通じで、Railsのコントローラー( Controller )、ビュー( View )、ルーティング( route )を練習しました。",
+        "desc": "この Ruby on Rails の SSR( サーバサイトレンダリング )開発を通じで、Railsのコントローラー( Controller )、ビュー( View )、ルーティング( route )を練習しました。",
         "function": [
             [
                 "展示しているカードから各詳細ページへ移動できます。"
@@ -379,6 +388,7 @@
         "name": "EC PinYouGo Shopping",
         "id": "static02",
         "type": "pc",
+        "time": "2020/11",
         "keywords": [
             "HTML5",
             "正規表現",
@@ -436,6 +446,7 @@
         "name": "EC QingZhu Shopping",
         "id": "static03",
         "type": "pc",
+        "time": "2020/12",
         "keywords": [
             "HTML5 + CSS3",
             "Ajax",
@@ -468,16 +479,16 @@
                 {
                     "name": "jQuery",
                     "pic": "jquery.svg"
-                },
-                {
-                    "name": "jQuery.Ajax",
-                    "pic": "jquery.svg"
                 }
             ],
             [
                 {
                     "name": "JSON",
                     "pic": "json.svg"
+                },
+                {
+                    "name": "jQuery.Ajax",
+                    "pic": "jquery.svg"
                 }
             ]
         ],
@@ -501,6 +512,7 @@
         "name": "Simple TodoList",
         "id": "jq01",
         "type": "pc",
+        "time": "2020/11",
         "keywords": [
             "HTML5 + CSS3",
             "ローカルストレージ",

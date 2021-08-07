@@ -3,7 +3,7 @@
     <v-card justify="center" class="pa-5">
       <v-expansion-panels accordion>
         <v-expansion-panel v-for="(item, index) in list" :key="index">
-         <v-expansion-panel-header>
+          <v-expansion-panel-header>
             <v-img
               :src="require(`@/assets/images/${item.pic}`)"
               lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
@@ -14,8 +14,11 @@
           </v-expansion-panel-header>
 
           <v-expansion-panel-content>
-            <v-list-item v-for="(list, i) in item.desc" :key="i">
-              {{ item.desc.length > 1 ? i + 1 + "." : "" }} {{ list }}
+            <v-list-item v-for="(list, i) in item.desc" :key="i" class="mt-2">
+              <small>
+                <b>{{ item.desc.length > 1 ? i + 1 + "." : "" }}</b>
+                {{ list }}</small
+              >
             </v-list-item>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -28,9 +31,9 @@
 export default {
   props: ["list"],
 
-  created(){
+  created() {
     console.log(this.list);
-  }
+  },
 };
 </script>
 

@@ -53,19 +53,19 @@
               </div>
 
               <!-- 2.3. desc -->
-              <div class="desc py-4">
+              <small class="desc py-4">
                 {{ version.desc }}
-              </div>
+              </small>
 
               <!-- 2.4. shortcoming -->
-              <div
+              <v-list-item-subtitle
                 class="shortcoming ml-lg-15 pa-2"
                 v-for="(shortcoming, i) in version.shortcoming"
                 :key="shortcoming"
               >
                 <b>{{ i + 1 }}</b
                 >. {{ shortcoming }}
-              </div>
+              </v-list-item-subtitle>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -91,7 +91,7 @@ export default {
           version: "4.0",
           time: "2021/07",
           desc:
-            "色々な練習を重ねて、最後はVue-Router + Vuetifyを利用して、単一ページのSPAサイトを開発しました。そして静的なWebページではなく、Vue-Cliの中でAxiosを通じて、/public/data に保存しているJSONファイルからデータを読み込んで、画面上で展示或いは操作をします。",
+            "色々な練習を重ねて、最後はVue-Router + Vuetifyを利用して、単一ページのSPAサイトを開発しました。そして静的なWebページではなく、Vue-Cliの中でAxiosを通じて/public /data に保存しされているJSONファイルからデータを読み込んで、画面上で展示或いは操作をします。",
           shortcoming: [],
           techStacks: [
             { name: "Vue-Cli", icon: "vue.svg" },

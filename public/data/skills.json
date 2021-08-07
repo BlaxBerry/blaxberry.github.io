@@ -92,6 +92,22 @@
         ]
     },
     {
+        "name": "jQuery",
+        "id": "jquery",
+        "type": "lang",
+        "pic": "jquery.svg",
+        "showHomePage": true,
+        "showSkillPage": true,
+        "main": "jQuery で開発することができます。",
+        "desc": [
+            "jQueryでDOM操作、アニメーションなどでインタラクティブにすることができます。",
+            "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"
+        ],
+        "similar": [
+            "jquery"
+        ]
+    },
+    {
         "name": "Scss",
         "id": "scss",
         "type": "style",
@@ -159,7 +175,7 @@
         "desc": [],
         "similar": [
             "vuetify",
-            "vue",
+            "vue-cli",
             "element-ui"
         ]
     },
@@ -173,7 +189,7 @@
         "desc": [],
         "similar": [
             "element-ui",
-            "vue",
+            "vue-cli",
             "vuetify"
         ]
     },
@@ -187,7 +203,7 @@
         "desc": [],
         "similar": [
             "material-ui",
-            "react",
+            "creat-react-app",
             "antd"
         ]
     },
@@ -206,22 +222,6 @@
         ]
     },
     {
-        "name": "jQuery",
-        "id": "jquery",
-        "type": "framework",
-        "pic": "jquery.svg",
-        "showHomePage": true,
-        "showSkillPage": true,
-        "main": "jQuery で開発することができます。",
-        "desc": [
-            "jQueryでDOM操作、アニメーションなどでインタラクティブにすることができます。",
-            "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"
-        ],
-        "similar": [
-            "jquery"
-        ]
-    },
-    {
         "name": "Vue.js",
         "id": "vue",
         "type": "framework",
@@ -229,7 +229,9 @@
         "showHomePage": true,
         "showSkillPage": true,
         "main": "色々な SPA Web App の開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
-        "desc": [],
+        "desc": [
+            "Vue 3 + Vite を勉強中です。"
+        ],
         "similar": [
             "vue-cli",
             "vuetify",
@@ -291,8 +293,8 @@
         "main": "JSXでレンダーをすることができ、state・props・contextを理解し、コンポーネント開発ができます。クラス型コンポーネントの他に、フック (hook) も強化中です。引き続き深く勉強して強化中です。",
         "desc": [
             "JSX で React要素のレンダーをすることができます。",
-            "state,props,contextを理解し、 コンポーネント開発ができます。",
-            "クラス型コンポーネントの他に、フック( hook )も強化中です。"
+            "state、props、contextを理解し、 コンポーネント開発ができます。",
+            "クラス型コンポーネントの他に、フック( React Hooks )での開発もできます。また深く強化中です。"
         ],
         "similar": [
             "creat-react-app",
@@ -335,13 +337,15 @@
         "type": "framework",
         "pic": "redux.svg",
         "showSkillPage": true,
-        "main": "引き続き深く勉強して強化中です。",
+        "main": "Reduxを利用して、React開発で状態 state を管理することができます。引き続き深く勉強して強化中です。",
         "desc": [
+            "store、action、reducerを理解し、状態stateを管理することができます。",
             "引き続き深く勉強して強化中です。"
         ],
         "similar": [
             "redux",
-            "react"
+            "react",
+            "creat-react-app"
         ]
     },
     {
@@ -383,7 +387,7 @@
         "showSkillPage": true,
         "main": "以前の勉強や開発練習は主にフロントエンドですが、キャリアアップするために、Node.jsからサーバ開発やデータベース関連スキルを勉強しはじめました。",
         "desc": [
-            "Express.jsを利用し、HTTPサーバ開発できます。",
+            "Express.jsでHTTPサーバ開発できます。",
             "データベースに接続して、SSR(Server Side Rending) や CSR(Client Side Rendering）Web開発できます。",
             "CommonJSのモジュール開発や、Middlewareなどを理解します。",
             "SSR 開発で、テンプレートエンジンやBootstrapなどを利用し、テンプレート開発することができます。",

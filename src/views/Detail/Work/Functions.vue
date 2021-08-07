@@ -9,7 +9,7 @@
     <v-list v-for="(l, index) in list" :key="index">
       <v-list-item v-for="(item, i) in l" :key="i">
         <v-icon>mdi-tag</v-icon>
-        <v-list-item-content class="px-4">{{ item }}</v-list-item-content>
+        <small class="pa-4">{{ item }}</small>
       </v-list-item>
       <v-divider inset class="mt-3"></v-divider>
     </v-list>

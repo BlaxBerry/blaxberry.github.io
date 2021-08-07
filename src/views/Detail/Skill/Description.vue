@@ -11,7 +11,7 @@
         max-width="150"
       ></v-img>
       <div class="pa-5">
-        <v-card-title class="text-h4 font-weight-black">
+        <v-card-title class="text-h5 font-weight-black">
           {{ skill.name }} 関連スキル
         </v-card-title>
         <v-card-text>{{ skill.main }}</v-card-text>

@@ -10,6 +10,7 @@
         :desc="work.desc"
         :tags="work.keywords"
         :links="work.links"
+        :time="work.time"
         v-if="work.desc"
       ></Description>
 
