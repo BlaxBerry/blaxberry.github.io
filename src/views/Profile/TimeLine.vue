@@ -55,6 +55,14 @@ export default {
     return {
       timeline: [
         {
+          time: "2021.8",
+          desc: "",
+          skill: [
+            { name: "Electron", pic: "electron.svg" },
+            { name: "Vue3", pic: "vue.svg" },
+          ],
+        },
+        {
           time: "2021.7",
           desc:
             "サーバ開発について、Node.jsだけでは足りないと思いました。Railsでの開発の強さを見つけ、自分のスキルアップのために、JavaScript以外の言語での開発を勉強しはじめました。",

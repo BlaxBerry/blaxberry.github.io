@@ -194,7 +194,82 @@
         }
     },
     {
-        "name": "Moba Game Characters Detail",
+        "name": "Electron Desktop App Moba Game",
+        "id": "relectron01",
+        "type": "pc",
+        "time": "2021/08",
+        "keywords": [
+            "Vue",
+            "App",
+            "Electron",
+            "JavaScript",
+            "Axios"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/01.png",
+        "pics": [
+            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/02.png",
+            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/01.png",
+            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/03.png",
+            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/04.png",
+            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/05.png"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Vue2",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vuetify",
+                    "pic": "vue-vuetify.svg"
+                },
+                {
+                    "name": "Scss",
+                    "pic": "sass.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Axios",
+                    "pic": "axios.svg"
+                },
+                {
+                    "name": "Vue-Router",
+                    "pic": "vue.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Electron",
+                    "pic": "electron.svg"
+                },
+                {
+                    "name": "Electron-Builder",
+                    "pic": "electron.svg"
+                }
+            ]
+        ],
+        "desc": "デスクトップアプリケーションです。中国人気 MobaGame「王者荣耀」ヒーローの詳細に関するアプリです。この作品を通じて、Electron 関連知識を勉強し、Vue + Vuetify ＋ electron-builder などを練習しました。これから Electron に対してまた引き続き深く勉強したいと思います",
+        "function": [
+            [
+                "スライダープラグインの形で、ヒーローの画像を展示しています。",
+                "タブコンテンツの形で、ヒーローのスキル詳細、おすすめの学遊び方や武器などの情報を展示しています。",
+                "各ヒーローの画像をクリックしたら、ヒーローのデーター画面が展示します。",
+                "各武器の画像をクリックしたら、ダイアログボックスの形で武器の詳細が出てきます。"
+            ],
+            [
+                "Electron-Builder + Vue でデスクトップアプリケーションの開発を練習しました。",
+                "Vue-Router + コンポネート開発を練習しました。",
+                "Axios請求で、HTTP通信を通じてフリーAPIからもらったヒーローリストまた武器リストのデータを展示しています。",
+                "Vuetify + Scss を練習しました。"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/electron-vue-mobagame"
+        }
+    },
+    {
+        "name": "React SPA Moba Game Characters",
         "id": "reactpc01",
         "type": "pc",
         "time": "2021/08",

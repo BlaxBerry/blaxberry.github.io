@@ -68,6 +68,7 @@
         "showSkillPage": true,
         "main": "ヘビゲームの開発を通じてTSを練習しました。引き続き深く勉強して強化中です。",
         "desc": [
+            "TypeScript + Vue3 + Electron を利用し、ローカル画像ファイルを読み込めるデスクトップアプリケーションを開発して練習しました。",
             "ヘビゲーム(Greedy Snake game)の開発を通じてTSを練習しました。"
         ],
         "similar": [
@@ -108,13 +109,31 @@
         ]
     },
     {
+        "name": "Bootstrap",
+        "id": "bootstrap",
+        "type": "style",
+        "pic": "bootstrap.svg",
+        "showHomePage": false,
+        "showSkillPage": true,
+        "main": "色々な架空サイトや Web APP などの練習を通じ、Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
+        "desc": [
+            "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
+            "Bootstrapのグリッドシステム( Grid System )を理解して使えます。"
+        ],
+        "similar": [
+            "bootstrap"
+        ]
+    },
+    {
         "name": "Scss",
         "id": "scss",
         "type": "style",
         "pic": "sass.svg",
         "showHomePage": true,
         "showSkillPage": true,
-        "desc": "色々な架空サイトや Web APP などの練習を通じ、フレームワークで Scss を利用して開発することができます。",
+        "desc": [
+            "色々な架空サイトや Web APP などの練習を通じ、フレームワークで Scss を利用して開発することができます。"
+        ],
         "techTasks": [
             {
                 "name": "Scss",
@@ -141,27 +160,13 @@
         "showHomePage": false,
         "showSkillPage": true,
         "main": "色々な架空サイトやWeb APPなどの練習を通じ、フレームワークで Less を利用して開発することができます。",
-        "desc": [],
+        "desc": [
+            "色々な架空サイトや Web APP などの練習を通じ、フレームワークで Less を利用して開発することができます。"
+        ],
         "similar": [
             "less",
             "scss",
             "css"
-        ]
-    },
-    {
-        "name": "Bootstrap",
-        "id": "bootstrap",
-        "type": "style",
-        "pic": "bootstrap.svg",
-        "showHomePage": false,
-        "showSkillPage": true,
-        "main": "色々な架空サイトや Web APP などの練習を通じ、Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
-        "desc": [
-            "Bootstrapテンプレートを使用してレスポンシブル開発することができます。",
-            "Bootstrapのグリッドシステム( Grid System )を理解して使えます。"
-        ],
-        "similar": [
-            "bootstrap"
         ]
     },
     {
@@ -230,7 +235,7 @@
         "showSkillPage": true,
         "main": "色々な SPA Web App の開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
         "desc": [
-            "Vue 3 + Vite を勉強中です。"
+            "現在 Vue 3 + Vite を勉強中です。"
         ],
         "similar": [
             "vue-cli",
@@ -353,7 +358,7 @@
         "id": "webpack",
         "type": "others",
         "pic": "webpack.svg",
-        "showHomePage": true,
+        "showHomePage": false,
         "showSkillPage": true,
         "main": "",
         "desc": [
@@ -525,24 +530,6 @@
         "similar": []
     },
     {
-        "name": "gem",
-        "id": "gem",
-        "type": "others",
-        "pic": "ruby-rubygems.svg",
-        "showHomePage": false,
-        "showSkillPage": true,
-        "main": "Nuxtは勉強中です。",
-        "desc": [
-            "RubyGemsで各gem( パッケージ )を管理することができます。",
-            "bundler が使えます。"
-        ],
-        "similar": [
-            "gem",
-            "ruby",
-            "rails"
-        ]
-    },
-    {
         "name": "npm",
         "id": "npm",
         "type": "others",
@@ -574,6 +561,24 @@
             "yarn",
             "nodejs",
             "npm"
+        ]
+    },
+    {
+        "name": "Electron",
+        "id": "electron",
+        "type": "others",
+        "pic": "electron.svg",
+        "showHomePage": true,
+        "showSkillPage": true,
+        "main": "引き続き強化しています。",
+        "desc": [
+            "TypeScript + Vue3 + Electron を利用し、ローカル画像ファイルを読み込めるデスクトップアプリケーションを開発して練習しました。",
+            "Axios + Vue2 での Moba Game Characters Detail のデスクトップアプリケーションを開発して練習しました。",
+            "引き続き強化しています。"
+        ],
+        "similar": [
+            "electron",
+            "vue-cli"
         ]
     }
 ]
