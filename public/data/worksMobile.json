@@ -32,8 +32,12 @@
                     "pic": "vue.svg"
                 },
                 {
-                    "name": "Vue-Cli2",
-                    "pic": "vue.svg"
+                    "name": "VantUI",
+                    "pic": "vue-vant.svg"
+                },
+                {
+                    "name": "Less",
+                    "pic": "less.svg"
                 }
             ],
             [
@@ -42,18 +46,14 @@
                     "pic": "axios.svg"
                 },
                 {
-                    "name": "JSON",
-                    "pic": "json.svg"
+                    "name": "API",
+                    "pic": "postman.svg"
                 }
             ],
             [
                 {
                     "name": "Vue-Router",
                     "pic": "vue.svg"
-                },
-                {
-                    "name": "Less",
-                    "pic": "less.svg"
                 }
             ]
         ],
@@ -95,16 +95,16 @@
             "音楽プレーヤー",
             "Material UI"
         ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/mobile01.png",
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
         "pics": [
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/mobile01.png",
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/mobile02.png",
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/src/assets/images/mobile03.png"
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-01.png",
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-03.png"
         ],
         "techTasks": [
             [
                 {
-                    "name": "Create-React-App",
+                    "name": "React",
                     "pic": "react.svg"
                 },
                 {
@@ -122,18 +122,14 @@
                     "pic": "axios.svg"
                 },
                 {
-                    "name": "JSON",
-                    "pic": "json.svg"
+                    "name": "React-Router-Dom",
+                    "pic": "react-router-dom.svg"
                 }
             ],
             [
                 {
-                    "name": "React-Router-Dom",
-                    "pic": "react-router-dom.svg"
-                },
-                {
-                    "name": "Pub/Sub-js",
-                    "pic": "npm.svg"
+                    "name": "Redux",
+                    "pic": "redux.svg"
                 }
             ]
         ],
@@ -181,23 +177,27 @@
                     "pic": "vue.svg"
                 },
                 {
-                    "name": "Vue-Cli2",
-                    "pic": "vue.svg"
+                    "name": "VantUI",
+                    "pic": "vue-vant.svg"
+                },
+                {
+                    "name": "Less",
+                    "pic": "less.svg"
                 }
             ],
             [
                 {
                     "name": "Axios",
                     "pic": "axios.svg"
+                },
+                {
+                    "name": "API",
+                    "pic": "postman.svg"
                 }
             ],
             [
                 {
                     "name": "Vue-Router",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Van UI",
                     "pic": "vue.svg"
                 }
             ]
@@ -329,52 +329,6 @@
         ],
         "links": {
             "github": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite"
-        }
-    },
-    {
-        "name": "Chat Robot",
-        "id": "ajaxchatrobot",
-        "type": "mobile",
-        "time": "2021/03",
-        "keywords": [
-            "HTML5 + CSS3",
-            "Ajax",
-            "jQuery"
-        ],
-        "mainPic": "https://github.com/BlaxBerry/Demo_jQuery/raw/master/ChatRobot/screenshot.png",
-        "pics": [
-            "https://github.com/BlaxBerry/Demo_jQuery/raw/master/ChatRobot/screenshot.png"
-        ],
-        "techTasks": [
-            [
-                {
-                    "name": "HTML5",
-                    "pic": "html.svg"
-                }
-            ],
-            [
-                {
-                    "name": "CSS3",
-                    "pic": "css.svg"
-                }
-            ],
-            [
-                {
-                    "name": "jQuery.Ajax",
-                    "pic": "jquery.svg"
-                }
-            ]
-        ],
-        "desc": "最初的なAjax練習として、jQueryのAjaxでFree APIにリクエストし、文字をボイス( Voice Message )に変更します。そしてjQueryのDOM操作を通じて声音を<audio>に代入します。",
-        "function": [
-            [],
-            [
-                "Ajaxメゾットのカプセル化を練習しました。",
-                "jQueryのDOM操作を練習しました。"
-            ]
-        ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/Demo_jQuery/tree/master/ChatRobot"
         }
     }
 ]

@@ -58,14 +58,13 @@
               </small>
 
               <!-- 2.4. shortcoming -->
-              <v-list-item-subtitle
-                class="shortcoming ml-lg-15 pa-2"
+              <p
+                class="shortcoming ml-lg-15 pa-2 mb-0 text-caption font-weight-medium"
                 v-for="(shortcoming, i) in version.shortcoming"
                 :key="shortcoming"
               >
-                <b>{{ i + 1 }}</b
-                >. {{ shortcoming }}
-              </v-list-item-subtitle>
+                {{ i + 1 }}. {{ shortcoming }}
+              </p>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>

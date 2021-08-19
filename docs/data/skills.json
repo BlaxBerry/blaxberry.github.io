@@ -179,9 +179,21 @@
         "main": "",
         "desc": [],
         "similar": [
-            "vuetify",
-            "vue-cli",
+            "vant",
             "element-ui"
+        ]
+    },
+    {
+        "name": "Vant",
+        "id": "vant",
+        "type": "style",
+        "pic": "vue-vant.svg",
+        "showSkillPage": true,
+        "main": "",
+        "desc": [],
+        "similar": [
+            "element-ui",
+            "vuetify"
         ]
     },
     {
@@ -193,9 +205,23 @@
         "main": "",
         "desc": [],
         "similar": [
-            "element-ui",
-            "vue-cli",
+            "vant",
             "vuetify"
+        ]
+    },
+    {
+        "name": "Ant-Design-Vue",
+        "id": "antd-vue",
+        "type": "style",
+        "pic": "vue-ant-design.svg",
+        "showSkillPage": true,
+        "main": "",
+        "desc": [],
+        "similar": [
+            "vuetify",
+            "vant",
+            "element-ui",
+            "antd"
         ]
     },
     {
@@ -208,7 +234,6 @@
         "desc": [],
         "similar": [
             "material-ui",
-            "creat-react-app",
             "antd"
         ]
     },
@@ -221,9 +246,8 @@
         "main": "",
         "desc": [],
         "similar": [
-            "antd",
-            "react",
-            "material-ui"
+            "material-ui",
+            "antd-vue"
         ]
     },
     {
@@ -240,7 +264,6 @@
         "similar": [
             "vue-cli",
             "vuetify",
-            "element-ui",
             "vue-router",
             "vue-x",
             "nuxt",
@@ -361,26 +384,26 @@
         "showHomePage": false,
         "showSkillPage": true,
         "main": "",
-        "desc": [
-            ""
-        ],
+        "desc": [],
         "similar": [
-            "webpack"
+            "webpack",
+            "vite"
         ]
     },
     {
-        "name": "Axios",
-        "id": "axios",
+        "name": "Vite",
+        "id": "vite",
         "type": "others",
-        "pic": "axios.svg",
+        "pic": "vue-vite.svg",
+        "showHomePage": false,
         "showSkillPage": true,
-        "main": "Nuxtは勉強中です。",
+        "main": "勉強中です。",
         "desc": [
-            "Axiosを利用し、非同期にHTTP通信することができます。"
+            "勉強中です。"
         ],
         "similar": [
-            "vue",
-            "react"
+            "webpack",
+            "vue-cli"
         ]
     },
     {
@@ -434,9 +457,7 @@
         "showHomePage": false,
         "showSkillPage": true,
         "main": "",
-        "desc": [
-            ""
-        ],
+        "desc": [],
         "similar": [
             "vue",
             "nodejs"
@@ -579,6 +600,21 @@
         "similar": [
             "electron",
             "vue-cli"
+        ]
+    },
+    {
+        "name": "Axios",
+        "id": "axios",
+        "type": "others",
+        "pic": "axios.svg",
+        "showSkillPage": false,
+        "main": "Nuxtは勉強中です。",
+        "desc": [
+            "Axiosを利用し、非同期にHTTP通信することができます。"
+        ],
+        "similar": [
+            "vue",
+            "react"
         ]
     }
 ]

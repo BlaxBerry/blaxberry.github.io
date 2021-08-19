@@ -121,10 +121,6 @@
                     "pic": "vue.svg"
                 },
                 {
-                    "name": "Vue-Cli3",
-                    "pic": "vue.svg"
-                },
-                {
                     "name": "Vuetify",
                     "pic": "vue-vuetify.svg"
                 },
@@ -234,11 +230,15 @@
                     "pic": "axios.svg"
                 },
                 {
-                    "name": "Vue-Router",
-                    "pic": "vue.svg"
+                    "name": "API",
+                    "pic": "postman.svg"
                 }
             ],
             [
+                {
+                    "name": "Vue-Router",
+                    "pic": "vue.svg"
+                },
                 {
                     "name": "Electron",
                     "pic": "electron.svg"
@@ -267,6 +267,69 @@
         "links": {
             "github": "https://github.com/BlaxBerry/electron-vue-mobagame"
         }
+    },
+    {
+        "name": "SPA Responsive Music Player 2.0",
+        "id": "vuemusicplayer",
+        "type": "pc",
+        "time": "2021/05 ~",
+        "keywords": [
+            "Vue",
+            "SPA",
+            "Vuetify",
+            "JavaScript",
+            "Axios"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
+        "pics": [
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-01.png",
+            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-sheet.png"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Vue2",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vuetify",
+                    "pic": "vue-vuetify.svg"
+                },
+                {
+                    "name": "Scss",
+                    "pic": "sass.svg"
+                }
+            ],
+            [
+                {
+                    "name": "VueX",
+                    "pic": "vue-vuex.svg"
+                },
+                {
+                    "name": "Vue-Router",
+                    "pic": "vue.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Axios",
+                    "pic": "axios.svg"
+                }
+            ]
+        ],
+        "desc": "レスポンシブSPA( Single Page Application ) 音楽プレーヤーです。Axios、VueX、UIフレームワークの Vuetify を利用して開発しました。個人練習専用です。( Only for Personal Using )",
+        "function": [
+            [
+                "Search画面で、Tabを通じてタイプ別で( List、Sheets、MV３集類 )音楽を探します。",
+                "Detail画面で、MVまたSheetsの詳細を確認できます。"
+            ],
+            [
+                "Version 2.0 です。",
+                "Version 1.0 は　Element-UI や Less を利用して開発しました。"
+            ]
+        ],
+        "links": {}
     },
     {
         "name": "React SPA Moba Game Characters",
@@ -306,11 +369,15 @@
                     "pic": "axios.svg"
                 },
                 {
-                    "name": "React-Router-Dom",
-                    "pic": "react-router-dom.svg"
+                    "name": "API",
+                    "pic": "postman.svg"
                 }
             ],
             [
+                {
+                    "name": "React-Router-Dom",
+                    "pic": "react-router-dom.svg"
+                },
                 {
                     "name": "Pub/Sub",
                     "pic": "npm.svg"
@@ -581,65 +648,6 @@
         ],
         "links": {
             "github": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping"
-        }
-    },
-    {
-        "name": "Simple TodoList",
-        "id": "jq01",
-        "type": "pc",
-        "time": "2020/11",
-        "keywords": [
-            "HTML5 + CSS3",
-            "ローカルストレージ",
-            "jQuery",
-            "JavaScript"
-        ],
-        "mainPic": "https://github.com/BlaxBerry/JS--todoList/raw/master/images/screenshot.png",
-        "pics": [
-            "https://github.com/BlaxBerry/JS--todoList/raw/master/images/screenshot.png"
-        ],
-        "techTasks": [
-            [
-                {
-                    "name": "HTML5",
-                    "pic": "html.svg"
-                },
-                {
-                    "name": "CSS3",
-                    "pic": "css.svg"
-                }
-            ],
-            [
-                {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
-                },
-                {
-                    "name": "jQuery",
-                    "pic": "jquery.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Local Storage",
-                    "pic": "html.svg"
-                }
-            ]
-        ],
-        "desc": "ローカルストレージ( LocalStorage )でブラウザにデータを保存するTodoListです。これを通じて、jQueryでのDOM操作やAPIまたアニメーションなどを練習しました。",
-        "function": [
-            [
-                "TodoListタスクを追加、保存、削除、編集することができます。"
-            ],
-            [
-                "ローカルストレージ( LocalStorage )を利用し、JSON.stringify()・JSON.parse()でTodoListのデータを操作し、ブラウザにデータを保存します。",
-                "HTML5、CSS3を練習しました。",
-                "jQueryのイベントやアニメーションを練習しました。"
-            ]
-        ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/JS--todoList",
-            "demo": "https://blaxberry.github.io/JS--todoList/"
         }
     }
 ]
