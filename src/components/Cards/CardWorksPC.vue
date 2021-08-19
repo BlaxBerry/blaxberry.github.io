@@ -10,7 +10,7 @@
         md="4"
         lg="3"
       >
-        <v-card elevation="2" @click="click(item)">
+        <v-card elevation="4" @click="click(item)">
           <v-img
             :src="item.mainPic"
             lazy-src="https://flevix.com/wp-content/uploads/2019/12/Barline-Loading-Images-1.gif"

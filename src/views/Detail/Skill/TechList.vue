@@ -1,6 +1,6 @@
 <template>
   <div id="detail-skill-techlist">
-    <v-card justify="center" class="pa-5">
+    <v-card justify="center" class="mt-3">
       <v-expansion-panels accordion>
         <v-expansion-panel v-for="(item, index) in list" :key="index">
           <v-expansion-panel-header>

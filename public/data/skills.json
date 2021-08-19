@@ -438,7 +438,7 @@
         "pic": "rails.svg",
         "showHomePage": true,
         "showSkillPage": true,
-        "main": "Node.js などでサーバを開発する経験があります。Rails を通じてWebアプリ開発することができます。引き続き深く勉強して強化中です。",
+        "main": "スキルアップのために、サーバー開発については Node.js・Express.js だけではなく、Ruby や Ruby on Rails の基礎も勉強し、それらに基づいた開発も練習しました。",
         "desc": [
             "MVC( モデルModel、ビューView、コントローラーController )を理解します。",
             "BootstrapフレームワークをRailsに組み込んで、ERB( Embedded Ruby )を通じて、Webアプリ開発することができます。"

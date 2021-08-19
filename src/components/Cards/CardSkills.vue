@@ -10,7 +10,12 @@
         md="2"
         lg="1"
       >
-        <v-card elevation="2" @click="click(item)">
+        <v-card
+          elevation="4"
+          max-width="100"
+          max-height="100"
+          @click="click(item)"
+        >
           <v-img
             :src="require(`../../assets/images/${item.pic}`)"
             lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
@@ -34,7 +39,7 @@ export default {
         this.$router.push({
           path: "/detail/skill",
           query: {
-            id
+            id,
           },
         });
       }, 200);

@@ -15,9 +15,9 @@
     </v-list>
 
     <!-- github link -->
-    <div class="link text-center pa-4">
+    <div class="link text-center pa-4" v-if="links.github">
       <h3 class="mb-4">check more details on github</h3>
-      <v-btn :href="links.github" target="_blank" elevation="2">
+      <v-btn :href="links.github" target="_blank" elevation="2" dark>
         <v-icon>mdi-github</v-icon>
         <span>Clike to Github</span>
       </v-btn>

@@ -4,12 +4,12 @@
       <!-- title -->
       <Title>
         <h2 slot="title1">{{ name }}</h2>
-        <h4 slot="title2">この作品について</h4>
+        <h4 slot="title2" class="pt-2">この作品について</h4>
       </Title>
 
       <!-- 1. desc -->
       <v-card-text class="px-4 pt-2">
-        <v-card-subtitle class="pt-0 px-0">
+        <v-card-subtitle class="pt-4 px-0 pb-2">
           <b>開発期間：{{ time ? time : "確認できず..." }}</b>
         </v-card-subtitle>
         {{ desc }}
@@ -35,6 +35,7 @@
           :href="links.github"
           target="_blank"
           elevation="2"
+          dark
         >
           <v-icon>mdi-github</v-icon>
           <span>Clike to Github</span>
@@ -44,8 +45,10 @@
           :href="links.demo"
           target="_blank"
           elevation="2"
+          class="cyan darken-2"
+          dark
         >
-          <v-icon color="primary">mdi-camera-iris</v-icon>
+          <v-icon>mdi-camera-iris</v-icon>
           <span>Check Demo Online</span>
         </v-btn>
       </div>
