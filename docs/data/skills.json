@@ -257,17 +257,17 @@
         "pic": "vue.svg",
         "showHomePage": true,
         "showSkillPage": true,
-        "main": "色々な SPA Web App の開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
+        "main": "Vue２、Vue3を、色々な独自の開発を通じて練習しました。これからも引き続き深く勉強して強化中です。",
         "desc": [
-            "現在 Vue 3 + Vite を勉強中です。"
+            "Vue２、Vue3を、色々な独自の開発を通じて練習しました。これからも引き続き深く勉強して強化中です。"
         ],
         "similar": [
             "vue-cli",
-            "vuetify",
             "vue-router",
             "vue-x",
+            "axios",
             "nuxt",
-            "axios"
+            "vuepress"
         ]
     },
     {
@@ -288,7 +288,7 @@
         "name": "Vue-Router",
         "id": "vue-router",
         "type": "framework",
-        "pic": "vue.svg",
+        "pic": "vue-router.svg",
         "showSkillPage": false,
         "main": "色々な SPA Web App の開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
         "desc": [
@@ -297,18 +297,17 @@
         "similar": "vue"
     },
     {
-        "name": "Vue X",
+        "name": "Vuex",
         "id": "vue-x",
         "type": "framework",
         "pic": "vue-vuex.svg",
         "showSkillPage": true,
-        "main": "Vuexは勉強して強化中です。",
-        "desc": [
-            "Vuexは勉強して強化中です。"
-        ],
+        "main": "",
+        "desc": [],
         "similar": [
             "vue",
-            "vue-cli"
+            "vue-cli",
+            "redux"
         ]
     },
     {
@@ -326,10 +325,8 @@
         ],
         "similar": [
             "creat-react-app",
-            "material-ui",
-            "antd",
-            "redux",
             "react-router-dom",
+            "redux",
             "axios"
         ]
     },
@@ -416,7 +413,7 @@
         "main": "以前の勉強や開発練習は主にフロントエンドですが、キャリアアップするために、Node.jsからサーバ開発やデータベース関連スキルを勉強しはじめました。",
         "desc": [
             "Express.jsでHTTPサーバ開発できます。",
-            "データベースに接続して、SSR(Server Side Rending) や CSR(Client Side Rendering）Web開発できます。",
+            "データベースに接続して、SSR( Server Side Rending )や CSR( Client Side Rendering )Web開発できます。",
             "CommonJSのモジュール開発や、Middlewareなどを理解します。",
             "SSR 開発で、テンプレートエンジンやBootstrapなどを利用し、テンプレート開発することができます。",
             "CSR 開発で、データベースに接続して、Ajaxjでデータをフロントにレスポンスすることが出来ます。",
@@ -446,7 +443,7 @@
         "similar": [
             "rails",
             "ruby",
-            "gem"
+            "nodejs"
         ]
     },
     {
@@ -558,9 +555,7 @@
         "showHomePage": false,
         "showSkillPage": true,
         "main": "Nuxtは勉強中です。",
-        "desc": [
-            "Axiosを利用し、非同期にHTTP通信することができます。"
-        ],
+        "desc": [],
         "similar": [
             "npm",
             "nodejs",
@@ -575,9 +570,7 @@
         "showHomePage": false,
         "showSkillPage": true,
         "main": "Nuxtは勉強中です。",
-        "desc": [
-            "Axiosを利用し、非同期にHTTP通信することができます。"
-        ],
+        "desc": [],
         "similar": [
             "yarn",
             "nodejs",
@@ -615,6 +608,21 @@
         "similar": [
             "vue",
             "react"
+        ]
+    },
+    {
+        "name": "Vuepress",
+        "id": "vuepress",
+        "type": "others",
+        "pic": "vue-vuepress.svg",
+        "showSkillPage": false,
+        "main": "Vuepress 静的サイトジェネレーター「Static Site Generator(SSG)」",
+        "desc": [
+            "静的サイトジェネレーター「Static Site Generator(SSG)」。"
+        ],
+        "similar": [
+            "vue",
+            "nuxt"
         ]
     }
 ]

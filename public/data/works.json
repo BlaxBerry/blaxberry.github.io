@@ -142,7 +142,7 @@
             [
                 {
                     "name": "Vue-Router",
-                    "pic": "vue.svg"
+                    "pic": "vue-router.svg"
                 },
                 {
                     "name": "vue-smooth-scroll",
@@ -230,14 +230,14 @@
                     "pic": "axios.svg"
                 },
                 {
-                    "name": "API",
+                    "name": "Free Data API",
                     "pic": "postman.svg"
                 }
             ],
             [
                 {
                     "name": "Vue-Router",
-                    "pic": "vue.svg"
+                    "pic": "vue-router.svg"
                 },
                 {
                     "name": "Electron",
@@ -308,7 +308,7 @@
                 },
                 {
                     "name": "Vue-Router",
-                    "pic": "vue.svg"
+                    "pic": "vue-router.svg"
                 }
             ],
             [
@@ -439,6 +439,10 @@
                 }
             ],
             [
+                {
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
+                },
                 {
                     "name": "Json",
                     "pic": "json.svg"

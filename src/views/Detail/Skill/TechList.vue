@@ -14,7 +14,7 @@
           </v-expansion-panel-header>
 
           <v-expansion-panel-content>
-            <v-list-item v-for="(list, i) in item.desc" :key="i" class="mt-2">
+            <v-list-item v-for="(list, i) in item.desc" :key="i" class="mt-2 px-0 px-md-4">
               <small>
                 <b>{{ item.desc.length > 1 ? i + 1 + "." : "" }}</b>
                 {{ list }}</small

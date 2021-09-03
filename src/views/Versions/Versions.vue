@@ -3,14 +3,17 @@
     <v-container>
       <!-- title -->
       <Title>
-        <h1 slot="title1">Portfolio Versions</h1>
+        <h1 slot="title1">Versions of Portfolio</h1>
         <h4 slot="title2">ポートフォリオのバージョンアップ</h4>
       </Title>
 
       <!-- 1. desc -->
-      <p class="pt-10">
-        この画面でポートフォリオのバージョンアップ、今までの各バージョンで使用したスキル、そして以前のポートフォリオの問題点など、開発に関する内容を確認することができます。
-      </p>
+      <p
+        class="pt-10"
+        v-text="
+          'この画面を通じて、ポートフォリオのバージョンアップや、今までの各バージョンで使用したスキル、そして以前のポートフォリオバージョンの問題点など、また開発に関する内容を確認することができます。'
+        "
+      />
 
       <!-- 2. list -->
       <div class="version-list my-10">
@@ -22,12 +25,18 @@
             <!-- 2.1. title -->
             <v-expansion-panel-header class="font-weight-black">
               Version
-              <b :class="index == 0 ? 'text-h6 pl-2 red--text' : 'pl-2'">
-                {{ version.version }}
-              </b>
-              <small class="text-right pr-2 primary--text">{{
-                version.time
-              }}</small>
+              <b
+                :class="
+                  index == 0
+                    ? 'text-h6 pl-2 red--text'
+                    : 'pl-2 text-decoration-line-through'
+                "
+                v-text="version.version"
+              />
+              <small
+                class="text-right pr-2 primary--text"
+                v-text="version.time"
+              />
             </v-expansion-panel-header>
             <v-expansion-panel-content class="pl-4">
               <!-- 2.2. tech stacks -->
@@ -44,22 +53,26 @@
                       lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
                       max-height="60"
                       max-width="60"
-                    ></v-img>
+                    />
                   </v-card>
-                  <v-list-item-content class="py-1 text-no-wrap">
-                    {{ tech.name }}
-                  </v-list-item-content>
+                  <!-- tech name -->
+                  <v-list-item-content
+                    class="py-1 text-no-wrap"
+                    v-text="tech.name"
+                  />
                 </div>
               </div>
 
               <!-- 2.3. desc -->
-              <small class="desc py-4">
-                {{ version.desc }}
-              </small>
+              <small
+                v-if="version.des"
+                class="desc py-4"
+                v-text="version.desc"
+              />
 
               <!-- 2.4. shortcoming -->
               <p
-                class="shortcoming ml-lg-15 pa-2 mb-0 text-caption font-weight-medium"
+                class="shortcoming pa-2 mb-0 text-caption font-weight-medium"
                 v-for="(shortcoming, i) in version.shortcoming"
                 :key="shortcoming"
               >
@@ -93,8 +106,9 @@ export default {
             "色々な練習を重ねて、最後はVue-Router + Vuetifyを利用して、単一ページのSPAサイトを開発しました。そして静的なWebページではなく、Vue-Cliの中でAxiosを通じて/public /data に保存しされているJSONファイルからデータを読み込んで、画面上で展示或いは操作をします。",
           shortcoming: [],
           techStacks: [
+            { name: "Vue2", icon: "vue.svg" },
             { name: "Vue-Cli", icon: "vue.svg" },
-            { name: "Vue-Router", icon: "vue.svg" },
+            { name: "Vue-Router", icon: "vue-router.svg" },
             { name: "Vuetify", icon: "vue-vuetify.svg" },
             { name: "Scss", icon: "sass.svg" },
             { name: "Axios", icon: "axios.svg" },
@@ -112,6 +126,7 @@ export default {
             "振り返って調整する時は難しくなる。",
           ],
           techStacks: [
+            { name: "Vue2", icon: "vue.svg" },
             { name: "Vue-Cli", icon: "vue.svg" },
             { name: "Media Query", icon: "css.svg" },
             { name: "less", icon: "less.svg" },

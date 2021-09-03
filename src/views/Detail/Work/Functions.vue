@@ -3,13 +3,20 @@
     <!-- title -->
     <Title>
       <h1 slot="title1">Function Details</h1>
-      <h4 slot="title2">機能詳細について</h4>
+      <h4 slot="title2">機能や詳細について</h4>
     </Title>
 
+    <!-- content -->
     <v-list v-for="(l, index) in list" :key="index">
-      <v-list-item v-for="(item, i) in l" :key="i">
+      <v-list-item v-if="list.length > 1">
         <v-icon>mdi-tag</v-icon>
-        <small class="pa-4">{{ item }}</small>
+        <b class="pl-2">{{ "0" + (index + 1) }}</b>
+      </v-list-item>
+      <v-list-item v-for="(item, i) in l" :key="i">
+        <small class="pa-4">
+          <small v-if="l.length > 1" v-text="i + 1 + ' . '" />
+          {{ item }}
+        </small>
       </v-list-item>
       <v-divider inset class="mt-3"></v-divider>
     </v-list>

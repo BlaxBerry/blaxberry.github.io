@@ -9,10 +9,10 @@
         md="3"
         lg="2"
       >
-        <v-card elevation="2" @click="click(item)">
+        <v-card elevation="4" @click="click(item)">
           <v-img
             :src="item.mainPic"
-              lazy-src="https://flevix.com/wp-content/uploads/2019/12/Barline-Loading-Images-1.gif"
+            lazy-src="https://flevix.com/wp-content/uploads/2019/12/Barline-Loading-Images-1.gif"
           ></v-img>
         </v-card>
         <v-card-text class="text-center text-no-wrap font-weight-bold">

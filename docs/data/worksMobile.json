@@ -32,6 +32,12 @@
                     "pic": "vue.svg"
                 },
                 {
+                    "name": "Vue-Router",
+                    "pic": "vue-router.svg"
+                }
+            ],
+            [
+                {
                     "name": "VantUI",
                     "pic": "vue-vant.svg"
                 },
@@ -46,14 +52,8 @@
                     "pic": "axios.svg"
                 },
                 {
-                    "name": "API",
+                    "name": "Free Data API",
                     "pic": "postman.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Vue-Router",
-                    "pic": "vue.svg"
                 }
             ]
         ],
@@ -191,14 +191,14 @@
                     "pic": "axios.svg"
                 },
                 {
-                    "name": "API",
+                    "name": "Free Data API",
                     "pic": "postman.svg"
                 }
             ],
             [
                 {
                     "name": "Vue-Router",
-                    "pic": "vue.svg"
+                    "pic": "vue-router.svg"
                 }
             ]
         ],
@@ -329,6 +329,62 @@
         ],
         "links": {
             "github": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite"
+        }
+    },
+    {
+        "name": "Responsive Caculator",
+        "id": "vuecaculator",
+        "type": "mobile",
+        "time": "2021/8",
+        "keywords": [
+            "Vue",
+            "App",
+            "Vuetify",
+            "JavaScript"
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vue-caculator/raw/main/public/images/mobile.png",
+        "pics": [
+            "https://github.com/BlaxBerry/vue-caculator/raw/main/public/images/pc.png"
+        ],
+        "techTasks": [
+            [
+                {
+                    "name": "Vuetify",
+                    "pic": "vue-vuetify.svg"
+                },
+                {
+                    "name": "Scss",
+                    "pic": "sass.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Vue2",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vue-Cli",
+                    "pic": "vue.svg"
+                }
+            ],
+            [
+                {
+                    "name": "JavaScript",
+                    "pic": "javascript.svg"
+                }
+            ]
+        ],
+        "desc": "Vueを使って作成したレスポンシブデザインの電卓ウェブアプリです。iPhoneを真似し、レスポンシブデザインにしておき、スマホサイズを優先に考えています。",
+        "function": [
+            [
+                "iPhoneの電卓を真似してコンポネート開発を練習しました。基本ボタンやスタイルなどを少し自分で変更しました。",
+                "レスポンシブデザイン、スマホサイズ優先に、スクリンの大きさより。レイアウトや電卓のボタンの数が変化されています。",
+                "Vue２＋Vue-CLi を利用したコンポネート開発で、UI については フレームワークのVuetifyとScssを使用しました。"
+            ]
+        ],
+        "links": {
+            "github": "https://github.com/BlaxBerry/vue-caculator",
+            "demo": "https://blaxberry.github.io/vue-caculator/"
         }
     }
 ]

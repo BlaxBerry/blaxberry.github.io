@@ -64,12 +64,19 @@ export default {
     return {
       timeline: [
         {
+          time: "2020.9",
+          title: "知識強化",
+          desc:
+            "今まで学んだフロントエンドに関する知識を復習して強化します。",
+        },
+        {
           time: "2021.8",
           desc:
             "ELectron の基礎を勉強して練習しました。最近 React や Vue３ の関連知識を強化しており、また Vite に対しても勉強し始めました。",
           skill: [
             { name: "Electron", pic: "electron.svg" },
             { name: "Vue3", pic: "vue.svg" },
+            { name: "VueX", pic: "vue-vuex.svg" },
             { name: "Vite", pic: "vue-vite.svg" },
           ],
         },
@@ -108,7 +115,7 @@ export default {
           skill: [
             { name: "Vue", pic: "vue.svg" },
             { name: "Vant", pic: "vue-vant.svg" },
-            { name: "ElementUI", pic: "vue-elementui.svg" },
+            { name: "Vue-router", pic: "vue-router.svg" },
             { name: "React", pic: "react.svg" },
             { name: "Antd", pic: "react-ant-design.svg" },
             { name: "React-Router-Dom", pic: "react-router-dom.svg" },
