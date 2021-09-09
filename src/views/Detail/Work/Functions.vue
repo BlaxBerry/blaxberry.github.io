@@ -14,7 +14,7 @@
       </v-list-item>
       <v-list-item v-for="(item, i) in l" :key="i">
         <small class="pa-4">
-          <small v-if="l.length > 1" v-text="i + 1 + ' . '" />
+          <b v-if="l.length > 1" v-text="i + 1 + '. '" />
           {{ item }}
         </small>
       </v-list-item>

@@ -65,7 +65,7 @@
 
               <!-- 2.3. desc -->
               <small
-                v-if="version.des"
+                v-if="version.desc"
                 class="desc py-4"
                 v-text="version.desc"
               />

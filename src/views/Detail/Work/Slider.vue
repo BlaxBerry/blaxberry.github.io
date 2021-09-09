@@ -7,15 +7,17 @@
         :src="item"
         reverse-transition="fade-transition"
         transition="fade-transition"
-      ></v-carousel-item>
+      />
       <template v-slot:prev="{ on, attrs }">
         <v-btn color="pink" rounded v-bind="attrs" v-on="on">
-          <v-icon>mdi-chevron-left</v-icon> Previous</v-btn
-        >
+          <v-icon>mdi-chevron-left</v-icon>
+          Previous
+        </v-btn>
       </template>
       <template v-slot:next="{ on, attrs }">
-        <v-btn color="info" rounded v-bind="attrs" v-on="on"
-          >Next<v-icon>mdi-chevron-right</v-icon>
+        <v-btn color="info" rounded v-bind="attrs" v-on="on">
+          Next
+          <v-icon>mdi-chevron-right</v-icon>
         </v-btn>
       </template>
     </v-carousel>

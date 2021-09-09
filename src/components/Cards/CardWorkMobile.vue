@@ -1,6 +1,6 @@
 <template>
   <div class="CardWorksMobile pb-5">
-    <v-row align="center" justify="start">
+    <v-row align="center" justify="center">
       <v-col
         v-for="(item, index) in list"
         :key="index"

@@ -1,13 +1,13 @@
 [
     {
         "name": "SPA EC Book Shop",
-        "id": "mobile001",
+        "id": "vue2-spa-mobile-01",
         "type": "mobile",
         "time": "2021/05",
         "keywords": [
             "Vue",
             "SPA",
-            "VantUI",
+            "Vant",
             "Axios",
             "Less"
         ],
@@ -32,8 +32,22 @@
                     "pic": "vue.svg"
                 },
                 {
+                    "name": "Vue-Cli4",
+                    "pic": "vue.svg"
+                },
+                {
                     "name": "Vue-Router",
                     "pic": "vue-router.svg"
+                }
+            ],
+            [
+                {
+                    "name": "Axios",
+                    "pic": "axios.svg"
+                },
+                {
+                    "name": "Free Data API",
+                    "pic": "json.svg"
                 }
             ],
             [
@@ -44,16 +58,6 @@
                 {
                     "name": "Less",
                     "pic": "less.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Axios",
-                    "pic": "axios.svg"
-                },
-                {
-                    "name": "Free Data API",
-                    "pic": "postman.svg"
                 }
             ]
         ],
@@ -150,39 +154,34 @@
         "links": {}
     },
     {
-        "name": "SPA EC Shop",
-        "id": "vueec02",
+        "name": "Vite + Vue3 EC Shop",
+        "id": "vite-vue3-mobile-shopping",
         "type": "mobile",
         "time": "2021/05",
         "keywords": [
             "Vue",
             "SPA",
-            "Vant UI",
-            "Axios"
+            "Axios",
+            "Vite",
+            "Vant"
         ],
         "mainPic": "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png",
         "pics": [
-            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png",
-            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Detail.png",
-            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Detail2.png",
-            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/AddToCart.png",
-            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Search&Sort.png",
-            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/CartEdit.png",
-            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/SignOut.png"
+            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png"
         ],
         "techTasks": [
             [
                 {
-                    "name": "Vue2",
+                    "name": "Vite2",
+                    "pic": "vue-vite.svg"
+                },
+                {
+                    "name": "Vue3",
                     "pic": "vue.svg"
                 },
                 {
-                    "name": "VantUI",
-                    "pic": "vue-vant.svg"
-                },
-                {
-                    "name": "Less",
-                    "pic": "less.svg"
+                    "name": "Vue-Router",
+                    "pic": "vue-router.svg"
                 }
             ],
             [
@@ -192,21 +191,29 @@
                 },
                 {
                     "name": "Free Data API",
-                    "pic": "postman.svg"
+                    "pic": "json.svg"
                 }
             ],
             [
                 {
-                    "name": "Vue-Router",
-                    "pic": "vue-router.svg"
+                    "name": "Vant",
+                    "pic": "vue-vant.svg"
+                },
+                {
+                    "name": "Less",
+                    "pic": "less.svg"
                 }
             ]
         ],
-        "desc": "モバイル端末の架空の日常生活用品のEC( 電子商取引 )Web Appです。新規登録・ログイン・ログアウトができ、商品検索や検索履歴の機能もあり、ショッピングカートを操作でき、商品注文を模擬します。",
+        "desc": "Vite2 + Vue3で開発した、モバイル端末向けの架空EC ( 電子商取引 )日常生活用品のWeb Appです。\n新規登録・ログイン・ログアウトができ、商品検索や検索履歴の機能もあり、ショッピングカートを操作でき、商品注文を模擬します。",
         "function": [
             [
-                "使用する前に、ログインまたは新規登録しなければなりません。",
-                "( テストアカウント: name: 默认用户, password: 111111 )"
+                "Vue3 + Vite を練習するため、以前の vue2 + Vue-Cli から書き換えました。",
+                "フロントエンドツールについて、Vue-CliとWebpackではなく、高速のHMRを提供するViteを利用します。",
+                "この作品を通じて、Vue3の Composition APIs や Hooks も練習しました。",
+                "Vue-Routerを利用したSPA( Single Page Application )電子商取引Web Appです。",
+                "UIについては、UIコンポネートのVantを利用し、そしてLessで調整します。( VantはLessで構築されているため。)",
+                "商品リストのデータについては、AxiosでFree APIに請求します。"
             ],
             [
                 "商品検索や検索履歴の機能があります。入力したキーワードで関連商品を探します。",
@@ -214,12 +221,6 @@
                 "List画面で、商品を種類によって分類してリストで展示しており、商品をクリックしたら、Product Detail画面に移動します。",
                 "Product Detail画面で、この商品に関する内容を確認し、商品の数を設定してショッピングカートに追加することができます。",
                 "Shopping Cart画面で、ショッピングカートを管理し( 商品数を変更、追加、削除 )、商品を確認したら注文することができます。( 摸擬 )"
-            ],
-            [
-                "Vue-Routerを利用したSPA(Single Page Application )電子商取引Web Appです。",
-                "商品リストのデータについては、AxiosでFree APIに請求します。",
-                "Axiosのinterceptorsで、リクエストやレスポンスの前処理をします。",
-                "Vant UIを利用し、Lessでレイアウトを設定します。 "
             ]
         ],
         "links": {
@@ -349,22 +350,22 @@
         "techTasks": [
             [
                 {
+                    "name": "Vue2",
+                    "pic": "vue.svg"
+                },
+                {
+                    "name": "Vue-Cli4",
+                    "pic": "vue.svg"
+                }
+            ],
+            [
+                {
                     "name": "Vuetify",
                     "pic": "vue-vuetify.svg"
                 },
                 {
                     "name": "Scss",
                     "pic": "sass.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Vue2",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Vue-Cli",
-                    "pic": "vue.svg"
                 }
             ],
             [

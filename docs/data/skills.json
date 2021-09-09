@@ -193,7 +193,8 @@
         "desc": [],
         "similar": [
             "element-ui",
-            "vuetify"
+            "vuetify",
+            "ant-design-vue"
         ]
     },
     {
@@ -206,12 +207,13 @@
         "desc": [],
         "similar": [
             "vant",
-            "vuetify"
+            "vuetify",
+            "ant-design-vue"
         ]
     },
     {
         "name": "Ant-Design-Vue",
-        "id": "antd-vue",
+        "id": "ant-design-vue",
         "type": "style",
         "pic": "vue-ant-design.svg",
         "showSkillPage": true,
@@ -263,6 +265,7 @@
         ],
         "similar": [
             "vue-cli",
+            "vite",
             "vue-router",
             "vue-x",
             "axios",
@@ -334,7 +337,7 @@
         "name": "Create-React-App",
         "id": "creat-react-app",
         "type": "framework",
-        "pic": "react.svg",
+        "pic": "react-create-creat-app.svg",
         "showSkillPage": false,
         "main": "引き続き深く勉強して強化中です。",
         "desc": [
