@@ -89,23 +89,25 @@
         ],
         "similar": [
             "ruby",
-            "rails"
+            "rails",
+            "php"
         ]
     },
     {
-        "name": "jQuery",
-        "id": "jquery",
+        "name": "PHP",
+        "id": "php",
         "type": "lang",
-        "pic": "jquery.svg",
-        "showHomePage": true,
+        "pic": "php.svg",
+        "showHomePage": false,
         "showSkillPage": true,
-        "main": "jQuery で開発することができます。",
+        "main": "スキルアップのために、将来の段階的な目標として PHP も勉強したいと思います。",
         "desc": [
-            "jQueryでDOM操作、アニメーションなどでインタラクティブにすることができます。",
-            "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"
+            "将来の段階的な目標になります。"
         ],
         "similar": [
-            "jquery"
+            "mysql",
+            "wordpress",
+            "ruby"
         ]
     },
     {
@@ -180,7 +182,8 @@
         "desc": [],
         "similar": [
             "vant",
-            "element-ui"
+            "element-ui",
+            "ant-design-vue"
         ]
     },
     {
@@ -198,7 +201,7 @@
         ]
     },
     {
-        "name": "Element-UI",
+        "name": "Element",
         "id": "element-ui",
         "type": "style",
         "pic": "vue-elementui.svg",
@@ -253,6 +256,22 @@
         ]
     },
     {
+        "name": "jQuery",
+        "id": "jquery",
+        "type": "framework",
+        "pic": "jquery.svg",
+        "showHomePage": true,
+        "showSkillPage": true,
+        "main": "jQuery で開発することができます。",
+        "desc": [
+            "jQueryでDOM操作、アニメーションなどでインタラクティブにすることができます。",
+            "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"
+        ],
+        "similar": [
+            "jquery"
+        ]
+    },
+    {
         "name": "Vue.js",
         "id": "vue",
         "type": "framework",
@@ -292,12 +311,16 @@
         "id": "vue-router",
         "type": "framework",
         "pic": "vue-router.svg",
-        "showSkillPage": false,
+        "showSkillPage": true,
         "main": "色々な SPA Web App の開発を通じてVueを練習しました。引き続き深く勉強して強化中です。",
         "desc": [
             "Vue-Routerを使って、SPAシングルページアプリケーションを作成することができます。"
         ],
-        "similar": "vue"
+        "similar": [
+            "vue-cli",
+            "vite",
+            "react-router-dom"
+        ]
     },
     {
         "name": "Vuex",
@@ -305,11 +328,12 @@
         "type": "framework",
         "pic": "vue-vuex.svg",
         "showSkillPage": true,
-        "main": "",
+        "main": "状態を管理することができます。引き続き深く勉強して強化中です。",
         "desc": [],
         "similar": [
             "vue",
             "vue-cli",
+            "vite",
             "redux"
         ]
     },
@@ -352,12 +376,15 @@
         "id": "react-router-dom",
         "type": "framework",
         "pic": "react-router-dom.svg",
-        "showSkillPage": false,
-        "main": "引き続き深く勉強して強化中です。",
+        "showSkillPage": true,
+        "main": "React-Router-Domを使って、SPAシングルページアプリケーションを作成することができます。。",
         "desc": [
             "React-Router-Domを使って、SPAシングルページアプリケーションを作成することができます。"
         ],
-        "similar": []
+        "similar": [
+            "creat-react-app",
+            "vue-router"
+        ]
     },
     {
         "name": "Redux",
@@ -365,13 +392,12 @@
         "type": "framework",
         "pic": "redux.svg",
         "showSkillPage": true,
-        "main": "Reduxを利用して、React開発で状態 state を管理することができます。引き続き深く勉強して強化中です。",
+        "main": "store、action、reducerを理解し、Reduxを利用してReact開発で状態 state を管理することができます。引き続き深く勉強して強化中です。",
         "desc": [
             "store、action、reducerを理解し、状態stateを管理することができます。",
             "引き続き深く勉強して強化中です。"
         ],
         "similar": [
-            "redux",
             "react",
             "creat-react-app"
         ]
@@ -397,9 +423,9 @@
         "pic": "vue-vite.svg",
         "showHomePage": false,
         "showSkillPage": true,
-        "main": "勉強中です。",
+        "main": "勉強して強化中です。",
         "desc": [
-            "勉強中です。"
+            "勉強して強化中です。"
         ],
         "similar": [
             "webpack",
@@ -456,7 +482,7 @@
         "pic": "vue-nuxt.svg",
         "showHomePage": false,
         "showSkillPage": true,
-        "main": "",
+        "main": "勉強して強化中です。",
         "desc": [],
         "similar": [
             "vue",
@@ -504,7 +530,7 @@
         "id": "mongodb",
         "type": "database",
         "pic": "mongodb.svg",
-        "showHomePage": true,
+        "showHomePage": false,
         "showSkillPage": true,
         "main": "以前、ブログ管理システムなどの SSR や CSR 開発を通じて、MongoDB を Node.js・Express.js などに接続したサーバサイト開発を練習しました。現在 Rails への組み込みの開発を練習しています。",
         "desc": [
@@ -614,18 +640,36 @@
         ]
     },
     {
-        "name": "Vuepress",
+        "name": "VuePress",
         "id": "vuepress",
-        "type": "others",
+        "type": "server",
         "pic": "vue-vuepress.svg",
-        "showSkillPage": false,
+        "showHomePage": false,
+        "showSkillPage": true,
         "main": "Vuepress 静的サイトジェネレーター「Static Site Generator(SSG)」",
         "desc": [
-            "静的サイトジェネレーター「Static Site Generator(SSG)」。"
+            "静的サイトジェネレーター「Static Site Generator(SSG)」。",
+            "WordPress、VuePress を比べながら勉強し始めました。"
         ],
         "similar": [
-            "vue",
-            "nuxt"
+            "wordpress",
+            "vue"
+        ]
+    },
+    {
+        "name": "WordPress",
+        "id": "wordpress",
+        "type": "server",
+        "pic": "wordpress.svg",
+        "showHomePage": true,
+        "showSkillPage": true,
+        "main": "WordPress、VuePress を比べながら勉強し始めました。",
+        "desc": [
+            "WordPress、VuePress を比べながら勉強し始めました。"
+        ],
+        "similar": [
+            "php",
+            "vuepress"
         ]
     }
 ]

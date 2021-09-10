@@ -64,20 +64,24 @@ export default {
     return {
       timeline: [
         {
-          time: "2020.9",
-          title: "知識強化",
+          time: "2021.9",
           desc:
-            "今まで学んだフロントエンドに関する知識を復習して強化します。",
+            "WordPress、VuePress を比べながら勉強し始めました。スキルアップのために、将来の段階的な目標として PHP も勉強したいと思います。",
+          skill: [
+            { name: "VuePress", pic: "vue-vuepress.svg" },
+            { name: "WordPress", pic: "wordpress.svg" },
+            { name: "PHP", pic: "php.svg" },
+          ],
         },
         {
           time: "2021.8",
           desc:
             "ELectron の基礎を勉強して練習しました。最近 React や Vue３ の関連知識を強化しており、また Vite に対しても勉強し始めました。",
           skill: [
-            { name: "Electron", pic: "electron.svg" },
+            { name: "Vite", pic: "vue-vite.svg" },
             { name: "Vue3", pic: "vue.svg" },
             { name: "VueX", pic: "vue-vuex.svg" },
-            { name: "Vite", pic: "vue-vite.svg" },
+            { name: "Electron", pic: "electron.svg" },
           ],
         },
         {
@@ -94,8 +98,9 @@ export default {
           time: "2021.6",
           skill: [
             { name: "TypeScript.js", pic: "typescript.svg" },
-            { name: "Vuetify", pic: "vue-vuetify.svg" },
             { name: "Redux", pic: "redux.svg" },
+            { name: "Vuetify", pic: "vue-vuetify.svg" },
+            { name: "Material UI", pic: "react-materialui.svg" },
           ],
         },
         {
@@ -104,9 +109,9 @@ export default {
             "以前の勉強や開発練習は主にフロントエンドですが、キャリアアップのために、Node.js・Express.js からサーバー開発やデータベース関連スキルを勉強しはじめました。",
           skill: [
             { name: "Node.js", pic: "nodejs.svg" },
+            { name: "axios", pic: "axios.svg" },
             { name: "MongoDB", pic: "mongodb.svg" },
             { name: "MySQL", pic: "mysql.svg" },
-            { name: "axios", pic: "axios.svg" },
           ],
         },
         {
