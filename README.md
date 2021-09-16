@@ -4,23 +4,23 @@
 Vue **SPA**
 Responsive Protofilo, 
 
-created by Vue-Cli3 + Vuetify + Vue-Router,
-and used Axios to get data from JSON files.
+created by **Vue2** + Vue-Cli + Vuetify + Vue-Router,
+and used **Axios** to get JSON data from public files.
 
 ---
 
 ### Tech Stacks
     - Vue2
-    - Vue-cli3
+    - Vue-cli
     - Vue-Router
     - Vuetify
     - Scss
-    - Material Design icons
-    - JSON
     - Axios
-    - vue-smooth-scroll
+    - JSON
+    - vue-lazyload
+    - vue-carousel
     - vue-typer
-
+    - Material Design icons
 ---
 
 ### SPA Routes
@@ -31,6 +31,15 @@ and used Axios to get data from JSON files.
 #### `/detail/skill`
 #### `/detail/work`
 #### `/versions`
+
+---
+
+
+![](./public/pics/home-01.png)
+![](./public/pics/detail-work-01.png)
+![](./public/pics/detail-work-02.png)
+![](./public/pics/works.png)
+![](./public/pics/skills.png)
 
 ---
 
@@ -49,10 +58,6 @@ and used Axios to get data from JSON files.
     - -> Concat links
     - -> version
 
-![](./public/pics/home-01.png)
-![](./public/pics/home-02.png)
-![](./public/pics/home-03.png)
-
 #### 2. Profile Page
 1. Short Info about me 
 2. Experience
@@ -62,7 +67,6 @@ and used Axios to get data from JSON files.
     - -> Concat links
     - -> Protofolio Versions
 
-![](./public/pics/profile-01.png)
 
 ---
 
@@ -73,8 +77,6 @@ and used Axios to get data from JSON files.
     - -> Concat links
     - -> version
 
-![](./public/pics/skills-01.png)
-
 ---
 
 #### 4. Works Page
@@ -83,8 +85,6 @@ and used Axios to get data from JSON files.
 2. Concat
     - -> Concat links
     - -> version
-
-![](./public/pics/works-01.png)
 
 ---
 
@@ -108,8 +108,6 @@ and used Axios to get data from JSON files.
 4. Concat
     - -> Concat links
     - -> version
-
-![](./public/pics/detail-work-01.png)
 
 ---
 

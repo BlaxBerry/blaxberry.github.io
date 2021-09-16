@@ -7,8 +7,11 @@
     </Title>
 
     <!-- top skills  -->
-
-    <v-row class="px-2 my-0 pt-5 justify-sm-center">
+    <small
+      class="d-block my-2 pt-5 text-sm-center"
+      v-text="'＊ 各スキルをクリックして、詳細をご確認ください。'"
+    />
+    <v-row class="px-2 my-0 justify-sm-center">
       <v-col
         v-for="(item, index) in list"
         :key="index"
@@ -24,24 +27,24 @@
         </v-card>
       </v-col>
     </v-row>
-    <small
-      class="d-block my-2 text-sm-center"
-      v-text="'＊ 各スキルをクリックして、詳細をご確認ください。'"
-    />
 
     <!-- bottom content -->
     <v-card>
-      <v-list class="pa-lg-5">
-        <v-list-item class="px-0">
-          <v-list-item-avatar size="80" tile>
+      <v-list class="pa-sm-5">
+        <v-list-item class="px-0 justify-center justify-sm-start">
+          <v-list-item-avatar size="80" tile class="d-none d-sm-flex">
             <v-img :src="require(`@/assets/images/${content.pic}`)" />
           </v-list-item-avatar>
           <h2 v-text="content.name" />
         </v-list-item>
 
-        <v-list-item class="d-block pa-lg-5">
-          <p v-for="(item, index) in content.desc" :key="index">
-            <b class="mr-md-1">
+        <v-list-item class="d-block pa-2 px-4 pa-lg-5">
+          <p
+            v-for="(item, index) in content.desc"
+            :key="index"
+            class="text-caption text-sm-body-2 text-md-body-1 ma-0 mb-2 mb-md-5"
+          >
+            <b class="mr-1">
               {{ content.desc.length > 1 ? index + 1 + ". " : "" }}
             </b>
             {{ item }}

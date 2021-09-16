@@ -2,14 +2,13 @@
   <div id="home-works" class="py-10 pb-15">
     <!-- title -->
     <Title>
-      <h1 slot="title1" class="title1">Works</h1>
-      <h4 slot="title2" class="title2">一部の作品</h4>
+      <h1 slot="title1">Works</h1>
+      <h4 slot="title2">一部の作品</h4>
     </Title>
 
     <!-- desc -->
-    <div class="pa-5">
-      <p>
-        <br />
+    <div>
+      <p class="text-caption text-sm-body-2 text-md-body-1 px-sm-2 px-md-0">
         SSR・CSR
         ウェブサイト、SPA、サーバーの開発、Electron、PC/Mobile端末向けのウェブアプリ、フレームワーク...などを日々頑張っています。
         フロントからサーバまで段階的な勉強を通じて、色々な独自の成果を残してきました。その中に不足なところも認識していますが、今後は必ず努力して改善してより良い作品を提供するために、引き続き勉強して行きたいと思います。

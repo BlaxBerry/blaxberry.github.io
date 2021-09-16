@@ -7,8 +7,8 @@
     </Title>
 
     <!-- desc -->
-    <div class="pa-5">
-      <p>
+    <div class="mb-4">
+      <p class="text-caption text-sm-body-2 text-md-body-1 px-sm-2 px-md-0">
         今まで身に付いているスキルは主にフロントエンドですが、サーバサイトまでも広く浅く取り組んできました。色々な開発練習を通じて、身に付いているスキルの不足なところも認識しましたが、今後は必ず幅広い面で挑戦して専門性を高め、開発経験を積んだ上で将来オールラウンドに対応できるように頑張りたいと考えています。
       </p>
       <small>
@@ -17,12 +17,17 @@
     </div>
 
     <!-- skills cards -->
-    <SkillCards :list="list"></SkillCards>
+    <SkillCards :list="list" />
 
     <!-- to works page -->
     <div class="text-center mt-2 px-10">
       <b>全てのスキルをご確認ください:</b>
-      <v-btn block to="/skills" class="my-2 cyan darken-2 white--text font-weight-black py-6">Check More</v-btn>
+      <v-btn
+        block
+        to="/skills"
+        class="my-2 cyan darken-2 white--text font-weight-black py-6"
+        >Check More</v-btn
+      >
     </div>
   </div>
 </template>
@@ -55,10 +60,10 @@ export default {
     // get all skill list
     getAllSkillList.then((res) => {
       console.log(res.data);
-      let list = res.data.filter(item=>{
-        return item.showHomePage
-      })
-      this.list =list;
+      let list = res.data.filter((item) => {
+        return item.showHomePage;
+      });
+      this.list = list;
     });
   },
 };

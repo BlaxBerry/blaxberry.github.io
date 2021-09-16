@@ -9,14 +9,14 @@
 
       <!-- 1. desc -->
       <p
-        class="pt-10"
+        class="py-5 text-caption text-sm-body-2 text-md-body-1"
         v-text="
           'この画面を通じて、ポートフォリオのバージョンアップや、今までの各バージョンで使用したスキル、そして以前のポートフォリオバージョンの問題点など、また開発に関する内容を確認することができます。'
         "
       />
 
       <!-- 2. list -->
-      <div class="version-list my-10">
+      <div class="version-list mb-10">
         <v-expansion-panels>
           <v-expansion-panel
             v-for="(version, index) in versionList"
@@ -39,6 +39,7 @@
               />
             </v-expansion-panel-header>
             <v-expansion-panel-content class="pl-4">
+              
               <!-- 2.2. tech stacks -->
               <div subheader class="d-flex flex-wrap" style="fontSize:12px">
                 <div
@@ -57,7 +58,7 @@
                   </v-card>
                   <!-- tech name -->
                   <v-list-item-content
-                    class="py-1 text-no-wrap"
+                    class="py-1 text-no-wrap font-weight-black"
                     v-text="tech.name"
                   />
                 </div>
@@ -66,17 +67,18 @@
               <!-- 2.3. desc -->
               <small
                 v-if="version.desc"
-                class="desc py-4"
+                class="desc py-4 text-caption text-sm-body-2 text-md-body-1"
                 v-text="version.desc"
               />
 
               <!-- 2.4. shortcoming -->
               <p
-                class="shortcoming pa-2 mb-0 text-caption font-weight-medium"
+                class="shortcoming pa-2 mb-0 text-caption text-sm-body-2 text-md-body-1"
                 v-for="(shortcoming, i) in version.shortcoming"
                 :key="shortcoming"
               >
-                {{ i + 1 }}. {{ shortcoming }}
+                <b> {{ i + 1 }}. </b>
+                {{ shortcoming }}
               </p>
             </v-expansion-panel-content>
           </v-expansion-panel>

@@ -6,6 +6,7 @@
       <Skills :list="work.techTasks" />
 
       <Links />
+
     </v-container>
   </div>
 </template>

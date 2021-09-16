@@ -1,5 +1,5 @@
 <template>
-  <div class="common-title">
+  <div class="common-title mb-5">
     <!-- session title1 主标题-->
     <slot name="title1"></slot>
 
@@ -16,8 +16,6 @@ export default {};
 
 <style lang="scss" scoped>
 .common-title {
-  padding-top: 2rem;
-
   text-align: center;
 
   // title1 主标题

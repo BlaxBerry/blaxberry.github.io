@@ -2,7 +2,7 @@
   <v-app>
     <div id="app">
       <!-- Nav to routes -->
-      <NavRoutes :mainRoutes="mainRoutes"></NavRoutes>
+      <NavRoutes />
 
       <!-- Nav for smooth scroll -->
       <!-- <NavScroll :SmoothScrollAnchors="SmoothScrollAnchors"></NavScroll> -->
@@ -11,10 +11,10 @@
       <router-view />
 
       <!-- footer -->
-      <Footer></Footer>
+      <Footer />
 
       <!-- Bottom -->
-      <NavBottom :mainRoutes="mainRoutes"></NavBottom>
+      <NavBottom />
     </div>
   </v-app>
 </template>
@@ -38,24 +38,11 @@ export default {
     return {
       drawer: false,
       group: null,
-
-      // page routes
-      mainRoutes: [
-        { name: "Home", icon: "mdi-home", to: "/",color:"teal" },
-        { name: "Profile", icon: "mdi-account", to: "/profile",color:"indigo" },
-        { name: "Skills", icon: "mdi-cards", to: "/skills" ,color:""},
-        { name: "Works", icon: "mdi-rhombus-split", to: "/works",color:"brown" },
-      ],
-
-      // contnet id of each page
-      SmoothScrollAnchors: [],
     };
   },
 };
 </script>
 
 <style lang="scss">
-// common style
-@import url("./assets/style/main.scss");
-@import url("./assets/style/common.scss");
+@import "./style/main.scss";
 </style>

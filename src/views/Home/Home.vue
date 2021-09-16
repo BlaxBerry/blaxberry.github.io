@@ -28,22 +28,7 @@ export default {
   },
 
   data() {
-    return {
-      SmoothScrollAnchors: [
-        // AboutMe
-        { name: "About Me", anchorID: "home-aboutme", icon: "mdi-ghost" },
-        // SKills
-        { name: "Skills", anchorID: "home-skills", icon: "mdi-pickaxe" },
-        // Works
-        { name: "Works", anchorID: "home-works", icon: "mdi-bug" },
-        // Contact
-        { name: "Contact", anchorID: "footer", icon: "mdi-hail" },
-      ],
-    };
-  },
-
-  mounted() {
-    this.$parent.$parent.SmoothScrollAnchors = this.SmoothScrollAnchors;
+    return {};
   },
 };
 </script>

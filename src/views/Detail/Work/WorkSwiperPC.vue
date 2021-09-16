@@ -1,18 +1,17 @@
 <template>
-  <v-card class="py-2 py-md-5 px-7 px-md-10 mb-5">
-    <carousel
-      :perPage="1"
-      :navigationEnabled="true"
-      :autoplay="true"
-      :autoplayTimeout="4000"
-      :paginationSize="10"
-      paginationActiveColor="#00BCD4"
-    >
-      <slide v-for="(item, index) in list" :key="index" class="px-1">
-        <img :src="item.pic" />
-      </slide>
-    </carousel>
-  </v-card>
+  <carousel
+    class="px-md-10"
+    :perPage="1"
+    :autoplay="true"
+    :autoplayHoverPause="true"
+    :autoplayTimeout="4000"
+    :paginationSize="10"
+    paginationActiveColor="#00BCD4"
+  >
+    <slide v-for="(item, index) in list" :key="index" class="px-1">
+      <img :src="item.pic" />
+    </slide>
+  </carousel>
 </template>
 
 <script>
@@ -21,8 +20,15 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .VueCarousel-pagination {
-  margin-top: -3rem;
+  margin-top: -2.6rem !important;
+}
+.VueCarousel-wrapper {
+  background-color: #eee;
+  .VueCarousel-inner {
+    // justify-content: center !important;
+    align-items: center !important;
+  }
 }
 </style>

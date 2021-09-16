@@ -1,25 +1,16 @@
 <template>
   <div class="CardSkills pb-5">
-    <v-row align="center" justify="start">
+    <v-row align="center" justify="start" class="px-2">
       <v-col
         v-for="(item, index) in list"
         :key="index"
         class="pa-0"
-        cols="3"
+        cols="2"
         sm="2"
-        md="2"
-        lg="1"
+        md="1"
       >
-        <v-card
-          elevation="4"
-          max-width="100"
-          max-height="100"
-          @click="click(item)"
-        >
-          <v-img
-            :src="require(`../../assets/images/${item.pic}`)"
-            lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
-          ></v-img>
+        <v-card class="ma-1" elevation="4" @click="click(item)">
+          <v-img :src="require(`../../assets/images/${item.pic}`)"></v-img>
         </v-card>
       </v-col>
     </v-row>
@@ -55,7 +46,6 @@ export default {
   .v-card {
     cursor: pointer;
     text-align: center;
-    margin: 10px;
   }
 }
 </style>

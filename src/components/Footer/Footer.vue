@@ -25,7 +25,7 @@
           </v-btn>
         </v-card-text>
 
-        <v-card-text class="text-left white--text">
+        <v-card-text class="text-left white--text text-caption text-sm-body-2 text-md-body-1">
           このポートフォリオを通して、私のことを少しでも知っていただければ嬉しいと思います。
           もしこのサイトや私について何かコメントがありましたら、上記のリンクご利用ください。
           独自の開発していくうちに、自分の不足も認識しました。

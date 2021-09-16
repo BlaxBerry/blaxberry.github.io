@@ -8,8 +8,8 @@
       </Title>
 
       <!-- desc -->
-      <div class="pa-5">
-        <p>
+      <div class="mb-4">
+        <p class="text-caption text-sm-body-2 text-md-body-1 px-sm-2 px-md-0">
           今までフロントエンドからサーバサイトまで広く浅く取り組んできました。<br />
           将来フルスタックエンジニアを目指して頑張っています。
           色々な開発練習を通じて、身に付いているスキルの不足なところも認識しましたが、今後は必ず幅広い面で挑戦して専門性を高め、開発経験を積んだ上で将来オールラウンドに対応できるように頑張りたいと考えています。
@@ -20,27 +20,22 @@
       </div>
 
       <!-- 1. languages -->
-      <SkillCards :list="lang_list"></SkillCards>
-      <br />
+      <SkillCards :list="lang_list" />
 
       <!-- 3. frameworks -->
-      <SkillCards :list="framework_list"></SkillCards>
-      <br />
+      <SkillCards :list="framework_list" />
 
       <!-- 5. server -->
-      <SkillCards :list="server_list"></SkillCards>
-      <br />
+      <SkillCards :list="server_list" />
 
       <!-- 6. datadase  -->
-      <SkillCards :list="db_list"></SkillCards>
-      <br />
+      <SkillCards :list="db_list" />
 
       <!-- 4. others -->
-      <SkillCards :list="others_list"></SkillCards>
-      <br />
+      <SkillCards :list="others_list" />
 
       <!-- 2. style -->
-      <SkillCards :list="style_list"></SkillCards>
+      <SkillCards :list="style_list" />
 
       <small class="pa-5"
         >＊ 各スキルをクリックして、詳細をご確認ください。</small

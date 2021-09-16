@@ -23,7 +23,7 @@
             <!-- title -->
             {{ item.title }}
           </v-card-title>
-          <v-card-text class="pb-5 text-lg-body-1 pr-3 px-md-6">
+          <v-card-text class="pb-5 text-lg-body-1 pr-3 px-md-6 text-caption text-sm-body-2 text-md-body-1">
             <v-card-title
               class="cyan--text text--darken-2 font-weight-bold pa-0 mb-2"
             >

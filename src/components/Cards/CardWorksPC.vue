@@ -11,14 +11,13 @@
         lg="3"
       >
         <v-card elevation="4" @click="click(item)">
-          <v-img
-            :src="item.mainPic"
-            lazy-src="https://flevix.com/wp-content/uploads/2019/12/Barline-Loading-Images-1.gif"
-          ></v-img>
+          <v-img :src="item.mainPic"></v-img>
         </v-card>
-        <v-card-text class="text-center text-no-wrap font-weight-bold">
-          {{ item.name }}
-        </v-card-text>
+        <v-card-text
+          v-show="item.mainPic"
+          class="text-center text-no-wrap font-weight-bold"
+          v-text="item.name"
+        />
       </v-col>
     </v-row>
   </div>
@@ -48,4 +47,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.v-card {
+  width: 100%;
+}
+</style>

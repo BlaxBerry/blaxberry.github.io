@@ -178,7 +178,7 @@
         "pic": "vue-vuetify.svg",
         "showHomePage": false,
         "showSkillPage": true,
-        "main": "",
+        "main": "Vuetify2 + Vu2 を練習しました。",
         "desc": [],
         "similar": [
             "vant",
@@ -192,8 +192,10 @@
         "type": "style",
         "pic": "vue-vant.svg",
         "showSkillPage": true,
-        "main": "",
-        "desc": [],
+        "main": "EC Mobile APP、Music player などを通じて、Vant2 + Vue2・Vant3 + Vue3 をセットにして組み合わせて練習しました。",
+        "desc": [
+            "モバイル端末向けのVueのUIフレームワーク。"
+        ],
         "similar": [
             "element-ui",
             "vuetify",
@@ -278,7 +280,7 @@
         "pic": "vue.svg",
         "showHomePage": true,
         "showSkillPage": true,
-        "main": "Vue２、Vue3を、色々な独自の開発を通じて練習しました。これからも引き続き深く勉強して強化中です。",
+        "main": "Vue２・Vue3 を色々な独自の開発を通じて練習しました。これからも引き続き深く勉強して強化中です。",
         "desc": [
             "Vue２、Vue3を、色々な独自の開発を通じて練習しました。これからも引き続き深く勉強して強化中です。"
         ],
@@ -423,9 +425,10 @@
         "pic": "vue-vite.svg",
         "showHomePage": false,
         "showSkillPage": true,
-        "main": "勉強して強化中です。",
+        "main": "EC電子商取引のSPAウェブアプリなどを通じて、Vite + Vue3 など関連技術を練習しました。また引き続き勉強して強化しています。",
         "desc": [
-            "勉強して強化中です。"
+            "SPAのEC( 電子商取引 )ウェブアプリなどを通じて、Vite + Vue3 を練習しました。",
+            "引き続き勉強して強化しています。"
         ],
         "similar": [
             "webpack",
@@ -458,7 +461,7 @@
         ]
     },
     {
-        "name": "Rails",
+        "name": "Ruby on Rails",
         "id": "rails",
         "type": "server",
         "pic": "rails.svg",
@@ -583,7 +586,7 @@
         "pic": "npm.svg",
         "showHomePage": false,
         "showSkillPage": true,
-        "main": "Nuxtは勉強中です。",
+        "main": "",
         "desc": [],
         "similar": [
             "npm",
@@ -598,7 +601,7 @@
         "pic": "yarn.svg",
         "showHomePage": false,
         "showSkillPage": true,
-        "main": "Nuxtは勉強中です。",
+        "main": "",
         "desc": [],
         "similar": [
             "yarn",
