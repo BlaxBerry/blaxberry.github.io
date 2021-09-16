@@ -1,65 +1,392 @@
 [
     {
+        "name": "Vite + Vue3 SPA EC",
+        "id": "vite-vue3-mobile-shopping",
+        "type": "mobile",
+        "time": "2021/09",
+        "keywords": [
+            {
+                "name": "Vue3",
+                "color": "#42b983"
+            },
+            {
+                "name": "Vite",
+                "color": "purple"
+            },
+            {
+                "name": "Vuex",
+                "color": "#42b983"
+            },
+            {
+                "name": "Vant",
+                "color": "blue"
+            },
+            {
+                "name": "EC",
+                "color": "orange"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
+            },
+            {
+                "name": "Vue-Router",
+                "color": "#42b983"
+            },
+            {
+                "name": "Less",
+                "color": "blue"
+            }
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png",
+        "pics": [
+            {
+                "pic": "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/detail-01.png",
+                "desc": "Detail"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/detail-sku.png",
+                "desc": "Detail"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/navagation-guard.png",
+                "desc": "Navagation Gard"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/user-login.png",
+                "desc": "Login"
+            }
+        ],
+        "techTasks": [
+            {
+                "name": "Vite2",
+                "pic": "vue-vite.svg",
+                "desc": [
+                    "Vite + Vue3 を利用して開発しました。",
+                    "従来のビルドツールの Vue-Cli + Webpack より高速のHMRを提供できます。",
+                    "Vuex、Vue-Router、Axiso なども導入して開発しました。"
+                ]
+            },
+            {
+                "name": "Vue3",
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue3 + Vite を利用して開発しました。",
+                    "機能やルートが多いので、大量なコンポネートに分かれて開発しました。",
+                    "コンポネート内部を簡潔化にするため、Hooks 関数を利用して大量にカプセル化しました。",
+                    "Vue3 の Composition API を練習しました。",
+                    "Vuex の Composition APIs も利用して、各コンポネートの共通状態を管理操作します。"
+                ]
+            },
+            {
+                "name": "Vue-Router4",
+                "pic": "vue-router.svg",
+                "desc": [
+                    "SPA( Single Page Application )のWEBアプリです。",
+                    "コンポネート開発するため、大量なルートに分かれました。",
+                    "ナビゲーションガード( Navagation Gard )などを利用して練習しました。"
+                ]
+            },
+            {
+                "name": "Vuex4",
+                "pic": "vue-vuex.svg",
+                "desc": [
+                    "Vuex4 の Composition API を利用して共通状態を管理しました。",
+                    "LocalStorage や Vant も利用して、Axios でもらったデータを保存、操作しました。"
+                ]
+            },
+            {
+                "name": "Axios",
+                "pic": "axios.svg",
+                "desc": [
+                    "Axios を通じて、商品リストのデータなどをFree APIに請求してもらいましました。",
+                    "便利に管理するため、各ルートのデータのAPIリクエストを別々のファイルに分かれました。"
+                ]
+            },
+            {
+                "name": "Free Data API",
+                "pic": "json.svg",
+                "desc": [
+                    "この EC( 電子商取引 )のウエブアプリの商品リストのデータはFree APIからもらいましました。",
+                    "Axios を通じてHTTP通信を起こしました。"
+                ]
+            },
+            {
+                "name": "Vant3",
+                "pic": "vue-vant.svg",
+                "desc": [
+                    "UIコンポネートについて、Vant を利用し開発しました。",
+                    "細かいところについて Less で調整しました。",
+                    "この作品もモバイル端末向け、モバイル優先のデザインです。"
+                ]
+            },
+            {
+                "name": "Less",
+                "pic": "less.svg",
+                "desc": [
+                    "UIコンポネート Vant は Less で構築されているため、細かいところは Less で調整しました。",
+                    "コンポネート開発するため、各ルートのスタイルも別々のファイルに分かれました。",
+                    "Vueファイルを簡潔化にするため、スタイルの調整を独自のLessファイルで書きました。"
+                ]
+            },
+            {
+                "name": "プラゲイン",
+                "pic": "npm.svg",
+                "desc": [
+                    "postcss-pxtorem：pxをremに変更します。",
+                    "lib-flexible：remの基準値を調整します。",
+                    "touch-emulator：デスクトップのmouseイベントをtouchイベントに変更します。",
+                    "babel-plugin-import：需要に応じて、Vant のUIコンポネートを導入します。"
+                ]
+            }
+        ],
+        "desc": "EC( 電子商取引 )モバイル端末向けのSAPです。この作品を通じて、Vite2 + Vue3で開発しました。この架空ECウェブアプリの機能については、ログイン・ログアウト、登録ユーザーの情報、商品検索・オーダーリスト操作、検索履歴・ホットキーワーズス、ショッピングカート操作、商品注文などを模擬します。",
+        "function": [
+            [
+                "Vue3 + Vite を練習しました。従来のVue-Cli + Webpackではなく、高速のHMRを提供するViteを利用して開発しました。",
+                "Vuex の Composition APIs を通じて、状態を管理操作します。",
+                "Vue3 でのコンポネート開発、Composition APIs、Hooks などをこの作品を通じて練習しました。",
+                "SPA( Single Page Application )開発のため、Vue-Routerを導入し、ナビゲーションガードなども練習しました。",
+                "モバイル端末向けのUIコンポネート Vant を利用し、そしてLessで調整します。( VantはLessで構築されているため。)",
+                "Axios を通じて、このECアプリの商品リストデータなどをFree APIに請求しました。"
+            ],
+            [
+                "商品検索や検索履歴の機能があります。入力したキーワードで関連商品を探します。",
+                "検査する時、値段や種類で商品リストを( Filter )並び替えます。",
+                "List画面で、商品を種類によって分類してリストで展示しており、商品をクリックしたら、Product Detail画面に移動します。",
+                "Product Detail画面で、この商品に関する内容を確認し、商品の数を設定してショッピングカートに追加することができます。",
+                "Shopping Cart画面で、ショッピングカートを管理し( 商品数を変更、追加、削除 )、商品を確認したら注文することができます。( 摸擬 )"
+            ]
+        ],
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/vue-shop-app-Mobile"
+            }
+        ]
+    },
+    {
+        "name": "SPA Muisc Player",
+        "id": "mobile002",
+        "type": "mobile",
+        "time": "2021/06",
+        "keywords": [
+            {
+                "name": "React",
+                "color": "blue"
+            },
+            {
+                "name": "Redux",
+                "color": "purple"
+            },
+            {
+                "name": "Material",
+                "color": "blue"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
+            },
+            {
+                "name": "React-Router-Dom",
+                "color": ""
+            },
+            {
+                "name": "Scss",
+                "color": "pink"
+            }
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
+        "pics": [
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
+                "desc": ""
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-01.png",
+                "desc": ""
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-03.png",
+                "desc": ""
+            }
+        ],
+        "techTasks": [
+            {
+                "name": "React",
+                "pic": "react.svg"
+            },
+            {
+                "name": "Create-React-App",
+                "pic": "react-create-creat-app.svg"
+            },
+            {
+                "name": "Redux",
+                "pic": "redux.svg"
+            },
+            {
+                "name": "React-Router-Dom",
+                "pic": "react-router-dom.svg"
+            },
+            {
+                "name": "Material UI",
+                "pic": "react-materialui.svg"
+            },
+            {
+                "name": "Scss",
+                "pic": "sass.svg"
+            },
+            {
+                "name": "Axios",
+                "pic": "axios.svg"
+            }
+        ],
+        "desc": "モバイル端末のSPA( Single Page Application ) 音楽プレーヤーです。Axiosを利用し、ローカルJSONファイルの音楽データを読み込めて操作します。個人練習専用です。( Only for Personal Using )",
+        "function": [
+            [
+                "曲 / 動画を検索することができます。",
+                "曲 / 動画を( 欧米、日本語、韓国語 )分類して、リストまたカードの形で画面上で展示します。",
+                "曲 / 動画を再生することができます。"
+            ],
+            [
+                "Axiosを通じて、ローカルJSONファイルから読み込めたデーターを画面上展示します。",
+                "Pub/Subでコンポーネン間の共有状態( 音楽のパース src )を管理や調整します。",
+                "この作品のコンポーネントが複雑ではないので、Rdeux より Pub/Sub や props のほうが便利だと考えています。",
+                "Material UIを利用し、Scssでレイアウトを調整します。"
+            ]
+        ],
+        "links": {}
+    },
+    {
         "name": "SPA EC Book Shop",
         "id": "vue2-spa-mobile-01",
         "type": "mobile",
         "time": "2021/05",
         "keywords": [
-            "Vue",
-            "SPA",
-            "Vant",
-            "Axios",
-            "Less"
+            {
+                "name": "Vue2",
+                "color": "#42b983"
+            },
+            {
+                "name": "Vant",
+                "color": "blue"
+            },
+            {
+                "name": "EC",
+                "color": "orange"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
+            },
+            {
+                "name": "Vue-Router",
+                "color": "#42b983"
+            },
+            {
+                "name": "Less",
+                "color": "blue"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Home.png",
         "pics": [
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Home.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Category.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Profile.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Register.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Login.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Detail.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Cart.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-OrderConfirm.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/OrderDetail.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/AddressList.png",
-            "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-EditAddress.png"
+            {
+                "pic": "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Home.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Category.png",
+                "desc": "Category"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Profile.png",
+                "desc": "Profile"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Register.png",
+                "desc": "Register"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Mobile-book-shopping/raw/main/src/assets/images/MK-Login.png",
+                "desc": "Login"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "Vue2",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Vue-Cli4",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Vue-Router",
-                    "pic": "vue-router.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Axios",
-                    "pic": "axios.svg"
-                },
-                {
-                    "name": "Free Data API",
-                    "pic": "json.svg"
-                }
-            ],
-            [
-                {
-                    "name": "VantUI",
-                    "pic": "vue-vant.svg"
-                },
-                {
-                    "name": "Less",
-                    "pic": "less.svg"
-                }
-            ]
+            {
+                "name": "Vue2",
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue2 + Vue-Cli + Vant2 を利用して開発しました。",
+                    "コンポネート間の通信や、各 Option APIs を練習しました。"
+                ]
+            },
+            {
+                "name": "Vue-Cli4",
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue-Cli + Vue2 利用して開発しました。",
+                    "大量なコンポネートに分かれて開発しました。",
+                    "UIについて、Vant2 + Less を導入しました。",
+                    "SPA( Single Page Application )開発のため、Vue-Router を導入しました。",
+                    "複雑なデータ処理などがないので、Mixin や Vuex などを使用していません。"
+                ]
+            },
+            {
+                "name": "Vue-Router3",
+                "pic": "vue-router.svg",
+                "desc": [
+                    "SPA( Single Page Application )のWEBアプリです。",
+                    "コンポネート開発するため、大量なルートに分かれました。",
+                    "ナビゲーションガード( Navagation Gard )などを利用して練習しました。"
+                ]
+            },
+            {
+                "name": "Vant2",
+                "pic": "vue-vant.svg",
+                "desc": [
+                    "UIコンポネートについて、Vant を利用し開発しました。",
+                    "細かいところについて Less で調整しました。",
+                    "この作品もモバイル端末向け、モバイル優先のデザインです。"
+                ]
+            },
+            {
+                "name": "Less",
+                "pic": "less.svg",
+                "desc": [
+                    "UIコンポネート Vant は Less で構築されているため、細かいところは Less で調整しました。",
+                    "コンポネート開発するため、各ルートのスタイルも別々のファイルに分かれました。",
+                    "Vueファイルを簡潔化にするため、スタイルの調整を独自のLessファイルで書きました。"
+                ]
+            },
+            {
+                "name": "Axios",
+                "pic": "axios.svg",
+                "desc": [
+                    "Axios を通じて、商品リストのデータなどをFree APIに請求してもらいましました。",
+                    "便利に管理するため、各ルートのデータのAPIリクエストを別々のファイルに分かれました。"
+                ]
+            },
+            {
+                "name": "Free Data API",
+                "pic": "json.svg",
+                "desc": [
+                    "この EC( 電子商取引 )のウエブアプリの商品リストのデータはFree APIからもらいましました。",
+                    "Axios を通じてHTTP通信を起こしました。"
+                ]
+            },
+            {
+                "name": "プラゲイン",
+                "pic": "npm.svg",
+                "desc": [
+                    "babel-plugin-import：需要に応じて、Vant のUIコンポネートを導入します。"
+                ]
+            }
         ],
         "desc": "モバイル端末の架空のITプログラミング本のEC( 電子商取引 )Web Appです。新規登録・ログイン・ログアウト機能あり、商品注文や商品配送を模擬し、ショッピングカートやオーダーリストを操作ができます。",
         "function": [
@@ -82,150 +409,20 @@
                 "Vant UIを利用し、Lessでレイアウトを設定します。 "
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/Mobile-book-shopping",
-            "demo": "blaxberry.github.io/mobile-book-shopping/"
-        }
-    },
-    {
-        "name": "SPA Muisc Player",
-        "id": "mobile002",
-        "type": "mobile",
-        "time": "2021/06",
-        "keywords": [
-            "SPA",
-            "Scss",
-            "React",
-            "音楽プレーヤー",
-            "Material UI"
-        ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
-        "pics": [
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-01.png",
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-03.png"
-        ],
-        "techTasks": [
-            [
-                {
-                    "name": "React",
-                    "pic": "react.svg"
-                },
-                {
-                    "name": "Scss",
-                    "pic": "sass.svg"
-                },
-                {
-                    "name": "Material UI",
-                    "pic": "react-materialui.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Axios",
-                    "pic": "axios.svg"
-                },
-                {
-                    "name": "React-Router-Dom",
-                    "pic": "react-router-dom.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Redux",
-                    "pic": "redux.svg"
-                }
-            ]
-        ],
-        "desc": "モバイル端末のSPA( Single Page Application ) 音楽プレーヤーです。Axiosを利用し、ローカルJSONファイルの音楽データを読み込めて操作します。個人練習専用です。( Only for Personal Using )",
-        "function": [
-            [
-                "曲 / 動画を検索することができます。",
-                "曲 / 動画を( 欧米、日本語、韓国語 )分類して、リストまたカードの形で画面上で展示します。",
-                "曲 / 動画を再生することができます。"
-            ],
-            [
-                "Axiosを通じて、ローカルJSONファイルから読み込めたデーターを画面上展示します。",
-                "Pub/Subでコンポーネン間の共有状態( 音楽のパース src )を管理や調整します。",
-                "この作品のコンポーネントが複雑ではないので、Rdeux より Pub/Sub や props のほうが便利だと考えています。",
-                "Material UIを利用し、Scssでレイアウトを調整します。"
-            ]
-        ],
-        "links": {}
-    },
-    {
-        "name": "Vite + Vue3 EC Shop",
-        "id": "vite-vue3-mobile-shopping",
-        "type": "mobile",
-        "time": "2021/05",
-        "keywords": [
-            "Vue",
-            "SPA",
-            "Axios",
-            "Vite",
-            "Vant"
-        ],
-        "mainPic": "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png",
-        "pics": [
-            "https://github.com/BlaxBerry/vue-shop-app-Mobile/raw/master/public/images/Home.png"
-        ],
-        "techTasks": [
-            [
-                {
-                    "name": "Vite2",
-                    "pic": "vue-vite.svg"
-                },
-                {
-                    "name": "Vue3",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Vue-Router",
-                    "pic": "vue-router.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Axios",
-                    "pic": "axios.svg"
-                },
-                {
-                    "name": "Free Data API",
-                    "pic": "json.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Vant",
-                    "pic": "vue-vant.svg"
-                },
-                {
-                    "name": "Less",
-                    "pic": "less.svg"
-                }
-            ]
-        ],
-        "desc": "Vite2 + Vue3で開発した、モバイル端末向けの架空EC ( 電子商取引 )日常生活用品のWeb Appです。\n新規登録・ログイン・ログアウトができ、商品検索や検索履歴の機能もあり、ショッピングカートを操作でき、商品注文を模擬します。",
-        "function": [
-            [
-                "Vue3 + Vite を練習するため、以前の vue2 + Vue-Cli から書き換えました。",
-                "フロントエンドツールについて、Vue-CliとWebpackではなく、高速のHMRを提供するViteを利用します。",
-                "この作品を通じて、Vue3の Composition APIs や Hooks も練習しました。",
-                "Vue-Routerを利用したSPA( Single Page Application )電子商取引Web Appです。",
-                "UIについては、UIコンポネートのVantを利用し、そしてLessで調整します。( VantはLessで構築されているため。)",
-                "商品リストのデータについては、AxiosでFree APIに請求します。"
-            ],
-            [
-                "商品検索や検索履歴の機能があります。入力したキーワードで関連商品を探します。",
-                "検査する時、値段や種類で商品リストを( Filter )並び替えます。",
-                "List画面で、商品を種類によって分類してリストで展示しており、商品をクリックしたら、Product Detail画面に移動します。",
-                "Product Detail画面で、この商品に関する内容を確認し、商品の数を設定してショッピングカートに追加することができます。",
-                "Shopping Cart画面で、ショッピングカートを管理し( 商品数を変更、追加、削除 )、商品を確認したら注文することができます。( 摸擬 )"
-            ]
-        ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/vue-shop-app-Mobile"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/Mobile-book-shopping"
+            },
+            {
+                "name": "Online Demo",
+                "icon": "mdi-camera-iris",
+                "color": "blue",
+                "to": "blaxberry.github.io/mobile-book-shopping/"
+            }
+        ]
     },
     {
         "name": "Simple TodoList",
@@ -233,39 +430,52 @@
         "type": "mobile",
         "time": "2020/12",
         "keywords": [
-            "HTML5 + CSS3",
-            "Local Storage",
-            "Material Framework",
-            "JavaScript"
+            {
+                "name": "HTML5",
+                "color": "deep-orange"
+            },
+            {
+                "name": "Material",
+                "color": "blue"
+            },
+            {
+                "name": "JavaScript",
+                "color": "yellow"
+            },
+            {
+                "name": "CSS3",
+                "color": "light-blue"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/JS--TaskList/raw/master/images/screenshot01.png",
         "pics": [
-            "https://github.com/BlaxBerry/JS--TaskList/raw/master/images/screenshot01.png",
-            "https://github.com/BlaxBerry/JS--TaskList/raw/master/images/screenshot02.png"
+            {
+                "pic": "https://github.com/BlaxBerry/JS--TaskList/raw/master/images/screenshot01.png",
+                "desc": ""
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "HTML5",
-                    "pic": "html.svg"
-                },
-                {
-                    "name": "Material ",
-                    "pic": "react-materialui.svg"
-                }
-            ],
-            [
-                {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Local Storage",
-                    "pic": "html.svg"
-                }
-            ]
+            {
+                "name": "HTML5",
+                "pic": "html.svg",
+                "desc": [
+                    ""
+                ]
+            },
+            {
+                "name": "Material",
+                "pic": "react-materialui.svg",
+                "desc": [
+                    ""
+                ]
+            },
+            {
+                "name": "JavaScript",
+                "pic": "javascript.svg",
+                "desc": [
+                    "LocalStorage"
+                ]
+            }
         ],
         "desc": "ローカルストレージ( LocalStorage )でブラウザにデータを保存するTodoList Web Appです。",
         "function": [
@@ -279,58 +489,20 @@
                 "JavaScriptのカプセル化を練習しました。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/JS--TaskList",
-            "demo": "https://blaxberry.github.io/JS--TaskList/"
-        }
-    },
-    {
-        "name": "Ticket Stite",
-        "id": "statictticket",
-        "type": "mobile",
-        "time": "2021/01",
-        "keywords": [
-            "HTML5",
-            "Flex Layout",
-            "CSS3",
-            "JavaScript"
-        ],
-        "mainPic": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/01.png",
-        "pics": [
-            "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/01.png",
-            "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/02.png"
-        ],
-        "techTasks": [
-            [
-                {
-                    "name": "HTML5",
-                    "pic": "html.svg"
-                }
-            ],
-            [
-                {
-                    "name": "CSS3",
-                    "pic": "css.svg"
-                }
-            ],
-            [
-                {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
-                }
-            ]
-        ],
-        "desc": "最初的なレイアウト練習として、モバイル端末における静的なレイアウト( Flex Box Layout )やJavaScriptを練習しました。",
-        "function": [
-            [],
-            [
-                "Flex Layoutを練習しました。",
-                "JavaScriptのカプセル化を練習しました。"
-            ]
-        ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/JS--TaskList"
+            },
+            {
+                "name": "demo",
+                "icon": "mdi-camera-iris",
+                "color": "blue",
+                "to": "https://blaxberry.github.io/JS--TaskList/"
+            }
+        ]
     },
     {
         "name": "Responsive Caculator",
@@ -338,42 +510,63 @@
         "type": "mobile",
         "time": "2021/8",
         "keywords": [
-            "Vue",
-            "App",
-            "Vuetify",
-            "JavaScript"
+            {
+                "name": "Vue2",
+                "color": "#42b983"
+            },
+            {
+                "name": "Vuetify",
+                "color": "blue"
+            },
+            {
+                "name": "JavaScript",
+                "color": "yellow"
+            },
+            {
+                "name": "Scss",
+                "color": "pink"
+            },
+            {
+                "name": "Vue-Cli",
+                "color": "#42b983"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/vue-caculator/raw/main/public/images/mobile.png",
         "pics": [
-            "https://github.com/BlaxBerry/vue-caculator/raw/main/public/images/pc.png"
+            {
+                "pic": "https://github.com/BlaxBerry/vue-caculator/raw/main/public/images/mobile.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "Vue2",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Vue-Cli4",
-                    "pic": "vue.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Vuetify",
-                    "pic": "vue-vuetify.svg"
-                },
-                {
-                    "name": "Scss",
-                    "pic": "sass.svg"
-                }
-            ],
-            [
-                {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
-                }
-            ]
+            {
+                "name": "Vue2",
+                "pic": "vue.svg"
+            },
+            {
+                "name": "Vue-Cli4",
+                "pic": "vue.svg"
+            },
+            {
+                "name": "Vuetify",
+                "pic": "vue-vuetify.svg",
+                "desc": [
+                    "UIコンポネートについて、Vuetify2 を利用し開発しました。",
+                    "細かいところについて Scss で調整しました。"
+                ]
+            },
+            {
+                "name": "Scss",
+                "pic": "sass.svg",
+                "desc": [
+                    "UIについては、主に Vuetify2 を使用しました。",
+                    "細かいところは Scss で調整しました。"
+                ]
+            },
+            {
+                "name": "JavaScript",
+                "pic": "javascript.svg"
+            }
         ],
         "desc": "Vueを使って作成したレスポンシブデザインの電卓ウェブアプリです。iPhoneを真似し、レスポンシブデザインにしておき、スマホサイズを優先に考えています。",
         "function": [
@@ -383,9 +576,80 @@
                 "Vue２＋Vue-CLi を利用したコンポネート開発で、UI については フレームワークのVuetifyとScssを使用しました。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/vue-caculator",
-            "demo": "https://blaxberry.github.io/vue-caculator/"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/vue-caculator"
+            },
+            {
+                "name": "demo",
+                "icon": "mdi-camera-iris",
+                "color": "blue",
+                "to": "https://blaxberry.github.io/vue-caculator/"
+            }
+        ]
+    },
+    {
+        "name": "Ticket Stite",
+        "id": "statictticket",
+        "type": "mobile",
+        "time": "2021/01",
+        "keywords": [
+            {
+                "name": "HTML5",
+                "color": "deep-orange"
+            },
+            {
+                "name": "CSS3",
+                "color": "light-blue"
+            },
+            {
+                "name": "JavaScript",
+                "color": "yellow"
+            }
+        ],
+        "mainPic": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/01.png",
+        "pics": [
+            {
+                "pic": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite/raw/master/images/02.png",
+                "desc": "Home"
+            }
+        ],
+        "techTasks": [
+            {
+                "name": "HTML5",
+                "pic": "html.svg"
+            },
+            {
+                "name": "CSS3",
+                "pic": "css.svg"
+            },
+            {
+                "name": "JavaScript",
+                "pic": "javascript.svg"
+            }
+        ],
+        "desc": "最初的なレイアウト練習として、モバイル端末における静的なレイアウト( Flex Box Layout )やJavaScriptを練習しました。",
+        "function": [
+            [],
+            [
+                "Flex Layoutを練習しました。",
+                "JavaScriptのカプセル化を練習しました。"
+            ]
+        ],
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/Mobile-Static-Web-ticketsite"
+            }
+        ]
     }
 ]

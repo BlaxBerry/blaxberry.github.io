@@ -33,6 +33,9 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
+// Vue Carousel
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
 
 
 new Vue({

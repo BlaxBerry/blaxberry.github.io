@@ -36,7 +36,7 @@ const routes = [
   {
     path: '/detail/work',
     name: 'WorkDetail',
-    component: () => import('../views/Detail/Work/Detail.vue')
+    component: () => import('../views/Detail/Work/index.vue')
   },
   {
     path:'/profile',

@@ -17,6 +17,7 @@ export default {};
 <style lang="scss" scoped>
 .common-title {
   padding-top: 2rem;
+
   text-align: center;
 
   // title1 主标题
@@ -24,10 +25,5 @@ export default {};
     font-style: italic;
     padding-top: 2rem;
   }
-
-  // title2 副标题
-  //   h4 {
-
-  //   }
 }
 </style>

@@ -5,65 +5,122 @@
         "type": "pc",
         "time": "2021/06",
         "keywords": [
-            "Node.js",
-            "パスワードを暗号化",
-            "サーバサイド",
-            "Art-Template",
-            "MongoDB"
+            {
+                "name": "Node.js",
+                "color": "#42b983"
+            },
+            {
+                "name": "Express.js",
+                "color": ""
+            },
+            {
+                "name": "Art-Template",
+                "color": "red"
+            },
+            {
+                "name": "サーバサイド",
+                "color": "blue"
+            },
+            {
+                "name": "Bootstrap",
+                "color": "purple"
+            },
+            {
+                "name": "MongoDB",
+                "color": "#42b983"
+            },
+            {
+                "name": "jQuery",
+                "color": "indigo"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png",
         "pics": [
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png",
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/10.png",
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/02.png",
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/03.png",
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/05.png",
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/06.png",
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/07.png"
+            {
+                "pic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/10.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/02.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/03.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/05.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/06.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/07.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "Bootstrap",
-                    "pic": "bootstrap.svg"
-                },
-                {
-                    "name": "jQuery",
-                    "pic": "jquery.svg"
-                },
-                {
-                    "name": "Art-Template",
-                    "pic": "npm.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Node.js",
-                    "pic": "nodejs.svg"
-                },
-                {
-                    "name": "Express.js",
-                    "pic": "nodejs.svg"
-                },
-                {
-                    "name": "MongoDB",
-                    "pic": "mongodb.svg"
-                }
-            ],
-            [
-                {
-                    "name": "bcrypt",
-                    "pic": "npm.svg"
-                },
-                {
-                    "name": "Joi",
-                    "pic": "npm.svg"
-                },
-                {
-                    "name": "session",
-                    "pic": "npm.svg"
-                }
-            ]
+            {
+                "name": "Node.js",
+                "pic": "nodejs.svg",
+                "desc": [
+                    "この作品は主に Express.js を通じてサーバサイドの作成を練習しました。",
+                    "この作品を通じて、動的にHTMLページの作成、ユーザーログイン、HTTP通信、フォームの処理などを練習しました。"
+                ]
+            },
+            {
+                "name": "Express.js",
+                "pic": "nodejs-express.svg",
+                "desc": [
+                    "Express.js でサーバサイドを構築しました。",
+                    "各ミドルウェア( Middleware )を使用しました。",
+                    "MongoDB データベースと接続しました。",
+                    "Art-Template テンプレートエンジンを利用して、HTMLテンプレーを動的に作成しました。",
+                    "ルートログインガード( Route Guard Login Interception )、ユーザー登録しないと、ページ展示できます。"
+                ]
+            },
+            {
+                "name": "MongoDB",
+                "pic": "mongodb.svg",
+                "desc": [
+                    "データベースについて、MongoDBを使用しました。",
+                    "mongooseを利用して、Express.js と接続しました。",
+                    "Art-Template テンプレートエンジンを利用して、MongoDBのデータをHTMLテンプレーで展示します。"
+                ]
+            },
+            {
+                "name": "Bootstrap4",
+                "pic": "bootstrap.svg",
+                "desc": [
+                    "フロントエンドのUIについては、Bootstrapを利用しました。"
+                ]
+            },
+            {
+                "name": "jQuery",
+                "pic": "jquery.svg",
+                "desc": [
+                    "フロントエンドについては、Bootstrap4 + Art-Template を使用しましたので。",
+                    "フロントエンドの簡単処理については、jQuery を使いました。"
+                ]
+            },
+            {
+                "name": "Npm",
+                "pic": "npm.svg",
+                "desc": [
+                    "mongoose：Express.jsと接続します。",
+                    "Art-Template：テンプレートエンジンを利用して、MongoDBのデータをHTMLテンプレーで展示します。",
+                    "session：SessionやCookieを利用し、ログインを記録します。",
+                    "Joi：サーバサイドでクライアント側で発送したフォームデータ( form data )を検証します。",
+                    "formidable：サーバサイドでクライアント側で登録したファイル( 文章の画像など )検証、分析します。",
+                    "bcrypt：サーバサイドでユーザーパスワードを暗号化( ハッシュ化 )してからデータベースに追加し、セキュリティ強化します。"
+                ]
+            }
         ],
         "desc": "SSR( Server Side Rendering )サーバサイドドレンダリングのブログ展示や管理システムです。Node.jsのExpress.jsを利用してサーバを開発し、フロントからのリクエストに応じて、MongoBDデータベースに接続し、そしてArt-Templateというテンプレートエンジンを通じてHTMLテンプレーを作成します。",
         "function": [
@@ -72,25 +129,19 @@
                 "一般的なユーザー( normal user)として管理システムにログインし、自分のブログ文章を管理操作( 追加、修正、削除 )することができます。",
                 "スーパー管理者( admin )として管理システムにログインし、全てのユーザーやブログ文章を管理操作することができます。",
                 "URLを通じて、静的リソース( サーバサイドにおける静的なファイル )を確認することができます。",
-                "ユーザーログイン、ログアウト機能があります。"
-            ],
-            [
-                "Express.jsでHTTPサーバを作成します。",
+                "ユーザーログイン、ログアウト機能があります。",
                 "フロントからのリクエストに応じて、データベースに接続し、データを管理操作( 追加、修正、削除 )します。",
-                "MongoDBのデータを、テンプレートエンジン( Art-Template )を利用して、HTMLテンプレーを作成します。",
-                "SSRサドレンダリングです。フロントからのリクエストに応じて、ページをリクエストします。",
-                "ルートログインガード( route guard login interception )、ユーザー登録しないと、ページ展示できます。"
-            ],
-            [
-                "SessionやCookieを利用し、サーバサイドでログインを記録します。",
-                "Joiを利用し、サーバサイドでクライアント側で発送したフォームデータ( form data )を検証します。",
-                "formidableを利用し、サーバサイドでクライアント側で登録したファイル( 文章の画像など )検証、分析します。",
-                "セキュリティ強化のために、bcryptを利用してサーバサイドでユーザーパスワードを暗号化( ハッシュ化 )してからデータベースに追加します。"
+                "SSRサドレンダリングです。フロントからのリクエストに応じて、ページをリクエストします。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/node_blog_management"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/node_blog_management"
+            }
+        ]
     },
     {
         "name": "Portfolio 4.0",
@@ -98,61 +149,129 @@
         "type": "pc",
         "time": "2021/07 ~",
         "keywords": [
-            "Vue",
-            "SPA",
-            "Vuetify",
-            "Scss",
-            "Axios"
+            {
+                "name": " Vue2",
+                "color": "#42b983"
+            },
+            {
+                "name": "JSON",
+                "color": ""
+            },
+            {
+                "name": "Vuetify",
+                "color": "blue"
+            },
+            {
+                "name": "Scss",
+                "color": "pink"
+            },
+            {
+                "name": "JavaScript",
+                "color": "yellow"
+            },
+            {
+                "name": "Vue-Router",
+                "color": "#42b983"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
+            },
+            {
+                "name": "Axios",
+                "color": "blue"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-01.png",
         "pics": [
-            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-01.png",
-            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-02.png",
-            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-03.png",
-            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/profile-01.png",
-            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/skills-01.png",
-            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/works-01.png",
-            "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/detail-work-01.png"
+            {
+                "pic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/BlaxBerry.github.io/raw/main/public/pics/home-01.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "Vue2",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Vuetify",
-                    "pic": "vue-vuetify.svg"
-                },
-                {
-                    "name": "Scss",
-                    "pic": "sass.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Axios",
-                    "pic": "axios.svg"
-                },
-                {
-                    "name": "JSON",
-                    "pic": "json.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Vue-Router",
-                    "pic": "vue-router.svg"
-                },
-                {
-                    "name": "vue-smooth-scroll",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "vue-typer",
-                    "pic": "vue.svg"
-                }
-            ]
+            {
+                "name": "Vue2",
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue2 + Vue-Cli を利用して開発しました。",
+                    "コンポネート間の通信や、各 Option APIs を練習しました。",
+                    "現時点では Vuetify2 を使用したので Vue2 で開発しましたが、将来 Vue3 にの移行する見込みです。"
+                ]
+            },
+            {
+                "name": "Vue-Cli",
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue-Cli + Vue2 利用して開発しました。",
+                    "大量なコンポネートに分かれて開発しました。",
+                    "UIについて、Vuetify2 + Scss を導入しました。",
+                    "SPA( Single Page Application )開発のため、Vue-Router を導入しました。",
+                    "模擬データベースや Axios を利用しました。",
+                    "複雑なデータ処理などがないので、Mixin や Vuex などを使用していません。"
+                ]
+            },
+            {
+                "name": "Vue-Router",
+                "pic": "vue-router.svg",
+                "desc": [
+                    "SPA( Single Page Application )のポートフォリオです。",
+                    "機能や展示内容により、大量なルートに分かれて開発しました。"
+                ]
+            },
+            {
+                "name": "Vuetify2",
+                "pic": "vue-vuetify.svg",
+                "desc": [
+                    "UIコンポネートについて、Vuetify2 を利用し開発しました。",
+                    "細かいところについて Scss で調整しました。",
+                    "この作品はレスポンシブウェブデザインのため、モバイル端末・PC端末によりレイアウトや展示内容が異なっています。"
+                ]
+            },
+            {
+                "name": "Scss",
+                "pic": "sass.svg",
+                "desc": [
+                    "UIコンポネートについて、主に Vuetify2 のコンポネートを利用し開発しました。",
+                    "細かいところについて Scss で調整しました。"
+                ]
+            },
+            {
+                "name": "Axios",
+                "pic": "axios.svg",
+                "desc": [
+                    "Axios を通じて、模擬データ( 自分で作った JSON の形のデータベース )を請求して、動的にテンプレートを作成し、最後画面上に展示しました。"
+                ]
+            },
+            {
+                "name": "JSON",
+                "pic": "json.svg",
+                "desc": [
+                    "展示されている内容について、静的にテンプレートに入力することではなく、自分で JSON の形でデータベースを模擬して作りました。",
+                    "Axios を通じて、通信を模擬して、請求したデータをテンプレートにレンダリングしました。"
+                ]
+            },
+            {
+                "name": "npm",
+                "pic": "npm.svg",
+                "desc": [
+                    "vue-typer：タイピングのようなテキストアニメーションをします。",
+                    "Vue-Carousel：シンプルにカルーセルスライダー( Carousel Slider )を作成します。",
+                    "将来新しい機能の追加により、他のプラゲインが導入される見込みです。"
+                ]
+            }
         ],
         "desc": "以前のポートフォリオ練習を重ねて、今回のバージョンはVue-Router + Vuetifyを利用して、静的なWebページではなく、単一ページのSPAサイトを開発しました。そして画面上で展示するデータを、Axiosを通じて、Vue-Cliの中のpublicに保存しているJSONファイルから読み込みます。",
         "function": [
@@ -184,10 +303,20 @@
                 "Versions画面で、ポートフォリオの開発に関する内容( バージョンアップ、各バージョンで使用したスキル、以前のポートフォリオの問題点など )を確認することができます。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/portfolio-version-4",
-            "demo": "/home"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/portfolio-version-4"
+            },
+            {
+                "name": "demo",
+                "icon": "mdi-camera-iris",
+                "color": "blue",
+                "to": "/home"
+            }
+        ]
     },
     {
         "name": "Electron App Moba Game Characters",
@@ -195,59 +324,123 @@
         "type": "pc",
         "time": "2021/08",
         "keywords": [
-            "Vue",
-            "App",
-            "Electron",
-            "JavaScript",
-            "Axios"
+            {
+                "name": "Electron",
+                "color": "#2c3e50"
+            },
+            {
+                "name": " Vue2",
+                "color": "#42b983"
+            },
+            {
+                "name": "Vuetify",
+                "color": "blue"
+            },
+            {
+                "name": "Scss",
+                "color": "pink"
+            },
+            {
+                "name": "Vue-Router",
+                "color": "#42b983"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
+            },
+            {
+                "name": "Axios",
+                "color": "blue"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/01.png",
         "pics": [
-            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/02.png",
-            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/01.png",
-            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/03.png",
-            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/04.png",
-            "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/05.png"
+            {
+                "pic": "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/02.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/03.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/04.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/electron-vue-mobagame/raw/main/public/images/05.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "Vue2",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Vuetify",
-                    "pic": "vue-vuetify.svg"
-                },
-                {
-                    "name": "Scss",
-                    "pic": "sass.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Axios",
-                    "pic": "axios.svg"
-                },
-                {
-                    "name": "Free Data API",
-                    "pic": "json.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Vue-Router",
-                    "pic": "vue-router.svg"
-                },
-                {
-                    "name": "Electron",
-                    "pic": "electron.svg"
-                },
-                {
-                    "name": "Electron-Builder",
-                    "pic": "electron.svg"
-                }
-            ]
+            {
+                "name": "Electron",
+                "pic": "electron.svg",
+                "desc": [
+                    "Electron + Vue2 を使って、デスクトップアプリを作成しました。",
+                    "Electron に対して、引き続き頑張ります。"
+                ]
+            },
+            {
+                "name": "Vue2",
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue2 + Vue-Cli + Vuetify2 を利用して開発しました。",
+                    "コンポネート間の通信や、各 Option APIs を練習しました。"
+                ]
+            },
+            {
+                "name": "Vue-Cli4",
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue-Cli + Vue2 利用して開発しました。",
+                    "大量なコンポネートに分かれて開発しました。",
+                    "UIについて、Vuetify2 + Scss を導入しました。",
+                    "複雑なデータ処理などがないので、Mixin や Vuex などを使用していません。"
+                ]
+            },
+            {
+                "name": "Vue-Router3",
+                "pic": "vue-router.svg",
+                "desc": [
+                    "SPA( Single Page Application )のポートフォリオです。",
+                    "機能や展示内容により、ルートに分かれて開発しました。"
+                ]
+            },
+            {
+                "name": "プラグイン",
+                "pic": "npm.svg",
+                "desc": [
+                    "Electron-Builder：Electron アプリをパッケージしてビルドします。"
+                ]
+            },
+            {
+                "name": "Vuetify2",
+                "pic": "vue-vuetify.svg",
+                "desc": [
+                    "UIコンポネートについて、Vuetify2 を利用し開発しました。",
+                    "細かいところについて Scss で調整しました。",
+                    "この作品はレスポンシブウェブデザインです。"
+                ]
+            },
+            {
+                "name": "Axios",
+                "pic": "axios.svg",
+                "desc": [
+                    "Axiosを利用し、HTTP通信を通じて、フリーAPIからもらったヒーローリストまた武器リストのデータを展示しています。"
+                ]
+            },
+            {
+                "name": "Free Data API",
+                "pic": "json.svg",
+                "desc": [
+                    "各ヒーローの画像、詳細、各武器の画像、数値などを Axios を通じて、フリーAPIからもらいました。"
+                ]
+            }
         ],
         "desc": "デスクトップアプリケーションです。中国人気 MobaGame「王者荣耀」ヒーローの詳細に関するアプリです。この作品を通じて、Electron 関連知識を勉強し、Vue + Vuetify ＋ electron-builder などを練習しました。これから Electron に対してまた引き続き深く勉強したいと思います",
         "function": [
@@ -264,9 +457,14 @@
                 "Vuetify + Scss を練習しました。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/electron-vue-mobagame"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/electron-vue-mobagame"
+            }
+        ]
     },
     {
         "name": "SPA Responsive Music Player 2.0",
@@ -274,49 +472,71 @@
         "type": "pc",
         "time": "2021/05 ~",
         "keywords": [
-            "Vue",
-            "SPA",
-            "Vuetify",
-            "JavaScript",
-            "Axios"
+            {
+                "name": " Vue2",
+                "color": "#42b983"
+            },
+            {
+                "name": "Vuetify",
+                "color": "blue"
+            },
+            {
+                "name": "Scss",
+                "color": "pink"
+            },
+            {
+                "name": "Vue-Router",
+                "color": "#42b983"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
+            },
+            {
+                "name": " Vuex",
+                "color": "#42b983"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
         "pics": [
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-01.png",
-            "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-sheet.png"
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-sheet.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "Vue2",
-                    "pic": "vue.svg"
-                },
-                {
-                    "name": "Vuetify",
-                    "pic": "vue-vuetify.svg"
-                },
-                {
-                    "name": "Scss",
-                    "pic": "sass.svg"
-                }
-            ],
-            [
-                {
-                    "name": "VueX",
-                    "pic": "vue-vuex.svg"
-                },
-                {
-                    "name": "Vue-Router",
-                    "pic": "vue-router.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Axios",
-                    "pic": "axios.svg"
-                }
-            ]
+            {
+                "name": "Vue2",
+                "pic": "vue.svg"
+            },
+            {
+                "name": "VueX",
+                "pic": "vue-vuex.svg"
+            },
+            {
+                "name": "Vue-Router",
+                "pic": "vue-router.svg"
+            },
+            {
+                "name": "Vuetify2",
+                "pic": "vue-vuetify.svg"
+            },
+            {
+                "name": "Scss",
+                "pic": "sass.svg"
+            },
+            {
+                "name": "Axios",
+                "pic": "axios.svg"
+            }
         ],
         "desc": "レスポンシブSPA( Single Page Application ) 音楽プレーヤーです。Axios、VueX、UIフレームワークの Vuetify を利用して開発しました。個人練習専用です。( Only for Personal Using )",
         "function": [
@@ -337,56 +557,107 @@
         "type": "pc",
         "time": "2021/08",
         "keywords": [
-            "Material UI",
-            "SPA",
-            "Redux",
-            "Axios",
-            "React"
+            {
+                "name": "React",
+                "color": "blue"
+            },
+            {
+                "name": "Redux",
+                "color": "purple"
+            },
+            {
+                "name": "Material",
+                "color": "blue"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
+            },
+            {
+                "name": "React-Router-Dom",
+                "color": ""
+            },
+            {
+                "name": "Scss",
+                "color": "pink"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/01.png",
         "pics": [
-            "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/01.png",
-            "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/02.png"
+            {
+                "pic": "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/react-game-collection/raw/main/public/uploads/02.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "React",
-                    "pic": "react.svg"
-                },
-                {
-                    "name": "Create-React-App",
-                    "pic": "react-create-creat-app.svg"
-                },
-                {
-                    "name": "React-Router-Dom",
-                    "pic": "react-router-dom.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Axios",
-                    "pic": "axios.svg"
-                },
-                {
-                    "name": "API",
-                    "pic": "json.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Redux",
-                    "pic": "redux.svg"
-                },
-                {
-                    "name": "react-tabs",
-                    "pic": "npm.svg"
-                },
-                {
-                    "name": "Material UI",
-                    "pic": "react-materialui.svg"
-                }
-            ]
+            {
+                "name": "React",
+                "pic": "react.svg",
+                "desc": [
+                    "Create-React-App を利用して開発しました。",
+                    "大量なコンポネートに分かれて開発しました。",
+                    "Classコンポネート・関数コンポネート、また Hooks も練習しました。",
+                    "UIについて、Material UI + Scss を導入しました。",
+                    "コンポネートの共通状態については、Reduxを利用して保存、管理、操作しました。"
+                ]
+            },
+            {
+                "name": "Redux",
+                "pic": "redux.svg",
+                "desc": [
+                    "Redux を利用して、各コンポネートの共通状態を保存、管理、操作しました。"
+                ]
+            },
+            {
+                "name": "React-Router-Dom",
+                "pic": "react-router-dom.svg",
+                "desc": [
+                    "SPA( Single Page Application )のウエブアプリケーションです。",
+                    "機能や展示内容により、ルートに分かれて展示しました。"
+                ]
+            },
+            {
+                "name": "プラゲイン",
+                "pic": "npm.svg",
+                "desc": [
+                    "react-tabs：シンプルでタブ( Tab )を作成します。",
+                    "pubsub.js：( 発行/購読 )を通じての共通状態の操作を練習しました。"
+                ]
+            },
+            {
+                "name": "Axios",
+                "pic": "axios.svg",
+                "desc": [
+                    "Axiosを利用し、HTTP通信を通じて、フリーAPIからもらったヒーローリストまた武器リストのデータを展示しています。"
+                ]
+            },
+            {
+                "name": "Free Data API",
+                "pic": "json.svg",
+                "desc": [
+                    "各ヒーローの画像、詳細、各武器の画像、数値などを Axios を通じて、フリーAPIからもらいました。"
+                ]
+            },
+            {
+                "name": "Material UI",
+                "pic": "react-materialui.svg",
+                "desc": [
+                    "UIコンポネートについて、Material UI を利用し開発しました。",
+                    "細かいところについて Scss で調整しました。",
+                    "この作品はレスポンシブウェブデザインです。"
+                ]
+            },
+            {
+                "name": "Scss",
+                "pic": "sass.svg",
+                "desc": [
+                    "スタイルの細かいところについて Scss で調整しました。"
+                ]
+            }
         ],
         "desc": "React.jsでの SPA 単一ページアプリケーションです。この作品を通じて、コンポーネント開発、Redux、React Hooks、react-router-domでのSPA開発、またUIフレームワークの使用を練習しました。",
         "function": [
@@ -403,9 +674,14 @@
                 "<audio>のsrcについて、画像の子コンポネートをクリックすると、各ヒーローのボイスパスのsrcをReduxで統一管理し、それをAppコンポネートでの<audio>が使います。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/react-game-collection"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/react-game-collection"
+            }
+        ]
     },
     {
         "name": "Wedding Dress Site",
@@ -413,65 +689,119 @@
         "type": "pc",
         "time": "2021/05",
         "keywords": [
-            "HTML5 + CSS3",
-            "Bootstrap",
-            "jQuery",
-            "Less",
-            "Webpack"
+            {
+                "name": "HTML5",
+                "color": "deep-orange"
+            },
+            {
+                "name": "CSS3",
+                "color": "light-blue"
+            },
+            {
+                "name": "Bootstrap",
+                "color": "purple"
+            },
+            {
+                "name": "jQuery",
+                "color": "indigo"
+            },
+            {
+                "name": "JavaScript",
+                "color": "yellow"
+            },
+            {
+                "name": "Webpack",
+                "color": "cyan"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
         "pics": [
-            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
-            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/02.png",
-            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/03.png",
-            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/04.png",
-            ""
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/02.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/03.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/04.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "Bootstrap",
-                    "pic": "bootstrap.svg"
-                },
-                {
-                    "name": "jQuery",
-                    "pic": "jquery.svg"
-                }
-            ],
-            [
-                {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
-                },
-                {
-                    "name": "Json",
-                    "pic": "json.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Webpack",
-                    "pic": "webpack.svg"
-                }
-            ]
+            {
+                "name": "HTML5",
+                "pic": "html.svg",
+                "desc": [
+                    "架空のサイトで、三大基礎の練習でした。",
+                    "Github Pageで展示されています。",
+                    "Bootstrapテンプレートを使用してレスポンシブル開発をしました。"
+                ]
+            },
+            {
+                "name": "CSS3",
+                "pic": "css.svg",
+                "desc": [
+                    "SCC3 のFlexレイアウト( Flex Layout )、フィルター( Filter )などを練習しました。",
+                    "Bootstrapテンプレートを使用してレスポンシブル開発をしました。"
+                ]
+            },
+            {
+                "name": "Bootstrap",
+                "pic": "bootstrap.svg",
+                "desc": [
+                    "Bootstrapテンプレートを使用してレスポンシブル開発をしました。",
+                    "レスポンシブウェブデザインで、グリッドシステム( Grid System )を練習し、各端末に応じてページレイアウトを自動調整できます。"
+                ]
+            },
+            {
+                "name": "jQuery",
+                "pic": "jquery.svg",
+                "desc": [
+                    "jQueryのDOM操作やアニメーション、例えばページスクロールアニメーション( Page Scroll Aniamtion )などを練習して実現しました。"
+                ]
+            },
+            {
+                "name": "JavaScript",
+                "pic": "javascript.svg",
+                "desc": [
+                    "jQueryでJavaScriptをカプセル化して練習しました。"
+                ]
+            },
+            {
+                "name": "Webpack",
+                "pic": "webpack.svg",
+                "desc": [
+                    "モジュールバンドラー Webpack を練習しました。"
+                ]
+            }
         ],
-        "desc": "架空のWedding Dressサイトです。各端末に応じてページレイアウトを自動調整することができます。これを通じて、Bootstrapレスポンシブレイアウト、そしてjQueryのDOM操作やアニメーションなどを練習しました。",
+        "desc": "架空のWedding Dressサイトです。各端末に応じてページレイアウトを自動調整することができます。これを通じて、Bootstrapレスポンシブレイアウト、そして。",
         "function": [
+            [],
             [
-                "Bootstrapテンプレートを使用してレスポンシブル開発をしました。",
-                "jQueryでJSをカプセル化して、ページスクロールを実現しました。"
-            ],
-            [
-                "SCC3のフィルター( Filter )を練習しました。",
-                "Bootstrapのグリッドシステム( Grid System )を練習しました。",
-                "Flexレイアウト( Flex Layout )を練習しました。",
                 "jQueryを通じて、やアニメーションなどを練習しました。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress",
-            "demo": "https://blaxberry.github.io/PC-Static-Weddng-Dress/"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/PC-Static-Weddng-Dress"
+            },
+            {
+                "name": "demo",
+                "icon": "mdi-camera-iris",
+                "color": "blue",
+                "to": "https://blaxberry.github.io/PC-Static-Weddng-Dress/"
+            }
+        ]
     },
     {
         "name": "SSR Game Collection by Rails",
@@ -479,42 +809,74 @@
         "type": "pc",
         "time": "2021/08",
         "keywords": [
-            "ERB",
-            "Ruby on Rails",
-            "Bootstrap",
-            "JavaScript"
+            {
+                "name": "Ruby",
+                "color": "red darken-4"
+            },
+            {
+                "name": "Ruby on Rails",
+                "color": "red darken-4"
+            },
+            {
+                "name": "Bootstrap",
+                "color": "purple"
+            },
+            {
+                "name": "jQuery",
+                "color": "indigo"
+            },
+            {
+                "name": "JavaScript",
+                "color": "yellow"
+            },
+            {
+                "name": "Scss",
+                "color": "pink"
+            }
         ],
         "mainPic": "https://pbs.twimg.com/media/E7zrQWeVUB0pVD2?format=jpg&name=medium",
         "pics": [
-            "https://pbs.twimg.com/media/E7zrQWeVUB0pVD2?format=jpg&name=medium"
+            {
+                "pic": "https://pbs.twimg.com/media/E7zrQWeVUB0pVD2?format=jpg&name=medium",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "Bootstrap",
-                    "pic": "bootstrap.svg"
-                },
-                {
-                    "name": "Scss",
-                    "pic": "sass.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Ruby",
-                    "pic": "ruby.svg"
-                },
-                {
-                    "name": "Ruby on Rails",
-                    "pic": "rails.svg"
-                }
-            ],
-            [
-                {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
-                }
-            ]
+            {
+                "name": "Ruby on Rails",
+                "pic": "rails.svg",
+                "desc": [
+                    "この作品は主に Ruby on Rails でサーバサイドの開発を練習しました。",
+                    "Ruby の ERBテンプレートを練習しました",
+                    "sass-rail を導入しました。",
+                    "jquery-rails を導入しました。",
+                    "Ruby on Rail に対して、引き続き頑張ります。"
+                ]
+            },
+            {
+                "name": "Ruby",
+                "pic": "ruby.svg",
+                "desc": [
+                    "Ruby on Rails でサーバサイドを開発するため、Ruby 言語については Class などを勉強しました。",
+                    "Ruby に対して、引き続き頑張ります。"
+                ]
+            },
+            {
+                "name": "Bootstrap",
+                "pic": "bootstrap.svg",
+                "desc": [
+                    "UIトについては、Bootstrap4 を使用しました。",
+                    "細かいところについて Scss で調整しました。"
+                ]
+            },
+            {
+                "name": "Scss",
+                "pic": "sass.svg",
+                "desc": [
+                    "各viewは主に Ruby の ERBテンプレート + Bootstrap で作成しました。",
+                    "細かいところについて Scss で調整しました。"
+                ]
+            }
         ],
         "desc": "この Ruby on Rails の SSR( サーバサイトレンダリング )開発を通じで、Railsのコントローラー( Controller )、ビュー( View )、ルーティング( route )を練習しました。",
         "function": [
@@ -526,9 +888,14 @@
                 "各ページのレイアウトについて、Bootstrap + Scss + ERBテンプレートを練習しました。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/rails_ssr"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/rails_ssr"
+            }
+        ]
     },
     {
         "name": "EC PinYouGo Shopping",
@@ -536,41 +903,73 @@
         "type": "pc",
         "time": "2020/11",
         "keywords": [
-            "HTML5",
-            "正規表現",
-            "CSS3",
-            "JavaScript"
+            {
+                "name": "HTML5",
+                "color": "deep-orange"
+            },
+            {
+                "name": "CSS3",
+                "color": "light-blue"
+            },
+            {
+                "name": "JavaScript",
+                "color": "yellow"
+            },
+            {
+                "name": "jQuery",
+                "color": "indigo"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
         "pics": [
-            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
-            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot2.png",
-            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot4.png",
-            "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot3.png"
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot1.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot2.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot3.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping/raw/master/images/screenshot4.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "HTML5",
-                    "pic": "html.svg"
-                },
-                {
-                    "name": "CSS3",
-                    "pic": "css.svg"
-                }
-            ],
-            [
-                {
-                    "name": "JavaScript",
-                    "pic": "javascript.svg"
-                }
-            ],
-            [
-                {
-                    "name": "Regular Express",
-                    "pic": "javascript.svg"
-                }
-            ]
+            {
+                "name": "HTML5",
+                "pic": "html.svg",
+                "desc": [
+                    "架空のサイトで、三大基礎の練習でした。",
+                    "Github Pageで展示されています。"
+                ]
+            },
+            {
+                "name": "CSS3",
+                "pic": "css.svg",
+                "desc": [
+                    "CSS基礎のボックスモデル・レイアウト・Float・Position( プロパティ )・Transformなどの練習でした。"
+                ]
+            },
+            {
+                "name": "JavaScript",
+                "pic": "javascript.svg",
+                "desc": [
+                    "JavaScript で基礎のDOM・BOM操作を練習しました。",
+                    "RegExp( 正規表現 )を利用して、フロントエンドでフォームの入力をチェックしました。"
+                ]
+            },
+            {
+                "name": "jQuery",
+                "pic": "jquery.svg",
+                "desc": [
+                    "jQuery で基礎のDOM・BOM操作を練習しました。"
+                ]
+            }
         ],
         "desc": "最初にレイアウトを練習する時の静的な架空のEC( 電子商取引 )サイトです。これを通じて、HTML＋CSSのレイアウトや、JavaScriptでのDOM操作、また正規表現( RegExp )でのフォームデータ( form data )検証などを練習しました。",
         "function": [
@@ -583,10 +982,20 @@
                 "正規表現( RegExp )でフォームデータ( form data )を検証します。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping",
-            "demo": "https://blaxberry.github.io/PC-Static-Web-PinYouGoShopping/"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/PC-Static-Web-PinYouGoShopping"
+            },
+            {
+                "name": "demo",
+                "icon": "mdi-camera-iris",
+                "color": "blue",
+                "to": "https://blaxberry.github.io/PC-Static-Web-PinYouGoShopping/"
+            }
+        ]
     },
     {
         "name": "EC QingZhu Shopping",
@@ -594,49 +1003,69 @@
         "type": "pc",
         "time": "2020/12",
         "keywords": [
-            "HTML5 + CSS3",
-            "Ajax",
-            "jQuery",
-            "JavaScript",
-            "JSON"
+            {
+                "name": "HTML5",
+                "color": "deep-orange"
+            },
+            {
+                "name": "CSS3",
+                "color": "light-blue"
+            },
+            {
+                "name": "JavaScript",
+                "color": "yellow"
+            },
+            {
+                "name": "jQuery",
+                "color": "indigo"
+            }
         ],
         "mainPic": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot.png",
         "pics": [
-            "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot.png",
-            "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot1.png",
-            "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot2.png"
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot1.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping/raw/master/images/screenshot2.png",
+                "desc": "Home"
+            }
         ],
         "techTasks": [
-            [
-                {
-                    "name": "HTML5",
-                    "pic": "html.svg"
-                },
-                {
-                    "name": "CSS3",
-                    "pic": "css.svg"
-                }
-            ],
-            [
-                {
-                    "name": "javaScript",
-                    "pic": "javascript.svg"
-                },
-                {
-                    "name": "jQuery",
-                    "pic": "jquery.svg"
-                }
-            ],
-            [
-                {
-                    "name": "JSON",
-                    "pic": "json.svg"
-                },
-                {
-                    "name": "jQuery.Ajax",
-                    "pic": "jquery.svg"
-                }
-            ]
+            {
+                "name": "HTML5",
+                "pic": "html.svg",
+                "desc": [
+                    "架空のサイトで、三大基礎の練習でした。",
+                    "Github Pageで展示されています。"
+                ]
+            },
+            {
+                "name": "CSS3",
+                "pic": "css.svg",
+                "desc": [
+                    "CSS基礎のボックスモデル・レイアウト・Float・Position( プロパティ )・Transformなどの練習でした。"
+                ]
+            },
+            {
+                "name": "JavaScript",
+                "pic": "javascript.svg",
+                "desc": [
+                    "JavaScript で基礎のDOM・BOM操作を練習しました。"
+                ]
+            },
+            {
+                "name": "jQuery",
+                "pic": "jquery.svg",
+                "desc": [
+                    "jQuery で基礎のDOM・BOM操作を練習しました。",
+                    "jQueryの Ajax を通じて、JSONファイルのデータを読み込めました。"
+                ]
+            }
         ],
         "desc": "最初にレイアウトを練習する時の静的な架空のEC( 電子商取引 )サイトです。この作品を通じてjQueryのAjaxや、DOM操作( 動的な生成、追加など )を練習しました。",
         "function": [
@@ -650,8 +1079,13 @@
                 "jQuery.ajaxを通じて、JSONファイルのデータを読み込めて動的にjQueryオブジェクトを生成し、そしてjQueryでDOM操作して画面上へ追加します。"
             ]
         ],
-        "links": {
-            "github": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping"
-        }
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/PC-Static-Web-QingZhuShopping"
+            }
+        ]
     }
 ]
