@@ -78,8 +78,8 @@
                     "Vue3 + Vite を利用して開発しました。",
                     "機能やルートが多いので、大量なコンポネートに分かれて開発しました。",
                     "コンポネート内部を簡潔化にするため、Hooks 関数を利用して大量にカプセル化しました。",
-                    "Vue3 の Composition API を練習しました。",
-                    "Vuex の Composition APIs も利用して、各コンポネートの共通状態を管理操作します。"
+                    "Vue3 の Composition APIs を練習しました。",
+                    "Vuex4 の Composition APIs を利用して、各コンポネートの共通状態を管理操作します。"
                 ]
             },
             {
@@ -95,7 +95,7 @@
                 "name": "Vuex4",
                 "pic": "vue-vuex.svg",
                 "desc": [
-                    "Vuex4 の Composition API を利用して共通状態を管理しました。",
+                    "Vuex4 の Composition API を利用して、共通状態( SKU・ショッピングカートなど )を管理します。",
                     "LocalStorage や Vant も利用して、Axios でもらったデータを保存、操作しました。"
                 ]
             },
@@ -121,46 +121,86 @@
                 "desc": [
                     "UIコンポネートについて、Vant を利用し開発しました。",
                     "細かいところについて Less で調整しました。",
-                    "この作品もモバイル端末向け、モバイル優先のデザインです。"
+                    "この作品のデザインはモバイル端末向け、モバイル優先のデザインです。"
                 ]
             },
             {
                 "name": "Less",
                 "pic": "less.svg",
                 "desc": [
-                    "UIコンポネート Vant は Less で構築されているため、細かいところは Less で調整しました。",
+                    "UIコンポネート Vant は Less に基づいて構築されているため、細かいところは Less で調整しました。",
                     "コンポネート開発するため、各ルートのスタイルも別々のファイルに分かれました。",
                     "Vueファイルを簡潔化にするため、スタイルの調整を独自のLessファイルで書きました。"
                 ]
             },
             {
-                "name": "プラゲイン",
+                "name": "npm",
                 "pic": "npm.svg",
                 "desc": [
-                    "postcss-pxtorem：pxをremに変更します。",
-                    "lib-flexible：remの基準値を調整します。",
-                    "touch-emulator：デスクトップのmouseイベントをtouchイベントに変更します。",
-                    "babel-plugin-import：需要に応じて、Vant のUIコンポネートを導入します。"
+                    "<b>postcss-pxtorem</b>：pxをremに変更します。",
+                    "<b>lib-flexible</b>：remの基準値を調整します。",
+                    "<b>touch-emulator</b>：デスクトップのmouseイベントをtouchイベントに変更します。",
+                    "<b>babel-plugin-import</b>：需要に応じて、Vant のUIコンポネートを導入します。"
                 ]
             }
         ],
         "desc": "EC( 電子商取引 )モバイル端末向けのSAPです。この作品を通じて、Vite2 + Vue3で開発しました。この架空ECウェブアプリの機能については、ログイン・ログアウト、登録ユーザーの情報、商品検索・オーダーリスト操作、検索履歴・ホットキーワーズス、ショッピングカート操作、商品注文などを模擬します。",
         "function": [
-            [
-                "Vue3 + Vite を練習しました。従来のVue-Cli + Webpackではなく、高速のHMRを提供するViteを利用して開発しました。",
-                "Vuex の Composition APIs を通じて、状態を管理操作します。",
-                "Vue3 でのコンポネート開発、Composition APIs、Hooks などをこの作品を通じて練習しました。",
-                "SPA( Single Page Application )開発のため、Vue-Routerを導入し、ナビゲーションガードなども練習しました。",
-                "モバイル端末向けのUIコンポネート Vant を利用し、そしてLessで調整します。( VantはLessで構築されているため。)",
-                "Axios を通じて、このECアプリの商品リストデータなどをFree APIに請求しました。"
-            ],
-            [
-                "商品検索や検索履歴の機能があります。入力したキーワードで関連商品を探します。",
-                "検査する時、値段や種類で商品リストを( Filter )並び替えます。",
-                "List画面で、商品を種類によって分類してリストで展示しており、商品をクリックしたら、Product Detail画面に移動します。",
-                "Product Detail画面で、この商品に関する内容を確認し、商品の数を設定してショッピングカートに追加することができます。",
-                "Shopping Cart画面で、ショッピングカートを管理し( 商品数を変更、追加、削除 )、商品を確認したら注文することができます。( 摸擬 )"
-            ]
+            {
+                "name": "Home View",
+                "val": [
+                    "カルーセル ( Carouse )・チャネル( Channel Bar )・人気商品などが展示されています。",
+                    "トップの検索欄をクッリクしたっら、ポップアップ( Popup )のSearch画面で出てきます。"
+                ]
+            },
+            {
+                "name": "Category View",
+                "val": [
+                    "Category画面で、ナビゲーション・ドロワー( Navigation Drawer )の形で分類して展示されており、各類別のタイトルをクッリクしたっら、関連詳細が出てきます。"
+                ]
+            },
+            {
+                "name": "Topic View",
+                "val": [
+                    "Topic画面で、話題になる商品などがリストで展示されており、またページネーション( Pagination )でページ変更もできます。"
+                ]
+            },
+            {
+                "name": "Search View",
+                "val": [
+                    "検索履歴の機能があります。入力したキーワードで関連商品を探します。",
+                    "フィルター( Filter )機能あり、商品検索の結果リストが値段・種類で並び替えます。",
+                    "検索の結果の商品画像をクリックしたら、Product Detail画面に移動します。"
+                ]
+            },
+            {
+                "name": "Product Detail View",
+                "val": [
+                    "Product Detail画面で、この商品に関する内容を確認できます。",
+                    "SKU ダイアログで、商品の在庫状況を確認でき、また注文数も設定できます。",
+                    "下のAdd to Cartボタンで商品をショッピングカートに追加でき、またBy Nowボタンで設定した注文数の商品をすぐ注文します。"
+                ]
+            },
+            {
+                "name": "Cart View",
+                "val": [
+                    "Navagation Gard があり、登録しないとショッピングカートに訪問できません。",
+                    "Shopping Cart画面で、ショッピングカートについて商品数を変更・追加・削除できます。",
+                    "ショッピングカートの内容が確認できったら提出して、摸擬注文することもできます。"
+                ]
+            },
+            {
+                "name": "User Profile View",
+                "val": [
+                    "グリッド( Grid )で、ユーザー情報・オーダーリスト・配達先アドレスなどの機能が展示されていますが、Navagation Gard があり、登録しないとそれらに訪問できません。"
+                ]
+            },
+            {
+                "name": "Others",
+                "val": [
+                    "開発中です。"
+                ]
+            }
         ],
         "links": [
             {
@@ -195,7 +235,7 @@
             },
             {
                 "name": "React-Router-Dom",
-                "color": ""
+                "color": "black"
             },
             {
                 "name": "Scss",
@@ -220,46 +260,88 @@
         "techTasks": [
             {
                 "name": "React",
-                "pic": "react.svg"
-            },
-            {
-                "name": "Create-React-App",
-                "pic": "react-create-creat-app.svg"
+                "pic": "react.svg",
+                "desc": [
+                    "Create-React-App を利用して開発しました。",
+                    "大量なコンポネートに分かれて開発しました。",
+                    "Classコンポネート・関数コンポネート、また Hooks も練習しました。",
+                    "UIについて、Material UI + Scss を導入しました。",
+                    "コンポネートの共通状態については、Redux を利用して保存、管理、操作しました。"
+                ]
             },
             {
                 "name": "Redux",
-                "pic": "redux.svg"
+                "pic": "redux.svg",
+                "desc": [
+                    "Redux を利用して、各コンポネートの共通状態を保存、管理、操作しました。"
+                ]
             },
             {
                 "name": "React-Router-Dom",
-                "pic": "react-router-dom.svg"
+                "pic": "react-router-dom.svg",
+                "desc": [
+                    "SPA( Single Page Application )のウエブアプリケーションです。",
+                    "機能や展示内容により、ルートに分かれて展示しました。"
+                ]
             },
             {
                 "name": "Material UI",
-                "pic": "react-materialui.svg"
+                "pic": "react-materialui.svg",
+                "desc": [
+                    "UIコンポネートについて、Material UI を利用し開発しました。",
+                    "細かいところについて Scss で調整しました。",
+                    "この作品はレスポンシブウェブデザインです。"
+                ]
             },
             {
                 "name": "Scss",
-                "pic": "sass.svg"
-            },
-            {
-                "name": "Axios",
-                "pic": "axios.svg"
+                "pic": "sass.svg",
+                "desc": [
+                    "スタイルの細かいところについて Scss で調整しました。"
+                ]
             }
         ],
         "desc": "モバイル端末のSPA( Single Page Application ) 音楽プレーヤーです。Axiosを利用し、ローカルJSONファイルの音楽データを読み込めて操作します。個人練習専用です。( Only for Personal Using )",
         "function": [
-            [
-                "曲 / 動画を検索することができます。",
-                "曲 / 動画を( 欧米、日本語、韓国語 )分類して、リストまたカードの形で画面上で展示します。",
-                "曲 / 動画を再生することができます。"
-            ],
-            [
-                "Axiosを通じて、ローカルJSONファイルから読み込めたデーターを画面上展示します。",
-                "Pub/Subでコンポーネン間の共有状態( 音楽のパース src )を管理や調整します。",
-                "この作品のコンポーネントが複雑ではないので、Rdeux より Pub/Sub や props のほうが便利だと考えています。",
-                "Material UIを利用し、Scssでレイアウトを調整します。"
-            ]
+            {
+                "name": "Search view",
+                "val": [
+                    "Search画面で、Tabの選択ボタンでタイプ別を通じて音楽を探します。",
+                    "検索結果がList・Sheets・MVという３集類に分かれて展示され、また画像をクリックしたっら、Detail画面に移動し、詳細を確認することもできます。"
+                ]
+            },
+            {
+                "name": "Song List View",
+                "val": [
+                    "Song List画面で、おすすめのリストが展示されてます。画像をクリックしたっら音楽が自動再生されます。"
+                ]
+            },
+            {
+                "name": "Album List View",
+                "val": [
+                    "Album List画面で、おすすめのリストが展示され、また画像をクリックしたっら、Album Detail画面に移動します。"
+                ]
+            },
+            {
+                "name": "Album Detail View",
+                "val": [
+                    "Album Detail画面で、このアルバムに関する詳細・音楽リストが展示されてます。",
+                    "音楽リストの画像をクリックしたっら、音楽が自動再生されます。"
+                ]
+            },
+            {
+                "name": "MV List View",
+                "val": [
+                    "MV List画面で、おすすめのリストが展示され、また画像をクリックしたっら、MV Detail画面に移動します。"
+                ]
+            },
+            {
+                "name": "MV Detail View",
+                "val": [
+                    "MV Detail画面で、MV動画・MV詳細・MVアーティスト情報・関連MVリストなどを確認できます。",
+                    "関連MVリストの画像をクリックしたっら、MV動画が自動再生されます"
+                ]
+            }
         ],
         "links": {}
     },
@@ -343,7 +425,7 @@
                 "desc": [
                     "SPA( Single Page Application )のWEBアプリです。",
                     "コンポネート開発するため、大量なルートに分かれました。",
-                    "ナビゲーションガード( Navagation Gard )などを利用して練習しました。"
+                    "ナビゲーションガード( Navagation Gard )などを練習しました。登録しないとショッピングカートに訪問できません。"
                 ]
             },
             {
@@ -381,33 +463,53 @@
                 ]
             },
             {
-                "name": "プラゲイン",
+                "name": "npm",
                 "pic": "npm.svg",
                 "desc": [
-                    "babel-plugin-import：需要に応じて、Vant のUIコンポネートを導入します。"
+                    "<b>babel-plugin-import</b>：Vant2 のUIコンポネートを需要に応じて Vue に導入します。"
                 ]
             }
         ],
-        "desc": "モバイル端末の架空のITプログラミング本のEC( 電子商取引 )Web Appです。新規登録・ログイン・ログアウト機能あり、商品注文や商品配送を模擬し、ショッピングカートやオーダーリストを操作ができます。",
+        "desc": "IT技術書籍のモバイルEC( 電子商取引 )架空APPです。新規登録・ログイン・ログアウト機能あり、商品注文や商品配送を模擬し、ショッピングカートやオーダーリストを操作ができます。",
         "function": [
-            [
-                "使用する前に、ログインまたは新規登録しなければなりません。",
-                "( テストアカウント: name: andy@qq.com, password: 123456 )"
-            ],
-            [
-                "List画面で、商品( IT本 )をIT技術や領域によって分類してリストで展示しており、商品をクリックしたら、Product Detail画面に移動します。",
-                "Product Detail画面で、この商品に関する内容を確認し、確認した後ショッピングカートに追加することができます。",
-                "Shopping Cart画面で、ショッピングカートを管理し( 商品数を変更、追加、削除 )、商品を確認したら、Order List画面に移動します。",
-                "Order List画面で、商品のオーダリストを再び確認し、その後注文することができます。( 摸擬 )",
-                "Order Detail画面で、商品の配送状況( 発送、途中、到着 )を確認できます。( 摸擬のため、全ての状態は「途中」 )",
-                "Personal画面で、配送先や商品オーダリストを設定することができます。"
-            ],
-            [
-                "Vue-Routerを利用したSPA(Single Page Application )電子商取引Web Appです。",
-                "商品のデータについては、Axiosで図書データに関するFree APIに請求します。",
-                "Axiosのinterceptorsで、リクエストやレスポンスの前処理をします。",
-                "Vant UIを利用し、Lessでレイアウトを設定します。 "
-            ]
+            {
+                "name": "Home View",
+                "val": [
+                    "登録しないと使用できません。<small>* テストアカウント: name: andy@qq.com・password: 123456 </small>",
+                    "Home画面で、人気商品などが展示されており、また商品画像をクリックしたらProduct Detail画面に移動します。"
+                ]
+            },
+            {
+                "name": "Category List View",
+                "val": [
+                    "Category List画面で、ナビゲーション・ドロワー( Navigation Drawer )の形で分類して展示されており、商品をクリックしたら、Product Detail画面に移動します。"
+                ]
+            },
+            {
+                "name": "Product Detail View",
+                "val": [
+                    "Product Detail画面で、この商品に関する内容を確認でき、またAdd to Cartボタンで商品をショッピングカートに追加できます。"
+                ]
+            },
+            {
+                "name": "Cart View",
+                "val": [
+                    "Shopping Cart画面で、ショッピングカートについて商品数を変更・追加・削除できます。内容が確認して提出したら Order List画面に移動します。"
+                ]
+            },
+            {
+                "name": "User Profile View",
+                "val": [
+                    "グリッド( Grid )で、ユーザー情報・オーダーリスト・配達先アドレスなどの機能が展示されており、配送先や商品オーダリストを設定することができます。"
+                ]
+            },
+            {
+                "name": "Order List + Detail View",
+                "val": [
+                    "Order List画面で、商品のオーダリストを再び確認し、また配送先が空欄ではなければ摸擬注文することができます。",
+                    "Order Detail画面で、注文商品の配送状況( 発送・途中・到着 )が確認できます。<small>* 摸擬のため、全ての状態は「途中」です。</small>"
+                ]
+            }
         ],
         "links": [
             {
@@ -459,35 +561,35 @@
                 "name": "HTML5",
                 "pic": "html.svg",
                 "desc": [
-                    ""
+                    "三大基礎の練習です。<a href='https://blaxberry.github.io/JS--TaskList/'>GithubPage</a>で展示されています。"
                 ]
             },
             {
                 "name": "Material",
                 "pic": "react-materialui.svg",
                 "desc": [
-                    ""
+                    "UIレイアウトについて、Materil を利用しました。"
                 ]
             },
             {
                 "name": "JavaScript",
                 "pic": "javascript.svg",
                 "desc": [
-                    "LocalStorage"
+                    "JavaScriptのカプセル化を練習しました。",
+                    "JavaScript で基礎のDOM・BOM操作を練習しました。",
+                    "ローカルストレージ( LocalStorage )を利用して、ブラウザにTodoListのデータを保存します。"
                 ]
             }
         ],
         "desc": "ローカルストレージ( LocalStorage )でブラウザにデータを保存するTodoList Web Appです。",
         "function": [
-            [
-                "TodoListタスクを追加、保存、削除、編集することができます。",
-                "保存しているタスクを検索( Filter )することができます。"
-            ],
-            [
-                "ローカルストレージ( LocalStorage )を利用して、ブラウザにTodoListのデータを保存します。",
-                "Material Frameworkでレイアウトを設定します。",
-                "JavaScriptのカプセル化を練習しました。"
-            ]
+            {
+                "name": "機能",
+                "val": [
+                    "TodoListタスクを追加・保存・削除・編集することができます。",
+                    "フィルター( Filter )で保存しているTodoListタスクを検索することができます。"
+                ]
+            }
         ],
         "links": [
             {
@@ -541,16 +643,24 @@
         "techTasks": [
             {
                 "name": "Vue2",
-                "pic": "vue.svg"
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue２＋Vue-CLi を利用したコンポネート開発です。",
+                    "UI については フレームワークのVuetifyとScssを使用しました。"
+                ]
             },
             {
                 "name": "Vue-Cli4",
-                "pic": "vue.svg"
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue２＋Vue-CLi を利用したコンポネート開発です。"
+                ]
             },
             {
                 "name": "Vuetify",
                 "pic": "vue-vuetify.svg",
                 "desc": [
+                    "レスポンシブデザインにしておき、スマホサイズを優先に考えています。",
                     "UIコンポネートについて、Vuetify2 を利用し開発しました。",
                     "細かいところについて Scss で調整しました。"
                 ]
@@ -568,14 +678,8 @@
                 "pic": "javascript.svg"
             }
         ],
-        "desc": "Vueを使って作成したレスポンシブデザインの電卓ウェブアプリです。iPhoneを真似し、レスポンシブデザインにしておき、スマホサイズを優先に考えています。",
-        "function": [
-            [
-                "iPhoneの電卓を真似してコンポネート開発を練習しました。基本ボタンやスタイルなどを少し自分で変更しました。",
-                "レスポンシブデザイン、スマホサイズ優先に、スクリンの大きさより。レイアウトや電卓のボタンの数が変化されています。",
-                "Vue２＋Vue-CLi を利用したコンポネート開発で、UI については フレームワークのVuetifyとScssを使用しました。"
-            ]
-        ],
+        "desc": "iPhoneの電卓を真似し、Vueで作成したレスポンシブデザインの電卓ウェブアプリです。レスポンシブデザイン、スマホサイズ優先に、スクリンの大きさより。レイアウトや電卓のボタンの数が変化されています。",
+        "function": [],
         "links": [
             {
                 "name": "github",
@@ -624,25 +728,29 @@
         "techTasks": [
             {
                 "name": "HTML5",
-                "pic": "html.svg"
+                "pic": "html.svg",
+                "desc": [
+                    "架空のサイトで、三大基礎の練習です。",
+                    "Github Pageで展示されています。"
+                ]
             },
             {
                 "name": "CSS3",
-                "pic": "css.svg"
+                "pic": "css.svg",
+                "desc": [
+                    "CSS基礎のボックスモデル・レイアウト・Float・Position( プロパティ )・Transformなどの練習です。"
+                ]
             },
             {
                 "name": "JavaScript",
-                "pic": "javascript.svg"
+                "pic": "javascript.svg",
+                "desc": [
+                    "JavaScript で基礎のDOM・BOM操作を練習しました。"
+                ]
             }
         ],
-        "desc": "最初的なレイアウト練習として、モバイル端末における静的なレイアウト( Flex Box Layout )やJavaScriptを練習しました。",
-        "function": [
-            [],
-            [
-                "Flex Layoutを練習しました。",
-                "JavaScriptのカプセル化を練習しました。"
-            ]
-        ],
+        "desc": "最初的なモバイルレイアウト練習として、モバイル端末における静的なレイアウト( Flex Box Layout )やJavaScriptを練習しました。",
+        "function": [],
         "links": [
             {
                 "name": "github",

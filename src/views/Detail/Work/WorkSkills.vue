@@ -20,10 +20,7 @@
         class="pa-1"
       >
         <v-card @click="clickItem(item)">
-          <v-img
-            :src="require(`@/assets/images/${item.pic}`)"
-            lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
-          />
+          <img :src="require(`@/assets/images/${item.pic}`)" />
         </v-card>
       </v-col>
     </v-row>
@@ -44,10 +41,11 @@
             :key="index"
             class="text-caption text-sm-body-2 text-md-body-1 ma-0 mb-2 mb-md-5"
           >
-            <b class="mr-1">
-              {{ content.desc.length > 1 ? index + 1 + ". " : "" }}
-            </b>
-            {{ item }}
+            <b
+              class="mr-1"
+              v-text="content.desc.length > 1 ? index + 1 + '. ' : ''"
+            />
+            <span v-html="item" />
           </p>
         </v-list-item>
       </v-list>
@@ -90,5 +88,9 @@ export default {
 <style lang="scss" scoped>
 .content-title {
   margin-left: 20% !important;
+}
+img {
+  width: 100%;
+  display: block;
 }
 </style>

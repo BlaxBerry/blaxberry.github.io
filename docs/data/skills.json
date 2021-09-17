@@ -515,7 +515,7 @@
         "id": "postgresql",
         "type": "database",
         "pic": "postgresql.svg",
-        "showHomePage": true,
+        "showHomePage": false,
         "showSkillPage": true,
         "main": "Ruby on Rails や Node.js・Express.js などに接続したサーバサイト開発を練習しました。現在 Rails への組み込みの開発を練習しています。",
         "desc": [

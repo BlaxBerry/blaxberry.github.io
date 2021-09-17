@@ -1,16 +1,16 @@
 <template>
   <div class="CardSkills pb-5">
-    <v-row align="center" justify="start" class="px-2">
+    <v-row align="center" justify="start" class="mx-auto">
       <v-col
         v-for="(item, index) in list"
         :key="index"
-        class="pa-0"
+        class="pa-0 ma-1 ma-md-2"
         cols="2"
         sm="2"
         md="1"
       >
-        <v-card class="ma-1" elevation="4" @click="click(item)">
-          <v-img :src="require(`../../assets/images/${item.pic}`)"></v-img>
+        <v-card elevation="4" @click="click(item)">
+          <img :src="require(`../../assets/images/${item.pic}`)" />
         </v-card>
       </v-col>
     </v-row>
@@ -47,5 +47,9 @@ export default {
     cursor: pointer;
     text-align: center;
   }
+}
+img {
+  width: 100%;
+  display: block;
 }
 </style>

@@ -32,9 +32,38 @@
         />
       </v-card-subtitle>
 
-      <!-- 5. main desc -->
+      <!-- 5. desc -->
       <v-card-subtitle class="text-caption text-sm-body-2 text-md-body-1">
-        {{ work.desc }}
+        <!-- 5.1 main desc -->
+        <p class="mb-4 mb-md-5" v-html="work.desc" />
+        <!-- 5.2 detail desc list -->
+        <v-list-item
+          two-line
+          v-for="list,index in work.function"
+          :key="index"
+          class="pa-0 mb-2"
+        >
+          <v-list-item-content class="pa-0">
+            <!-- list title -->
+            <v-list-item-title
+              class="mb-2 cyan--text text--darken-3"
+              v-text="'- ' + list.name + ' -'"
+              v-if="list.name"
+            />
+            <!-- list item content -->
+            <p
+              class="text-caption text-md-body-2 mb-1 mb-sm-2 grey--text text--darken-3"
+              v-for="(item, index) in list.val"
+              :key="index"
+            >
+              <b
+                v-html="list.val.length > 1 ? index + 1 + '.' : '&nbsp;'"
+                class="mr-1 mr-sm-2"
+              />
+              <span v-html="item" />
+            </p>
+          </v-list-item-content>
+        </v-list-item>
       </v-card-subtitle>
 
       <!-- 5. link -->

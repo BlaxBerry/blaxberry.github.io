@@ -74,7 +74,6 @@ export default {
 
   data() {
     return {
-      // 分类skills
       lang_list: [],
       style_list: [],
       framework_list: [],
@@ -88,70 +87,38 @@ export default {
     // get all skill list
     getAllSkillList.then((res) => {
       console.log(res.data);
-      let allSkill = [];
-      res.data.forEach((item) => {
-        if (item.showSkillPage) {
-          allSkill.push(item);
-        }
-      });
-      // console.log(allSkill);
+      let allSKillArr = res.data.filter((item) => item.showSkillPage);
 
-      // 1. get all kinds of types of Skills
-      let allTypes = [];
-      allSkill.forEach((item) => {
-        allTypes.push(item.type);
-      });
-      allTypes = Array.from(new Set(allTypes));
-      // console.log("types", allTypes);
+      // languages
+      let langs = allSKillArr.filter((item) => item.type == "lang");
+      console.log("languages", langs);
+      this.lang_list = langs;
 
-      // 2. 分类 并 赋值
-      allSkill.map((item) => {
-        switch (item.type) {
-          case allTypes[0]:
-            this.lang_list.push(item);
-            break;
-          case allTypes[1]:
-            this.style_list.push(item);
-            break;
-          case allTypes[2]:
-            this.framework_list.push(item);
-            break;
-          case allTypes[3]:
-            this.others_list.push(item);
-            break;
-          case allTypes[4]:
-            this.server_list.push(item);
-            break;
-          case allTypes[5]:
-            this.db_list.push(item);
-            break;
-          default:
-            break;
-        }
-      });
+      // framework
+      let frameworks = allSKillArr.filter((item) => item.type == "framework");
+      console.log("frameworks", frameworks);
+      this.framework_list = frameworks;
 
-      // 4 去重复 hash unique
-      // function unique(arr) {
-      //   for (let i = 0; i < arr.length; i++) {
-      //     for (let j = i + 1; j < arr.length; j++) {
-      //       if (arr[i].name === arr[j].name) {
-      //         arr.splice(i, 1);
-      //         j--;
-      //       }
-      //     }
-      //   }
-      // }
-      // unique(lang_list);
-      // unique(style_list);
-      // unique(framework_list);
-      // unique(server_list);
-      // unique(db_list);
-      // unique(others_list);
+      // server
+      let servers = allSKillArr.filter((item) => item.type == "server");
+      console.log("servers", servers);
+      this.server_list = servers;
+
+      // database
+      let databases = allSKillArr.filter((item) => item.type == "database");
+      console.log("databasess", databases);
+      this.db_list = databases;
+
+      // others
+      let others = allSKillArr.filter((item) => item.type == "others");
+      console.log("others", others);
+      this.others_list = others;
+
+      // ui style
+      let styles = allSKillArr.filter((item) => item.type == "style");
+      console.log("styles", styles);
+      this.style_list = styles;
     });
-  },
-
-  mounted() {
-    this.$parent.$parent.SmoothScrollAnchors = this.SmoothScrollAnchors;
   },
 };
 </script>

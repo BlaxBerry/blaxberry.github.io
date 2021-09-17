@@ -52,8 +52,8 @@
                     <v-img
                       :src="require(`@/assets/images/${tech.icon}`)"
                       lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
-                      max-height="60"
-                      max-width="60"
+                      max-height="50"
+                      max-width="50"
                     />
                   </v-card>
                   <!-- tech name -->
