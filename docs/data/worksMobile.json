@@ -45,6 +45,18 @@
                 "desc": "Home"
             },
             {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/category-01.png",
+                "desc": "Category"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/category-02.png",
+                "desc": "Category"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/topic-01.png",
+                "desc": "Topic"
+            },
+            {
                 "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/detail-01.png",
                 "desc": "Detail"
             },
@@ -55,6 +67,18 @@
             {
                 "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/navagation-guard.png",
                 "desc": "Navagation Gard"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/cart-01.png",
+                "desc": "Cart"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/cart-02.png",
+                "desc": "Cart"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/user-info.png",
+                "desc": "User"
             },
             {
                 "pic": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/user-login.png",
@@ -242,7 +266,7 @@
                 "color": "pink"
             }
         ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-04.png",
         "pics": [
             {
                 "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
@@ -254,6 +278,10 @@
             },
             {
                 "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-03.png",
+                "desc": ""
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-04.png",
                 "desc": ""
             }
         ],

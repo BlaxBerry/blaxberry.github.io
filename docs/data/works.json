@@ -531,18 +531,18 @@
                 "color": "#42b983"
             }
         ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-sheet.png",
         "pics": [
             {
                 "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
                 "desc": "Home"
             },
             {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-01.png",
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-sheet.png",
                 "desc": "Home"
             },
             {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-sheet.png",
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-01.png",
                 "desc": "Home"
             }
         ],
@@ -1060,8 +1060,7 @@
             }
         ],
         "desc": "最初にレイアウトを練習する時の静的な架空のEC( 電子商取引 )サイトです。これを通じて、HTML＋CSSのレイアウトや、JavaScriptでのDOM操作、また正規表現( RegExp )でのフォームデータ( form data )検証などを練習しました。",
-        "function": [
-        ],
+        "function": [],
         "links": [
             {
                 "name": "github",

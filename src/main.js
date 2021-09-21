@@ -39,12 +39,8 @@ Vue.use(VueCarousel);
 
 // vue lazyload
 import VueLazyload from 'vue-lazyload'
-const loadimage = require('./assets/loading/loading.gif')
-const errorimage = require('./assets/loading/loading.gif')
 Vue.use(VueLazyload, {
   preLoad: 1.3,
-  error: errorimage,
-  loading: loadimage,
   attempt: 1
 })
 

@@ -47,12 +47,13 @@
         "main": "引き続き深く勉強して強化中です。",
         "desc": [
             "DOM、BOM操作が出来ます。",
-            "JSのJSオブジェクト指向を理解します。",
             "オブジェクト指向を理解します。",
+            "非同期処理・同期処理（Promise、async/await）を理解します。",
             "ES6+を理解します。",
-            "モジュール開発が出来ます。",
+            "import/exportを利用してプログラムモジュール開発が出来ます。",
             "XMLHTTPRequestを通じてHTTP通信をすることができます。",
-            "async/await、Promiseを理解します。"
+            "Vue.js・React.jsなどのフレームワークが使えます。",
+            "Node.js・express.jsでのサーバー外発が使えます。"
         ],
         "similar": [
             "javascript",
@@ -331,7 +332,10 @@
         "pic": "vue-vuex.svg",
         "showSkillPage": true,
         "main": "状態を管理することができます。引き続き深く勉強して強化中です。",
-        "desc": [],
+        "desc": [
+            "Vuexを使った状態管理ができます。",
+            "Vuex4のComponsition APIsを使った状態管理ができます。"
+        ],
         "similar": [
             "vue",
             "vue-cli",
@@ -486,7 +490,9 @@
         "showHomePage": false,
         "showSkillPage": true,
         "main": "勉強して強化中です。",
-        "desc": [],
+        "desc": [
+            "勉強して強化中です。"
+        ],
         "similar": [
             "vue",
             "nodejs"

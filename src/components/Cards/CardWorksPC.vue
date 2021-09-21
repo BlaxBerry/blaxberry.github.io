@@ -11,7 +11,10 @@
         lg="3"
       >
         <v-card elevation="4" @click="click(item)">
-          <v-img :src="item.mainPic"></v-img>
+          <v-img
+            :src="item.mainPic"
+            :lazy-src="require(`../../assets/loading/loading-pc.png`)"
+          />
         </v-card>
         <v-card-text
           v-show="item.mainPic"

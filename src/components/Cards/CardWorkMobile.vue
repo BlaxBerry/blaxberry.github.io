@@ -12,7 +12,7 @@
         <v-card elevation="4" @click="click(item)">
           <v-img
             :src="item.mainPic"
-            lazy-src="https://flevix.com/wp-content/uploads/2019/12/Barline-Loading-Images-1.gif"
+            :lazy-src="require(`../../assets/loading/loading-mobile.png`)"
           ></v-img>
         </v-card>
         <v-card-text class="text-center text-no-wrap font-weight-bold">
