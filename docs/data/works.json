@@ -338,6 +338,86 @@
         ]
     },
     {
+        "name": "VuePress Static Site Document Blog",
+        "id": "vuepress-studynote",
+        "type": "pc",
+        "time": "2021/9",
+        "keywords": [
+            {
+                "name": "VuePress",
+                "color": "#42b983"
+            },
+            {
+                "name": "HTML",
+                "color": "deep-orange"
+            },
+            {
+                "name": "Vue",
+                "color": "#42b983"
+            },
+            {
+                "name": "Javascript",
+                "color": "yellow"
+            }
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vuepress-studynotes/raw/main/images/01.png",
+        "pics": [
+            {
+                "pic": "https://github.com/BlaxBerry/vuepress-studynotes/raw/main/images/01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vuepress-studynotes/raw/main/images/02.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vuepress-studynotes/raw/main/images/03.png",
+                "desc": "Home"
+            }
+        ],
+        "techTasks": [
+            {
+                "name": "VuePress 1.0",
+                "pic": "vue-vuepress.svg",
+                "desc": [
+                    "静的サイトジェネレータVuePressを利用し、Markdownを書くだけのシンプルな静的サイトです。",
+                    "ドキュメントサイトとしてビルドして、GitHub Pagesでホスティングしました。"
+                ]
+            },
+            {
+                "name": " Vue",
+                "pic": "vue.svg",
+                "desc": [
+                    "VuePressは Markdown の中でVueコンポーネントが使えるようになっています。"
+                ]
+            },
+            {
+                "name": "npm",
+                "pic": "npm.svg",
+                "desc": [
+                    "<b>vuepress/plugin-search：</b>検索欄機能。",
+                    "<b>vuepress/plugin-back-to-top：</b>トップに戻ります。"
+                ]
+            }
+        ],
+        "desc": "WordPressではなくVuePressを使用し、Markdownを書くだけで作成した、今までのプログラミングノートに関する静的なドキュメントサイトです。検索・ナビゲーション機能などがあります。",
+        "function": [],
+        "links": [
+            {
+                "name": "github",
+                "icon": "mdi-github",
+                "color": "black",
+                "to": "https://github.com/BlaxBerry/vuepress-studynotes/tree/development"
+            },
+            {
+                "name": "demo",
+                "icon": "mdi-camera-iris",
+                "color": "blue",
+                "to": "https://blaxberry.github.io/vuepress-studynotes/"
+            }
+        ]
+    },
+    {
         "name": "Electron App Moba Game Characters",
         "id": "relectron01",
         "type": "pc",

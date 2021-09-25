@@ -495,6 +495,7 @@
         ],
         "similar": [
             "vue",
+            "vuepress",
             "nodejs"
         ]
     },
@@ -655,12 +656,13 @@
         "pic": "vue-vuepress.svg",
         "showHomePage": false,
         "showSkillPage": true,
-        "main": "Vuepress 静的サイトジェネレーター「Static Site Generator(SSG)」",
+        "main": "静的サイトジェネレーター「Static Site Generator(SSG)」の VuePress を利用し、自分の今までのプログラミングノートに関する静的なドキュメントサイトを作りました。",
         "desc": [
-            "静的サイトジェネレーター「Static Site Generator(SSG)」。",
+            "今までのプログラミングノートに関する静的なドキュメントサイトを作りました。",
             "WordPress、VuePress を比べながら勉強し始めました。"
         ],
         "similar": [
+            "vuepress",
             "wordpress",
             "vue"
         ]
