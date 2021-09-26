@@ -15,15 +15,12 @@
         large
         :icon="item.skill ? 'mdi-code-tags' : ''"
       >
-        <!-- <template v-slot:opposite>
-          <h3 class="cyan--text text--darken-2">{{ item.time }}</h3>
-        </template> -->
         <v-card class="elevation-4">
           <v-card-title v-if="item.title" class="cyan white--text py-2 mb-2">
             <!-- title -->
             {{ item.title }}
           </v-card-title>
-          <v-card-text class="pb-5 text-lg-body-1 pr-3 px-md-6 text-caption text-sm-body-2 text-md-body-1">
+          <v-card-text class="pb-5 text-lg-body-1 pr-3 px-md-6">
             <v-card-title
               class="cyan--text text--darken-2 font-weight-bold pa-0 mb-2"
             >
@@ -31,9 +28,13 @@
               {{ item.time }}
             </v-card-title>
             <!-- description -->
-            {{ item.desc ? item.desc : "" }}
+            <p
+              v-if="item.desc"
+              class="text-caption text-sm-body-2 text-md-body-1"
+              v-html="item.desc"
+            />
+            <!-- skills -->
             <div class="skills pt-2 mt-md-3 ml-md-5" v-if="item.skill">
-              <!-- skills -->
               <v-avatar
                 v-for="(skill, i) in item.skill"
                 :key="i"
@@ -66,7 +67,7 @@ export default {
         {
           time: "2021.9",
           desc:
-            "WordPress、VuePress を比べながら勉強し始めました。スキルアップのために、将来の段階的な目標として PHP も勉強したいと思います。",
+            "WordPress、VuePress を比べながら勉強し始めました。<br/>VuePressで作った静的サイト<b>Study Notes</b> が <a href='https://blaxberry.github.io/vuepress-studynotes/'>GitHub Pages</a> で展示されています。<br/>またスキルアップのために、将来の段階的な目標として PHP も勉強したいと思います。",
           skill: [
             { name: "VuePress", pic: "vue-vuepress.svg" },
             { name: "WordPress", pic: "wordpress.svg" },
@@ -76,7 +77,7 @@ export default {
         {
           time: "2021.8",
           desc:
-            "ELectron の基礎を勉強して練習しました。最近 React や Vue３ の関連知識を強化しており、また Vite に対しても勉強し始めました。",
+            "ELectron の基礎を勉強して練習しました。<br/>React や Vue３ の関連知識を強化しており、また Vite に対しても勉強し始めました。",
           skill: [
             { name: "Vite", pic: "vue-vite.svg" },
             { name: "Vue3", pic: "vue.svg" },

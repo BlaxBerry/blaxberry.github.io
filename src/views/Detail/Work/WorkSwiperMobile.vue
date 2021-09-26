@@ -4,7 +4,7 @@
     <carousel :perPage="2" class="d-flex d-sm-none">
       <slide v-for="(item, index) in list" :key="index" class="mx-0">
         <v-card class="ma-4 mobile-slide-card">
-          <img :src="item.pic" :alt="item.name" />
+          <img v-lazy="item.pic" :alt="item.name" />
         </v-card>
       </slide>
     </carousel>
@@ -12,7 +12,7 @@
     <carousel :perPage="3" class="d-none d-sm-flex d-md-none">
       <slide v-for="(item, index) in list" :key="index" class="mx-0">
         <v-card class="ma-4 mobile-slide-card">
-          <img :src="item.pic" :alt="item.name" />
+          <img v-lazy="item.pic" :alt="item.name" />
         </v-card>
       </slide>
     </carousel>
@@ -20,7 +20,7 @@
     <carousel :perPage="4" class="d-none d-md-flex">
       <slide v-for="(item, index) in list" :key="index" class="mx-0">
         <v-card class="ma-4 mobile-slide-card">
-          <img :src="item.pic" :alt="item.name" />
+          <img v-lazy="item.pic" :alt="item.name" />
         </v-card>
       </slide>
     </carousel>

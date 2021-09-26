@@ -39,8 +39,10 @@ Vue.use(VueCarousel);
 
 // vue lazyload
 import VueLazyload from 'vue-lazyload'
+import loadingPic from './assets/loading/loading-mobile.png'
 Vue.use(VueLazyload, {
   preLoad: 1.3,
+  loading: loadingPic, // for Detail Work's mobile pic
   attempt: 1
 })
 

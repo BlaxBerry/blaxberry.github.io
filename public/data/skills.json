@@ -51,9 +51,9 @@
             "非同期処理・同期処理（Promise、async/await）を理解します。",
             "ES6+を理解します。",
             "import/exportを利用してプログラムモジュール開発が出来ます。",
-            "XMLHTTPRequestを通じてHTTP通信をすることができます。",
+            "Ajaxを通じてHTTP通信をすることができます。",
             "Vue.js・React.jsなどのフレームワークが使えます。",
-            "Node.js・express.jsでのサーバー外発が使えます。"
+            "Node.js・Express.jsでのサーバー開発が使えます。"
         ],
         "similar": [
             "javascript",
@@ -565,7 +565,8 @@
         "showSkillPage": true,
         "main": "",
         "desc": [
-            "Gitを利用してバージョン管理ができます。"
+            "Gitを利用してバージョン管理ができます。",
+            "作成したウェブページ、ウェブアプリ( Web App )などを GitHub Pagesで公開することができます。"
         ],
         "similar": [
             "git",
@@ -581,8 +582,8 @@
         "showSkillPage": false,
         "main": "",
         "desc": [
-            "Githubが使えます。",
-            "作成したウェブページ、ウェブアプリ( Web App )などを GitHub Pagesで公開することができます。"
+            "<a href='https://github.com/BlaxBerry?tab=repositories'>Githubリポジトリ</a>",
+            "<a href='https://github.com/BlaxBerry/BlaxBerry.github.io'>Github Pageポートフォリオ</a>"
         ],
         "similar": []
     },
@@ -659,7 +660,8 @@
         "main": "静的サイトジェネレーター「Static Site Generator(SSG)」の VuePress を利用し、自分の今までのプログラミングノートに関する静的なドキュメントサイトを作りました。",
         "desc": [
             "今までのプログラミングノートに関する静的なドキュメントサイトを作りました。",
-            "WordPress、VuePress を比べながら勉強し始めました。"
+            "WordPress、VuePress を比べながら勉強し始めました。",
+            "VuePressで作った静的サイト<b>Study Notes</b> が <a href='https://blaxberry.github.io/vuepress-studynotes/'>GitHub Pages</a>で展示されています。"
         ],
         "similar": [
             "vuepress",

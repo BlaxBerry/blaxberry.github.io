@@ -24,7 +24,7 @@
                 <b class="mr-1">
                   {{ item.desc.length > 1 ? index + 1 + ". " : "" }}
                 </b>
-                {{ list }}
+                <span v-html="list" />
               </p>
             </v-list-item>
           </v-expansion-panel-content>

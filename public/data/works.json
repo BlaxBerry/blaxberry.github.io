@@ -1,6 +1,6 @@
 [
     {
-        "name": "Blogs & Users Management",
+        "name": "Users' Blogs Management System",
         "id": "01",
         "type": "pc",
         "time": "2021/06",
@@ -344,6 +344,10 @@
         "time": "2021/9",
         "keywords": [
             {
+                "name": "Markdown",
+                "color": "black"
+            },
+            {
                 "name": "VuePress",
                 "color": "#42b983"
             },
@@ -381,7 +385,8 @@
                 "pic": "vue-vuepress.svg",
                 "desc": [
                     "静的サイトジェネレータVuePressを利用し、Markdownを書くだけのシンプルな静的サイトです。",
-                    "ドキュメントサイトとしてビルドして、GitHub Pagesでホスティングしました。"
+                    "ビルド( <b>vuepress build</b> )した後、Markdownが HTML に変更しました。",
+                    "ドキュメントサイトとしてビルドして、<a href='https://blaxberry.github.io/vuepress-studynotes/'>GitHub Page</a>でホスティングしました。"
                 ]
             },
             {
@@ -396,12 +401,22 @@
                 "pic": "npm.svg",
                 "desc": [
                     "<b>vuepress/plugin-search：</b>検索欄機能。",
-                    "<b>vuepress/plugin-back-to-top：</b>トップに戻ります。"
+                    "<b>vuepress/plugin-back-to-top：</b>トップに戻ります。",
+                    "<b>vuepress/last-updated：</b>最終更新時間を表示します。",
+                    "<b>vuepress-plugin-nprogress：</b>ページを変更する時、プログレスバー( Progress Bar )をページのトッポで表示します。"
                 ]
             }
         ],
         "desc": "WordPressではなくVuePressを使用し、Markdownを書くだけで作成した、今までのプログラミングノートに関する静的なドキュメントサイトです。検索・ナビゲーション機能などがあります。",
-        "function": [],
+        "function": [
+            {
+                "name": "Static Document Site",
+                "val": [
+                    "今までのプログラミング勉強のMarkDownノートを、VuePressで静的なサイトの形で展示しています。",
+                    "VuePressでビルド( vuepress build )した後、Markdownが HTML に変更し、読む時も便利になりました。"
+                ]
+            }
+        ],
         "links": [
             {
                 "name": "github",
@@ -611,8 +626,12 @@
                 "color": "#42b983"
             }
         ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-sheet.png",
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-mv.png",
         "pics": [
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-mv.png",
+                "desc": "Home"
+            },
             {
                 "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
                 "desc": "Home"
@@ -730,7 +749,7 @@
         "links": {}
     },
     {
-        "name": "React SPA Moba Game Characters",
+        "name": "React Moba Game Characters",
         "id": "reactpc01",
         "type": "pc",
         "time": "2021/08",
