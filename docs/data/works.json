@@ -588,167 +588,6 @@
         ]
     },
     {
-        "name": "SPA Responsive Music Player 2.0",
-        "id": "vuemusicplayer",
-        "type": "pc",
-        "time": "2021/05 ~",
-        "keywords": [
-            {
-                "name": " Vue2",
-                "color": "#42b983"
-            },
-            {
-                "name": "Vuetify",
-                "color": "light-blue"
-            },
-            {
-                "name": "Scss",
-                "color": "pink"
-            },
-            {
-                "name": "ElementUI",
-                "color": "blue darken-1"
-            },
-            {
-                "name": "Less",
-                "color": "blue"
-            },
-            {
-                "name": "Vue-Router",
-                "color": "#42b983"
-            },
-            {
-                "name": "SPA",
-                "color": "red"
-            },
-            {
-                "name": " Vuex",
-                "color": "#42b983"
-            }
-        ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-mv.png",
-        "pics": [
-            {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-mv.png",
-                "desc": "Home"
-            },
-            {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-02.png",
-                "desc": "Home"
-            },
-            {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/detail-sheet.png",
-                "desc": "Home"
-            },
-            {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-01.png",
-                "desc": "Home"
-            }
-        ],
-        "techTasks": [
-            {
-                "name": "Vue2",
-                "pic": "vue.svg",
-                "desc": [
-                    "Vue2 + Vue-Cli を利用して開発しました。",
-                    "コンポネート間の通信や、各 Option APIs を練習しました。",
-                    "現時点では Vuetify2 を使用したので Vue2 で開発しましたが、将来 Vue3 にの移行する見込みです。"
-                ]
-            },
-            {
-                "name": "VueX",
-                "pic": "vue-vuex.svg",
-                "desc": [
-                    "Vuex を利用して、各コンポネートの共通状態を管理しました。"
-                ]
-            },
-            {
-                "name": "Vue-Router",
-                "pic": "vue-router.svg",
-                "desc": [
-                    "SPA( Single Page Application )のポートフォリオです。",
-                    "機能や展示内容により、大量なルートに分かれて開発しました。"
-                ]
-            },
-            {
-                "name": "ElementUI",
-                "pic": "vue-elementui.svg",
-                "desc": [
-                    "UIコンポネートやスタイルの調整について、最初は <b>Element-UI + Less</b> の組み合わせを利用して開発しました。",
-                    "その後は <b>Vuetify2 + Scss</b> のセットに移行しました。"
-                ]
-            },
-            {
-                "name": "Vuetify2",
-                "pic": "vue-vuetify.svg",
-                "desc": [
-                    "UIコンポネートについて、Vuetify2 を利用し開発しました。",
-                    "細かいところについて Scss で調整しました。",
-                    "この作品はレスポンシブウェブデザインのため、モバイル端末・PC端末によりレイアウトや展示内容が異なっています。"
-                ]
-            },
-            {
-                "name": "Scss",
-                "pic": "sass.svg",
-                "desc": [
-                    "UIコンポネートについて、主に Vuetify2 のコンポネートを利用し開発しました。",
-                    "細かいところについて Scss で調整しました。"
-                ]
-            },
-            {
-                "name": "Less",
-                "pic": "less.svg",
-                "desc": [
-                    "最初は <b>Element-UI + Less</b> の組み合わせを利用し、細かいところについて Less で調整しました。",
-                    "その後は <b>Vuetify2 + Scss</b> のセットに移行しました。"
-                ]
-            }
-        ],
-        "desc": "レスポンシブSPA( Single Page Application ) 音楽プレーヤーです。Axios、VueX、UIフレームワークの Vuetify を利用して開発しました。個人練習専用です。( Only for Personal Using )",
-        "function": [
-            {
-                "name": "Search view",
-                "val": [
-                    "Search画面で、Tabの選択ボタンでタイプ別を通じて音楽を探します。",
-                    "検索結果がList・Sheets・MVという３集類に分かれて展示され、また画像をクリックしたっら、Detail画面に移動し、詳細を確認することもできます。"
-                ]
-            },
-            {
-                "name": "Song List View",
-                "val": [
-                    "Song List画面で、おすすめのリストが展示されてます。画像をクリックしたっら音楽が自動再生されます。"
-                ]
-            },
-            {
-                "name": "Album List View",
-                "val": [
-                    "Album List画面で、おすすめのリストが展示され、また画像をクリックしたっら、Album Detail画面に移動します。"
-                ]
-            },
-            {
-                "name": "Album Detail View",
-                "val": [
-                    "Album Detail画面で、このアルバムに関する詳細・音楽リストが展示されてます。",
-                    "音楽リストの画像をクリックしたっら、音楽が自動再生されます。"
-                ]
-            },
-            {
-                "name": "MV List View",
-                "val": [
-                    "MV List画面で、おすすめのリストが展示され、また画像をクリックしたっら、MV Detail画面に移動します。"
-                ]
-            },
-            {
-                "name": "MV Detail View",
-                "val": [
-                    "MV Detail画面で、MV動画・MV詳細・MVアーティスト情報・関連MVリストなどを確認できます。",
-                    "関連MVリストの画像をクリックしたっら、MV動画が自動再生されます"
-                ]
-            }
-        ],
-        "links": {}
-    },
-    {
         "name": "React Moba Game Characters",
         "id": "reactpc01",
         "type": "pc",
@@ -881,6 +720,150 @@
                 "to": "https://github.com/BlaxBerry/react-game-collection"
             }
         ]
+    },
+    {
+        "name": "Music Player 2.0",
+        "id": "vuemusicplayer",
+        "type": "pc",
+        "time": "2021/05 ~",
+        "keywords": [
+            {
+                "name": " Vue2",
+                "color": "#42b983"
+            },
+            {
+                "name": "Vuetify",
+                "color": "light-blue"
+            },
+            {
+                "name": "Scss",
+                "color": "pink"
+            },
+            {
+                "name": " Vuex",
+                "color": "#42b983"
+            },
+            {
+                "name": "ElementUI",
+                "color": "blue darken-1"
+            },
+            {
+                "name": "Less",
+                "color": "blue"
+            },
+            {
+                "name": "Vue-Router",
+                "color": "#42b983"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
+            }
+        ],
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/PC-search-01.png",
+        "pics": [
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/PC-search-01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/PC-search-02.png",
+                "desc": "Home"
+            }
+        ],
+        "techTasks": [
+            {
+                "name": "Vue2",
+                "pic": "vue.svg",
+                "desc": [
+                    "Vue2 + Vue-Cli を利用して開発しました。",
+                    "コンポネート間の通信や、各 Option APIs を練習しました。",
+                    "現時点では Vuetify2 を使用したので Vue2 で開発しましたが、将来 Vue3 にの移行する見込みです。"
+                ]
+            },
+            {
+                "name": "VueX",
+                "pic": "vue-vuex.svg",
+                "desc": [
+                    "Vuex を利用して、各コンポネートの共通状態を管理しました。"
+                ]
+            },
+            {
+                "name": "Vue-Router",
+                "pic": "vue-router.svg",
+                "desc": [
+                    "SPA( Single Page Application )のポートフォリオです。",
+                    "機能や展示内容により、大量なルートに分かれて開発しました。"
+                ]
+            },
+            {
+                "name": "ElementUI",
+                "pic": "vue-elementui.svg",
+                "desc": [
+                    "UIコンポネートやスタイルの調整について、最初は <b>Element-UI + Less</b> の組み合わせを利用して開発しました。",
+                    "その後は <b>Vuetify2 + Scss</b> のセットに移行しました。"
+                ]
+            },
+            {
+                "name": "Vuetify2",
+                "pic": "vue-vuetify.svg",
+                "desc": [
+                    "UIコンポネートについて、Vuetify2 を利用し開発しました。",
+                    "細かいところについて Scss で調整しました。",
+                    "この作品はレスポンシブウェブデザインのため、モバイル端末・PC端末によりレイアウトや展示内容が異なっています。"
+                ]
+            },
+            {
+                "name": "Scss",
+                "pic": "sass.svg",
+                "desc": [
+                    "UIコンポネートについて、主に Vuetify2 のコンポネートを利用し開発しました。",
+                    "細かいところについて Scss で調整しました。"
+                ]
+            },
+            {
+                "name": "Less",
+                "pic": "less.svg",
+                "desc": [
+                    "最初は <b>Element-UI + Less</b> の組み合わせを利用し、細かいところについて Less で調整しました。",
+                    "その後は <b>Vuetify2 + Scss</b> のセットに移行しました。"
+                ]
+            }
+        ],
+        "desc": "音楽プレーヤーです。個人専用です( Only for Personal Using )<br/>バージョン2.0として、<b>ダークモード( Dark Theme )</b>を追加し、レイアウトやデザインも書き直しました。<br/>Axios、VueX、UIフレームワークの Vuetify を利用して開発したレスポンシブのSPA( Single Page Application )です。",
+        "function": [
+            {
+                "name": "Search view",
+                "val": [
+                    "トップの検索欄( Top Nav )を通じて、音楽・MVのキーワードで検索できます。",
+                    "検索結果が 音楽・アルバム・MV という３類に分かれ、Tabボタンをクリックしたっら各結果リストをスライド展示されています。",
+                    "Songsの検索結果のレイアウト画面が左右二つに分かれ、左は選択された音楽の画像・詳細・コメントで、右は音楽のリストです。"
+                ]
+            },
+            {
+                "name": "Song List & Album List & MV List View",
+                "val": [
+                    "List画面で、おすすめのリストが展示されてます。",
+                    "Songのカードをクリックしたっら、音楽が自動再生されます。",
+                    "MV・Albumの画像をクリックしたっら、それに対する詳細画面に移動します。"
+                ]
+            },
+            {
+                "name": "Album Detail View",
+                "val": [
+                    "Album Detail画面で、このアルバムに関する詳細・音楽リストが展示されてます。",
+                    "Songのカードをクリックしたっら、音楽が自動再生されます。"
+                ]
+            },
+            {
+                "name": "MV Detail View",
+                "val": [
+                    "MV Detail画面で、MV動画・MV詳細・MVアーティスト情報・関連MVリストなどを確認できます。",
+                    "関連MVリストの画像をクリックしたっら、MV動画が自動再生されます"
+                ]
+            }
+        ],
+        "links": {}
     },
     {
         "name": "Wedding Dress Site",

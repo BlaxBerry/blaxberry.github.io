@@ -236,7 +236,7 @@
         ]
     },
     {
-        "name": "SPA Muisc Player",
+        "name": "Muisc Player",
         "id": "mobile002",
         "type": "mobile",
         "time": "2021/06",
@@ -266,22 +266,18 @@
                 "color": "pink"
             }
         ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-04.png",
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/Mobile-search-01.png",
         "pics": [
             {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-02.png",
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/Mobile-search-01.png",
                 "desc": ""
             },
             {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-01.png",
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/Mobile-search-02.png",
                 "desc": ""
             },
             {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-03.png",
-                "desc": ""
-            },
-            {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mobile-04.png",
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/Mobile-search-04.png",
                 "desc": ""
             }
         ],
@@ -329,38 +325,29 @@
                 ]
             }
         ],
-        "desc": "モバイル端末のSPA( Single Page Application ) 音楽プレーヤーです。Axiosを利用し、ローカルJSONファイルの音楽データを読み込めて操作します。個人練習専用です。( Only for Personal Using )",
+        "desc": "音楽プレーヤーです。個人専用です( Only for Personal Using )<br/>バージョン2.0として、<b>ダークモード( Dark Theme )</b>を追加し、レイアウトやデザインも書き直しました。<br/>React、Redux、UIフレームワークの MaterialUI を利用して開発したレスポンシブのSPA( Single Page Application )です。",
         "function": [
             {
                 "name": "Search view",
                 "val": [
-                    "Search画面で、Tabの選択ボタンでタイプ別を通じて音楽を探します。",
-                    "検索結果がList・Sheets・MVという３集類に分かれて展示され、また画像をクリックしたっら、Detail画面に移動し、詳細を確認することもできます。"
+                    "トップの検索欄( Top Nav )を通じて、音楽・MVのキーワードで検索できます。",
+                    "検索結果が 音楽・アルバム・MV という３類に分かれ、Tabボタンをクリックしたっら各結果リストをスライド展示されています。",
+                    "Songsの検索結果のレイアウト画面が左右二つに分かれ、左は選択された音楽の画像・詳細・コメントで、右は音楽のリストです。"
                 ]
             },
             {
-                "name": "Song List View",
+                "name": "Song List & Album List & MV List View",
                 "val": [
-                    "Song List画面で、おすすめのリストが展示されてます。画像をクリックしたっら音楽が自動再生されます。"
-                ]
-            },
-            {
-                "name": "Album List View",
-                "val": [
-                    "Album List画面で、おすすめのリストが展示され、また画像をクリックしたっら、Album Detail画面に移動します。"
+                    "List画面で、おすすめのリストが展示されてます。",
+                    "Songのカードをクリックしたっら、音楽が自動再生されます。",
+                    "MV・Albumの画像をクリックしたっら、それに対する詳細画面に移動します。"
                 ]
             },
             {
                 "name": "Album Detail View",
                 "val": [
                     "Album Detail画面で、このアルバムに関する詳細・音楽リストが展示されてます。",
-                    "音楽リストの画像をクリックしたっら、音楽が自動再生されます。"
-                ]
-            },
-            {
-                "name": "MV List View",
-                "val": [
-                    "MV List画面で、おすすめのリストが展示され、また画像をクリックしたっら、MV Detail画面に移動します。"
+                    "Songのカードをクリックしたっら、音楽が自動再生されます。"
                 ]
             },
             {
