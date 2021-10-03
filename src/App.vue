@@ -39,7 +39,7 @@ export default {
       drawer: false,
       group: null,
     };
-  },
+  }
 };
 </script>
 

@@ -38,7 +38,7 @@
             </v-btn>
           </div>
           <!-- infomation -->
-          <v-card-text class="">
+          <v-card-text class="grey--text text--darken-4">
             Hello, I am Chen. Welcome to my Portfolio.
             Hope you will know more about me here. 
           </v-card-text>

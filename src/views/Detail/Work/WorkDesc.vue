@@ -52,7 +52,7 @@
             />
             <!-- list item content -->
             <p
-              class="text-caption text-md-body-2 mb-1 mb-sm-2 grey--text text--darken-3"
+              class="text-caption text-md-body-2 mb-1 mb-sm-2 grey--text"
               v-for="(item, index) in list.val"
               :key="index"
             >

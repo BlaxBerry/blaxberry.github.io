@@ -30,7 +30,10 @@
       <v-list class="pa-sm-5">
         <v-list-item class="px-0 justify-center justify-sm-start">
           <v-list-item-avatar size="80" tile class="d-none d-sm-flex">
-            <v-img :src="require(`@/assets/images/${content.pic}`)" />
+            <v-img
+              :src="require(`@/assets/images/${content.pic}`)"
+              style="background-color:white"
+            />
           </v-list-item-avatar>
           <h2 v-text="content.name" />
         </v-list-item>
@@ -92,5 +95,6 @@ export default {
 img {
   width: 100%;
   display: block;
+  background-color: white;
 }
 </style>

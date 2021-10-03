@@ -9,6 +9,7 @@
               lazy-src="https://gifimage.net/wp-content/uploads/2018/11/gif-chargement-transparent-blanc-1.gif"
               max-width="50"
               class="mx-1"
+              style="background-color:white"
             />
             <h2 class="pl-5">{{ item.name }}</h2>
           </v-expansion-panel-header>

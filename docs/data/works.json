@@ -760,14 +760,22 @@
                 "color": "red"
             }
         ],
-        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/PC-search-01.png",
+        "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-album-01.png",
         "pics": [
             {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/PC-search-01.png",
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-song-01.png",
                 "desc": "Home"
             },
             {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/development/public/images/PC-search-02.png",
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-album-01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/album.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/favourite.png",
                 "desc": "Home"
             }
         ],
@@ -827,6 +835,14 @@
                 "desc": [
                     "最初は <b>Element-UI + Less</b> の組み合わせを利用し、細かいところについて Less で調整しました。",
                     "その後は <b>Vuetify2 + Scss</b> のセットに移行しました。"
+                ]
+            },
+            {
+                "name": "npm",
+                "pic": "npm.svg",
+                "desc": [
+                    "<b>Vue-Aplayer</b>",
+                    "<b>Vue-video-playe</b>"
                 ]
             }
         ],

@@ -29,6 +29,16 @@
             </v-btn>
           </v-list-item-title>
         </v-list-item>
+        <!-- theme model -->
+        <v-list-item class="px-0 py-1" max-width="60">
+          <v-list-item-title>
+            <v-btn fab elevation="5" raised @click="toggleTheme">
+              <v-icon large>
+                {{ isDarkTheme ? "mdi-weather-sunny" : "mdi-weather-night" }}
+              </v-icon>
+            </v-btn>
+          </v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-menu>
   </div>
@@ -38,6 +48,7 @@
 export default {
   data() {
     return {
+      isDarkTheme: false,
       mainRoutes: [
         { name: "Home", icon: "mdi-home", to: "/", color: "teal" },
         {
@@ -55,6 +66,13 @@ export default {
         },
       ],
     };
+  },
+
+  methods: {
+    toggleTheme() {
+      this.isDarkTheme = !this.isDarkTheme;
+      this.$vuetify.theme.dark = this.isDarkTheme;
+    },
   },
 };
 </script>

@@ -46,6 +46,7 @@ export default {
   .v-card {
     cursor: pointer;
     text-align: center;
+    background-color: white;
   }
 }
 img {
