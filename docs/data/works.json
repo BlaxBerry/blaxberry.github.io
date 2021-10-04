@@ -285,12 +285,13 @@
                 ]
             }
         ],
-        "desc": "以前のポートフォリオ練習を重ねて、今回のバージョンはVue-Router + Vuetifyを利用して、静的なWebページではなく、単一ページのSPAサイトを開発しました。そして画面上で展示するデータを、Axiosを通じて、Vue-Cliの中のpublicに保存しているJSONファイルから読み込みます。",
+        "desc": "レスポンシブSPAです。静的なページではなく、Axiosを通じて画面上で展示するデータをJSONファイルから読み込みました。<br/>新機能とした<b>ダークモード（Dark Theme）</b>を追加しました。今後、作品タイプ検索・フィルターなどを導入する見込みです。",
         "function": [
             {
                 "name": "Home View",
                 "val": [
                     "左上のナビゲーションボタン( Navagation )を通じて、<b>メイン画面・スキルリスト・作品集・プロフィール</b>などの画面に移動することができます。",
+                    "左上のナビゲーションボタンの<b>モード変更ボタン</b>を通じて、<b>ダークモード・ライトモード</b>に変更することができます。",
                     "右下のバージョンボタンを通じて、ポートフォリオの<b>バージョンアップ</b>に関する内容を確認することができます。"
                 ]
             },
@@ -763,15 +764,27 @@
         "mainPic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-album-01.png",
         "pics": [
             {
-                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-song-01.png",
-                "desc": "Home"
-            },
-            {
                 "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-album-01.png",
                 "desc": "Home"
             },
             {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-song-01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-mv-01.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-mv-02.png",
+                "desc": "Home"
+            },
+            {
                 "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/album.png",
+                "desc": "Home"
+            },
+            {
+                "pic": "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/mv.png",
                 "desc": "Home"
             },
             {
@@ -852,8 +865,8 @@
                 "name": "Search view",
                 "val": [
                     "トップの検索欄( Top Nav )を通じて、音楽・MVのキーワードで検索できます。",
-                    "検索結果が 音楽・アルバム・MV という３類に分かれ、Tabボタンをクリックしたっら各結果リストをスライド展示されています。",
-                    "Songsの検索結果のレイアウト画面が左右二つに分かれ、左は選択された音楽の画像・詳細・コメントで、右は音楽のリストです。"
+                    "検索結果が 音楽・アルバム・MV という３類に分類されており、Songs・Albumsの検索結果のレイアウト画面が左右二つに分かれています。",
+                    "リストの<b>ハート</b>を通じてFavouriteに追加でき、<b>ビデオ</b>を通じてMV詳細画面に移動します。"
                 ]
             },
             {

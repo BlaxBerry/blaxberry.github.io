@@ -3,9 +3,12 @@
 ### About This
 Vue **SPA**
 Responsive Protofilo, 
+created by **Vue2** + Vue-Cli + Vuetify + Vue-Router, used **Axios** to get JSON data from public files.
 
-created by **Vue2** + Vue-Cli + Vuetify + Vue-Router,
-and used **Axios** to get JSON data from public files.
+- SPA by Vue・UI frameworks
+- Axios response to render page
+- Dark Theme
+
 
 ---
 
@@ -36,11 +39,16 @@ and used **Axios** to get JSON data from public files.
 
 
 ![](./public/pics/home-01.png)
-![](./public/pics/detail-work-01.png)
-![](./public/pics/detail-work-02.png)
+
+![](./public/pics/works-02.png)
 ![](./public/pics/works.png)
+
 ![](./public/pics/skills.png)
 
+![](./public/pics/detail-skill-01.png)
+
+![](./public/pics/detail-work-01.png)
+![](./public/pics/detail-work-02.png)
 ---
 
 ### Function and Details
