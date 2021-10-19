@@ -2,7 +2,7 @@ const timeline = [
     {
         time: "2021.9",
         desc:
-            "WordPress、VuePress を比べながら勉強し始めました。<br/>VuePressで作った静的サイト<b>Study Notes</b> が <a href='https://blaxberry.github.io/vuepress-studynotes/'>GitHub Pages</a> で展示されています。<br/>またスキルアップのために、将来の段階的な目標として PHP も勉強したいと思います。",
+            "VuePressで開発した静的なドキュメントサイトを<a href='https://blaxberry.github.io/vuepress-studynotes/'>GitHub Pages</a>で展示しました。<br/>今後ポロジェットに携わりながら、これからポートフォリオを不定期に更新したいと思います。ポロジェットの開発により、ポートフォリオに検索フィルターやGitHubとの連携などの機能も導入する見込みです。",
         skill: [
             { name: "VuePress", pic: "vue-vuepress.svg" },
             { name: "WordPress", pic: "wordpress.svg" },
@@ -12,7 +12,7 @@ const timeline = [
     {
         time: "2021.8",
         desc:
-            "ELectron の基礎を勉強して練習しました。<br/>React や Vue３ の関連知識を強化しており、また Vite に対しても勉強し始めました。",
+            "Electronの関連知識を通じて、デスクトップアプリケーション開発を勉強しました。<br/>Vite + Vue3 を利用し、モバイルECウェブアプリを開発しました。",
         skill: [
             { name: "Vite", pic: "vue-vite.svg" },
             { name: "Vue3", pic: "vue.svg" },
@@ -90,7 +90,7 @@ const timeline = [
     {
         time: "2020.10",
         title: "プログラミング開始",
-        desc: "ITプログラミングを知り、フロントエンドから勉強し始めました。",
+        desc: "ITプログラミングを知り、IT関係のアルバイトをやりながらフロントエンドから勉強し始めました。",
     },
     {
         time: "2020",

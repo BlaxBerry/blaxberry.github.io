@@ -9,9 +9,7 @@
     <!-- desc -->
     <div>
       <p class="text-caption text-sm-body-2 text-md-body-1 px-sm-2 px-md-0">
-        SSR・CSR
-        ウェブサイト、SPA、サーバーの開発、Electron、PC/Mobile端末向けのウェブアプリ、フレームワーク...などを日々頑張っています。
-        フロントからサーバまで段階的な勉強を通じて、色々な独自の成果を残してきました。その中に不足なところも認識していますが、今後は必ず努力して改善してより良い作品を提供するために、引き続き勉強して行きたいと思います。
+        フロントからサーバまで、<b>SPA開発、PC/Mobile端末向けのウェブアプリ、SSR/CSRウェブサイト、サーバー開発、デスクトップアプリケーション...</b>色々な開発成果を残してきました。今後もさらなる努力をしてより良い作品を提供して行きたいと思います。
       </p>
       <small>
         ＊ 各作品をクリックして、詳細をご確認ください。
@@ -52,19 +50,13 @@ import WorkCardsPC from "@/components/Cards/CardWorksPC.vue";
 import WorkCardsMobile from "@/components/Cards/CardWorkMobile.vue";
 
 export default {
+  components: { Title, WorkCardsPC, WorkCardsMobile },
+
   data() {
     return {
-      // works list
       list: [],
       listMobile: [],
     };
-  },
-
-  components: {
-    // components
-    Title,
-    WorkCardsPC,
-    WorkCardsMobile,
   },
 
   created() {
@@ -82,5 +74,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped></style>

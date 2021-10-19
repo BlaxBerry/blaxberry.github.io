@@ -1,20 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
 
 Vue.config.productionTip = false
 
+// vue router
+import router from './router'
 
-// 每次跳转回到页面顶部
-router.beforeEach((to, from, next) => {
-  // chrome
-  document.body.scrollTop = 0
-  // firefox
-  document.documentElement.scrollTop = 0
-  // safari
-  window.pageYOffset = 0
-  next()
-})
+// vuex
+import store from './store'
 
 // Vuetify
 import Vuetify from 'vuetify'
@@ -50,6 +43,7 @@ Vue.use(VueLazyload, {
 
 new Vue({
   router,
+  store,
   vuetify: new Vuetify,
   render: h => h(App)
 }).$mount('#app')

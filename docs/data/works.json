@@ -1,6 +1,6 @@
 [
     {
-        "name": "Users' Blogs Management System",
+        "name": "SSR Management System",
         "id": "01",
         "type": "pc",
         "time": "2021/06",
@@ -98,15 +98,15 @@
                 "name": "Bootstrap4",
                 "pic": "bootstrap.svg",
                 "desc": [
-                    "フロントエンドのUIについては、Bootstrapを利用しました。"
+                    "UI テンプレートについては、Bootstrapを利用しました。"
                 ]
             },
             {
                 "name": "jQuery",
                 "pic": "jquery.svg",
                 "desc": [
-                    "フロントエンドについては、Bootstrap4 + Art-Template を使用しましたので。",
-                    "フロントエンドの簡単処理については、jQuery を使いました。"
+                    "フロントエンドについては、Bootstrap4 + Art-Template を使用しましたので、jQuery を使いました。",
+                    "フロントエンドのDOM操作、フォームデータ検証などについては、jQuery を使いました。"
                 ]
             },
             {
@@ -122,7 +122,7 @@
                 ]
             }
         ],
-        "desc": "SSR( Server Side Rendering )サーバサイドドレンダリングのブログ展示や管理システムです。Node.jsのExpress.jsを利用してサーバを開発し、フロントからのリクエストに応じて、MongoBDデータベースに接続し、そしてArt-Templateというテンプレートエンジンを通じてHTMLテンプレーを作成します。",
+        "desc": "フルスタック SSR( Server Side Rendering )サーバサイドドレンダリングの管理システムです。Node.jsのExpress.jsを利用してサーバを開発し、フロントからのリクエストに応じて、MongoBDデータベースに接続し、そしてArt-Templateというテンプレートエンジンを通じてHTMLテンプレーを作成します。",
         "function": [
             {
                 "name": "Front Side",
@@ -161,10 +161,6 @@
                 "color": "#42b983"
             },
             {
-                "name": "JSON",
-                "color": ""
-            },
-            {
                 "name": "Vuetify",
                 "color": "blue"
             },
@@ -173,16 +169,24 @@
                 "color": "pink"
             },
             {
+                "name": "Vuex",
+                "color": "#42b983"
+            },
+            {
                 "name": "JavaScript",
                 "color": "yellow"
+            },
+            {
+                "name": "SPA",
+                "color": "red"
             },
             {
                 "name": "Vue-Router",
                 "color": "#42b983"
             },
             {
-                "name": "SPA",
-                "color": "red"
+                "name": "JSON",
+                "color": ""
             },
             {
                 "name": "Axios",
@@ -218,20 +222,15 @@
                 "pic": "vue.svg",
                 "desc": [
                     "Vue2 + Vue-Cli を利用して開発しました。",
-                    "コンポネート間の通信や、各 Option APIs を練習しました。",
+                    "コンポネート間の通信、ライフサイクル、各 Option APIs　などを練習しました。",
                     "現時点では Vuetify2 を使用したので Vue2 で開発しましたが、将来 Vue3 にの移行する見込みです。"
                 ]
             },
             {
-                "name": "Vue-Cli",
-                "pic": "vue.svg",
+                "name": "Vuex",
+                "pic": "vue-vuex.svg",
                 "desc": [
-                    "Vue-Cli + Vue2 利用して開発しました。",
-                    "大量なコンポネートに分かれて開発しました。",
-                    "UIについて、Vuetify2 + Scss を導入しました。",
-                    "SPA( Single Page Application )開発のため、Vue-Router を導入しました。",
-                    "模擬データベースや Axios を利用しました。",
-                    "複雑なデータ処理などがないので、Mixin や Vuex などを使用していません。"
+                    "<b>ダークモード(Dark Theme)</b>を切り替えるめた、本ポロジェットでは Vuex の <b>Sate、Mutations</b> を使用して状態管理を管理操作します。"
                 ]
             },
             {
@@ -239,6 +238,7 @@
                 "pic": "vue-router.svg",
                 "desc": [
                     "SPA( Single Page Application )のポートフォリオです。",
+                    "ナビゲーションガード( Navigation Guards )を使用しました。",
                     "機能や展示内容により、大量なルートに分かれて開発しました。"
                 ]
             },
@@ -339,7 +339,7 @@
         ]
     },
     {
-        "name": "VuePress Static Site Document Blog",
+        "name": "VuePress Static Document Blog Site",
         "id": "vuepress-studynote",
         "type": "pc",
         "time": "2021/9",
@@ -391,10 +391,18 @@
                 ]
             },
             {
-                "name": " Vue",
+                "name": "Vue2",
                 "pic": "vue.svg",
                 "desc": [
                     "VuePressは Markdown の中でVueコンポーネントが使えるようになっています。"
+                ]
+            },
+            {
+                "name": "MarkDown",
+                "pic": "markdown.svg",
+                "desc": [
+                    "VuePressを利用し、静的なMarkdownドキュメントサイトを作りました。",
+                    "Markdownファイルが最後HTMLファイルになりました。"
                 ]
             },
             {
@@ -423,7 +431,7 @@
                 "name": "github",
                 "icon": "mdi-github",
                 "color": "black",
-                "to": "https://github.com/BlaxBerry/vuepress-studynotes/tree/development"
+                "to": "https://github.com/BlaxBerry/vuepress-studynotes/tree/dev"
             },
             {
                 "name": "demo",
@@ -1010,7 +1018,7 @@
         ]
     },
     {
-        "name": "SSR Game Collection by Rails",
+        "name": "SSR Rails Game Collection Template",
         "id": "rails01",
         "type": "pc",
         "time": "2021/08",

@@ -39,7 +39,7 @@
         <!-- 5.2 detail desc list -->
         <v-list-item
           two-line
-          v-for="list,index in work.function"
+          v-for="(list, index) in work.function"
           :key="index"
           class="pa-0 mb-2"
         >
@@ -67,9 +67,9 @@
       </v-card-subtitle>
 
       <!-- 5. link -->
-      <div class="px-5">
+      <!-- show in mobile -->
+      <v-sheet class="d-block d-sm-none pa-5">
         <v-btn
-          block
           v-for="item in work.links"
           :key="item.to"
           :href="item.to"
@@ -77,14 +77,43 @@
           target="_blank"
           elevation="2"
           dark
-          class="py-6 mb-2 darken-2 white--text font-weight-black"
+          block
+          class="py-6 mr-1 darken-2 white--text font-weight-black"
         >
           <v-icon size="2rem" v-text="item.icon" />
           <span class="ml-1 ml-md-5" v-text="item.name" />
         </v-btn>
         <v-btn
           v-if="work.name == 'Portfolio 4.0'"
+          to="/versions"
+          color="purple"
+          elevation="2"
+          dark
           block
+          class="py-6 darken-2 white--text font-weight-black"
+        >
+          <v-icon size="2rem" v-text="'mdi-trending-up'" />
+          <span class="ml-1 ml-md-5" v-text="'Versions Up'" />
+        </v-btn>
+      </v-sheet>
+
+      <!-- show in pc -->
+      <v-sheet class="d-none d-sm-flex justify-center align-center pa-5">
+        <v-btn
+          v-for="item in work.links"
+          :key="item.to"
+          :href="item.to"
+          :color="item.color"
+          target="_blank"
+          elevation="2"
+          dark
+          class="py-6 mr-1 darken-2 white--text font-weight-black"
+        >
+          <v-icon size="2rem" v-text="item.icon" />
+          <span class="ml-1 ml-md-5" v-text="item.name" />
+        </v-btn>
+        <v-btn
+          v-if="work.name == 'Portfolio 4.0'"
           to="/versions"
           color="purple"
           elevation="2"
@@ -94,7 +123,7 @@
           <v-icon size="2rem" v-text="'mdi-trending-up'" />
           <span class="ml-1 ml-md-5" v-text="'Versions Up'" />
         </v-btn>
-      </div>
+      </v-sheet>
     </div>
   </div>
 </template>

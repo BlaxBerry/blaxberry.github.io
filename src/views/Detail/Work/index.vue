@@ -6,7 +6,6 @@
       <Skills :list="work.techTasks" />
 
       <Links />
-
     </v-container>
   </div>
 </template>
@@ -43,36 +42,29 @@ export default {
     init() {
       // 1. get the name of skill in detail page at the beginning
       this.urlQuery = this.$route.query.id;
-      // console.log("query id:",this.urlQuery);
-
       // 2. get all skill list (PC? or Mobile?)
       let type = this.$route.query.type;
-      if (type == "pc") {
+
+      if (this.urlQuery && type == "pc") {
         // pc work
         getAllWorkList.then((res) => {
           this.allWorksList = res.data;
-          // console.log("all:", this.allWorksList);
-
           // 3. find the work
           this.work = this.allWorksList.find((item) => {
             return item.id == this.urlQuery;
           });
-          // console.log(this.work);
         });
-      } else if (type == "mobile") {
+      } else if (this.urlQuery && type == "mobile") {
         // mobile work
         getAllWorkMobileList.then((res) => {
           this.allWorksList = res.data;
-          // console.log("all:", this.allWorksList);
-
           // 3. find the work
           this.work = this.allWorksList.find((item) => {
             return item.id == this.urlQuery;
           });
-          console.log(this.work);
         });
       } else {
-        this.$router.go(-1);
+        this.$router.push("/works");
       }
     },
   },
@@ -86,5 +78,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped></style>

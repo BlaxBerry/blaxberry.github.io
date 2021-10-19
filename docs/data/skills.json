@@ -265,7 +265,7 @@
         "pic": "jquery.svg",
         "showHomePage": true,
         "showSkillPage": true,
-        "main": "jQuery で開発することができます。",
+        "main": "jQuery で開発することができます。EC( 電子商取引 )サイトや TaskList などの開発を通じてjQueryを練習しました。",
         "desc": [
             "jQueryでDOM操作、アニメーションなどでインタラクティブにすることができます。",
             "jQuery.ajaxを利用し、非同期にHTTP通信することが出来ます。"

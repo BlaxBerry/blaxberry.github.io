@@ -259,7 +259,7 @@
             },
             {
                 "name": "React-Router-Dom",
-                "color": "black"
+                "color": ""
             },
             {
                 "name": "Scss",
@@ -542,7 +542,7 @@
         ]
     },
     {
-        "name": "Simple TodoList",
+        "name": "Simple TaskList",
         "id": "statictodolist02",
         "type": "mobile",
         "time": "2020/12",
@@ -711,7 +711,7 @@
         ]
     },
     {
-        "name": "Ticket Stite",
+        "name": "Ticket Stite Layout",
         "id": "statictticket",
         "type": "mobile",
         "time": "2021/01",

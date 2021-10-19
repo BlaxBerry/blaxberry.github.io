@@ -65,10 +65,10 @@
               </div>
 
               <!-- 2.3. desc -->
-              <small
+              <p
                 v-if="version.desc"
                 class="desc py-4 text-caption text-sm-body-2 text-md-body-1"
-                v-text="version.desc"
+                v-html="version.desc"
               />
 
               <!-- 2.4. shortcoming -->

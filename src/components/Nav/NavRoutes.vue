@@ -20,7 +20,7 @@
         <v-list-item
           class="px-0 py-1"
           max-width="60"
-          v-for="(item, index) in mainRoutes"
+          v-for="(item, index) in navItems"
           :key="index"
         >
           <v-list-item-title>
@@ -45,33 +45,22 @@
 </template>
 
 <script>
+import navItems from "@/assets/items/Nav/navRoutesItems";
+import { mapState } from "vuex";
+
 export default {
-  data() {
-    return {
-      isDarkTheme: false,
-      mainRoutes: [
-        { name: "Home", icon: "mdi-home", to: "/", color: "teal" },
-        {
-          name: "Profile",
-          icon: "mdi-account",
-          to: "/profile",
-          color: "indigo",
-        },
-        { name: "Skills", icon: "mdi-cards", to: "/skills", color: "" },
-        {
-          name: "Works",
-          icon: "mdi-rhombus-split",
-          to: "/works",
-          color: "brown",
-        },
-      ],
-    };
+  data: () => ({ navItems }),
+
+  computed: {
+    ...mapState(["isDarkTheme"]),
   },
 
   methods: {
     toggleTheme() {
-      this.isDarkTheme = !this.isDarkTheme;
-      this.$vuetify.theme.dark = this.isDarkTheme;
+      this.$store.commit("toggleTheme", {
+        isDarkTheme: !this.isDarkTheme,
+        VM: this,
+      });
     },
   },
 };

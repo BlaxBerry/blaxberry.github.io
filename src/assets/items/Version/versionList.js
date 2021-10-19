@@ -3,11 +3,11 @@ const versionList = [
         version: "4.0",
         time: "2021/07",
         desc:
-            "色々な練習を重ねて、最後はVue-Router + Vuetifyを利用して、単一ページのSPAサイトを開発しました。そして静的なWebページではなく、Vue-Cliの中でAxiosを通じて/public /data に保存しされているJSONファイルからデータを読み込んで、画面上で展示或いは操作をします。",
+            "現時点のバージョンは単一ページのSPAサイトで Vue-Router + Vuetifyを利用しました。<br/>静的なWebページではなく、Axiosを通じてJSONファイルからデータを読み込んで、画面上で展示或いは操作をします。<br/>ポロジェット開発により、今後ポートフォリオに検索フィルターやGitHubとの連携などの機能も導入する見込みです。",
         shortcoming: [],
         techStacks: [
             { name: "Vue2", icon: "vue.svg" },
-            { name: "Vue-Cli", icon: "vue.svg" },
+            { name: "Vuex", icon: "vue-vuex.svg" },
             { name: "Vue-Router", icon: "vue-router.svg" },
             { name: "Vuetify", icon: "vue-vuetify.svg" },
             { name: "Scss", icon: "sass.svg" },
@@ -18,17 +18,17 @@ const versionList = [
     {
         version: "3.0",
         time: "2021/05",
-        desc: "",
+        desc: "初めてフレームワークやコンポネートを使用してポートフォリオを開発しました。",
         shortcoming: [
-            "他のWebページにジャンプするので、閲覧する体験が良くない。",
-            "Ajaxを使わず、直接にJSONファイルのデータを各ページに導入するので、画面レンダリングする時間が増えてしまう。",
-            "各種類の端末に応じるために、Media Queryを利用し、Lessでレイアウトを一々書くので、量も多いし開発のスピードに対して不満。",
-            "振り返って調整する時は難しくなる。",
+            "Vue-Routerを使わず、DialogやAnimationなどを大量に使用した単一ページのため、体験がそんなに良くない。",
+            "Asyncではなく直接にJSONファイルの全てのデータをページに導入するので、画面レンダリングする時間が増えてしまった。",
+            "各種類の端末に応じるために、Media Query + Lessでレイアウトスタイルをいちいち書くので、開発スピードに不満。",
+            "処理内容やスタイルの量が多くて、振り返って調整する時は難しくなる。",
         ],
         techStacks: [
             { name: "Vue2", icon: "vue.svg" },
             { name: "Vue-Cli", icon: "vue.svg" },
-            { name: "Media Query", icon: "css.svg" },
+            // { name: "Media Query", icon: "css.svg" },
             { name: "less", icon: "less.svg" },
             { name: "JSON", icon: "json.svg" },
         ],
@@ -46,7 +46,7 @@ const versionList = [
         ],
         techStacks: [
             { name: "Bootstrap4", icon: "bootstrap.svg" },
-            { name: "CSS3", icon: "css.svg" },
+            { name: "Less", icon: "less.svg" },
             { name: "jQuery", icon: "jquery.svg" },
             { name: "Webpack", icon: "webpack.svg" },
         ],

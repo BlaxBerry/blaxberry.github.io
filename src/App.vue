@@ -23,23 +23,15 @@
 // common components
 import NavBottom from "@/components/Nav/NavBottom.vue";
 import NavRoutes from "@/components/Nav/NavRoutes.vue";
-// import NavScroll from "@/components/Nav/NavScroll.vue";
 import Footer from "@/components/Footer/Footer.vue";
+// vuex
 
 export default {
-  components: {
-    NavBottom,
-    NavRoutes,
-    // NavScroll,
-    Footer,
-  },
+  components: { NavBottom, NavRoutes, Footer },
 
-  data() {
-    return {
-      drawer: false,
-      group: null,
-    };
-  }
+  mounted() {
+    this.$vuetify.theme.dark = this.$store.state.isDarkTheme;
+  },
 };
 </script>
 
