@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home/Home.vue'
+import Home from '../views/Home/index.vue'
 
 Vue.use(VueRouter)
 
@@ -33,7 +33,7 @@ const router = new VueRouter({
     {
       path: '/detail/skill',
       name: 'SkillDetail',
-      component: () => import('../views/Detail/Skill/Detail.vue')
+      component: () => import('../views/Detail/Skill/index.vue')
     },
     {
       path: '/detail/work',

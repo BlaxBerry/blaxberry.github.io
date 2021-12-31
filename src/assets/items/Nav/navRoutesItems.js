@@ -5,16 +5,16 @@ export default [
         to: "/",
         color: "teal"
     },
-    {
-        name: "Profile",
-        icon: "mdi-account",
-        to: "/profile",
-        color: "indigo",
-    },
+    // {
+    //     name: "Profile",
+    //     icon: "mdi-account",
+    //     to: "/profile",
+    //     color: "indigo",
+    // },
     {
         name: "Skills",
         icon: "mdi-cards",
-        o: "/skills",
+        to: "/skills",
         color: ""
     },
     {

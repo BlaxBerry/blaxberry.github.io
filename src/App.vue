@@ -14,20 +14,24 @@
       <Footer />
 
       <!-- Bottom -->
-      <NavBottom />
+      <!-- <NavBottom /> -->
     </div>
   </v-app>
 </template>
 
 <script>
 // common components
-import NavBottom from "@/components/Nav/NavBottom.vue";
+// import NavBottom from "@/components/Nav/NavBottom.vue";
 import NavRoutes from "@/components/Nav/NavRoutes.vue";
 import Footer from "@/components/Footer/Footer.vue";
 // vuex
 
 export default {
-  components: { NavBottom, NavRoutes, Footer },
+  components: {
+    // NavBottom,
+    NavRoutes,
+    Footer,
+  },
 
   mounted() {
     this.$vuetify.theme.dark = this.$store.state.isDarkTheme;

@@ -2,118 +2,85 @@
   <div id="skills" class="pb-15">
     <v-container>
       <!-- title -->
-      <Title>
-        <h1 slot="title1">Skills</h1>
-        <h4 slot="title2">スキルについて</h4>
-      </Title>
+      <v-col>
+        <h1 class="text-center text-en">Skills</h1>
+        <br />
+        <v-divider></v-divider>
+      </v-col>
 
-      <!-- desc -->
-      <div class="mb-4">
-        <p class="text-caption text-sm-body-2 text-md-body-1 px-sm-2 px-md-0">
-          フロントエンドだけではなく、サーバサイトなどまでも浅く取り組んできました。これからフルスタックエンジニアを目指し、幅広い面で活躍できるように頑張りたいと考えています。これからポロジェットに携わりながら、スキルや詳細を不定期に更新します。
-        </p>
-        <small>
-          ＊ 各スキルをクリックして、詳細をご確認ください。
-        </small>
-      </div>
+      <!-- desc text -->
+      <p>今まで経験したスキル</p>
 
-      <!-- 1. languages -->
-      <SkillCards :list="lang_list" />
+      <v-tabs color="accent-4" centered>
+        <!-- top tabs -->
+        <v-tab class="font-weight-black" v-for="tab in tabs" :key="tab">
+          {{ tab }}
+        </v-tab>
 
-      <!-- 3. frameworks -->
-      <SkillCards :list="framework_list" />
-
-      <!-- 5. server -->
-      <SkillCards :list="server_list" />
-
-      <!-- 6. datadase  -->
-      <SkillCards :list="db_list" />
-
-      <!-- 4. others -->
-      <SkillCards :list="others_list" />
-
-      <!-- 2. style -->
-      <SkillCards :list="style_list" />
-
-      <!-- to works page -->
-      <div class="text-center mt-10 px-10">
-        <b>今までの作品集をご確認ください:</b>
-        <v-btn
-          block
-          to="/works"
-          class="my-2 cyan darken-2 white--text font-weight-black py-6"
-          >Check Works</v-btn
-        >
-      </div>
+        <!-- bottom content -->
+        <v-tab-item v-for="(item, i) in tabItems" :key="i">
+          <v-container fluid>
+            <br />
+            <SkillsList
+              v-for="(contentItem, index) in item.content"
+              :key="index"
+              :list="contentItem"
+            />
+          </v-container>
+        </v-tab-item>
+      </v-tabs>
     </v-container>
   </div>
 </template>
 
 <script>
-// api
-import {
-  // get all skill list
-  getAllSkillList,
-} from "@/api/api";
-
+// mixin
+import skills from "@/mixin/skills";
 // components
-import Title from "@/components/Title/Title.vue";
-import SkillCards from "@/components/Cards/CardSkills.vue";
+import SkillsList from "@/components/Skills/SkillsList.vue";
 
 export default {
   components: {
-    Title,
-    SkillCards,
+    SkillsList,
   },
+
+  mixins: [skills],
 
   data() {
     return {
-      lang_list: [],
-      style_list: [],
-      framework_list: [],
-      server_list: [],
-      db_list: [],
-      others_list: [],
+      tabs: ["Front", "Back", "Others"],
     };
   },
 
-  created() {
-    // get all skill list
-    getAllSkillList.then((res) => {
-      console.log(res.data);
-      let allSKillArr = res.data.filter((item) => item.showSkillPage);
-
-      // languages
-      let langs = allSKillArr.filter((item) => item.type == "lang");
-      console.log("languages", langs);
-      this.lang_list = langs;
-
-      // framework
-      let frameworks = allSKillArr.filter((item) => item.type == "framework");
-      console.log("frameworks", frameworks);
-      this.framework_list = frameworks;
-
-      // server
-      let servers = allSKillArr.filter((item) => item.type == "server");
-      console.log("servers", servers);
-      this.server_list = servers;
-
-      // database
-      let databases = allSKillArr.filter((item) => item.type == "database");
-      console.log("databasess", databases);
-      this.db_list = databases;
-
-      // others
-      let others = allSKillArr.filter((item) => item.type == "others");
-      console.log("others", others);
-      this.others_list = others;
-
-      // ui style
-      let styles = allSKillArr.filter((item) => item.type == "style");
-      console.log("styles", styles);
-      this.style_list = styles;
-    });
+  computed: {
+    tabItems: function() {
+      return [
+        {
+          name: "Front Skills",
+          content: [
+            this.FRONT_TYPE_BASIC,
+            this.FRONT_TYPE_VUE,
+            this.FRONT_TYPE_REACT,
+          ],
+        },
+        {
+          name: "Back Skills",
+          content: [
+            this.BACK_TYPE_LANG,
+            this.BACK_TYPE_SERVER,
+            this.BACK_TYPE_DB,
+          ],
+        },
+        {
+          name: "Other Skills",
+          content: [
+            this.OTHER_TYPE_DEVTOOL,
+            this.OTHER_TYPE_APIQUERY,
+            this.OTHER_TYPE_APP,
+          ],
+        },
+      ];
+    },
   },
 };
 </script>
-
