@@ -27,7 +27,7 @@
       </v-img>
     </v-card>
     <!-- name -->
-    <h3 class="text-center mt-2" id="text-jp">{{ item.name }}</h3>
+    <h3 class="text-center mt-2 text-jp">{{ item.name }}</h3>
   </div>
 </template>
 

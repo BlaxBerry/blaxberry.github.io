@@ -1,36 +1,51 @@
 <template>
   <div id="home">
-    <!-- 1. about me -->
-    <!-- <AboutMe></AboutMe> -->
+    <!-- top background -->
+    <div class="top-background-pic full-screen-block">
+      <!-- title -->
+      <div>
+        <h1 class="text-center text-en">Welcome</h1>
+        <h2 class="text-center text-en">Chen's Portfolio</h2>
+      </div>
+    </div>
 
-    <v-container>
-      <!-- 2. skills -->
-      <!-- <Skills></Skills> -->
+    <!-- about -->
+    <HomeAbout />
 
-      <!-- 3. works -->
-      <!-- <Works></Works> -->
-    </v-container>
+    <!-- skills -->
+    <HomeSkills />
+
+    <!-- works -->
+    <HomeWorks />
   </div>
 </template>
 
 <script>
-// mian components
-// import AboutMe from "@/views/Home/AboutMe.vue";
-// import Skills from "@/views/Home/Skills.vue";
-// import Works from "@/views/Home/Works.vue";
+// components
+import HomeSkills from "./HomeSkills.vue";
+import HomeAbout from "./HomeAbout.vue";
+import HomeWorks from "./HomeWorks.vue";
 
 export default {
   components: {
-    // mian components
-    // AboutMe,
-    // Skills,
-    // Works,
-  },
-
-  data() {
-    return {};
+    HomeAbout,
+    HomeSkills,
+    HomeWorks,
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.top-background-pic {
+  background: url(../../assets/upload/bgk01.png) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+</style>

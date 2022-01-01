@@ -1,5 +1,4 @@
 <template>
-  <!-- 横行 nav page routes-->
   <div class="text-center nav-row-routes">
     <v-menu transition="slide-y-transition" bottom>
       <template v-slot:activator="{ on, attrs }">
@@ -24,12 +23,25 @@
           :key="index"
         >
           <v-list-item-title>
-            <v-btn fab :to="item.to" elevation="5" raised>
-              <v-icon large color="cyan darken-2">{{ item.icon }}</v-icon>
-            </v-btn>
+            <v-tooltip right>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  fab
+                  :to="item.to"
+                  elevation="5"
+                  raised
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  <v-icon large color="cyan darken-2">{{ item.icon }}</v-icon>
+                </v-btn>
+              </template>
+              <span>{{ item.name }}</span>
+            </v-tooltip>
           </v-list-item-title>
         </v-list-item>
-        <!-- theme model -->
+
+        <!-- toggle theme model -->
         <v-list-item class="px-0 py-1" max-width="60">
           <v-list-item-title>
             <v-btn fab elevation="5" raised @click="toggleTheme">
@@ -45,7 +57,7 @@
 </template>
 
 <script>
-import navItems from "@/assets/items/Nav/navRoutesItems";
+import navItems from "@/lib/Items/navigationList.js";
 import { mapState } from "vuex";
 
 export default {

@@ -1,0 +1,35 @@
+.theme--dark {
+  color: $color3 !important;
+  // tab
+  .v-tabs {
+    .v-tabs-bar {
+      background-color: transparent !important;
+    }
+    .v-tab--active {
+      background-color: #1e1e1e !important;
+    }
+    .v-tabs-items {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.v-toolbar {
+  // switch
+  .v-input--switch {
+    margin-bottom: -2px;
+    .v-input__slot {
+      margin-bottom: 0 !important;
+    }
+    .v-input__append-outer {
+      margin-left: 0 !important;
+    }
+    .v-messages {
+      display: none;
+    }
+    .v-input__icon {
+      margin-left: -10px !important;
+      margin-top: -2px;
+    }
+  }
+}

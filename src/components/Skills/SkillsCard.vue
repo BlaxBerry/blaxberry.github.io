@@ -3,8 +3,6 @@
     :elevation="
       hover ? ELEVATIONS.CARD_ELEVATION * 2 : ELEVATIONS.CARD_ELEVATION
     "
-    v-bind="attrs"
-    v-on="on"
     @click="goDetailPage(item.id)"
   >
     <v-img
@@ -28,7 +26,7 @@
 <script>
 import { ELEVATIONS } from "../../lib/common/commonVariables";
 export default {
-  props: ["hover", "on", "attrs", "item"],
+  props: ["hover", "item"],
   data: () => ({ ELEVATIONS }),
   methods: {
     goDetailPage(id) {

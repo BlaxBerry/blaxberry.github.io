@@ -1,7 +1,58 @@
-@import "./main.scss";
-
-// vue carousel
-.VueCarousel-pagination {
-  margin-top: -3rem !important;
+.text-en {
+  font-family: $text-en !important;
 }
 
+.text-jp {
+  font-family: $text-jp !important;
+}
+
+.pure-text-content {
+  // jp
+  text-indent: 1rem;
+  line-height: 2rem;
+}
+
+.full-screen-block {
+  min-height: 100vh !important;
+
+  .title {
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.work-card {
+  .v-card {
+    z-index: 2;
+    transition: 0.8s;
+  }
+  &:hover {
+    .v-card {
+      transform: scale(1.025);
+      .v-img {
+        transform: scale(1.025);
+      }
+    }
+  }
+}
+
+.hidden {
+  animation: hidden 1.5s linear forwards;
+}
+@keyframes hidden {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    width: 0;
+    display: none;
+  }
+}

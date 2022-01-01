@@ -5,9 +5,12 @@ Vue.config.productionTip = false
 
 // vue router
 import router from './router'
-
 // vuex
 import store from './store'
+// fonts
+import './assets/font/font.css'
+import './style/index.scss'
+
 
 // Vuetify
 import Vuetify from 'vuetify'
@@ -22,9 +25,6 @@ import '@mdi/font/css/materialdesignicons.css'
 import VueTyperPlugin from 'vue-typer'
 Vue.use(VueTyperPlugin)
 
-// vue Smooth Scroll
-import vueSmoothScroll from 'vue-smooth-scroll'
-Vue.use(vueSmoothScroll)
 
 // Vue Carousel
 import VueCarousel from 'vue-carousel';

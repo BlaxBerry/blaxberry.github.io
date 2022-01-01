@@ -1,16 +1,22 @@
 <template>
-  <div id="skill-detail">
+  <div id="skill-detail" class="py-10">
     <v-container>
       <div v-if="!currentSkill">Loading...</div>
       <div v-else>
         <!-- title -->
-        <v-col>
+        <Title>
+          <h1 slot="first" class="text-center text-en">
+            {{ currentSkill.name }}
+          </h1>
+        </Title>
+
+        <!-- <div class="title">
           <h1 class="text-center text-en">
             {{ currentSkill.name }}
           </h1>
           <br />
           <v-divider></v-divider>
-        </v-col>
+        </div> -->
 
         <!-- relevance Skills -->
         <v-col v-show="relevanceList.length">
@@ -38,10 +44,12 @@
 //api
 import { getSkillFront, getSkillBack, getSkillOther } from "@/api/api";
 // components
+import Title from "@/components/common/Titles/Titles.vue";
 import SkillsList from "@/components/Skills/SkillsList.vue";
 
 export default {
   components: {
+    Title,
     SkillsList,
   },
 

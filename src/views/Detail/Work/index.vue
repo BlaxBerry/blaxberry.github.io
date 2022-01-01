@@ -1,14 +1,12 @@
 <template>
-  <div id="work-detail">
+  <div id="work-detail" class="py-10">
     <v-container>
       <!-- title -->
-      <v-col>
-        <h1 class="text-center text-en">
+      <Title>
+        <h1 slot="first" class="text-center text-en">
           {{ currentWork.name }}
         </h1>
-        <br />
-        <v-divider></v-divider>
-      </v-col>
+      </Title>
 
       <!-- tech tasks skills-->
       <v-col>
@@ -50,7 +48,7 @@
       </v-col>
 
       <!-- links-->
-      <v-col>
+      <v-col v-show="currentWork.links">
         <h1 class="text-en">Links</h1>
         <br />
         <v-row>
@@ -106,6 +104,7 @@
 //api
 import { getSkillFront, getSkillBack, getSkillOther } from "@/api/api";
 // components
+import Title from "@/components/common/Titles/Titles.vue";
 import SkillsList from "@/components/Skills/SkillsList.vue";
 import Details from "./WorkDetailsList.vue";
 // mixin
@@ -113,6 +112,7 @@ import works from "@/mixin/works";
 
 export default {
   components: {
+    Title,
     SkillsList,
     Details,
   },

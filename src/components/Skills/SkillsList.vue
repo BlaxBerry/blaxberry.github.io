@@ -9,14 +9,18 @@
       md="1"
       lg="1"
     >
-      <v-tooltip bottom>
+      <v-hover v-slot="{ hover }">
+        <Card :hover="hover" :item="item" />
+      </v-hover>
+
+      <!-- <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-hover v-slot="{ hover }">
             <Card :hover="hover" :on="on" :attrs="attrs" :item="item" />
           </v-hover>
         </template>
         <span>{{ item.name }}</span>
-      </v-tooltip>
+      </v-tooltip> -->
     </v-col>
   </v-row>
 </template>

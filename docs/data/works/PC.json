@@ -6,13 +6,12 @@
         "fileName": "pc-wedding.png",
         "techTask": [
             "Vue.js",
-            "TypeScript",
             "Vue-Router",
             "Vuex",
+            "Axios",
             "Vuetify",
             "Sass",
-            "npm",
-            "Axios"
+            "npm"
         ],
         "links": {
             "demo": {
@@ -28,7 +27,7 @@
             "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
             "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/03.png"
         ],
-        "description": "Personal Portfilo (almost be Version 5), which shows about some information about myself, and also connected to some works on Github page.<br/>This Project is a SPA (Single Page Application) based on Vue2 and Typescript, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
+        "description": "Personal Portfilo (almost be Version 5), which shows about some information about myself, and also connected to some works on Github page.<br/>This Project is a SPA (Single Page Application) based on Vue2, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
         "details": [
             {
                 "title": "Skills List Page",
@@ -62,12 +61,12 @@
             "Vue.js",
             "Vue-Router",
             "Vuex",
+            "Axios",
             "Vuetify",
             "Sass",
-            "Axios",
             "npm"
         ],
-        "links": {},
+        "links": null,
         "pics": [
             "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-album-01.png",
             "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/album.png",
@@ -138,5 +137,38 @@
         "description": "Personal Static Document Site, which shows the notes about skills I have learned.<br/>This Project is a SPA (Single Page Application) based on VuePress, Markdown files are builded as static HTML pages by VuePress.<br/> ",
         "details": null,
         "extra": "Still updating."
+    },
+    {
+        "name": "SAGA SunrisePark Booking System",
+        "id": "admin202112",
+        "type": "PC",
+        "fileName": "pc-wedding.png",
+        "techTask": [
+            "React.js",
+            "TypeScript",
+            "AntDesign",
+            "Gatsby.js",
+            "Apollo Client",
+            "GraphQL",
+            "Python",
+            "MongoDB"
+        ],
+        "links": {
+            "demo": {
+                "icon": "mdi-video",
+                "link": "https://blaxberry.github.io/#/detail/work?id=01&type=pc"
+            },
+            "github": {
+                "icon": "mdi-github",
+                "link": "https://github.com/BlaxBerry"
+            }
+        },
+        "pics": [
+            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png"
+        ],
+        "description": "Booking Management System for Saga SunrisePark (SAGA サンライズパーク).<br/>",
+        "details": null,
+        "teamwork": [],
+        "extra": "Learned GraphQL and Apollo Client from this project, and motivated to planed to study Server side start with Python."
     }
 ]

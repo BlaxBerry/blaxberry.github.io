@@ -1,19 +1,24 @@
 <template>
-  <div id="skills" class="pb-15">
+  <div id="skills" class="py-10">
     <v-container>
       <!-- title -->
-      <v-col>
+      <Title>
+        <h1 slot="first" class="text-center text-en">Skills</h1>
+        <h3 slot="second" class="text-center text-jp">スキルについて</h3>
+      </Title>
+      <!-- <div class="title">
         <h1 class="text-center text-en">Skills</h1>
+        <h3 class="text-center text-jp">スキルについて</h3>
         <br />
         <v-divider></v-divider>
-      </v-col>
+      </div> -->
 
       <!-- desc text -->
-      <p>今まで経験したスキル</p>
+      <!-- <p class="text-center text-jp">今まで経験したスキル</p> -->
 
       <v-tabs color="accent-4" centered>
         <!-- top tabs -->
-        <v-tab class="font-weight-black" v-for="tab in tabs" :key="tab">
+        <v-tab class="font-weight-black text-en" v-for="tab in tabs" :key="tab">
           {{ tab }}
         </v-tab>
 
@@ -37,10 +42,12 @@
 // mixin
 import skills from "@/mixin/skills";
 // components
+import Title from "../../components/common/Titles/Titles.vue";
 import SkillsList from "@/components/Skills/SkillsList.vue";
 
 export default {
   components: {
+    Title,
     SkillsList,
   },
 

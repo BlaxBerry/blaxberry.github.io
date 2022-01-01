@@ -1,17 +1,15 @@
 <template>
-  <div id="works" class="pb-15">
+  <div id="works" class="py-10">
     <v-container>
       <!-- title -->
-      <v-col>
-        <h1 class="text-center text-en">Works</h1>
-        <h3 class="text-center text-jp">作品について</h3>
-        <br />
-        <v-divider></v-divider>
-      </v-col>
+      <Title>
+        <h1 slot="first" class="text-center text-en">Works</h1>
+        <h3 slot="second" class="text-center text-jp">作品集について</h3>
+      </Title>
 
       <v-tabs color="accent-4" centered>
         <!-- top tabs -->
-        <v-tab class="font-weight-black" v-for="tab in tabs" :key="tab">
+        <v-tab class="font-weight-black text-en" v-for="tab in tabs" :key="tab">
           {{ tab }}
         </v-tab>
 
@@ -34,16 +32,15 @@
 <script>
 // mixin
 import works from "@/mixin/works";
-
 // components
+import Title from "../../components/common/Titles/Titles.vue";
 import WorksList from "@/components/Works/WorksList.vue";
 
 export default {
   components: {
+    Title,
     WorksList,
   },
   mixins: [works],
 };
 </script>
-
-<style lang="scss" scoped></style>

@@ -56,7 +56,7 @@
 // components
 import Title from "@/components/Title/Title.vue";
 // items
-import timeline from "@/assets/items/Profile/timelineItems";
+// import timeline from "@/assets/items/Profile/timelineItems";
 
 export default {
   components: {
@@ -65,7 +65,7 @@ export default {
 
   data() {
     return {
-      timeline,
+      timeline: [],
     };
   },
 };
