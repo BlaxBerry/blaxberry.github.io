@@ -19,7 +19,7 @@ export default [
     },
     {
         name: "Works",
-        icon: "mdi-image-filter-black-white",
+        icon: "mdi-cards",
         to: "/works",
         color: "brown",
     },

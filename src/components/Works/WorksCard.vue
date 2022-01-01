@@ -10,6 +10,9 @@
       <!-- pc desktop bar -->
       <DesktopBar v-if="item.type == 'PC'" />
 
+      <!-- skeleton -->
+      <v-skeleton-loader v-if="!item" class="mx-auto" type="image" />
+
       <!-- img -->
       <v-img
         class="lighten-2"

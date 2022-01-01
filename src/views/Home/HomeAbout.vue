@@ -7,13 +7,13 @@
     </Title>
 
     <!-- text -->
-    <div class="text-justify text-sm-center text-jp py-10 pure-text-content">
+    <p class="text-justify text-sm-center text-jp py-10 pure-text-content">
       ここは Chen のポートフォリオサイトです。
       <br class="d-none d-sm-block" />
       これまでに手がけた作品や、身につけたスキルをまとめています。
       <br class="d-none d-sm-block" />
       このポートフォリオを通して、私のことを少しでも知っていただければ嬉しいと思います。
-    </div>
+    </p>
   </v-container>
 </template>
 

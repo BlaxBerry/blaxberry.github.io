@@ -18,5 +18,6 @@ export default {};
   padding-top: 5%;
   margin-bottom: 2%;
   text-align: center;
+  width: 100%;
 }
 </style>

@@ -7,7 +7,7 @@
         <h3 slot="second" class="text-center text-jp">作品集について</h3>
       </Title>
 
-      <v-tabs color="accent-4" centered>
+      <v-tabs color="cyan darken-1" centered>
         <!-- top tabs -->
         <v-tab class="font-weight-black text-en" v-for="tab in tabs" :key="tab">
           {{ tab }}
@@ -20,6 +20,7 @@
           :style="{ minHeight: '100vh' }"
         >
           <v-container fluid>
+            <br>
             <WorksList :item="item" />
           </v-container>
         </v-tab-item>

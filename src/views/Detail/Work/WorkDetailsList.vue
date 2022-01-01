@@ -5,7 +5,9 @@
         <v-expansion-panel-header>
           <h3>{{ index + 1 }}. {{ item.title }}</h3>
         </v-expansion-panel-header>
-        <v-expansion-panel-content>
+        <v-expansion-panel-content
+          class="text-justify text-jp pure-text-content pt-4"
+        >
           {{ item.info }}
         </v-expansion-panel-content>
       </v-expansion-panel>

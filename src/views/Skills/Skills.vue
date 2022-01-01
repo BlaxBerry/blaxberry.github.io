@@ -6,17 +6,15 @@
         <h1 slot="first" class="text-center text-en">Skills</h1>
         <h3 slot="second" class="text-center text-jp">スキルについて</h3>
       </Title>
-      <!-- <div class="title">
-        <h1 class="text-center text-en">Skills</h1>
-        <h3 class="text-center text-jp">スキルについて</h3>
-        <br />
-        <v-divider></v-divider>
-      </div> -->
 
-      <!-- desc text -->
-      <!-- <p class="text-center text-jp">今まで経験したスキル</p> -->
+      <!-- text -->
+      <p class="text-justify text-sm-center text-jp py-10 pure-text-content">
+        フロントからバックエンドまで幅広くスキルアップに取り組んできました。
+        <br class="d-none d-sm-block" />
+        広く浅くではありますが、今後も幅広い領域に挑戦し、オールラウンドに対応できるように頑張りたいと考えています。
+      </p>
 
-      <v-tabs color="accent-4" centered>
+      <v-tabs color="cyan darken-1" centered>
         <!-- top tabs -->
         <v-tab class="font-weight-black text-en" v-for="tab in tabs" :key="tab">
           {{ tab }}

@@ -1,59 +1,63 @@
 <template>
-  <div class="text-center nav-row-routes">
-    <v-menu transition="slide-y-transition" bottom>
+  <v-speed-dial
+    v-model="fab"
+    fixed
+    top
+    left
+    direction="bottom"
+    transition="scale-transition"
+  >
+    <template v-slot:activator>
+      <!-- toggle list -->
+      <v-btn v-model="fab" dark fab color="cyan darken-1">
+        <v-icon v-if="fab">
+          mdi-close
+        </v-icon>
+        <v-icon v-else>
+          mdi-menu
+        </v-icon>
+      </v-btn>
+    </template>
+
+    <!-- navigation list -->
+    <v-tooltip right v-for="(item, index) in navItems" :key="index">
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="cyan darken-2"
-          class="font-weight-black text-sm-h6 white--text"
           fab
-          large
-          elevation="5"
+          :to="item.to"
+          :elevation="CARD_ELEVATION"
           v-bind="attrs"
           v-on="on"
         >
-          <v-icon>mdi-menu-down-outline</v-icon>
+          <v-icon large color="cyan darken-1">
+            {{ item.icon }}
+          </v-icon>
         </v-btn>
       </template>
+      <span class="text-jp">{{ item.name }}</span>
+    </v-tooltip>
 
-      <v-list class="pl-2 pt-14 mt-5" width="400px">
-        <v-list-item
-          class="px-0 py-1"
-          max-width="60"
-          v-for="(item, index) in navItems"
-          :key="index"
+    <!-- change theme -->
+    <v-tooltip right>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          fab
+          dark
+          color="cyan darken-1"
+          v-bind="attrs"
+          v-on="on"
+          @click="toggleTheme"
         >
-          <v-list-item-title>
-            <v-tooltip right>
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn
-                  fab
-                  :to="item.to"
-                  elevation="5"
-                  raised
-                  v-bind="attrs"
-                  v-on="on"
-                >
-                  <v-icon large color="cyan darken-2">{{ item.icon }}</v-icon>
-                </v-btn>
-              </template>
-              <span>{{ item.name }}</span>
-            </v-tooltip>
-          </v-list-item-title>
-        </v-list-item>
-
-        <!-- toggle theme model -->
-        <v-list-item class="px-0 py-1" max-width="60">
-          <v-list-item-title>
-            <v-btn fab elevation="5" raised @click="toggleTheme">
-              <v-icon large>
-                {{ isDarkTheme ? "mdi-weather-sunny" : "mdi-weather-night" }}
-              </v-icon>
-            </v-btn>
-          </v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-menu>
-  </div>
+          <v-icon large>
+            {{ isDarkTheme ? "mdi-weather-sunny" : "mdi-weather-night" }}
+          </v-icon>
+        </v-btn>
+      </template>
+      <span class="text-jp">
+        {{ isDarkTheme ? "Light Theme" : "Dark Theme" }}
+      </span>
+    </v-tooltip>
+  </v-speed-dial>
 </template>
 
 <script>
@@ -61,7 +65,11 @@ import navItems from "@/lib/Items/navigationList.js";
 import { mapState } from "vuex";
 
 export default {
-  data: () => ({ navItems }),
+  data: () => ({
+    CARD_ELEVATION: 4,
+    navItems,
+    fab: false,
+  }),
 
   computed: {
     ...mapState(["isDarkTheme"]),
@@ -77,28 +85,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.nav-row-routes {
-  position: fixed;
-  z-index: 999;
-  top: 10px;
-  left: 20px;
-}
-.v-menu__content {
-  top: 0.5rem !important;
-  left: 1rem !important;
-  box-shadow: none !important;
-  .v-list {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    .v-list-item {
-      box-shadow: none !important;
-      .v-list-item__title {
-        overflow: visible !important;
-        box-shadow: none !important;
-      }
-    }
-  }
-}
-</style>

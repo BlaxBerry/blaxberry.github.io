@@ -7,11 +7,23 @@
     </Title>
 
     <!-- text -->
-    <p class="text-justify text-sm-center text-jp pure-text-content">
+    <p class="text-justify text-sm-center text-jp py-10 pure-text-content">
       フロントからバックエンドまで幅広く練習してきました。
       <br class="d-none d-sm-block" />
       今後もさらなる努力をしてより良い作品を提供して行きたいと思います。
+      <br class="d-none d-sm-block" />
+      これからポロジェットに携わりながら、作品集を不定期に更新します。
     </p>
+
+    <!-- route change -->
+    <div
+      class="d-flex flex-column justify-center align-center text-jp"
+    >
+      <span>今までの作品集をご確認</span>
+      <v-btn class="ma-4" outlined dark color="cyan darken-1" to="/works">
+        More
+      </v-btn>
+    </div>
   </v-container>
 </template>
 

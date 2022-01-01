@@ -1,57 +1,59 @@
 <template>
-  <v-footer class="cyan darken-2 white--text text-center" padless bottom>
-    <v-container>
-      <!-- title -->
-      <Title>
-        <h2 slot="first" class="text-en">Thanks for Watching</h2>
-        <h5 slot="second" class="text-jp">
-          最後までご覧頂き、心より感謝致します
-        </h5>
-      </Title>
-      <!-- <div class="title">
-        <h1 class="text-en">Thanks for Watching</h1>
-        <h3 class="text-jp">最後までご覧頂き、心より感謝致します</h3>
-        <br />
-        <v-divider></v-divider>
-      </div> -->
+  <div class="background-pic full-screen-block">
+    <div class="cover-mask">
+      <v-container class="text-center">
+        <!-- title -->
+        <Title>
+          <h2 slot="first" class="text-en">Thanks for Watching</h2>
+          <h5 slot="second" class="text-jp">
+            最後までご覧頂き、心より感謝致します
+          </h5>
+        </Title>
 
-      <!-- content -->
-      <v-card-text class="py-5">
-        <!-- text -->
-        <div class="text-jp pure-text-content text-justify text-sm-center">
-          このポートフォリオを通して、私のことを少しでも知っていただければ嬉しいと思います。
-          <br class="d-none d-sm-block" />
-          もし何かコメントがありましたら、下記のリンクご利用ください。
-          <br class="d-none d-sm-block" />
-          開発していくうちに自分の不足も認識しました。今後も必ず深く勉強して改善し、専門性も高め、
-          <br class="d-none d-sm-block" />
-          一流のエンジニアを目指して、引き続き頑張っていきたいと思います。
-        </div>
-
-        <!-- links -->
-        <div class="pt-5">
-          <v-btn
-            v-for="(btn, i) in FOOTER_LINK_BTNS"
-            :key="i"
-            icon
-            large
-            dark
-            :href="btn.href"
-            target="_blank"
+        <!-- content -->
+        <div>
+          <!-- text -->
+          <div
+            class="text-jp py-10 pure-text-content text-justify text-sm-center"
           >
-            <v-icon>{{ btn.icon }}</v-icon>
-          </v-btn>
+            このポートフォリオを通して、私のことを少しでも知っていただければ嬉しいと思います。
+            <br class="d-none d-sm-block" />
+            もし何かコメントがありましたら、下記のリンクご利用ください。
+            <br class="d-none d-sm-block" />
+            開発していくうちに自分の不足も認識しました。今後も必ず深く勉強して改善し、専門性も高め、
+            <br class="d-none d-sm-block" />
+            一流のエンジニアを目指して、引き続き頑張っていきたいと思います。
+          </div>
+
+          <!-- links -->
+          <div>
+            <v-btn
+              v-for="(btn, i) in FOOTER_LINK_BTNS"
+              :key="i"
+              icon
+              large
+              dark
+              :href="btn.href"
+              target="_blank"
+            >
+              <v-icon>{{ btn.icon }}</v-icon>
+            </v-btn>
+          </div>
         </div>
-      </v-card-text>
+      </v-container>
 
       <!-- copyright -->
-      <v-card-text class="py-0">
-        <v-divider class="pt-3"></v-divider>
-        <!-- <span class="text-subtitle-2 mx-2">2021.12</span> -->
-        <span class="font-weight-black text-en">Chen</span>
-      </v-card-text>
-    </v-container>
-  </v-footer>
+      <div class="copyright text-center py-2">
+        <v-card-text class="py-0">
+          <!-- <span class="text-subtitle-2 mx-2">2021.12</span> -->
+          <h3 class="font-weight-black text-en">
+            <small class="font-italic text-jp">© 2021</small>
+            Chen
+          </h3>
+        </v-card-text>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -64,10 +66,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.title {
-  margin-bottom: 0;
-  h5 {
-    margin-bottom: -10px;
+.background-pic {
+  background: url(../../assets/upload/bgk01.png) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh !important;
+  color: white;
+  overflow: hidden;
+
+  .cover-mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .v-divider {
+    border-color: grey !important;
   }
 }
 </style>

@@ -13,11 +13,15 @@
 }
 
 .full-screen-block {
+  position: relative;
   min-height: 100vh !important;
-
-  .title {
-    padding-top: 10%;
-    padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .v-divider {
+    border-color: grey !important;
   }
 }
 

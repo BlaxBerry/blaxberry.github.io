@@ -18,7 +18,10 @@
       <v-col>
         <h1 class="text-en">About This Project</h1>
         <br />
-        <p v-html="currentWork.description" />
+        <p
+          class="text-justify text-jp pure-text-content"
+          v-html="currentWork.description"
+        />
         <v-divider></v-divider>
       </v-col>
 

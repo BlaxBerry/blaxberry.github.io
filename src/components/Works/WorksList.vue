@@ -10,7 +10,13 @@
       :lg="item.type == 'PC' ? 4 : 2"
       :xl="item.type == 'PC' ? 3 : 2"
     >
-      <v-hover v-slot="{ hover }">
+      <v-skeleton-loader
+        class="mx-auto"
+        max-width="300"
+        type="card"
+        v-if="!item"
+      ></v-skeleton-loader>
+      <v-hover v-slot="{ hover }" v-else>
         <Card :hover="hover" :item="item" />
       </v-hover>
     </v-col>
@@ -21,6 +27,6 @@
 import Card from "./WorksCard.vue";
 export default {
   props: ["item"],
-    components: { Card },
+  components: { Card },
 };
 </script>

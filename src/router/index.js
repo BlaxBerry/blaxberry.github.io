@@ -39,16 +39,7 @@ const router = new VueRouter({
       path: '/detail/work',
       name: 'WorkDetail',
       component: () => import('../views/Detail/Work/index.vue')
-    },
-    {
-      path: '/profile',
-      name: 'Profile',
-      component: () => import('../views/Profile/Profile.vue')
-    },
-    {
-      path: '/versions',
-      component: () => import('../views/Versions/Versions.vue')
-    },
+    }
   ]
 })
 
