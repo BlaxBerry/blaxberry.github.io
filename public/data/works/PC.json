@@ -27,7 +27,7 @@
             "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
             "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/03.png"
         ],
-        "description": "Personal Portfilo (almost be Version 5), which shows about some information about myself, and also connected to some works on Github page.<br/>This Project is a SPA (Single Page Application) based on Vue2, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
+        "description": "Personal Portfilo (almost be Version 5), which shows about some information about myself, and also connected to some works on Github page.This Project is a SPA (Single Page Application) based on Vue2, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
         "details": [
             {
                 "title": "Skills List Page",
@@ -76,7 +76,7 @@
             "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-song-01.png",
             "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/favourite.png"
         ],
-        "description": "Music Player, only for personal using and practising.<br/>This Project is a SPA (Single Page Application) based on Vue2 and Vue-Cli, designed by UI Library Vuetify and used Sass for minor fixes on style.<br/> ",
+        "description": "Music Player, only for personal using and practising.This Project is a SPA (Single Page Application) based on Vue2 and Vue-Cli, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
         "details": [
             {
                 "title": "Search Page",
@@ -134,7 +134,7 @@
             "https://github.com/BlaxBerry/vuepress-studynotes/raw/main/images/02.png",
             "https://github.com/BlaxBerry/vuepress-studynotes/raw/main/images/03.png"
         ],
-        "description": "Personal Static Document Site, which shows the notes about skills I have learned.<br/>This Project is a SPA (Single Page Application) based on VuePress, Markdown files are builded as static HTML pages by VuePress.<br/> ",
+        "description": "Personal Static Document Site, which shows the notes about skills I have learned.This Project is a SPA (Single Page Application) based on VuePress, Markdown files are builded as static HTML pages by VuePress. ",
         "details": null,
         "extra": "Still updating."
     },
@@ -146,10 +146,14 @@
         "techTask": [
             "React.js",
             "TypeScript",
-            "AntDesign",
             "Gatsby.js",
+            "Webpack",
             "Apollo Client",
             "GraphQL",
+            "Bootstrap",
+            "AntDesign",
+            "Sass",
+            "Docker",
             "Python",
             "MongoDB"
         ],
@@ -166,9 +170,12 @@
         "pics": [
             "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png"
         ],
-        "description": "Booking Management System for Saga SunrisePark (SAGA サンライズパーク).<br/>",
+        "description": "Booking Management System for Saga SunrisePark (SAGA サンライズパーク).",
         "details": null,
-        "teamwork": [],
+        "teamwork": [
+            "Front Side for Admin Managment, page of Setting & Holidays",
+            "Front Side for Customer Client, layout's seting, pages of products, booking orders, user's information profile,"
+        ],
         "extra": "Learned GraphQL and Apollo Client from this project, and motivated to planed to study Server side start with Python."
     }
 ]

@@ -36,8 +36,9 @@
         "showAsMain": true,
         "fileName": "css-sass.svg",
         "relevance": [
-            "CSS 3",
             "Less",
+            "CSS 3",
+            "Bootstrap",
             "Vuetify",
             "ElementUI",
             "AntDesign",
@@ -50,8 +51,9 @@
         "type": "BASIC",
         "fileName": "css-less.svg",
         "relevance": [
-            "CSS 3",
             "Sass",
+            "CSS 3",
+            "Bootstrap",
             "Vuetify",
             "ElementUI",
             "Vant",
@@ -98,8 +100,8 @@
             "jQuery",
             "Vue.js",
             "React.js",
-            "Node.js",
-            "TypeScript"
+            "TypeScript",
+            "Node.js"
         ]
     },
     {
@@ -128,7 +130,8 @@
             "Nuxt.js",
             "Vuetify",
             "ElementUI",
-            "Vant"
+            "Vant",
+            "TypeScript"
         ]
     },
     {
@@ -142,7 +145,8 @@
             "Vue-Router",
             "Vuex",
             "VuePress",
-            "Nuxt.js"
+            "Nuxt.js",
+            "Webpack"
         ]
     },
     {
@@ -181,7 +185,6 @@
         "relevance": [
             "Vue.js",
             "Vite",
-            "Nuxt.js",
             "Gatsby.js"
         ]
     },
@@ -195,7 +198,8 @@
             "ElementUI",
             "Vant",
             "AntDesign",
-            "MaterialUI"
+            "MaterialUI",
+            "Bootstrap"
         ]
     },
     {
@@ -208,7 +212,8 @@
             "Vuetify",
             "Vant",
             "AntDesign",
-            "MaterialUI"
+            "MaterialUI",
+            "Bootstrap"
         ]
     },
     {
@@ -221,7 +226,8 @@
             "Vuetify",
             "ElementUI",
             "AntDesign",
-            "MaterialUI"
+            "MaterialUI",
+            "Bootstrap"
         ]
     },
     {
@@ -232,12 +238,13 @@
         "fileName": "react.svg",
         "relevance": [
             "Create-React-App",
-            "Gatsby.js",
             "React-Router-Dom",
+            "Gatsby.js",
             "Redux",
+            "TypeScript",
+            "Apollo Client",
             "AntDesign",
-            "MaterialUI",
-            "Apollo Client"
+            "MaterialUI"
         ]
     },
     {
@@ -270,8 +277,8 @@
         "fileName": "react-redux.svg",
         "relevance": [
             "React.js",
+            "Gatsby.js",
             "Create-React-App",
-            "React-Router-Dom",
             "Vuex"
         ]
     },
@@ -295,7 +302,9 @@
         "relevance": [
             "React.js",
             "MaterialUI",
-            "Sass"
+            "Sass",
+            "Less",
+            "Bootstrap"
         ]
     },
     {
@@ -305,7 +314,9 @@
         "fileName": "react-ui-material.svg",
         "relevance": [
             "React.js",
-            "AntDesign"
+            "AntDesign",
+            "Sass",
+            "Bootstrap"
         ]
     }
 ]

@@ -32,7 +32,7 @@
             "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/cart-01.png",
             "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/cart-02.png"
         ],
-        "description": "EC (Electronic Commerce) Shopping web site for mobile. <br/>This Project is a SPA (Single Page Application) based on Vue3 and Vite, designed by UI Library Vant and used Less for minor fixes on style.<br/>",
+        "description": "EC (Electronic Commerce) Shopping web site for mobile. This Project is a SPA (Single Page Application) based on Vue3 and Vite, designed by UI Library Vant and used Less for minor fixes on style.",
         "details": [
             {
                 "title": "Search Product",
@@ -87,7 +87,7 @@
             "https://github.com/BlaxBerry/vue-book-shopping-mobile/raw/main/public/images/08.png",
             "https://github.com/BlaxBerry/vue-book-shopping-mobile/raw/main/public/images/09.png"
         ],
-        "description": "EC (Electronic Commerce) Shopping web site for mobile. <br/>This Project is a SPA (Single Page Application) based on Vue.js, designed by UI Library Vant and used Less for minor fixes on style.<br/> ",
+        "description": "EC (Electronic Commerce) Shopping web site for mobile. This Project is a SPA (Single Page Application) based on Vue.js, designed by UI Library Vant and used Less for minor fixes on style. ",
         "details": [
             {
                 "title": "Search Product",
@@ -124,9 +124,9 @@
         "techTask": [
             "React.js",
             "TypeScript",
+            "Axios",
             "AntDesign",
             "Sass",
-            "Axios",
             "yarn"
         ],
         "links": {
@@ -147,7 +147,7 @@
             "https://github.com/BlaxBerry/react-moba-game-characters/raw/main/public/images/heroes.png",
             "https://github.com/BlaxBerry/react-moba-game-characters/raw/main/public/images/search.png"
         ],
-        "description": "This project is a SPA (Single Page Application),  which shows about heroes' detail from the popular MOBA Game LOL (League of Legends). <br/>For the reason that MOBA game LOL came to mobile, as a crazy game lover, it appears necessary to know every hero's trait. This project is developed by React.js and UI library AntDesign Mobile, used Axios to request character's detail infornamtion from free API.<br/>",
+        "description": "This project is a SPA (Single Page Application),  which shows about heroes' detail from the popular MOBA Game LOL (League of Legends). For the reason that MOBA game LOL came to mobile, as a crazy game lover, it appears necessary to know every hero's trait. This project is developed by React.js and UI library AntDesign Mobile, used Axios to request character's detail infornamtion from free API.",
         "details": [
             {
                 "title": "All Characters' List",
@@ -163,5 +163,44 @@
             }
         ],
         "extra": "The Weapons Page is developing..."
+    },
+    {
+        "name": "SoundTracks Player",
+        "id": "soundtrack2021",
+        "type": "MOBILE",
+        "fileName": "mobile-react-music-player.png",
+        "techTask": [
+            "React.js",
+            "TypeScript",
+            "Gatsby.js",
+            "Redux",
+            "Apollo Client",
+            "MaterialUI",
+            "Sass",
+            "yarn",
+            "Node.js",
+            "GraphQL"
+        ],
+        "links": {
+            "github": {
+                "icon": "mdi-github",
+                "link": "https://github.com/BlaxBerry/react-music-player"
+            }
+        },
+        "pics": [
+            "https://github.com/BlaxBerry/react-music-player/blob/master/src/assets/01.png?raw=true"
+        ],
+        "description": "Player for Sound Tracks & Background Music, only for personal using.",
+        "details": [
+            {
+                "title": "Games' SoundTracks",
+                "info": ""
+            },
+            {
+                "title": "Movies' SoundTracks",
+                "info": ""
+            }
+        ],
+        "extra": "Client side is still being developed...."
     }
 ]

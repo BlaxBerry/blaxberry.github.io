@@ -59,7 +59,8 @@
         "relevance": [
             "Apollo Client",
             "Node.js",
-            "React.js"
+            "React.js",
+            "Axios"
         ]
     },
     {
@@ -69,7 +70,8 @@
         "fileName": "other-apollo-graphql.svg",
         "relevance": [
             "GraphQL",
-            "React.js"
+            "React.js",
+            "Gatsby.js"
         ]
     },
     {
