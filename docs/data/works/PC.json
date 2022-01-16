@@ -3,7 +3,7 @@
         "name": "Portfolio",
         "id": "portfolio202112",
         "type": "PC",
-        "fileName": "pc-wedding.png",
+        "fileName": "pc-portfoilo.png",
         "techTask": [
             "Vue.js",
             "Vue-Router",
@@ -24,8 +24,10 @@
             }
         },
         "pics": [
-            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/01.png",
-            "https://github.com/BlaxBerry/PC-Static-Weddng-Dress/raw/master/images/03.png"
+            "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/home-main.png",
+            "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/home-skills.png",
+            "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/skills.png",
+            "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/detail-work-01.png"
         ],
         "description": "Personal Portfilo (almost be Version 5), which shows about some information about myself, and also connected to some works on Github page.This Project is a SPA (Single Page Application) based on Vue2, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
         "details": [
@@ -76,7 +78,7 @@
             "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/search-song-01.png",
             "https://github.com/BlaxBerry/vue-music-player/raw/master/public/images/favourite.png"
         ],
-        "description": "Music Player, only for personal using and practising.This Project is a SPA (Single Page Application) based on Vue2 and Vue-Cli, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
+        "description": " ミュージックプレイヤー、個人使用と練習のみとなっています。Music Player, only for personal using and practising.This Project is a SPA (Single Page Application) based on Vue2 and Vue-Cli, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
         "details": [
             {
                 "title": "Search Page",
@@ -139,10 +141,10 @@
         "extra": "Still updating."
     },
     {
-        "name": "SAGA SunrisePark Booking System",
+        "name": "SAGA SunrisePark Booking",
         "id": "admin202112",
         "type": "PC",
-        "fileName": "pc-wedding.png",
+        "fileName": "pc-saga.png",
         "techTask": [
             "React.js",
             "TypeScript",
@@ -168,7 +170,7 @@
             }
         },
         "pics": [
-            "https://github.com/BlaxBerry/node_blog_management/raw/master/public/images/01.png"
+           
         ],
         "description": "Booking Management System for Saga SunrisePark (SAGA サンライズパーク).",
         "details": null,

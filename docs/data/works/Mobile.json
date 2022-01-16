@@ -165,8 +165,8 @@
         "extra": "The Weapons Page is developing..."
     },
     {
-        "name": "SoundTracks Player",
-        "id": "soundtrack2021",
+        "name": "Music Video Player",
+        "id": "mvplayer2022",
         "type": "MOBILE",
         "fileName": "mobile-react-music-player.png",
         "techTask": [
@@ -174,12 +174,9 @@
             "TypeScript",
             "Gatsby.js",
             "Redux",
-            "Apollo Client",
             "MaterialUI",
             "Sass",
-            "yarn",
-            "Node.js",
-            "GraphQL"
+            "yarn"
         ],
         "links": {
             "github": {
@@ -188,19 +185,23 @@
             }
         },
         "pics": [
-            "https://github.com/BlaxBerry/react-music-player/blob/master/src/assets/01.png?raw=true"
+            "https://github.com/BlaxBerry/react-music-player/raw/master/src/assets/01.png"
         ],
-        "description": "Player for Sound Tracks & Background Music, only for personal using.",
+        "description": "サウンドトラックプレイヤー、個人使用と練習のみとなっています。Gatsby で作られた SPA( シングルページアプリケーション )です。",
         "details": [
             {
-                "title": "Games' SoundTracks",
+                "title": "MV",
                 "info": ""
             },
             {
-                "title": "Movies' SoundTracks",
+                "title": "Recommend",
+                "info": ""
+            },
+            {
+                "title": "Comments",
                 "info": ""
             }
         ],
-        "extra": "Client side is still being developed...."
+        "extra": "クライアントはまだ開発中です...."
     }
 ]
