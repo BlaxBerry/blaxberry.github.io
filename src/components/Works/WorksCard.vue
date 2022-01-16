@@ -8,7 +8,7 @@
       @click="goDetailPage(item.id)"
     >
       <!-- pc desktop bar -->
-      <DesktopBar v-if="item.type == 'PC'" />
+      <DesktopBar v-if="item.type == 'PC'" v-show="item"/>
 
       <!-- skeleton -->
       <v-skeleton-loader v-if="!item" class="mx-auto" type="image" />
@@ -30,7 +30,9 @@
       </v-img>
     </v-card>
     <!-- name -->
-    <h3 class="text-center mt-2 text-jp">{{ item.name }}</h3>
+    <h3 class="text-center mt-2 text-subtitle-1">
+      <b class="text-jp">{{ item.name }}</b>
+    </h3>
   </div>
 </template>
 

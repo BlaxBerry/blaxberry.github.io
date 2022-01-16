@@ -10,13 +10,7 @@
       :lg="item.type == 'PC' ? 4 : 2"
       :xl="item.type == 'PC' ? 3 : 2"
     >
-      <v-skeleton-loader
-        class="mx-auto"
-        max-width="300"
-        type="card"
-        v-if="!item"
-      ></v-skeleton-loader>
-      <v-hover v-slot="{ hover }" v-else>
+      <v-hover v-slot="{ hover }" v-show="item">
         <Card :hover="hover" :item="item" />
       </v-hover>
     </v-col>
