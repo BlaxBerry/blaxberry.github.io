@@ -1,9 +1,13 @@
 [
     {
         "name": "Portfolio",
+        "nameEN": "ポートフォリオ",
         "id": "portfolio202112",
         "type": "PC",
         "fileName": "pc-portfoilo.png",
+        "date": [
+            "2021.06"
+        ],
         "techTask": [
             "Vue.js",
             "Vue-Router",
@@ -11,23 +15,27 @@
             "Axios",
             "Vuetify",
             "Sass",
-            "npm"
+            "npm",
+            "Webpack"
         ],
-        "links": {
-            "demo": {
+        "links": [
+            {
+                "name": "Demo",
                 "icon": "mdi-video",
                 "link": "https://blaxberry.github.io/"
             },
-            "github": {
+            {
+                "name": "Github",
                 "icon": "mdi-github",
-                "link": "https://github.com/BlaxBerry"
+                "link": "https://github.com/BlaxBerry/blaxberry.github.io"
             }
-        },
+        ],
         "pics": [
             "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/home-main.png",
             "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/home-skills.png",
             "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/skills.png",
-            "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/detail-work-01.png"
+            "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/detail-work-01.png",
+            "https://github.com/BlaxBerry/blaxberry.github.io/raw/main/public/pics/detail-work-02.png"
         ],
         "description": "Personal Portfilo (almost be Version 5), which shows about some information about myself, and also connected to some works on Github page.This Project is a SPA (Single Page Application) based on Vue2, designed by UI Library Vuetify and used Sass for minor fixes on style. ",
         "details": [
@@ -56,6 +64,7 @@
     },
     {
         "name": "Muisc Player",
+        "nameEN": "ミュージックアプリ",
         "id": "musicplayer202106",
         "type": "PC",
         "fileName": "pc-vue-musicplayer.png",
@@ -113,24 +122,28 @@
     },
     {
         "name": "Study Document Site",
+        "nameEN": "勉強ドキュメント",
         "id": "studynotessite202112",
         "type": "PC",
         "fileName": "pc-vuepress-stydynote.png",
         "techTask": [
             "Vue.js",
+            "Vite",
             "VuePress",
             "npm"
         ],
-        "links": {
-            "demo": {
+        "links": [
+            {
+                "name": "Demo",
                 "icon": "mdi-video",
-                "link": "https://blaxberry.github.io/#/detail/work?id=01&type=pc"
+                "link": "https://blaxberry.github.io/vuepress-studynotes/"
             },
-            "github": {
+            {
+                "name": "Github",
                 "icon": "mdi-github",
-                "link": "https://github.com/BlaxBerry"
+                "link": "https://github.com/BlaxBerry/vuepress-studynotes/tree/dev"
             }
-        },
+        ],
         "pics": [
             "https://github.com/BlaxBerry/vuepress-studynotes/raw/main/images/01.png",
             "https://github.com/BlaxBerry/vuepress-studynotes/raw/main/images/02.png",
@@ -142,9 +155,10 @@
     },
     {
         "name": "SAGA SunrisePark Booking",
+        "nameEN": "ブッキングシステム",
         "id": "admin202112",
         "type": "PC",
-        "fileName": "pc-saga.png",
+        "fileName": "pc-saga-booking.png",
         "techTask": [
             "React.js",
             "TypeScript",
@@ -159,18 +173,16 @@
             "Python",
             "MongoDB"
         ],
-        "links": {
-            "demo": {
+        "links": [
+            {
+                "name": "公式サイト",
                 "icon": "mdi-video",
-                "link": "https://blaxberry.github.io/#/detail/work?id=01&type=pc"
-            },
-            "github": {
-                "icon": "mdi-github",
-                "link": "https://github.com/BlaxBerry"
+                "link": "https://saga-sunrisepark.com/"
             }
-        },
+        ],
         "pics": [
-           
+            "https://github.com/BlaxBerry/blaxberry.github.io/blob/main/public/images/works/saga/saga01.png?raw=true",
+            "https://github.com/BlaxBerry/blaxberry.github.io/blob/main/public/images/works/saga/saga02.png?raw=true"
         ],
         "description": "Booking Management System for Saga SunrisePark (SAGA サンライズパーク).",
         "details": null,

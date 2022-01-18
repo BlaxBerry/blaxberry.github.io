@@ -1,6 +1,7 @@
 [
     {
         "name": "EC Shopping",
+        "nameEN": "モバイルショッピングサイト",
         "id": "shopping2021",
         "type": "MOBILE",
         "fileName": "mobile-vue-ec-01.png",
@@ -14,12 +15,13 @@
             "Less",
             "npm"
         ],
-        "links": {
-            "github": {
+        "links": [
+            {
+                "name": "Github",
                 "icon": "mdi-github",
                 "link": "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping"
             }
-        },
+        ],
         "pics": [
             "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/detail-01.png",
             "https://github.com/BlaxBerry/Vite-Vue3-Mobile-Shopping/raw/master/public/images/detail-02.png",
@@ -59,6 +61,7 @@
     },
     {
         "name": "Books Shopping",
+        "nameEN": "モバイルショッピングサイト",
         "id": "shopping2021booking",
         "type": "MOBILE",
         "fileName": "mobile-vue-ec-02.png",
@@ -70,12 +73,13 @@
             "Less",
             "npm"
         ],
-        "links": {
-            "github": {
+        "links": [
+            {
+                "name": "Demo",
                 "icon": "mdi-github",
                 "link": "https://github.com/BlaxBerry/vue-book-shopping-mobile"
             }
-        },
+        ],
         "pics": [
             "https://github.com/BlaxBerry/vue-book-shopping-mobile/raw/main/public/images/01.png",
             "https://github.com/BlaxBerry/vue-book-shopping-mobile/raw/main/public/images/02.png",
@@ -118,6 +122,7 @@
     },
     {
         "name": "LOL Heroes' Detail",
+        "nameEN": "MOBAゲーム情報サイト",
         "id": "mobadota202112",
         "type": "MOBILE",
         "fileName": "mobile-react-lol-characters.png",
@@ -129,16 +134,18 @@
             "Sass",
             "yarn"
         ],
-        "links": {
-            "demo": {
+        "links": [
+            {
+                "name": "Demo",
                 "icon": "mdi-video",
                 "link": "https://blaxberry.github.io/react-moba-game-characters/"
             },
-            "github": {
+            {
+                "name": "Github",
                 "icon": "mdi-github",
                 "link": "https://github.com/BlaxBerry/react-moba-game-characters"
             }
-        },
+        ],
         "pics": [
             "https://github.com/BlaxBerry/react-moba-game-characters/raw/main/public/images/detail-03.png",
             "https://github.com/BlaxBerry/react-moba-game-characters/raw/main/public/images/detail-01.png",
@@ -166,6 +173,7 @@
     },
     {
         "name": "Music Video Player",
+        "nameEN": "ミュージックアプリ",
         "id": "mvplayer2022",
         "type": "MOBILE",
         "fileName": "mobile-react-music-player.png",
@@ -178,12 +186,13 @@
             "Sass",
             "yarn"
         ],
-        "links": {
-            "github": {
+        "links": [
+            {
+                "name": "Github",
                 "icon": "mdi-github",
                 "link": "https://github.com/BlaxBerry/react-music-player"
             }
-        },
+        ],
         "pics": [
             "https://github.com/BlaxBerry/react-music-player/raw/master/src/assets/01.png"
         ],

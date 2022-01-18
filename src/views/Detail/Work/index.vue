@@ -6,6 +6,9 @@
         <h1 slot="first" class="text-center text-en">
           {{ currentWork.name }}
         </h1>
+        <h3 slot="second" class="text-center text-jp">
+          {{ currentWork.nameEN }}
+        </h3>
       </Title>
 
       <!-- tech tasks skills-->
@@ -14,91 +17,23 @@
         <br />
       </v-col>
 
-      <!-- description-->
-      <v-col>
-        <h1 class="text-en">About This Project</h1>
-        <br />
-        <p
-          class="text-justify text-jp pure-text-content"
-          v-html="currentWork.description"
-        />
-        <v-divider></v-divider>
-      </v-col>
+      <!-- about this work -->
+      <About :desc="currentWork.description" :date="currentWork.date" />
 
       <!-- details-->
-      <v-col v-show="currentWork.details">
-        <h1 class="text-en">Project Details</h1>
-        <br />
-        <Details :list="currentWork.details" />
-        <br />
-        <v-divider></v-divider>
-      </v-col>
+      <Details :details="currentWork.details" />
 
       <!-- what i have done (in team work)-->
-      <v-col v-show="currentWork.teamwork">
-        <h1 class="text-en">What I Have Done ?</h1>
-        <br />
-        <p v-html="currentWork.teamwork" />
-        <v-divider></v-divider>
-      </v-col>
+      <Teamwork :teamwork="currentWork.teamwork" />
 
       <!-- extras-->
-      <v-col v-show="currentWork.extra">
-        <h1 class="text-en">Extra Information ?</h1>
-        <br />
-        <p v-html="currentWork.extra" />
-        <v-divider></v-divider>
-      </v-col>
+      <Extra :extra="currentWork.extra" />
 
       <!-- links-->
-      <v-col v-show="currentWork.links">
-        <h1 class="text-en">Links</h1>
-        <br />
-        <v-row>
-          <v-col
-            v-for="(val, key, index) in currentWork.links"
-            :key="index"
-            cols="6"
-            sm="4"
-            md="3"
-            lg="2"
-          >
-            <v-icon x-large>{{ val.icon }}</v-icon>
-            <v-btn
-              :href="val.link"
-              target="_blank"
-              depressed
-              elevation="2"
-              rounded
-            >
-              {{ key }}
-            </v-btn>
-          </v-col>
-        </v-row>
-        <br />
-        <v-divider></v-divider>
-      </v-col>
+      <Links :links="currentWork.links" />
 
       <!-- images-->
-      <v-col>
-        <h1 class="text-en">Images</h1>
-        <br />
-        <v-row>
-          <v-col
-            v-for="(pic, i) in currentWork.pics"
-            :key="i"
-            :cols="currentWork.type == 'PC' ? 12 : 6"
-            :sm="currentWork.type == 'PC' ? 6 : 4"
-            :md="currentWork.type == 'PC' ? 4 : 2"
-            :lg="currentWork.type == 'PC' ? 4 : 2"
-          >
-            <v-card>
-              <v-img :src="pic" :lazy-src="pic" class="white" />
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-col>
-      <br />
+      <Images :images="currentWork.pics" :workType="currentWork.type" />
     </v-container>
   </div>
 </template>
@@ -109,7 +44,12 @@ import { getSkillFront, getSkillBack, getSkillOther } from "@/api/api";
 // components
 import Title from "@/components/common/Titles/Titles.vue";
 import SkillsList from "@/components/Skills/SkillsList.vue";
-import Details from "./WorkDetailsList.vue";
+import About from "./WorkAboutThis.vue";
+import Details from "./WorkProjectDetail.vue";
+import Teamwork from "./WorkTeamwork.vue";
+import Extra from "./WorkExtraInfo.vue";
+import Links from "./WorkLinks.vue";
+import Images from "./WorkImages.vue";
 // mixin
 import works from "@/mixin/works";
 
@@ -117,7 +57,12 @@ export default {
   components: {
     Title,
     SkillsList,
+    About,
     Details,
+    Teamwork,
+    Extra,
+    Links,
+    Images,
   },
 
   mixins: [works],

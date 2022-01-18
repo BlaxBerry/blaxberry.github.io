@@ -51,3 +51,4 @@ details...
 ![](./public/pics/home-skills.png)
 ![](./public/pics/skills.png)
 ![](./public/pics/detail-work-01.png)
+![](./public/pics/detail-work-02.png)
