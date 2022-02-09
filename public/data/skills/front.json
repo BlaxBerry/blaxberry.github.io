@@ -22,6 +22,7 @@
             "Sass",
             "Less",
             "Bootstrap",
+            "Tailwind",
             "Vuetify",
             "ElementUI",
             "Vant",
@@ -36,11 +37,13 @@
         "showAsMain": true,
         "fileName": "css-sass.svg",
         "relevance": [
-            "Less",
             "CSS 3",
+            "Less",
             "Bootstrap",
+            "Tailwind",
             "Vuetify",
             "ElementUI",
+            "Vant",
             "AntDesign",
             "MaterialUI"
         ]
@@ -51,9 +54,10 @@
         "type": "BASIC",
         "fileName": "css-less.svg",
         "relevance": [
-            "Sass",
             "CSS 3",
+            "Sass",
             "Bootstrap",
+            "Tailwind",
             "Vuetify",
             "ElementUI",
             "Vant",
@@ -70,6 +74,24 @@
             "CSS 3",
             "Sass",
             "Less",
+            "Tailwind",
+            "Vuetify",
+            "ElementUI",
+            "Vant",
+            "AntDesign",
+            "MaterialUI"
+        ]
+    },
+    {
+        "name": "Tailwind",
+        "id": "tailwind",
+        "type": "BASIC",
+        "fileName": "css-tailwind.svg",
+        "relevance": [
+            "CSS 3",
+            "Sass",
+            "Less",
+            "Bootstrap",
             "Vuetify",
             "ElementUI",
             "Vant",
@@ -199,7 +221,8 @@
             "Vant",
             "AntDesign",
             "MaterialUI",
-            "Bootstrap"
+            "Bootstrap",
+            "Tailwind"
         ]
     },
     {
@@ -213,7 +236,8 @@
             "Vant",
             "AntDesign",
             "MaterialUI",
-            "Bootstrap"
+            "Bootstrap",
+            "Tailwind"
         ]
     },
     {
@@ -227,7 +251,8 @@
             "ElementUI",
             "AntDesign",
             "MaterialUI",
-            "Bootstrap"
+            "Bootstrap",
+            "Tailwind"
         ]
     },
     {
@@ -254,7 +279,7 @@
         "fileName": "react-cli.svg",
         "relevance": [
             "React.js",
-            "React-Router-Dom",
+            "Gatsby.js",
             "Redux"
         ]
     },
@@ -291,7 +316,8 @@
         "relevance": [
             "React.js",
             "VuePress",
-            "GraphQL"
+            "GraphQL",
+            "Apollo Client"
         ]
     },
     {
@@ -302,9 +328,10 @@
         "relevance": [
             "React.js",
             "MaterialUI",
+            "Bootstrap",
+            "Tailwind",
             "Sass",
-            "Less",
-            "Bootstrap"
+            "Less"
         ]
     },
     {
@@ -315,8 +342,10 @@
         "relevance": [
             "React.js",
             "AntDesign",
+            "Bootstrap",
+            "Tailwind",
             "Sass",
-            "Bootstrap"
+            "Less"
         ]
     }
 ]

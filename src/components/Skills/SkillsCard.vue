@@ -33,12 +33,20 @@ export default {
       // this.$router.push(`/detail/skill/${id}`).catch((err) => {
       //   console.log("skills card go detail page", err);
       // });
-      this.$router.push({
-        path: "/detail/skill",
-        query: {
-          id,
-        },
-      });
+
+      // for github/gitlab
+      if (id == "github") {
+        window.location.href = "https://github.com/BlaxBerry";
+      } else if (id == "gitlab") {
+        window.location.href = "https://github.com/BlaxBerry";
+      } else {
+        this.$router.push({
+          path: "/detail/skill",
+          query: {
+            id,
+          },
+        });
+      }
     },
   },
 };

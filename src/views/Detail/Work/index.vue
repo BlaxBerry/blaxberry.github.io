@@ -1,39 +1,43 @@
 <template>
   <div id="work-detail" class="py-10">
     <v-container>
-      <!-- title -->
-      <Title>
-        <h1 slot="first" class="text-center text-en">
-          {{ currentWork.name }}
-        </h1>
-        <h3 slot="second" class="text-center text-jp">
-          {{ currentWork.nameEN }}
-        </h3>
-      </Title>
+      <!-- TODO: loading -->
+      <div v-if="!currentWork || !SKILLS_ALL.length">Loading...</div>
+      <div v-else>
+        <!-- title -->
+        <Title>
+          <h1 slot="first" class="text-center text-en">
+            {{ currentWork.name }}
+          </h1>
+          <h3 slot="second" class="text-center text-jp">
+            {{ currentWork.nameEN }}
+          </h3>
+        </Title>
 
-      <!-- tech tasks skills-->
-      <v-col>
-        <SkillsList :list="techTask" />
-        <br />
-      </v-col>
+        <!-- tech tasks skills-->
+        <v-col>
+          <SkillsList :list="techTask" />
+          <br />
+        </v-col>
 
-      <!-- about this work -->
-      <About :desc="currentWork.description" :date="currentWork.date" />
+        <!-- about this work -->
+        <About :desc="currentWork.description" :date="currentWork.date" />
 
-      <!-- details-->
-      <Details :details="currentWork.details" />
+        <!-- details-->
+        <Details :details="currentWork.details" />
 
-      <!-- what i have done (in team work)-->
-      <Teamwork :teamwork="currentWork.teamwork" />
+        <!-- what i have done (in team work)-->
+        <Teamwork :teamwork="currentWork.teamwork" />
 
-      <!-- extras-->
-      <Extra :extra="currentWork.extra" />
+        <!-- extras-->
+        <Extra :extra="currentWork.extra" />
 
-      <!-- links-->
-      <Links :links="currentWork.links" />
+        <!-- links-->
+        <Links :links="currentWork.links" />
 
-      <!-- images-->
-      <Images :images="currentWork.pics" :workType="currentWork.type" />
+        <!-- images-->
+        <Images :images="currentWork.pics" :workType="currentWork.type" />
+      </div>
     </v-container>
   </div>
 </template>
@@ -76,14 +80,12 @@ export default {
   computed: {
     currentWork: function() {
       return this.WORKS_ALL.find((item) => {
-        return item.id == this.$route.query.id;
+        return item?.id == this.$route.query.id;
       });
     },
     techTask: function() {
-      return this.currentWork.techTask.map((currentItem) => {
-        if (this.SKILLS_ALL.length) {
-          return this.SKILLS_ALL.find((item) => item.name === currentItem);
-        }
+      return this.currentWork?.techTask?.map((currentItem) => {
+        return this.SKILLS_ALL?.find((item) => item?.name === currentItem);
       });
     },
   },
@@ -102,6 +104,11 @@ export default {
   },
   created() {
     this.getData();
+  },
+
+  updated() {
+    // console.log("currentWork", this.currentWork);
+    console.log("techTasks", this.techTask);
   },
 };
 </script>

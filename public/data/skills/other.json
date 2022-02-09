@@ -6,16 +6,16 @@
         "showAsMain": true,
         "fileName": "other-webpack.svg",
         "relevance": [
+            "Node.js",
+            "Vite",
             "Vue.js",
-            "React.js",
-            "Vite"
+            "React.js"
         ]
     },
     {
         "name": "npm",
         "id": "npm",
         "type": "DEVTOOL",
-        "showAsMain": true,
         "fileName": "other-npm.svg",
         "relevance": [
             "Node.js",
@@ -26,7 +26,6 @@
         "name": "yarn",
         "id": "yarn",
         "type": "DEVTOOL",
-        "showAsMain": true,
         "fileName": "other-yarn.svg",
         "relevance": [
             "Node.js",
@@ -39,20 +38,40 @@
         "type": "DEVTOOL",
         "showAsMain": true,
         "fileName": "other-git.svg",
+        "relevance": [
+            "GitHub",
+            "GitLab"
+        ]
+    },
+    {
+        "name": "GitHub",
+        "id": "github",
+        "type": "DEVTOOL",
+        "fileName": "other-github.svg",
+        "relevance": []
+    },
+    {
+        "name": "GitLab",
+        "id": "gitlab",
+        "type": "DEVTOOL",
+        "fileName": "other-gitlab.svg",
         "relevance": []
     },
     {
         "name": "Docker",
         "id": "docker",
         "type": "DEVTOOL",
+        "showAsMain": true,
         "fileName": "other-docker.svg",
         "relevance": [
+            "Python",
+            "Ruby",
             "MongoDB"
         ]
     },
     {
         "name": "GraphQL",
-        "id": "grapgql",
+        "id": "graphql",
         "type": "APIQUERY",
         "showAsMain": true,
         "fileName": "other-graphql.svg",
@@ -94,7 +113,8 @@
         "showAsMain": true,
         "fileName": "other-electron.svg",
         "relevance": [
-            "JavaScript"
+            "JavaScript",
+            "Vue.js"
         ]
     }
 ]

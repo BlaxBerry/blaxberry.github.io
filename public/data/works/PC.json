@@ -163,15 +163,11 @@
             "React.js",
             "TypeScript",
             "Gatsby.js",
-            "Webpack",
             "Apollo Client",
             "GraphQL",
             "Bootstrap",
             "AntDesign",
-            "Sass",
-            "Docker",
-            "Python",
-            "MongoDB"
+            "Sass"
         ],
         "links": [
             {
