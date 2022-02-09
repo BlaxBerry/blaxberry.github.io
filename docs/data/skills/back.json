@@ -6,12 +6,12 @@
         "showAsMain": true,
         "fileName": "server-nodejs.svg",
         "relevance": [
-            "JavaScript",
-            "Ruby",
             "Express.js",
-            "MongoDB",
+            "Django",
+            "Ruby on Rails",
             "GraphQL",
-            "Axios"
+            "npm",
+            "yarn"
         ]
     },
     {
@@ -21,10 +21,9 @@
         "fileName": "server-nodejs-express.svg",
         "relevance": [
             "Node.js",
-            "Ruby",
-            "MongoDB",
-            "GraphQL",
-            "Axios"
+            "Django",
+            "Ruby on Rails",
+            "GraphQL"
         ]
     },
     {
@@ -36,7 +35,8 @@
         "relevance": [
             "Ruby on Rails",
             "Node.js",
-            "Express.js"
+            "Python",
+            "Django"
         ]
     },
     {
@@ -47,6 +47,7 @@
         "fileName": "server-ruby-on-rails.svg",
         "relevance": [
             "Ruby",
+            "Django",
             "Node.js",
             "Express.js"
         ]
@@ -55,8 +56,23 @@
         "name": "Python",
         "id": "python",
         "type": "LANG",
+        "showAsMain": true,
         "fileName": "lang-python.svg",
         "relevance": [
+            "Django",
+            "Ruby",
+            "Node.js",
+            "Express.js"
+        ]
+    },
+    {
+        "name": "Django",
+        "id": "django",
+        "type": "SERVER",
+        "showAsMain": true,
+        "fileName": "server-python-django.svg",
+        "relevance": [
+            "Python",
             "Ruby",
             "Node.js",
             "Express.js"
