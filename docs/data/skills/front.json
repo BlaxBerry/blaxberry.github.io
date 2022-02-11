@@ -122,6 +122,7 @@
         "fileName": "lang-typescript.svg",
         "relevance": [
             "JavaScript",
+            "Node.js",
             "Vue.js",
             "React.js"
         ]
@@ -169,8 +170,7 @@
             "Nuxt.js",
             "Vuetify",
             "ElementUI",
-            "Vant",
-            "TypeScript"
+            "Vant"
         ]
     },
     {
@@ -301,8 +301,8 @@
         "relevance": [
             "React-Router-Dom",
             "Redux",
-            "Next.js",
             "Gatsby.js",
+            "Next.js",
             "Apollo Client",
             "AntDesign",
             "MaterialUI"
@@ -315,7 +315,9 @@
         "fileName": "react-router-dom.svg",
         "relevance": [
             "React.js",
-            "Redux"
+            "Redux",
+            "Gatsby.js",
+            "Next.js"
         ]
     },
     {
@@ -338,10 +340,12 @@
         "fileName": "react-gatsby.svg",
         "relevance": [
             "React.js",
-            "VuePress",
             "GraphQL",
             "Apollo Client",
-            "Next.js"
+            "Next.js",
+            "AntDesign",
+            "MaterialUI",
+            "VuePress"
         ]
     },
     {
@@ -352,8 +356,8 @@
         "fileName": "react-next.svg",
         "relevance": [
             "React.js",
-            "Node.js",
-            "Express.js"
+            "Gatsby.js",
+            "Nuxt.js"
         ]
     },
     {

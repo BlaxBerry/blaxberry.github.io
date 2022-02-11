@@ -60,6 +60,8 @@
         "relevance": [
             "Ruby",
             "Python",
+            "JavaScript",
+            "TypeScript",
             "Node.js"
         ]
     },

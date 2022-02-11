@@ -10,15 +10,7 @@
             {{ currentSkill.name }}
           </h1>
         </Title>
-
-        <!-- <div class="title">
-          <h1 class="text-center text-en">
-            {{ currentSkill.name }}
-          </h1>
-          <br />
-          <v-divider></v-divider>
-        </div> -->
-
+        
         <!-- relevance Skills -->
         <v-col v-show="relevanceList.length">
           <h1 class="text-en">Relevant Skills:</h1>
@@ -38,11 +30,11 @@
       <!-- graph? -->
 
       <!-- relevance Works-->
-      <!-- <v-col v-show="relevanceWorks.length">
-        <h1 class="text-en">Relevant Projects:</h1>
-        <br />
-        <v-divider></v-divider>
-      </v-col> -->
+      <SkillRelevanceWork
+        :worksPC="worksPC"
+        :worksMobile="worksMobile"
+        :currentSkil="currentSkill"
+      />
     </v-container>
   </div>
 </template>
@@ -54,23 +46,29 @@ import {
   getSkillBack,
   getSkillOther,
   getSkillDescriptions,
+  getWorksPC,
+  getWorksMobile,
 } from "@/api/api";
 // components
 import Title from "@/components/common/Titles/Titles.vue";
 import SkillsList from "@/components/Skills/SkillsList.vue";
 import SkillDescription from "./SkillDescription.vue";
+import SkillRelevanceWork from "./SkillRelevanceWorks.vue";
 
 export default {
   components: {
     Title,
     SkillsList,
     SkillDescription,
+    SkillRelevanceWork,
   },
 
   data() {
     return {
       SKILLS_ALL: [],
       DESC_ALL: [],
+      WORKS_PC: [],
+      WORKS_MOBILE: [],
     };
   },
 
@@ -99,6 +97,22 @@ export default {
         })?.desc || []
       );
     },
+    worksPC: function() {
+      return {
+        name: "PC",
+        content: this.WORKS_PC?.filter((item) => {
+          return item?.techTask?.find((s) => s === this.currentSkill.name);
+        }),
+      };
+    },
+    worksMobile: function() {
+      return {
+        name: "Mobile",
+        content: this.WORKS_MOBILE?.filter((item) => {
+          return item?.techTask?.find((s) => s === this.currentSkill.name);
+        }),
+      };
+    },
   },
 
   methods: {
@@ -115,6 +129,10 @@ export default {
 
       // all skills
       this.SKILLS_ALL = [...FRONT, ...BACK, ...OTHER];
+
+      // works
+      this.WORKS_PC = (await getWorksPC).data;
+      this.WORKS_MOBILE = (await getWorksMobile).data;
     },
   },
 
@@ -133,8 +151,10 @@ export default {
 
   updated() {
     console.log("currentSkill", this.currentSkill);
-    console.log("relevanceList", this.relevanceList);
+    console.log("relevance skills", this.relevanceList);
     console.log("currentSkill's description", this.skillDescription);
+    console.log("relevance works PC", this.worksPC);
+    console.log("relevance works MOBILE", this.worksMobile);
   },
 };
 </script>

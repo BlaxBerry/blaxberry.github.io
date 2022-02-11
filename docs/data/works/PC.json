@@ -15,8 +15,9 @@
             "Axios",
             "Vuetify",
             "Sass",
-            "npm",
-            "Webpack"
+            "Webpack",
+            "Node.js",
+            "npm"
         ],
         "links": [
             {
@@ -75,6 +76,7 @@
             "Axios",
             "Vuetify",
             "Sass",
+            "Node.js",
             "npm"
         ],
         "links": null,
@@ -130,6 +132,7 @@
             "Vue.js",
             "Vite",
             "VuePress",
+            "Node.js",
             "npm"
         ],
         "links": [
@@ -167,7 +170,8 @@
             "GraphQL",
             "Bootstrap",
             "AntDesign",
-            "Sass"
+            "Sass",
+            "yarn"
         ],
         "links": [
             {

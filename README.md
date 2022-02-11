@@ -2,10 +2,10 @@
 
 ### Tech Stacks
 
-- [Vue2]()
+- [Vue]() v2
 - [Vue-cli]()
-- [Vue-Router]()
-- [Vuetify]()
+- [Vue-Router]() v3
+- [Vuetify]() v2
 - [Scss]()
 - [Axios]()
 - [JSON]()
@@ -52,3 +52,4 @@ details...
 ![](./public/pics/skills.png)
 ![](./public/pics/detail-work-01.png)
 ![](./public/pics/detail-work-02.png)
+![](./public/pics/detail-skill-01.png)
