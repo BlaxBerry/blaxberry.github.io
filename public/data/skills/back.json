@@ -1,32 +1,5 @@
 [
     {
-        "name": "Node.js",
-        "id": "node",
-        "type": "SERVER",
-        "showAsMain": true,
-        "fileName": "server-nodejs.svg",
-        "relevance": [
-            "Express.js",
-            "Django",
-            "Ruby on Rails",
-            "GraphQL",
-            "npm",
-            "yarn"
-        ]
-    },
-    {
-        "name": "Express.js",
-        "id": "express",
-        "type": "SERVER",
-        "fileName": "server-nodejs-express.svg",
-        "relevance": [
-            "Node.js",
-            "Django",
-            "Ruby on Rails",
-            "GraphQL"
-        ]
-    },
-    {
         "name": "Ruby",
         "id": "ruby",
         "type": "LANG",
@@ -79,6 +52,31 @@
         ]
     },
     {
+        "name": "PHP",
+        "id": "php",
+        "type": "LANG",
+        "showAsMain": true,
+        "fileName": "lang-php.svg",
+        "relevance": [
+            "Ruby",
+            "Python",
+            "Node.js"
+        ]
+    },
+    {
+        "name": "Express.js",
+        "id": "express",
+        "type": "SERVER",
+        "showAsMain": true,
+        "fileName": "js-express.svg",
+        "relevance": [
+            "Node.js",
+            "Django",
+            "Ruby on Rails",
+            "GraphQL"
+        ]
+    },
+    {
         "name": "MongoDB",
         "id": "mongodb",
         "type": "DB",
@@ -109,16 +107,6 @@
         "relevance": [
             "Node.js",
             "Express.js"
-        ]
-    },
-    {
-        "name": "Nuxt.js",
-        "id": "nuxt",
-        "type": "SERVER",
-        "fileName": "vue-nuxt.svg",
-        "relevance": [
-            "Vue.js",
-            "Node.js"
         ]
     }
 ]

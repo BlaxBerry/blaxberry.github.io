@@ -9,7 +9,8 @@ export default {
     data() {
         return {
             // front
-            FRONT_TYPE_BASIC: [],
+            FRONT_TYPE_LAYOUT: [],
+            FRONT_TYPE_JS: [],
             FRONT_TYPE_VUE: [],
             FRONT_TYPE_REACT: [],
             // back
@@ -27,8 +28,10 @@ export default {
         async init() {
             // front
             const FRONT = (await getSkillFront).data;
-            // basic
-            this.FRONT_TYPE_BASIC = FRONT.filter((item) => item.type == "BASIC" && item.showAsMain);
+            // layout
+            this.FRONT_TYPE_LAYOUT = FRONT.filter((item) => item.type == "LAYOUT" && item.showAsMain);
+            // js 
+            this.FRONT_TYPE_JS = FRONT.filter((item) => item.type == "JS" && item.showAsMain);
             // vue
             this.FRONT_TYPE_VUE = FRONT.filter((item) => item.type == "VUE" && item.showAsMain);
             // react

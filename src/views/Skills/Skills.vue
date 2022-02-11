@@ -63,7 +63,8 @@ export default {
         {
           name: "Front Skills",
           content: [
-            this.FRONT_TYPE_BASIC,
+            this.FRONT_TYPE_LAYOUT,
+            this.FRONT_TYPE_JS,
             this.FRONT_TYPE_VUE,
             this.FRONT_TYPE_REACT,
           ],

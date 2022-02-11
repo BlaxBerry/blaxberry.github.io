@@ -2,7 +2,7 @@
     {
         "name": "HTML 5",
         "id": "html",
-        "type": "BASIC",
+        "type": "LAYOUT",
         "showAsMain": true,
         "fileName": "html.svg",
         "relevance": [
@@ -15,7 +15,7 @@
     {
         "name": "CSS 3",
         "id": "css",
-        "type": "BASIC",
+        "type": "LAYOUT",
         "showAsMain": true,
         "fileName": "css.svg",
         "relevance": [
@@ -31,9 +31,43 @@
         ]
     },
     {
+        "name": "Bootstrap",
+        "id": "bootstrap",
+        "type": "LAYOUT",
+        "fileName": "css-bootstrap.svg",
+        "relevance": [
+            "CSS 3",
+            "Sass",
+            "Less",
+            "Tailwind",
+            "Vuetify",
+            "ElementUI",
+            "Vant",
+            "AntDesign",
+            "MaterialUI"
+        ]
+    },
+    {
+        "name": "Tailwind",
+        "id": "tailwind",
+        "type": "LAYOUT",
+        "fileName": "css-tailwind.svg",
+        "relevance": [
+            "CSS 3",
+            "Sass",
+            "Less",
+            "Bootstrap",
+            "Vuetify",
+            "ElementUI",
+            "Vant",
+            "AntDesign",
+            "MaterialUI"
+        ]
+    },
+    {
         "name": "Sass",
         "id": "sass",
-        "type": "BASIC",
+        "type": "LAYOUT",
         "showAsMain": true,
         "fileName": "css-sass.svg",
         "relevance": [
@@ -51,7 +85,8 @@
     {
         "name": "Less",
         "id": "less",
-        "type": "BASIC",
+        "type": "LAYOUT",
+        "showAsMain": true,
         "fileName": "css-less.svg",
         "relevance": [
             "CSS 3",
@@ -66,56 +101,9 @@
         ]
     },
     {
-        "name": "Bootstrap",
-        "id": "bootstrap",
-        "type": "BASIC",
-        "fileName": "css-bootstrap.svg",
-        "relevance": [
-            "CSS 3",
-            "Sass",
-            "Less",
-            "Tailwind",
-            "Vuetify",
-            "ElementUI",
-            "Vant",
-            "AntDesign",
-            "MaterialUI"
-        ]
-    },
-    {
-        "name": "Tailwind",
-        "id": "tailwind",
-        "type": "BASIC",
-        "fileName": "css-tailwind.svg",
-        "relevance": [
-            "CSS 3",
-            "Sass",
-            "Less",
-            "Bootstrap",
-            "Vuetify",
-            "ElementUI",
-            "Vant",
-            "AntDesign",
-            "MaterialUI"
-        ]
-    },
-    {
-        "name": "jQuery",
-        "id": "jquery",
-        "type": "BASIC",
-        "showAsMain": true,
-        "fileName": "jquery.svg",
-        "relevance": [
-            "JavaScript",
-            "Vue.js",
-            "React.js",
-            "Node.js"
-        ]
-    },
-    {
         "name": "JavaScript",
         "id": "javascript",
-        "type": "BASIC",
+        "type": "JS",
         "showAsMain": true,
         "fileName": "lang-javascript.svg",
         "relevance": [
@@ -129,13 +117,41 @@
     {
         "name": "TypeScript",
         "id": "typescript",
-        "type": "BASIC",
+        "type": "JS",
         "showAsMain": true,
         "fileName": "lang-typescript.svg",
         "relevance": [
             "JavaScript",
             "Vue.js",
             "React.js"
+        ]
+    },
+    {
+        "name": "jQuery",
+        "id": "jquery",
+        "type": "JS",
+        "showAsMain": true,
+        "fileName": "js-jquery.svg",
+        "relevance": [
+            "JavaScript",
+            "Vue.js",
+            "React.js",
+            "Node.js"
+        ]
+    },
+    {
+        "name": "Node.js",
+        "id": "node",
+        "type": "JS",
+        "showAsMain": true,
+        "fileName": "js-nodejs.svg",
+        "relevance": [
+            "Express.js",
+            "Django",
+            "Ruby on Rails",
+            "GraphQL",
+            "npm",
+            "yarn"
         ]
     },
     {
@@ -148,6 +164,7 @@
             "Vite",
             "Vue-Router",
             "Vuex",
+            "Pinia",
             "VuePress",
             "Nuxt.js",
             "Vuetify",
@@ -160,7 +177,6 @@
         "name": "Vite",
         "id": "vite",
         "type": "VUE",
-        "showAsMain": true,
         "fileName": "vue-vite.svg",
         "relevance": [
             "Vue.js",
@@ -192,10 +208,19 @@
         "fileName": "vue-vuex.svg",
         "relevance": [
             "Vue.js",
-            "Vite",
-            "Vue-Router",
-            "VuePress",
-            "Nuxt.js"
+            "Pinia",
+            "Redux"
+        ]
+    },
+    {
+        "name": "Pinia",
+        "id": "pinia",
+        "type": "VUE",
+        "fileName": "vue-pinia.svg",
+        "relevance": [
+            "Vue.js",
+            "Vuex",
+            "Redux"
         ]
     },
     {
@@ -208,6 +233,18 @@
             "Vue.js",
             "Vite",
             "Gatsby.js"
+        ]
+    },
+    {
+        "name": "Nuxt.js",
+        "id": "nuxt",
+        "type": "VUE",
+        "showAsMain": true,
+        "fileName": "vue-nuxt.svg",
+        "relevance": [
+            "Vue.js",
+            "Node.js",
+            "Express.js"
         ]
     },
     {
@@ -262,25 +299,13 @@
         "showAsMain": true,
         "fileName": "react.svg",
         "relevance": [
-            "Create-React-App",
             "React-Router-Dom",
-            "Gatsby.js",
             "Redux",
-            "TypeScript",
+            "Next.js",
+            "Gatsby.js",
             "Apollo Client",
             "AntDesign",
             "MaterialUI"
-        ]
-    },
-    {
-        "name": "Create-React-App",
-        "id": "create-react-app",
-        "type": "REACT",
-        "fileName": "react-cli.svg",
-        "relevance": [
-            "React.js",
-            "Gatsby.js",
-            "Redux"
         ]
     },
     {
@@ -290,7 +315,6 @@
         "fileName": "react-router-dom.svg",
         "relevance": [
             "React.js",
-            "Create-React-App",
             "Redux"
         ]
     },
@@ -303,7 +327,6 @@
         "relevance": [
             "React.js",
             "Gatsby.js",
-            "Create-React-App",
             "Vuex"
         ]
     },
@@ -317,7 +340,20 @@
             "React.js",
             "VuePress",
             "GraphQL",
-            "Apollo Client"
+            "Apollo Client",
+            "Next.js"
+        ]
+    },
+    {
+        "name": "Next.js",
+        "id": "next",
+        "type": "REACT",
+        "showAsMain": true,
+        "fileName": "react-next.svg",
+        "relevance": [
+            "React.js",
+            "Node.js",
+            "Express.js"
         ]
     },
     {

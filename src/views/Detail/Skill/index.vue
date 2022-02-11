@@ -30,18 +30,10 @@
       </div>
 
       <!-- description -->
-      <v-col v-show="skillDescription.length">
-        <h1 class="text-en">Description:</h1>
-        <br />
-        <v-divider></v-divider>
-        <v-sheet
-          class="text-jp py-3 px-4"
-          v-for="(item, index) in skillDescription"
-          :key="index"
-        >
-          {{ item }}
-        </v-sheet>
-      </v-col>
+      <SkillDescription
+        v-show="skillDescription.length"
+        :skillDescription="skillDescription"
+      />
 
       <!-- graph? -->
 
@@ -66,11 +58,13 @@ import {
 // components
 import Title from "@/components/common/Titles/Titles.vue";
 import SkillsList from "@/components/Skills/SkillsList.vue";
+import SkillDescription from "./SkillDescription.vue";
 
 export default {
   components: {
     Title,
     SkillsList,
+    SkillDescription,
   },
 
   data() {
