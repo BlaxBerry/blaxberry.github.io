@@ -172,45 +172,62 @@
         "extra": "The Weapons Page is developing..."
     },
     {
-        "name": "Music Video Player",
-        "nameEN": "ミュージックアプリ",
-        "id": "mvplayer2022",
+        "name": "Words Study",
+        "nameEN": "",
+        "id": "wordstydy2022",
         "type": "MOBILE",
-        "fileName": "mobile-react-music-player.png",
+        "fileName": "mobile-vite-word-study.png",
         "techTask": [
-            "React.js",
+            "Vue.js",
+            "Vite",
+            "Vue-Router",
             "TypeScript",
-            "Gatsby.js",
-            "Redux",
-            "MaterialUI",
+            "ElementUI",
             "Sass",
-            "yarn"
+            "Pinia",
+            "npm",
+            "GraphQL",
+            "Apollo",
+            "Node.js",
+            "Express.js"
         ],
         "links": [
             {
-                "name": "Github",
+                "name": "Client Side",
                 "icon": "mdi-github",
-                "link": "https://github.com/BlaxBerry/react-music-player"
+                "link": "https://github.com/BlaxBerry/vue3-words-study-mobile"
+            },
+            {
+                "name": "Server Side",
+                "icon": "mdi-github",
+                "link": "https://github.com/BlaxBerry/vue3-words-study-server"
             }
         ],
         "pics": [
-            "https://github.com/BlaxBerry/react-music-player/raw/master/src/assets/01.png"
+            "https://github.com/BlaxBerry/vue3-words-study-mobile/raw/main/public/images/home-01.png",
+            "https://github.com/BlaxBerry/vue3-words-study-mobile/raw/main/public/images/home-setting.png",
+            "https://github.com/BlaxBerry/vue3-words-study-mobile/raw/main/public/images/list-01.png",
+            "https://github.com/BlaxBerry/vue3-words-study-mobile/raw/main/public/images/word-01.png"
         ],
-        "description": "サウンドトラックプレイヤー、個人使用と練習のみとなっています。Gatsby で作られた SPA( シングルページアプリケーション )です。",
+        "description": "vue3、i18n、pinia、graphql、express",
         "details": [
             {
-                "title": "MV",
+                "title": "Home",
                 "info": ""
             },
             {
-                "title": "Recommend",
+                "title": "Lists",
                 "info": ""
             },
             {
-                "title": "Comments",
+                "title": "Edit",
+                "info": ""
+            },
+            {
+                "title": "Add",
                 "info": ""
             }
         ],
-        "extra": "クライアントはまだ開発中です...."
+        "extra": "まだ開発中です...."
     }
 ]
