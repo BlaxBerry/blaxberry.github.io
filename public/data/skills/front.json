@@ -303,7 +303,7 @@
             "Redux",
             "Gatsby.js",
             "Next.js",
-            "Apollo Client",
+            "Apollo",
             "AntDesign",
             "MaterialUI"
         ]
@@ -341,7 +341,7 @@
         "relevance": [
             "React.js",
             "GraphQL",
-            "Apollo Client",
+            "Apollo",
             "Next.js",
             "AntDesign",
             "MaterialUI",

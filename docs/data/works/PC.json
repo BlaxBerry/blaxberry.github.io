@@ -166,7 +166,7 @@
             "React.js",
             "TypeScript",
             "Gatsby.js",
-            "Apollo Client",
+            "Apollo",
             "GraphQL",
             "Bootstrap",
             "AntDesign",
@@ -190,6 +190,6 @@
             "Front Side for Admin Managment, page of Setting & Holidays",
             "Front Side for Customer Client, layout's seting, pages of products, booking orders, user's information profile,"
         ],
-        "extra": "Learned GraphQL and Apollo Client from this project, and motivated to planed to study Server side start with Python."
+        "extra": "Learned GraphQL and Apollo from this project, and motivated to planed to study Server side start with Python."
     }
 ]

@@ -4,7 +4,7 @@
     <h1 class="text-en">Images</h1>
     <br />
     <!-- lists -->
-    <v-row>
+    <v-row v-if="images.length">
       <v-col
         v-for="(pic, i) in images"
         :key="i"
@@ -18,7 +18,11 @@
         </v-card>
       </v-col>
     </v-row>
-    <br />
+    <br v-if="images.length" />
+
+    <v-row v-else>
+      <v-col>no images right now ...</v-col>
+    </v-row>
   </v-col>
 </template>
 

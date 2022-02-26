@@ -5,14 +5,7 @@
     <br />
     <!-- links -->
     <v-row class="d-flex">
-      <v-col
-        v-for="(linkItem, i) in links"
-        :key="i"
-        cols="12"
-        sm="4"
-        md="3"
-        lg="2"
-      >
+      <div v-for="(linkItem, i) in links" :key="i" class="mr-10 py-2">
         <!-- icon -->
         <v-icon x-large color="blue-grey">
           {{ linkItem.icon }}
@@ -22,7 +15,7 @@
           :href="linkItem.link"
           target="_blank"
           color="blue-grey"
-          class="ml-3"
+          class="ml-2"
           elevation="2"
           dark
           rounded
@@ -30,7 +23,7 @@
         >
           {{ linkItem.name }}
         </v-btn>
-      </v-col>
+      </div>
     </v-row>
     <br />
     <v-divider></v-divider>
@@ -42,4 +35,3 @@ export default {
   props: ["links"],
 };
 </script>
-

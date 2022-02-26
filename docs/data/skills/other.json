@@ -76,15 +76,15 @@
         "showAsMain": true,
         "fileName": "other-graphql.svg",
         "relevance": [
-            "Apollo Client",
+            "Apollo",
             "Node.js",
             "React.js",
             "Axios"
         ]
     },
     {
-        "name": "Apollo Client",
-        "id": "apollo-client",
+        "name": "Apollo",
+        "id": "apollo",
         "type": "APIQUERY",
         "fileName": "other-apollo-graphql.svg",
         "relevance": [
