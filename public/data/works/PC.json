@@ -156,41 +156,5 @@
         "description": "Personal Static Document Site, which shows the notes about skills I have learned.This Project is a SPA (Single Page Application) based on VuePress, Markdown files are builded as static HTML pages by VuePress. ",
         "details": null,
         "extra": "Still updating."
-    },
-    {
-        "name": "SunrisePark Booking System",
-        "nameEN": "ブッキングシステム",
-        "id": "admin202112",
-        "type": "PC",
-        "fileName": "pc-saga-booking.png",
-        "techTask": [
-            "React.js",
-            "TypeScript",
-            "Gatsby.js",
-            "Apollo",
-            "GraphQL",
-            "Bootstrap",
-            "AntDesign",
-            "Sass",
-            "yarn"
-        ],
-        "links": [
-            {
-                "name": "公式サイト",
-                "icon": "mdi-video",
-                "link": "https://saga-sunrisepark.com/"
-            }
-        ],
-        "pics": [
-            "https://github.com/BlaxBerry/blaxberry.github.io/blob/main/public/images/works/saga/saga01.png?raw=true",
-            "https://github.com/BlaxBerry/blaxberry.github.io/blob/main/public/images/works/saga/saga02.png?raw=true"
-        ],
-        "description": "Booking Management System for Saga SunrisePark (SAGA サンライズパーク).",
-        "details": null,
-        "teamwork": [
-            "a lot ...",
-            "a lot ..."
-        ],
-        "extra": "Learned GraphQL and Apollo from this project, and motivated to planed to study Server side start with Python."
     }
 ]

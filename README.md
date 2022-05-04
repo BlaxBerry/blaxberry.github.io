@@ -14,28 +14,28 @@
 ## Routes
 
 <details>
-<summary>/</summary>
-details...
+<summary>Top page</summary>
+/
 </details>
 
 <details>
-<summary>/works</summary>
-details...
+<summary>Works page</summary>
+/works
 </details>
 
 <details>
-<summary>/detail/work?id=xxx</summary>
-details...
+<summary>Work detail</summary>
+/detail/work?id=xxx
 </details>
 
 <details>
-<summary>/skills</summary>
-details...
+<summary>Skills page</summary>
+/skills
 </details>
 
 <details>
-<summary>/detail/skill?id=xxx</summary>
-details...
+<summary>Skill detail</summary>
+/detail/skill?id=xxx
 </details>
 
 <!-- <details>
