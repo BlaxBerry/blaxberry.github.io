@@ -38,9 +38,13 @@ export default {
 .home-skills {
   background: url(../../assets/upload/bgk01.png) center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   color: white;
   overflow: hidden;
+
+  // to fix background-attachment: fixed cannot work in iphone
+  @media screen and (min-width: 768px) {
+    background-attachment: fixed;
+  }
 
   .cover-mask {
     display: flex;

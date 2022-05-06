@@ -31,12 +31,12 @@
               v-for="(btn, i) in FOOTER_LINK_BTNS"
               :key="i"
               icon
-              large
               dark
               :href="btn.href"
               target="_blank"
+              class="mx-2"
             >
-              <v-icon>{{ btn.icon }}</v-icon>
+              <v-icon large>{{ btn.icon }}</v-icon>
             </v-btn>
           </div>
         </div>
@@ -47,8 +47,8 @@
         <v-card-text class="py-0">
           <!-- <span class="text-subtitle-2 mx-2">2021.12</span> -->
           <h3 class="font-weight-black text-en">
-            <small class="font-italic text-jp">© 2021</small>
-            Chen
+            <small class="font-italic text-jp">Latest Updated 2021.12</small>
+            &nbsp;©Chen
           </h3>
         </v-card-text>
       </div>
@@ -69,10 +69,14 @@ export default {
 .background-pic {
   background: url(../../assets/upload/bgk01.png) center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh !important;
   color: white;
   overflow: hidden;
+
+  // to fix background-attachment: fixed cannot work in iphone
+  @media screen and (min-width: 768px) {
+    background-attachment: fixed;
+  }
 
   .cover-mask {
     display: flex;

@@ -39,7 +39,7 @@ export default {
 .top-background-pic {
   background: url(../../assets/upload/bgk01.png) center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   height: 100vh !important;
   display: flex;
   flex-direction: column;
@@ -47,5 +47,10 @@ export default {
   align-items: center;
   color: white;
   font-size: 2rem;
+
+  // to fix background-attachment: fixed cannot work in iphone
+  @media screen and (min-width: 768px) {
+    background-attachment: fixed;
+  }
 }
 </style>
