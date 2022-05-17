@@ -67,16 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 .background-pic {
-  background: url(../../assets/upload/bgk01.png) center no-repeat;
-  background-size: cover;
-  height: 100vh !important;
   color: white;
-  overflow: hidden;
-
-  // to fix background-attachment: fixed cannot work in iphone
-  @media screen and (min-width: 768px) {
-    background-attachment: fixed;
-  }
 
   .cover-mask {
     display: flex;
